@@ -89,6 +89,9 @@ img.arrows {
 #resumenav a{
 	color: #000;
 }
+
+.gallery { text-align:center; margin:0 auto;}
+.thumb { max-width: 200px; padding: 8px;}
 .tab-content { margin: 30px auto; padding: 0 5% 5% 5%;}
 .tab-content h2, h3 { text-shadow: none;}
 .tab-content p { text-align:left;}
