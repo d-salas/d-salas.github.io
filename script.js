@@ -22,6 +22,15 @@ $( document ).ready(function() {
 			});
 		});
 
+		//style="text-align:center; width:45%;
+		if( $(window).width() > 500){
+			$(".block").css("width","45%")
+		}
+		else
+		{
+			$(".block").css("width","100%")	
+		}
+
 		$('.totop').click(function(evn)
 		{
 			evn.preventDefault(); 

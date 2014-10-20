@@ -90,6 +90,7 @@ img.arrows {
 	color: #000;
 }
 
+.block { text-align:center;}
 .gallery { text-align:center; margin:0 auto;}
 .thumb { max-width: 200px; padding: 8px;}
 .tab-content { margin: 30px auto; padding: 0 5% 5% 5%;}
