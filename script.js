@@ -23,7 +23,7 @@ $( document ).ready(function() {
 		});
 
 		//style="text-align:center; width:45%;
-		if( $(window).width() > 700){
+		if( width > 700){
 			$(".block").css("width","45%")
 		}
 		else
