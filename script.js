@@ -12,7 +12,7 @@ $( document ).ready(function() {
 		// Show the content at the proper size when the arrow is clicked
 		$('#down').click(function(evn)
 		{
-			evn.preventDefault();
+			evn.preventDefault(); // Don't change the URL when these buttons are clicked
 			var width = $(window).width();
 
 			$('#main').show("fast",function() {
@@ -24,7 +24,7 @@ $( document ).ready(function() {
 
 		$('.totop').click(function(evn)
 		{
-			evn.preventDefault();
+			evn.preventDefault(); 
 
 			$(window).scrollTo($('#resumenav'), 300);
 		});
@@ -33,7 +33,7 @@ $( document ).ready(function() {
 			$("[data-toggle='tooltip']").tooltip(); 
 		});
 
-		// This fixes the nav-justified bug in webkit
+		// This fixes the nav-justified bug in webkit browsers
 		$(window).bind('resize', function(){
     		var w = $(this).width(),
         	threshold = 768;
