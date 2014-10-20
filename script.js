@@ -16,20 +16,11 @@ $( document ).ready(function() {
 			var width = $(window).width();
 
 			$('#main').show("fast",function() {
-				if(width>500) {$('.section2').height(height+navheight);}
-				else $('.section2').height(height+navheight+(contentheight/1.5));
+				if(width>700) {$('.section2').height(height+navheight); $(".block").css("width","60%").css("text-align","center");}
+				else { $('.section2').height(height+navheight+(contentheight/1.5)); $(".block").css("width","100%").css("text-align","center");	}
 				$(window).scrollTo($('#main'), 500);
 			});
 		});
-
-		//style="text-align:center; width:45%;
-		if( width > 700){
-			$(".block").css("width","45%")
-		}
-		else
-		{
-			$(".block").css("width","100%")	
-		}
 
 		$('.totop').click(function(evn)
 		{
