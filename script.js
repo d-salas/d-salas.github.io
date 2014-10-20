@@ -33,6 +33,11 @@ $( document ).ready(function() {
 			$("[data-toggle='tooltip']").tooltip(); 
 		});
 
+		$(".fancybox").fancybox({
+			openEffect	: 'none',
+			closeEffect	: 'none'
+		});
+
 		// This fixes the nav-justified bug in webkit browsers
 		$(window).bind('resize', function(){
     		var w = $(this).width(),
