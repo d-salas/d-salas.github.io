@@ -99,7 +99,7 @@ p {
 	background-image: url('../img/model.jpeg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: right;
+	background-position: left;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
