@@ -75,13 +75,13 @@ p {
 	color: #3c3c3c;
 	font-size: 1.9rem;
 }
-.sb-menu {
+.sb-menu a {
 	color: #3c3c3c;
 }
 .sb-menu li {
-	text-align: center;
+	text-align: left;
 	display: list-item;
-	padding-right: 0px;
+	padding-left: 10px;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 1px;
 	font-weight: normal;
@@ -90,7 +90,7 @@ p {
 }
 .sb-slidebar {
 	background-color: #F8F4F3;
-	width: 25%;
+	width: 30%;
 }
 
 #top { 
@@ -99,7 +99,7 @@ p {
 	background-image: url('../img/model.jpeg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: right top;
+	background-position: right;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
