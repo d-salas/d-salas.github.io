@@ -152,6 +152,7 @@ a {
 	padding-right: 4vw;
 	letter-spacing: 0px;
 	text-align: center;
+	/* min-height: 50vh; */
 }
 #info p {
 	text-align: justify;
