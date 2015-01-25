@@ -74,7 +74,7 @@ a {
 }
 .tab-bar {
 	background-image: url('../img/greyfloral.png');
-	background-attachment: fixed;
+	background-attachment: scroll;
 	color: #3c3c3c;
 	font-size: 2rem;
 }
