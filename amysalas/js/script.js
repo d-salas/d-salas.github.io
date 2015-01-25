@@ -102,21 +102,16 @@ $( document ).ready(function() {
 
 		///// PARALLAX ///////
 
-		//$("#services").backstretch("./img/salon.jpg");
+		if(!Modernizr.touch){ 
+    		$.stellar({
+  				horizontalOffset: 100,
+	  			horizontalScrolling: false,
+	  			responsive: true
+			});
 
-		//$("#top").backstretch("./img/model.jpeg", {centeredX:false});		
-
-		var width1 = $(window).width();
-
-
-		$.stellar({
-  			horizontalOffset: 100,
-	  		horizontalScrolling: false,
-	  		responsive: true
-		});
-
-		$( window ).resize(function() {
-			$.stellar('refresh');
-		});
+			$( window ).resize(function() {
+				$.stellar('refresh');
+			});
+		}
 
 	});
