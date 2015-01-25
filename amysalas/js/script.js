@@ -100,7 +100,7 @@ $( document ).ready(function() {
 			$("#portfolio").backstretch("next");
 		});		
 
-		///// PARALLAX ///////
+		/////// PARALLAX /////// (disabled on mobile)
 
 		if(!Modernizr.touch){ 
     		$.stellar({
