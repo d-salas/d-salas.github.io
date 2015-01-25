@@ -104,7 +104,7 @@ $( document ).ready(function() {
 
 		//$("#services").backstretch("./img/salon.jpg");
 
-		$("#top").backstretch("./img/model.jpeg");		
+		$("#top").backstretch("./img/model.jpeg", {centeredX:true});		
 
 		var width1 = $(window).width();
 
