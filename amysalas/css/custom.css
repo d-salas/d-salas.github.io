@@ -101,7 +101,7 @@ a {
 	position:relative;
 	background-image: url('../img/model.jpeg');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	background-position: right top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -217,7 +217,7 @@ a {
 	position:relative;
 	background-image: url('../img/salon.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	background-position: right top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
