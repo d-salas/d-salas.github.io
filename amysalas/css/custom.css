@@ -102,7 +102,7 @@ a {
 	background-image: url('../img/model.jpeg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center bottom;
+	background-position: right top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

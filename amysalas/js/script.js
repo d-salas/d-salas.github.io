@@ -104,6 +104,9 @@ $( document ).ready(function() {
 
 		//$("#services").backstretch("./img/salon.jpg");
 
+		var width1 = $(window).width();
+
+		
 		$.stellar({
   			horizontalOffset: 100,
 	  		horizontalScrolling: false,
