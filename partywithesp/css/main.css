@@ -4,8 +4,8 @@
    	ESP Productions by Daniel Salas, 2015
    ========================================================================== */
 
-body {
-
+* {
+	font-family: 'Quicksand';
 }
 
 #top {
@@ -33,7 +33,13 @@ body {
 }
 
 #party {
+}
 
+#party p {
+	line-height: 100vh;
+	font-size: 6rem;
+	color:white;
+	font-family: 'Codystar';
 }
 
 #esp-top {
@@ -55,7 +61,7 @@ body {
    	transition: all 0.4s ease;
 }
 
-#navbar-text {
+#navbar {
 	/*color:#FFFFFF;*/
 	float:right; 
 	margin-top:15px
