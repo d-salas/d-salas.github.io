@@ -30,28 +30,27 @@
     <![endif]-->
 
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <section id="top"></section>
-    <div class="overlay">
-        <span id="esp-top">ESP</span><span id="events">&nbsp;events</span>
-    </div>
-
-    <nav class="navbar" role="navigation" id="navi">
+    <nav class="navbar" id="esp-nav" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
-                    <i class="icon ion-navicon-round size-48" style="color:#000000;"></i>
+                    <i class="icon ion-navicon-round size-48"></i>
                 </button>
-                <a class="navbar-brand" href="#top">ESP productions</a>
+                <a class="navbar-brand" href="#top"> <span id="esp-top">ESP events</span></a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <span style="float:right; margin-top:15px">stuff</span>
+            <div class="navbar-collapse collapse">
+                <div id="navbar-text"><ul><li>stuff</li></ul></span>
             </div><!--/.navbar-collapse -->
         </div>
     </nav>
 
-    <div class="container">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section id="top" data-stellar-background-ratio=".5"></section>
+    <div class="overlay"><span id="party"> PARTY WITH US </span></div>
+
+
+    <div class="container" id="content">
         <!-- Example row of columns -->
         <div class="row">
             <div class="col-md-4">
@@ -130,13 +129,16 @@
         </div>
 
         <hr>
-
+    </div> <!-- /container -->        
+    <div class="container">
         <footer>
             <p>&copy; Daniel Salas 2015</p>
         </footer>
-    </div> <!-- /container -->        
-
+    </div>
 <script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="js/vendor/jquery.stellar.js"></script>
+
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
 <script src="js/vendor/bootstrap.min.js"></script>

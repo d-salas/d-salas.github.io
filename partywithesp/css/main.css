@@ -10,7 +10,6 @@ body {
 
 #top {
 	height:100vh;
-	margin-bottom: 0;
 	background-image: url('../img/dj.jpg');
 	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/
@@ -19,7 +18,6 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	z-index: 1;
 }
 .overlay {
 	text-align: center;
@@ -33,32 +31,54 @@ body {
 	background-color: rgba(44,62,80,0.6);
 	z-index: 2;
 }
-#esp-top {
-	font-size: 7rem;
-	line-height: 100vh;
-	color: #FFFFFF;
-	font-family: 'Monoton', cursive;
-	z-index: 100;
+
+#party {
+
 }
-#events {
-	font-size: 6rem;
-	line-height: 100vh;
-	color: #FFFFFF;
-	font-family: 'Quicksand', sans-serif;
-	z-index: 100;	
+
+#esp-top {
+	font-size: 3rem;
+	/*color: #FFFFFF;*/
+	font-family: 'Megrim';
+	z-index: 100;
 }
 
 .navbar {
+	z-index: 100;
+   	width:100vw;
+	margin-top: 25px;
 	margin-bottom: 0;
+	border-radius: 0;
 }
 
-#navi {
-   	background-color: #ffffff;
-   	z-index: 100000;
-   	width:100vw;
+#esp-nav {
+   	transition: all 0.4s ease;
 }
+
+#navbar-text {
+	/*color:#FFFFFF;*/
+	float:right; 
+	margin-top:15px
+}
+
+.affix-top, .affix-top a {
+	position: absolute;
+	color: #FFFFFF;	
+}
+
 .affix {
-	top:0;
+	margin-top: 0 !important;
+	background: #FFFFFF;
+	color: #464d55;
+	/*add browser support*/
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5)
+}
+.affix a {
+	color: #464d55;
+}
+
+#content {
+
 }
 
 
