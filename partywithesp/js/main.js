@@ -21,7 +21,7 @@ $( document ).ready(function() {
 	
 
 	if(!Modernizr.touch){ 
-    		$.stellar({,
+    		$.stellar({
 	  			horizontalScrolling: false,
 	  			responsive: true
 			});
