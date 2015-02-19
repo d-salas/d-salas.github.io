@@ -12,38 +12,6 @@ ul {
 	list-style-type: none;
 }
 
-#top {
-	height:100vh;
-	background-image: url('../img/dj.jpg');
-	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/
-	background-position: center top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.overlay {
-	text-align: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
-	background-image: url('../img/pattern.png');
-	background-repeat: repeat;
-	background-color: rgba(44,62,80,0.6);
-	z-index: 2;
-}
-
-
-#party h1 {
-	line-height: 100vh;
-	font-size: 8vw;
-	color:white;
-	font-family: 'Syncopate';
-}
-
 a.navbar-brand {
 	font-size: 3rem;
 	/*color: #FFFFFF;*/
@@ -97,6 +65,52 @@ a.navbar-brand {
 
 .collapse.in {
 
+}
+
+#top {
+	height:100vh;
+	background-image: url('../img/dj.jpg');
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.overlay {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../img/pattern.png');
+	background-repeat: repeat;
+	background-color: rgba(44,62,80,0.6);
+	z-index: 2;
+}
+
+#party p {
+	padding-top: 30vh;
+	padding-left: 10vh;
+	padding-right: 10vh;
+	font-size: 3vw;
+	color:white;
+	font-family: 'Quicksand';
+}
+
+#party h1 {
+	/*line-height: 100vh;*/
+	padding-top: 6vh;
+	font-size: 8vw;
+	color:white;
+	font-family: 'Quicksand';
+}
+
+#party b {
+	font-family: 'Syncopate';
+	font-size: 5.6vw;
 }
 
 #content {
