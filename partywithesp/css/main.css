@@ -1,5 +1,6 @@
 
 
+
 /* ==========================================================================
    	ESP Productions by Daniel Salas, 2015
    ========================================================================== */
@@ -15,10 +16,13 @@ ul {
 a.navbar-brand {
 	font-size: 3rem;
 	/*color: #FFFFFF;*/
-	font-family: 'Syncopate';
 	z-index: 100;
 	line-height: 100%;
 	padding-top: 12px;
+}
+
+a.navbar-brand, #party b {
+	font-family: 'Megrim';
 }
 
 .navbar {
@@ -109,8 +113,7 @@ a.navbar-brand {
 }
 
 #party b {
-	font-family: 'Syncopate';
-	font-size: 5.6vw;
+	font-size: 6.5vw;
 }
 
 #content {
