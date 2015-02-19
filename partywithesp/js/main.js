@@ -9,16 +9,6 @@ $( document ).ready(function() {
 		}
 	})
 
-	/*$(window).scroll(function() {
-		if ($(this).scrollTop() > 15){  
-			$('navi').addClass("affix");
-		}
-		else{
-			$('navi').removeClass("affix");
-		}
-	});*/
-
-	
 
 	if(!Modernizr.touch){ 
     		$.stellar({

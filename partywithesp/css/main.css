@@ -5,7 +5,7 @@
    ========================================================================== */
 
 * {
-	font-family: 'Open Sans';
+	font-family: 'Nobile';
 }
 
 ul {
@@ -36,22 +36,21 @@ ul {
 	z-index: 2;
 }
 
-#party {
-}
 
-#party p {
+#party h1 {
 	line-height: 100vh;
 	font-size: 8vw;
 	color:white;
-	font-family: '';
+	font-family: 'Syncopate';
 }
 
-#esp-top {
+a.navbar-brand {
 	font-size: 3rem;
 	/*color: #FFFFFF;*/
 	font-family: 'Syncopate';
 	z-index: 100;
 	line-height: 100%;
+	padding-top: 12px;
 }
 
 .navbar {
@@ -69,8 +68,14 @@ ul {
 #navbar {
 	/*color:#FFFFFF;*/
 	float:right; 
-	margin-top:15px;
 	/*transition: all 0.1s ease;*/
+}
+.ion-navicon, .navbar-toggle {
+	font-size: 4.5rem;
+	padding: 2px 15px;
+	height:50px;
+	margin: 0 0;
+	line-height: 100%;
 }
 
 .affix-top, .affix-top a {
@@ -83,7 +88,8 @@ ul {
 	background: #FFFFFF;
 	color: #464d55;
 	/*add browser support*/
-	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5)
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+	height: 1vh;
 }
 .affix a {
 	color: #464d55;
