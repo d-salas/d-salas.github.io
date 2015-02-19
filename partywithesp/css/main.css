@@ -96,17 +96,17 @@ a.navbar-brand, #party b {
 }
 
 #party p {
-	padding-top: 30vh;
-	padding-left: 10vh;
-	padding-right: 10vh;
-	font-size: 4vw;
+	padding-top: 25vh;
+	padding-left: 20%;
+	padding-right: 20%;
+	font-size: 3rem;
 	color:white;
 	font-family: 'Quicksand';
 }
 
 #party h1 {
 	/*line-height: 100vh;*/
-	padding-top: 6vh;
+	padding-top: 8vh;
 	font-size: 8vw;
 	color:white;
 	font-family: 'Quicksand';
