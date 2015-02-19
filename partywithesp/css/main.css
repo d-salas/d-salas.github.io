@@ -14,11 +14,11 @@ ul {
 }
 
 a.navbar-brand {
-	font-size: 3rem;
+	font-size: 4rem;
 	/*color: #FFFFFF;*/
 	z-index: 100;
 	line-height: 100%;
-	padding-top: 12px;
+	padding-top: 3px;
 }
 
 a.navbar-brand, #party b {
@@ -99,7 +99,7 @@ a.navbar-brand, #party b {
 	padding-top: 30vh;
 	padding-left: 10vh;
 	padding-right: 10vh;
-	font-size: 3vw;
+	font-size: 4vw;
 	color:white;
 	font-family: 'Quicksand';
 }
@@ -113,7 +113,7 @@ a.navbar-brand, #party b {
 }
 
 #party b {
-	font-size: 6.5vw;
+	font-size: 8vw;
 }
 
 #content {
