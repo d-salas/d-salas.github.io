@@ -96,24 +96,46 @@ a.navbar-brand, #party b {
 }
 
 #party p {
-	padding-top: 25vh;
-	padding-left: 20%;
-	padding-right: 20%;
-	font-size: 5vmin;
-	color:white;
-	font-family: 'Quicksand';
+	padding-top: 20vh;
+	padding-left: 20vmin;
+	padding-right: 20vmin;
+	font-size: 5.5vmin;
 }
 
 #party h1 {
 	/*line-height: 100vh;*/
 	padding-top: 8vh;
-	font-size: 8vw;
-	color:white;
+}
+#party h2 {
+	font-size: 2rem;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	margin-top: 10vh;
+	margin-right: 30vw;
+	margin-left: 30vw;
+	line-height: 100%;
+
+	/*border-radius: 9px 9px 9px 9px;
+	-moz-border-radius: 9px 9px 9px 9px;
+	-webkit-border-radius: 9px 9px 9px 9px;
+	border: 4px double #FFFFFF;*/
+}
+
+.overlay .btn {
+	background-color: rgba(44,62,80,0.6);
+	font-size: 2rem;
+}
+
+#party p, #party h1, #party h2, #party a {
 	font-family: 'Quicksand';
 }
 
-#party b {
-	font-size: 8vw;
+#party b, #party h1, #party p, #party h2, #party a {
+	/*font-size: 6vmax;*/
+	color: white;
+}
+#party b, #party h1 {
+	font-size: 6vmax;
 }
 
 #content {
