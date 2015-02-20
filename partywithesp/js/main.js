@@ -1,7 +1,6 @@
 
 $( document ).ready(function() {
 
-	var h = $('.jumbotron').outerHeight();
 
 	$('#esp-nav').affix({
 		offset: {
@@ -9,6 +8,22 @@ $( document ).ready(function() {
 		}
 	})
 
+	////  ////
+
+	var text = ['Fundraisers', 'Product Launches', 'Holiday parties', 'Bar/Bat Mitvahs', 'Galas', 'Trade shows'];
+        i = 0,
+        $div = $('#services');
+    
+    setInterval(function ()
+    {
+        $div.fadeOut(function ()
+        {
+            $div.text(text[i++ % text.length]).fadeIn();
+        });
+    }, 2000);
+
+
+    //// STELLAR ////
 
 	if(!Modernizr.touch){ 
     		$.stellar({
