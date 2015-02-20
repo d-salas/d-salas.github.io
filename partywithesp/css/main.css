@@ -111,7 +111,7 @@ a.navbar-brand, #party b {
 	font-size: 4vw;
 }
 #party h2 {
-	font-size: 3.5vw;
+	font-size: 3.5;
 	padding-top: 10vh;
 	padding-left: 10vw;
 	padding-right: 10vw;
@@ -131,15 +131,15 @@ a.navbar-brand, #party b {
 }
 
 .overlay .btn {
-	margin-top: 5vh;
+	margin-top: 10vh;
 	background: none;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	transition: all 0.2s ease;
 }
 
 h2#services {
 	/*transition: all 0.2s ease;*/
-	padding-top: 25vh;
+	padding-top: 22vh;
 }
 
 #party a.btn {
@@ -148,8 +148,8 @@ h2#services {
 }
 
 #party a.btn:hover {
-	background: #FFFFFF;
 	color:#000000;
+	background: #FFFFFF;
 }
 
 #party p, #party h1, #party h2, #party a {
