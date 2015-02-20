@@ -10,7 +10,7 @@ $( document ).ready(function() {
 
 	////  ////
 
-	var text = ['Fundraisers', 'Product Launches', 'Holiday parties', 'Bar/Bat Mitvahs', 'Galas', 'Trade shows'];
+	var text = ['Fundraisers', 'Product launches', 'Holiday parties', 'Bar/Bat Mitvahs', 'Galas', 'Trade shows', 'Private parties'];
         i = 0,
         $div = $('#services');
     

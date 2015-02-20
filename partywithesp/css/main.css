@@ -111,8 +111,10 @@ a.navbar-brand, #party b {
 	font-size: 4vw;
 }
 #party h2 {
-	font-size: 3.5rem;
+	font-size: 3.5vw;
 	padding-top: 10vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
 }
 #party h3 {
 	font-size: 2rem;
@@ -129,6 +131,7 @@ a.navbar-brand, #party b {
 }
 
 .overlay .btn {
+	margin-top: 5vh;
 	background: none;
 	font-size: 2rem;
 	transition: all 0.2s ease;
