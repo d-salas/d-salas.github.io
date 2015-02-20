@@ -169,7 +169,12 @@ h2#services {
 }
 
 
-
+@media screen and (max-device-width: 640px) {
+	h2#services {
+		font-size: 4rem;
+		padding-top: 22vh;
+	}
+}
 
 
 
