@@ -25,7 +25,7 @@ $( document ).ready(function() {
 
     //// STELLAR & SKROLLR ////
 
-    var s = skrollr.init();
+    // var s = skrollr.init();
 
 	if(!Modernizr.touch){ 
     		$.stellar({
