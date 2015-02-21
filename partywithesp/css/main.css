@@ -73,7 +73,7 @@ a.navbar-brand, #party b {
 	padding-top: 14px;
 	font-family: 'Quicksand';
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 1.6rem;
 }
 .navbar-nav li:hover {
@@ -111,7 +111,7 @@ a.navbar-brand, #party b {
 	font-size: 4vw;
 }
 #party h2 {
-	font-size: 3.5;
+	font-size: 5vmin;
 	padding-top: 10vh;
 	padding-left: 10vw;
 	padding-right: 10vw;
@@ -133,13 +133,13 @@ a.navbar-brand, #party b {
 .overlay .btn {
 	margin-top: 10vh;
 	background: none;
-	font-size: 1.75rem;
+	font-size: 2rem;
 	transition: all 0.2s ease;
 }
 
 h2#services {
 	/*transition: all 0.2s ease;*/
-	padding-top: 22vh;
+	padding-top: 20vh;
 }
 
 #party a.btn {
@@ -169,13 +169,13 @@ h2#services {
 }
 
 
-@media screen and (max-device-width: 640px) {
+/*@media screen and (max-device-width: 640px) {
 	h2#services {
-		font-size: 1rem;
+		font-size: 2rem;
 		padding-top: 22vh;
 	}
 }
-
+*/
 
 
 
