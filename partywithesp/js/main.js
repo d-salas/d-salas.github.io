@@ -6,11 +6,11 @@ $( document ).ready(function() {
 		offset: {
 			top: 2
 		}
-	})
+	});
 
 	////  ////
 
-	var text = ['Fundraisers', 'Product launches', 'Holiday parties', 'Bar/Bat Mitvahs', 'Galas', 'Trade shows', 'Private parties'];
+	var text = ['Private parties', 'Fundraisers', 'Product launches', 'Holiday parties', 'Bar/Bat Mitvahs', 'Galas', 'Trade shows'];
         i = 0,
         $div = $('#services');
     
@@ -20,7 +20,7 @@ $( document ).ready(function() {
         {
             $div.text(text[i++ % text.length]).fadeIn();
         });
-    }, 2000);
+    }, 1500);
 
 
     //// STELLAR & SKROLLR ////
