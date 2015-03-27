@@ -1,8 +1,29 @@
 /* ==========================================================================
    	ESP Productions by Daniel Salas, 2015
    ========================================================================== */
+@font-face {
+  font-family: 'Quicksand Bold';
+  src: url('../fonts/Quicksand-Bold-webfont.eot');
+  src: url('../fonts/Quicksand-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Quicksand-Bold-webfont.woff2') format('woff2'), url('../fonts/Quicksand-Bold-webfont.woff') format('woff'), url('../fonts/Quicksand-Bold-webfont.ttf') format('truetype'), url('../fonts/Quicksand-Bold-webfont.svg#quicksandbold') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quicksand Italic';
+  src: url('../fonts/Quicksand-Italic-webfont.eot');
+  src: url('../fonts/Quicksand-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Quicksand-Italic-webfont.woff2') format('woff2'), url('../fonts/Quicksand-Italic-webfont.woff') format('woff'), url('../fonts/Quicksand-Italic-webfont.ttf') format('truetype'), url('../fonts/Quicksand-Italic-webfont.svg#quicksanditalic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quicksand Regular';
+  src: url('../fonts/Quicksand-Regular-webfont.eot');
+  src: url('../fonts/Quicksand-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Quicksand-Regular-webfont.woff2') format('woff2'), url('../fonts/Quicksand-Regular-webfont.woff') format('woff'), url('../fonts/Quicksand-Regular-webfont.ttf') format('truetype'), url('../fonts/Quicksand-Regular-webfont.svg#quicksandregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 * {
-  font-family: "Khula"; }
+  font-family: 'Khula'; }
 
 a.navbar-brand {
   font-size: 4rem;
@@ -11,7 +32,7 @@ a.navbar-brand {
   padding-top: 3px; }
 
 a.navbar-brand, #party b {
-  font-family: "Megrim"; }
+  font-family: 'Megrim'; }
 
 .navbar {
   width: 100 vw;
@@ -19,23 +40,21 @@ a.navbar-brand, #party b {
   margin-bottom: 0;
   border-radius: 0;
   z-index: 100;
-  transition: all 0.4s ease; }
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
 
 #navbar-menu {
-  float: right;
-  padding-bottom: 10px; }
+  float: right; }
 
 ul.nav {
   list-style-type: none; }
 
 .navbar-nav li {
-  font-family: "Quicksand";
+  font-family: 'Quicksand Bold';
   text-transform: uppercase;
   font-size: 1.6rem;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  padding-top: 14px;
-  padding-bottom: 4px; }
+  padding: 14px 3vw 4px 3vw;
+  letter-spacing: 1px; }
 
 .navbar-toggle {
   font-size: 4.5rem;
@@ -44,43 +63,43 @@ ul.nav {
   margin: 0 0;
   line-height: 100%; }
 
+.affix-top, .affix-top a {
+  color: #FFF; }
+@media screen and (max-width: 768px) {
+  .affix-top .in, .affix-top .collapsing {
+    background: #FFF;
+    width: 100vw;
+    color: #131B21; } }
+@media screen and (min-width: 768px) {
+  .affix-top .in {
+    background: none;
+    color: #FFF; } }
+
 .in, .collapsing {
   text-align: right;
   border: none; }
 
-.affix-top, .affix-top a {
-  color: white; }
-@media screen and (max-width: 768px) {
-  .affix-top .in, .affix-top .collapsing {
-    background: white;
-    width: 100vw;
-    color: black; } }
-@media screen and (min-width: 768px) {
-  .affix-top .in {
-    background: none;
-    color: white; } }
-
 .affix {
   /*add ios safari support*/
-  background: white;
+  background: #FFF;
   margin-top: 0;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
   .affix a {
-    color: black; }
-  .affix .hvr-underline-from-center:before {
-    background: black; }
+    color: #131B21; }
+  .affix .hvr-underline-reveal:before {
+    background: #131B21; }
 
+/* ==========================================================================
+   	TOP Styles
+   ========================================================================== */
 #top {
   height: 100vh;
   width: 100vw;
-  background-image: url("../img/dj.jpg");
+  background-image: url('../img/bat_mitzvah.jpg');
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
   background-position: center top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: inset 0px 70px 150px 0px rgba(6, 25, 30, 0.4); }
   @media screen and (max-width: 768px) {
     #top {
       min-height: 385px; } }
@@ -95,7 +114,7 @@ ul.nav {
   position: absolute;
   left: 0;
   top: 0;
-  background: -webkit-linear-gradient(-45deg, #324c52 0%, #65a073 60%); }
+  background-color: rgba(15, 60, 73, 0.7); }
   @media screen and (max-width: 768px) {
     .overlay {
       min-height: 385px; } }
@@ -104,9 +123,9 @@ ul.nav {
       min-height: 600px; } }
 
 #party p, #party h1, #party h2, #party a {
-  font-family: "Quicksand"; }
+  font-family: 'Quicksand Regular'; }
 #party p, #party h1, #party h2, #party a, #party b {
-  color: white; }
+  color: #FFF; }
 #party h1, #party b {
   font-size: 7vmax; }
 #party h1 {
@@ -126,18 +145,93 @@ ul.nav {
   margin-left: 30vw;
   line-height: 100%; }
 #party a.btn {
-  font-family: "Quicksand";
-  color: white;
+  font-family: 'Quicksand Regular';
+  color: #FFF;
   background: none;
   font-size: 2rem;
-  margin-top: 7vmin;
-  transition: all 0.2s ease; }
+  margin-top: 6.5vmax;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
   #party a.btn:hover {
-    color: black;
-    background: white; }
+    color: #131B21;
+    background: #FFF; }
 
 #party b, #party h1 {
   font-size: 7vmax; }
+
+/* ==========================================================================
+   	TOP Styles
+   ========================================================================== */
+#about {
+  height: 40vh;
+  background: #134e5e;
+  padding: 1% 5%; }
+
+/* ==========================================================================
+   	Hover Styles
+   ========================================================================== */
+/* Hang */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale; }
+
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate; }
 
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -159,7 +253,7 @@ ul.nav {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: white;
+  background: #FFF;
   height: 1px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -172,73 +266,40 @@ ul.nav {
   left: 0;
   right: 0; }
 
-/* Underline From Right */
-.hvr-underline-from-right {
+/* Underline Reveal */
+.hvr-underline-reveal {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 2px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden; }
 
-.hvr-underline-from-right:before {
+.hvr-underline-reveal:before {
   content: "";
   position: absolute;
   z-index: -1;
-  left: 100%;
+  left: 0;
   right: 0;
   bottom: 0;
-  background: #FFFFFF;
-  height: 1px;
-  -webkit-transition-property: left;
-  transition-property: left;
+  background: #FFF;
+  height: 2px;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+      transform: translateY(3px);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
-.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
-  left: 0; }
-
-/* Outline Out */
-.hvr-outline-out {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative; }
-
-.hvr-outline-out:before {
-  content: '';
-  position: absolute;
-  border: #FFFFFF solid 4px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: top, right, bottom, left;
-  transition-property: top, right, bottom, left; }
-
-.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px; }
-
-/*@media screen and (max-device-width: 640px) {
-	h2#services {
-		font-size: 2rem;
-		padding-top: 22vh;
-	}
-}
-*/
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+      transform: translateY(0); }
+/*# sourceMappingURL=main.css.map */

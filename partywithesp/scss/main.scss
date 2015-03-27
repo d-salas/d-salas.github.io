@@ -5,19 +5,21 @@
 
 // From paranoida.github.com/sass-mediaqueries/
 @import "media-queries";
+@import "typography";
 
-// FONTS
+////////////
+// COLORS //
+////////////
 
-$esp-font: 'Megrim';
-$main-font: 'Khula';
-$top-font: 'Quicksand';
+$white:			#FFF;
+$black:			#131B21;
+$orange-red:	rgba(255,78,40, .6);
+$blue:			rgb(19,78,94);
+$green:			rgb(113,178,128);
 
-// COLORS
-
-$white: #FFF;
-$black: #000;
-
-// ASSIGNMENTS
+//////////////////////////
+// ASSIGNMENTS & MIXINS //
+//////////////////////////
 
 @mixin full-screen {
 	height: 100vh;
@@ -29,7 +31,6 @@ $black: #000;
 		min-height: 600px;
 	}
 }
-
 
 * {
 	font-family: $main-font;
@@ -58,19 +59,17 @@ a.navbar-brand, #party b {
 }
 #navbar-menu {
 	float:right; 
-	padding-bottom: 10px;
 }
 ul.nav {
 	list-style-type: none;
 }
 .navbar-nav li {
-	font-family: $top-font;
+	font-family: $nav-font;
 	text-transform: uppercase;
 	font-size: 1.6rem;
-	padding-left: 3vw;
-	padding-right: 3vw;
-	padding-top: 14px;
-	padding-bottom: 4px;
+	padding: 14px 3vw 4px 3vw;
+	letter-spacing: 1px;
+	//margin-bottom: 20px;
 }
 .navbar-toggle {
 	font-size: 4.5rem;
@@ -80,10 +79,6 @@ ul.nav {
 	line-height: 100%;
 }
 //// BEFORE AFFIXING
-.in, .collapsing {
-	text-align: right;
-	border: none;
-}
 .affix-top {
 	&, a { color: $white}
 
@@ -101,43 +96,60 @@ ul.nav {
 		}
 	}
 }
+//// WHILE COLLAPSING
+.collapsing {
+	//display: none;
+	//padding-top: -100px;
+}
+.in, .collapsing {
+	text-align: right;
+	border: none;
+}
 //// AFTER AFFIXING
 .affix {
 	/*add ios safari support*/
 	background: $white;
 	margin-top: 0;
+
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 	a {
 		color: $black;
 	}
-	.hvr-underline-from-center:before {
+	.hvr-underline-reveal:before {
 		background: $black;
 	}
 }
 
-// Top section
+/* ==========================================================================
+   	TOP Styles
+   ========================================================================== */
+
 #top {
 	@include full-screen;
-	background-image: url('../img/dj.jpg');
+	background-image: url('../img/bat_mitzvah.jpg');
 	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/
 	background-position: center top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
-	// background:-webkit-gradient(linear, 45% 100%, 19% 21%, from(#864F74), to(#FF4E28))
+	//box-shadow: inset 0px 13px 220px 0px rgba(0,0,0,0.75);
+	
+	box-shadow: inset 0px 70px 150px 0px darken(rgba(19,78,94,.4), 15%);
+
+	//box-shadow: inset 0px 180px 100px -100px rgba(0, 0, 0, 0.6)
 }
 .overlay {
 	@include full-screen;
 	text-align: center;
 	position: absolute;
+
 	left: 0;
 	top: 0;
-	//background-image: url('../img/pattern.png');    //rgba(255,78,40, .6)   rgba(50,76,82, .8)
-	//background-color: rgba(89,126,162,0.5);
-	//background: -webkit-linear-gradient(-45deg, rgba(255,78,40, .6) 0%, rgba(134,79,116, .6) 60%);
-	background: -webkit-linear-gradient(-45deg, rgba(50,76,82, 1) 0%, rgba(101,160,115, 1) 60%);
+	//background-image: url('../img/pattern.png');
+
+	background-color: darken(rgba(19,78,94,.7), 5%);
+
+	//background-color: darken(rgba(113,178,128,1), 15%);//darken(rgba(19,78,94, .7), 5%);
+	//background: linear-gradient(-45deg, $orange-red 0%, rgba(134,79,116, .6) 70%);
+	//background: linear-gradient(100deg, rgba(19,78,94, .5) 15%, rgba(113,178,128,.5) 100%);
 }
 #party {
 	p, h1, h2, a {
@@ -175,7 +187,7 @@ ul.nav {
 		color: $white;
 		background: none;
 		font-size: 2rem;
-		margin-top: 7vmin;
+		margin-top: 6.5vmax;
 		transition: all 0.2s ease;
 		&:hover {
 			color: $black;
@@ -188,8 +200,97 @@ ul.nav {
 	font-size: 7vmax;
 }
 
-#content {
+/* ==========================================================================
+   	TOP Styles
+   ========================================================================== */
 
+#about {
+	height: 40vh;
+	background: $blue;
+	padding: 1% 5%;
+}
+
+
+
+/* ==========================================================================
+   	Hover Styles
+   ========================================================================== */
+
+/* Hang */
+
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
 
 /* Underline From Center */
@@ -226,87 +327,42 @@ ul.nav {
   right: 0;
 }
 
-/* Underline From Right */
-.hvr-underline-from-right {
+/* Underline Reveal */
+.hvr-underline-reveal {
+	//padding-bottom: 10px;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
 }
-.hvr-underline-from-right:before {
+.hvr-underline-reveal:before {
   content: "";
   position: absolute;
   z-index: -1;
-  left: 100%;
+  left: 0;
   right: 0;
   bottom: 0;
-  background: #FFFFFF;
-  height: 1px;
-  -webkit-transition-property: left;
-  transition-property: left;
+  background: $white;
+  height: 2px;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
-  left: 0;
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
-
-/* Outline Out */
-.hvr-outline-out {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-}
-.hvr-outline-out:before {
-  content: '';
-  position: absolute;
-  border: #FFFFFF solid 4px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: top, right, bottom, left;
-  transition-property: top, right, bottom, left;
-}
-.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px;
-}
-
-
-
-/*@media screen and (max-device-width: 640px) {
-	h2#services {
-		font-size: 2rem;
-		padding-top: 22vh;
-	}
-}
-*/
-
-
-
-
-
-
-
 
 
 
