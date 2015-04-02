@@ -56,7 +56,7 @@ a.navbar-brand, #party b {
    ========================================================================== */
 
 .navbar {
-   	width: 100 vw;
+   	//width: 100 vw;
 	margin-top: 25px;
 	margin-bottom: 0;
 	border-radius: 0;
@@ -133,11 +133,11 @@ ul.nav {
 
 #top {
 	@include full-screen;
-	background-image: url('../img/bat_mitzvah.jpg');
+	background-image: url('../img/confetti.jpg');
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
-	box-shadow: inset 0px 100px 200px -40px darken(rgba(19,78,94,.8), 20%);
+	box-shadow: inset 0px 0px 100px 0px darken(rgba(19,78,94,.8), 20%);
 }
 .overlay {
 	@include full-screen;
@@ -145,62 +145,43 @@ ul.nav {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: darken(rgba(19,78,94,.5), 5%);
+	background: darken(rgba(19,78,94,.6), 12%);
 }
 #party {
-	h1, h2, b {
-		text-shadow: 0px 0px 10px darken(rgba(19,78,94, .5), 12%);
+	h1, b {
+		text-shadow: 0px 0px 15px darken(rgba(19,78,94, .7), 12%);
+		font-size: 7.5vmax;
 	}
 
-	h2 {
-		line-height: 1.3em;
-	}
-
-	p, h1, h2, a {
+	h1 {
 		font-family: $top-font;
 		font-weight: 300;
-		letter-spacing: 2px;
+		letter-spacing: 3px;
+		padding-top: 23vh;
 	}
 	p, h1, h2, a, b {
 		color: $white;
 	}
-	h1, b {
-		font-size: 7vmax;
-	}
-	h1 {
-		padding-top: 4vmin;
-	}
-	h2 {
-		font-size: 3.5vmax;
-		padding-top: 5vmin;
-		padding-left: 10vw;
-		padding-right: 10vw;
-		&#services {
-			padding-top: 19vh;
-		}
-	}
-	h3 {
-		font-size: 2rem;
-		padding-top: 2vw;
-		padding-bottom: 2vh;
-
-		margin-right: 30vw;
-		margin-left: 30vw;
-		line-height: 100%;
-	}
 	a.btn {
-		padding: 10px 15px 10px 15px;
-		font-family: $top-font;
+		border-radius: 3px 3px 150px 150px;
+		padding: 13px 15px 7px 15px;
+		font-family: $btn-font;
 		color: $white;
 		//background: $white;
-		background: lighten(rgb(19,78,94), 26%);
+		background: #0F5B84;//lighten(rgb(19,78,94), 7%);
 		border: none;
-		font-size: 2rem;
+		font-size: 1.5rem;
+		text-transform: uppercase;
 		margin-top: 5vmax;
+		line-height: 1.5em;
 		transition: all 0.2s ease;
+		i {
+			font-size: 3rem;
+		}
 		&:hover {
 			color: $white;
-			background: lighten(rgb(19,78,94), 13%);
+			background: lighten(#0F5B84, 15%);
+			margin-top: 5.1vmax;
 		}
 	}
 }
@@ -215,133 +196,42 @@ ul.nav {
 
 #about {
 	text-align: center;
-	height: 40vh;
-	//background: linear-gradient(100deg, rgba(255,78,40, .9) 10%, rgba(134,79,116, .9) 55%);
-	background: darken(rgb(19,78,94), 2%);
-	box-shadow: inset 0px 20px 80px 0px darken(rgba(19,78,94,.3), 15%);
-	padding: 1% 5%;
+	min-height: 40vh;
+	background: darken(#303946,5%);
+	//padding: 7vh 15vw;
 	color: $white;
 	h1 {
 		letter-spacing: 1px;
 	}
+	p {
+		font-size: 1.6rem;
+	}
+	h2, p {
+		padding-top: 10%;
+	}
+
+	img {
+		width: 100%;
+	}
 }
 
 
+/* ==========================================================================
+   	FOOTER Styles
+   ========================================================================== */
+
+footer {
+	padding-top: 1.5%;
+}
+
+
+/*	|||\  //||	||	||++++  ||+++
+	|||\\// ||	||	||==||	||
+	|||	\/	||	||	++++||	||+++
 
 /* ==========================================================================
    	Hover Styles
    ========================================================================== */
-
-/* Hang */
-
-@-webkit-keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-
-@keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-
-@-webkit-keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-
-@keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-
-.hvr-hang {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-  -webkit-animation-name: hvr-hang-sink, hvr-hang;
-  animation-name: hvr-hang-sink, hvr-hang;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-
-/* Underline From Center */
-.hvr-underline-from-center {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  background: $white;
-  height: 1px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
-}
 
 /* Underline Reveal */
 .hvr-underline-reveal {
@@ -370,8 +260,8 @@ ul.nav {
   transform: translateY(3px);
   -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
