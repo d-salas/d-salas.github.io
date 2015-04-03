@@ -44,7 +44,7 @@ table {
 
 td, th {
     border: 5px solid rgb(260, 222, 235);
-    padding: 5px 3px 2px 4px;
+    padding: 5px 4px 2px 3px;
     text-align: left;
     /*max-width: 10vw;*/
 }
