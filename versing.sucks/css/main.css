@@ -9,7 +9,7 @@ html {
 
 body {
     color: rgb(231, 18, 18);
-    height: 300vh;
+    height: 400vh;
 }
 
 a {
@@ -85,7 +85,7 @@ caption {
 }
 
 #yeah {
-    padding-top: 260vh;
+    padding-top: 360vh;
     margin-bottom: 7px;
     text-align: center;
 }
