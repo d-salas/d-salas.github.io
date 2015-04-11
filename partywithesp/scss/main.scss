@@ -13,13 +13,32 @@
 
 $white:			#FFF;
 $black:			#131B21;
-$orange-red:	rgba(255,78,40, .5);
-$blue:			rgb(19,78,94);
+$dark-gray:		#303946;
+$off-white:		#f5f5f2;
+
+$red:			#d62e29;
+
+$blue:			#0F5B84;
+$light-blue:	#29B0E5;
+$blue-gray:		#34495e;
+$aqua-blue:		rgb(19,78,94);
+$aqua-blue1:	rgba(19,78,94,.8);
+$aqua-blue2:	rgba(19,78,94,.55);
+
 $green:			rgb(113,178,128);
+
 
 //////////////////////////
 // ASSIGNMENTS & MIXINS //
 //////////////////////////
+
+$top-color1:		$aqua-blue2;
+$top-color2:		$aqua-blue1;
+$top-btn-clr:		$red;
+
+$about-color:		$red;
+
+$footer-color:		$dark-gray;
 
 @mixin full-screen {
 	height: 100vh;
@@ -35,6 +54,15 @@ $green:			rgb(113,178,128);
 * {
 	font-family: $main-font;
 
+}
+
+/* ==========================================================================
+   	GENERAL Styles
+   ========================================================================== */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* ==========================================================================
@@ -56,7 +84,7 @@ a.navbar-brand, #party b {
    ========================================================================== */
 
 .navbar {
-   	//width: 100 vw;
+   	//max-width: 100px;
 	margin-top: 25px;
 	margin-bottom: 0;
 	border-radius: 0;
@@ -68,8 +96,14 @@ a.navbar-brand, #party b {
 }
 ul.nav {
 	list-style-type: none;
+	&:last-child {
+		@include max-screen(768px){
+			margin-bottom: 16px;
+		}
+	}
 }
 .navbar-nav li {
+	cursor: pointer;
 	font-family: $nav-font;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -77,6 +111,8 @@ ul.nav {
 	padding: 14px 3vw 4px 3vw;
 	letter-spacing: 1px;
 	//margin-bottom: 20px;
+
+
 }
 .navbar-toggle {
 	font-size: 4.5rem;
@@ -94,6 +130,7 @@ ul.nav {
 		background: $white;
 		width: 100vw;
 		color: $black;
+
 		}
 	}
 	.in {
@@ -133,11 +170,12 @@ ul.nav {
 
 #top {
 	@include full-screen;
-	background-image: url('../img/confetti.jpg');
+	background-image: url('../img/bat_mitzvah.jpg');
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
-	box-shadow: inset 0px 0px 100px 0px darken(rgba(19,78,94,.8), 20%);
+	box-shadow: inset 0px 0px 100px 0px darken($top-color2, 20%);
 }
 .overlay {
 	@include full-screen;
@@ -145,11 +183,11 @@ ul.nav {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: darken(rgba(19,78,94,.6), 12%);
+	background: darken($top-color1, 12%);
 }
 #party {
 	h1, b {
-		text-shadow: 0px 0px 15px darken(rgba(19,78,94, .7), 12%);
+		text-shadow: 0 1px 1px $black;
 		font-size: 7.5vmax;
 	}
 
@@ -163,16 +201,25 @@ ul.nav {
 		color: $white;
 	}
 	a.btn {
-		border-radius: 3px 3px 150px 150px;
-		padding: 13px 15px 7px 15px;
 		font-family: $btn-font;
 		color: $white;
-		//background: $white;
-		background: #0F5B84;//lighten(rgb(19,78,94), 7%);
-		border: none;
 		font-size: 1.5rem;
 		text-transform: uppercase;
-		margin-top: 5vmax;
+		min-width: 150px;
+		height: 85px;
+		width: 15vmax;
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+		left: 0;
+		margin: auto;
+		// border-radius: 3px 3px 150px 150px;
+		border-radius: 150px 150px 3px 3px;
+		// padding: 13px 15px 7px 15px;
+		padding: 27px 15px 0px 15px;
+		background: $top-btn-clr;
+		border: none;
+		//margin-top: 5vmax;
 		line-height: 1.5em;
 		transition: all 0.2s ease;
 		i {
@@ -180,14 +227,17 @@ ul.nav {
 		}
 		&:hover {
 			color: $white;
-			background: lighten(#0F5B84, 15%);
-			margin-top: 5.1vmax;
+			background: darken($top-btn-clr, 8%);
+			//margin-top: 5.1vmax;
+			height: 84px;
+			// bottom: -1px;
 		}
 	}
 }
 
 #party b, #party h1 {
 	font-size: 7vmax;
+
 }
 
 /* ==========================================================================
@@ -195,24 +245,41 @@ ul.nav {
    ========================================================================== */
 
 #about {
-	text-align: center;
-	min-height: 40vh;
-	background: darken(#303946,5%);
-	//padding: 7vh 15vw;
-	color: $white;
+	padding: 33px 10% 33px 10%;
+	//min-height: 95vh;
+	background:	linear-gradient(180deg, $red, $light-blue);
+	// background-image: url('../img/Nico-BM-48.jpg');
+	// background-attachment: fixed;
+	// background-repeat: no-repeat;
+	// background-position: center top;
+	// background-size: cover;
+	color:	$black;
 	h1 {
-		letter-spacing: 1px;
+		font-family: $about-font;
+		text-align: center;
+		letter-spacing: 4vmin;
+		line-height: 100%;
+  		font-size: 16vmin;
+  		color: $black;
 	}
 	p {
 		font-size: 1.6rem;
 	}
 	h2, p {
-		padding-top: 10%;
+
 	}
 
 	img {
 		width: 100%;
 	}
+}
+
+#about-stripe {
+	padding: 2% 3%;
+	//border: 2px solid $top-btn-clr;
+	border-radius: 5px;
+	//background: rgba(0, 0, 0, .5);
+	//background: rgba(36, 155, 202, 0.9);
 }
 
 
@@ -221,7 +288,10 @@ ul.nav {
    ========================================================================== */
 
 footer {
-	padding-top: 1.5%;
+	height: 20vh;
+	padding-top: 2%;
+	background: $footer-color;
+	color: $white;
 }
 
 
