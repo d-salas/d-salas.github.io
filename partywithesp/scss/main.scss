@@ -13,19 +13,30 @@
 
 $white:			#FFF;
 $black:			#131B21;
+$light-black:	#1C1E26;
 $dark-gray:		#303946;
 $off-white:		#f5f5f2;
 
-$red:			#d62e29;
+$red3:			#e3483e;//#d62e29;
+$red2:			#d62e29;
+$red:			mix($red3, $red2, 50%);
+$purple:		#372d3b;
+$light-purple:	#4F3043;
 
-$blue:			#0F5B84;
+$mid-blue:			#116A9A;
+$blue:			#074B80;
 $light-blue:	#29B0E5;
+$dark-blue:		#072D42;
+$deep-blue:		#0C197A;
+$midnight-blue:	#051E2C;
 $blue-gray:		#34495e;
 $aqua-blue:		rgb(19,78,94);
 $aqua-blue1:	rgba(19,78,94,.8);
 $aqua-blue2:	rgba(19,78,94,.55);
 
-$green:			rgb(113,178,128);
+$green:				rgb(113,178,128);
+$light-green:		#4DE7B8;
+$turquoise:			#00c1af;
 
 
 //////////////////////////
@@ -36,9 +47,11 @@ $top-color1:		$aqua-blue2;
 $top-color2:		$aqua-blue1;
 $top-btn-clr:		$red;
 
-$about-color:		$red;
+$about-color:		$light-black;
 
-$footer-color:		$dark-gray;
+$services-color:	$turquoise;
+
+$footer-color:		$light-black;
 
 @mixin full-screen {
 	height: 100vh;
@@ -63,6 +76,10 @@ $footer-color:		$dark-gray;
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+p {
+	line-height: 150%;
 }
 
 /* ==========================================================================
@@ -110,9 +127,6 @@ ul.nav {
 	font-size: 1.6rem;
 	padding: 14px 3vw 4px 3vw;
 	letter-spacing: 1px;
-	//margin-bottom: 20px;
-
-
 }
 .navbar-toggle {
 	font-size: 4.5rem;
@@ -130,7 +144,6 @@ ul.nav {
 		background: $white;
 		width: 100vw;
 		color: $black;
-
 		}
 	}
 	.in {
@@ -154,8 +167,9 @@ ul.nav {
 	// It's weird on iOS Safari
 	background: $white;
 	margin-top: 0;
+	// box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+	border-bottom: 3px solid $midnight-blue;
 
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 	a {
 		color: $black;
 	}
@@ -187,7 +201,7 @@ ul.nav {
 }
 #party {
 	h1, b {
-		text-shadow: 0 1px 1px $black;
+		text-shadow: 0 2px 1px $black;
 		font-size: 7.5vmax;
 	}
 
@@ -205,21 +219,18 @@ ul.nav {
 		color: $white;
 		font-size: 1.5rem;
 		text-transform: uppercase;
-		min-width: 150px;
 		height: 85px;
-		width: 15vmax;
+		min-width: 130px;
+		max-width: 150px;
 		position: absolute;
 		bottom: 0px;
 		right: 0;
 		left: 0;
 		margin: auto;
-		// border-radius: 3px 3px 150px 150px;
-		border-radius: 150px 150px 3px 3px;
-		// padding: 13px 15px 7px 15px;
+		border-radius: 170px 170px 0px 0px;
 		padding: 27px 15px 0px 15px;
 		background: $top-btn-clr;
 		border: none;
-		//margin-top: 5vmax;
 		line-height: 1.5em;
 		transition: all 0.2s ease;
 		i {
@@ -228,9 +239,7 @@ ul.nav {
 		&:hover {
 			color: $white;
 			background: darken($top-btn-clr, 8%);
-			//margin-top: 5.1vmax;
 			height: 84px;
-			// bottom: -1px;
 		}
 	}
 }
@@ -245,43 +254,124 @@ ul.nav {
    ========================================================================== */
 
 #about {
-	padding: 33px 10% 33px 10%;
-	//min-height: 95vh;
-	background:	linear-gradient(180deg, $red, $light-blue);
-	// background-image: url('../img/Nico-BM-48.jpg');
-	// background-attachment: fixed;
-	// background-repeat: no-repeat;
-	// background-position: center top;
-	// background-size: cover;
-	color:	$black;
-	h1 {
-		font-family: $about-font;
+	background-image: url('../img/Nico-BM-48.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	border-top: 3px solid $red;
+	position: relative;
+	z-index: -2;
+
+	.abt-us {
+		padding: 1% 0 2% 0;
+		background: $red;
+		border-bottom: 3px solid $red;
+
+		h1 {
+			font-family: $header-font;
+			color: $white;
+			margin: 3% 0 7vmin 0;
+			text-align: center;
+			letter-spacing: 2vmin;
+			line-height: 100%;
+	  		font-size: 10vmin;
+	  		&:after {
+	  			border-bottom: 4px solid $white;
+	  			content: "";
+				display: block;
+				position: relative;
+				top: 20px;
+				width: 40vmin;
+				z-index: 0;
+				margin-right: auto;
+				margin-left: auto;
+	  		}
+		}
+		p {
+			font-size: 2rem;
+			line-height: 1.7;
+			color:	$white;
+			text-align: justify;
+			padding: 1% 15% 1% 15%;
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+	}
+
+	#about-img-overlay {
+		background: rgba(4, 30, 60, 0.6);
 		text-align: center;
-		letter-spacing: 4vmin;
+		color: $white;
+		min-height: 65vh;
+
+		h1 {
+			color: $white;
+		}
+		small {
+			color: $white;
+		}
+	}
+
+	#statistics {
+		padding: 16vh 5%;
+		h1 {
+			font-size: 4.5rem;
+			text-shadow: 0 1px 1px $black;
+		}
+		small {
+			font-size: 40%;
+		}
+		.statistic {
+			&:after {
+	  			border-bottom: 4px solid $red;
+	  			content: "";
+				display: block;
+				position: relative;
+				top: 20px;
+				left: -5px;
+				width: 5vmax;
+				z-index: 0;
+				margin-right: auto;
+				margin-left: auto;
+	  		}
+		}
+	}
+
+	#tri-up {
+		position: absolute;
+		bottom: -1px;
+		left: -1vw;
+		width: 0;
+		height: 0;
+		transform: scale(.999);
+		border-left: 51vw inset rgba(255, 255, 255, 0);
+		border-right: 51vw inset rgba(255, 255, 255, 0);
+		border-bottom: 8vw solid $services-color;
+	}
+}
+
+/* ==========================================================================
+   	WHAT WE DO Styles
+   ========================================================================== */
+
+#what-we-do {
+	background-color: $services-color;
+	padding: 0 5% 5% 5%;
+	text-align: center;
+	min-height: 60vh;
+
+	h1 {
+		height: 0;
+		font-family: $header-font;
+		color: $white;
+		margin: -1vmin 0 7vmin 0;
+		letter-spacing: 2vmin;
 		line-height: 100%;
-  		font-size: 16vmin;
-  		color: $black;
-	}
-	p {
-		font-size: 1.6rem;
-	}
-	h2, p {
-
+  		font-size: 6vmin;
 	}
 
-	img {
-		width: 100%;
-	}
 }
-
-#about-stripe {
-	padding: 2% 3%;
-	//border: 2px solid $top-btn-clr;
-	border-radius: 5px;
-	//background: rgba(0, 0, 0, .5);
-	//background: rgba(36, 155, 202, 0.9);
-}
-
 
 /* ==========================================================================
    	FOOTER Styles
