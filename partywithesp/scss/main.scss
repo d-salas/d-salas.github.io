@@ -1,4 +1,3 @@
-
 /* ==========================================================================
    	ESP Productions by Daniel Salas, 2015
    ========================================================================== */
@@ -11,28 +10,28 @@
 // COLORS //
 ////////////
 
-$white:			#FFF;
-$black:			#131B21;
-$light-black:	#1C1E26;
-$dark-gray:		#303946;
-$off-white:		#f5f5f2;
+$white:				#FFF;
+$black:				#131B21;
+$light-black:		#1C1E26;
+$dark-gray:			#303946;
+$off-white:			#f5f5f2;
 
-$red3:			#e3483e;//#d62e29;
-$red2:			#d62e29;
-$red:			mix($red3, $red2, 50%);
-$purple:		#372d3b;
-$light-purple:	#4F3043;
+$red3:				#e3483e;//#d62e29;
+$red2:				#d62e29;
+$red:				mix($red3, $red2, 50%);
+$purple:			#372d3b;
+$light-purple:		#4F3043;
 
 $mid-blue:			#116A9A;
-$blue:			#074B80;
-$light-blue:	#29B0E5;
-$dark-blue:		#072D42;
-$deep-blue:		#0C197A;
-$midnight-blue:	#051E2C;
-$blue-gray:		#34495e;
-$aqua-blue:		rgb(19,78,94);
-$aqua-blue1:	rgba(19,78,94,.8);
-$aqua-blue2:	rgba(19,78,94,.55);
+$blue:				#074B80;
+$light-blue:		#29B0E5;
+$dark-blue:			#072D42;
+$deep-blue:			#0C197A;
+$midnight-blue:		#051E2C;
+$blue-gray:			#34495e;
+$aqua-blue:			rgb(19,78,94);
+$aqua-blue1:		rgba(19,78,94,.8);
+$aqua-blue2:		rgba(19,78,94,.55);
 
 $green:				rgb(113,178,128);
 $light-green:		#4DE7B8;
@@ -56,11 +55,11 @@ $footer-color:		$light-black;
 @mixin full-screen {
 	height: 100vh;
 	width: 100vw;
-	@include max-screen(768px) {
-		min-height: 385px;
+	@include max-screen(481px) {
+		background-attachment: scroll;
 	}
-	@include min-screen(768px) {
-		min-height: 600px;
+	@include min-screen(481px) {
+		background-attachment: fixed;
 	}
 }
 
@@ -185,7 +184,6 @@ ul.nav {
 #top {
 	@include full-screen;
 	background-image: url('../img/bat_mitzvah.jpg');
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -254,8 +252,12 @@ ul.nav {
    ========================================================================== */
 
 #about {
-	background-image: url('../img/Nico-BM-48.jpg');
-	background-attachment: fixed;
+	@include full-screen;
+	height: auto;
+	background: $light-black;
+	@include min-screen(481px){
+		background-image: url('../img/Nico-BM-38.jpg');
+	}
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -264,9 +266,12 @@ ul.nav {
 	z-index: -2;
 
 	.abt-us {
-		padding: 1% 0 2% 0;
+		padding: 5%;
 		background: $red;
-		border-bottom: 3px solid $red;
+
+		@include min-screen(481px){
+			border-bottom: 3px solid $red;
+		}
 
 		h1 {
 			font-family: $header-font;
@@ -292,15 +297,18 @@ ul.nav {
 			font-size: 2rem;
 			line-height: 1.7;
 			color:	$white;
-			text-align: justify;
-			padding: 1% 15% 1% 15%;
+			text-align: left;
+			padding: 1% 5% 2% 5%;
 			font-weight: 300;
 			letter-spacing: 1px;
 		}
 	}
 
 	#about-img-overlay {
-		background: rgba(4, 30, 60, 0.6);
+		@include min-screen(481px){
+			background: rgba(4, 30, 60, 0.6);
+		}
+
 		text-align: center;
 		color: $white;
 		min-height: 65vh;
@@ -315,12 +323,18 @@ ul.nav {
 
 	#statistics {
 		padding: 16vh 5%;
+		@include max-screen(481px){
+			background: $light-black;
+		}
+
 		h1 {
 			font-size: 4.5rem;
 			text-shadow: 0 1px 1px $black;
+			margin-bottom: 0;
+			padding-bottom: 0;
 		}
-		small {
-			font-size: 40%;
+		h4 {
+			margin: 0;
 		}
 		.statistic {
 			&:after {
@@ -365,12 +379,15 @@ ul.nav {
 		height: 0;
 		font-family: $header-font;
 		color: $white;
-		margin: -1vmin 0 7vmin 0;
+		margin: 0 0 7vmin 0;//-1vmin 0 7vmin 0;
 		letter-spacing: 2vmin;
 		line-height: 100%;
   		font-size: 6vmin;
 	}
 
+	#service-row {
+		padding: 5% 0 5% 0;
+	}
 }
 
 /* ==========================================================================
