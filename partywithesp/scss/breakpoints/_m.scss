@@ -1,0 +1,196 @@
+/*
+Medium screens. Like tablets.
+*/
+
+/* ==========================================================================
+   	GENERAL Styles
+   ========================================================================== */
+
+* {
+
+}
+
+html, body {
+    
+}
+
+p {
+
+}
+
+/* ==========================================================================
+   	LOGO Styles
+   ========================================================================== */
+
+a.navbar-brand {
+
+}
+a.navbar-brand, #party b {
+
+}
+
+/* ==========================================================================
+   	NAVBAR Styles
+   ========================================================================== */
+
+.navbar {
+
+}
+#navbar-menu {
+
+}
+ul.nav {
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+.navbar-nav li {
+	
+}
+.navbar-toggle {
+
+}
+//// BEFORE AFFIXING
+.affix-top {
+	&, a {
+
+	}
+
+	.in, .collapsing {
+		width: initial;
+	}
+	.in {
+		background: none;
+		color: $white;
+	}
+}
+//// WHILE COLLAPSING
+.collapsing {
+
+}
+.in, .collapsing {
+
+}
+//// AFTER AFFIXING
+.affix {
+
+	a {
+		
+	}
+	.hvr-underline-reveal:before {
+		
+	}
+}
+
+/* ==========================================================================
+   	TOP Styles
+   ========================================================================== */
+
+#top {
+	
+}
+.overlay {
+	
+}
+#party {
+	h1, b {
+
+	}
+
+	h1 {
+		
+	}
+	p, h1, h2, a, b {
+	}
+	a.btn {
+		
+		i {
+		}
+		&:hover {
+
+		}
+	}
+}
+
+#party b, #party h1 {
+	
+}
+
+/* ==========================================================================
+   	ABOUT Styles
+   ========================================================================== */
+
+#about {
+	background-image: url('../img/Nico-BM-38.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+
+	.abt-us {
+
+		h1 {
+
+	  		&:after {
+
+	  		}
+		}
+		p {
+			
+		}
+	}
+
+	#about-img-overlay {
+		min-height: 60vh;
+		background: rgba(4, 30, 60, 0.6);
+		h1 {
+
+		}
+		small {
+
+		}
+	}
+
+	#statistics {
+		padding: 16vh 5%;
+		background: transparent;
+		h1 {
+
+		}
+		h4 {
+
+		}
+		.statistic {
+			&:after {
+	  		}
+		}
+	}
+
+	#tri-up {
+
+	}
+}
+
+/* ==========================================================================
+   	WHAT WE DO Styles
+   ========================================================================== */
+
+#what-we-do {
+	#service-row, #wwd-h1 {
+	}
+
+	h1 {
+		font-size: 6vmin;
+	}
+
+	#service-row {
+	}
+}
+
+/* ==========================================================================
+   	FOOTER Styles
+   ========================================================================== */
+
+footer {
+
+}

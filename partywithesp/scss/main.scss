@@ -1,456 +1,58 @@
 /* ==========================================================================
    	ESP Productions by Daniel Salas, 2015
+
+	Import all the breakpoint files here.
    ========================================================================== */
 
-// From paranoida.github.com/sass-mediaqueries/
-@import "media-queries";
-@import "typography";
+@import "media-queries"; // From paranoida.github.com/sass-mediaqueries/
+@import "partials/typography";
+@import "partials/variables";
+@import "partials/mixins";
 
-////////////
-// COLORS //
-////////////
+/*
+	!!!BREAKPOINTS!!
+*/
+$small:			481px;
+$medium:		768px;
+$large:			1030px;
+$x-large:		1240px;
 
-$white:				#FFF;
-$black:				#131B21;
-$light-black:		#1C1E26;
-$dark-gray:			#303946;
-$off-white:			#f5f5f2;
+/*********************
+EXTRA SMALL
+For phones
+*********************/
+@import "breakpoints/xs";
 
-$red3:				#e3483e;//#d62e29;
-$red2:				#d62e29;
-$red:				mix($red3, $red2, 50%);
-$purple:			#372d3b;
-$light-purple:		#4F3043;
+/*********************
+SMALL
+For slightly less small devices
+*********************/
+@media only screen and (min-width: $small) {
+	@import "breakpoints/s";
+} // end of media query
 
-$mid-blue:			#116A9A;
-$blue:				#074B80;
-$light-blue:		#29B0E5;
-$dark-blue:			#072D42;
-$deep-blue:			#0C197A;
-$midnight-blue:		#051E2C;
-$blue-gray:			#34495e;
-$aqua-blue:			rgb(19,78,94);
-$aqua-blue1:		rgba(19,78,94,.8);
-$aqua-blue2:		rgba(19,78,94,.55);
+/*********************
+MEDIUM
+For tablets and smaller laptops
+*********************/
+@media only screen and (min-width: $medium) {
+	@import "breakpoints/m";
+} // end of media query
 
-$green:				rgb(113,178,128);
-$light-green:		#4DE7B8;
-$turquoise:			#00c1af;
+/*********************
+LARGE
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. 
+Adds resource intensive styles.
+*********************/
+@media only screen and (min-width: $large) {
+	@import "breakpoints/l";
+} // end of media query
 
-
-//////////////////////////
-// ASSIGNMENTS & MIXINS //
-//////////////////////////
-
-$top-color1:		$aqua-blue2;
-$top-color2:		$aqua-blue1;
-$top-btn-clr:		$red;
-
-$about-color:		$light-black;
-
-$services-color:	$turquoise;
-
-$footer-color:		$light-black;
-
-@mixin full-screen {
-	height: 100vh;
-	width: 100vw;
-	@include max-screen(481px) {
-		background-attachment: scroll;
-	}
-	@include min-screen(481px) {
-		background-attachment: fixed;
-	}
-}
-
-* {
-	font-family: $main-font;
-
-}
-
-/* ==========================================================================
-   	GENERAL Styles
-   ========================================================================== */
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-p {
-	line-height: 150%;
-}
-
-/* ==========================================================================
-   	LOGO Styles
-   ========================================================================== */
-
-a.navbar-brand {
-	font-size: 4rem;
-	z-index: 100;
-	line-height: 100%;
-	padding-top: 3px;
-}
-a.navbar-brand, #party b {
-	font-family: $esp-font;
-}
-
-/* ==========================================================================
-   	NAVBAR Styles
-   ========================================================================== */
-
-.navbar {
-   	//max-width: 100px;
-	margin-top: 25px;
-	margin-bottom: 0;
-	border-radius: 0;
-	z-index: 100;
-	transition: all 0.4s ease;
-}
-#navbar-menu {
-	float:right; 
-}
-ul.nav {
-	list-style-type: none;
-	&:last-child {
-		@include max-screen(768px){
-			margin-bottom: 16px;
-		}
-	}
-}
-.navbar-nav li {
-	cursor: pointer;
-	font-family: $nav-font;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 1.6rem;
-	padding: 14px 3vw 4px 3vw;
-	letter-spacing: 1px;
-}
-.navbar-toggle {
-	font-size: 4.5rem;
-	padding: 2px 15px;
-	height:50px;
-	margin: 0 0;
-	line-height: 100%;
-}
-//// BEFORE AFFIXING
-.affix-top {
-	&, a { color: $white}
-
-	.in, .collapsing {
-		@include max-screen(768px) {
-		background: $white;
-		width: 100vw;
-		color: $black;
-		}
-	}
-	.in {
-		@include min-screen(768px) {
-		background: none;
-		color: $white;
-		}
-	}
-}
-//// WHILE COLLAPSING
-.collapsing {
-	//display: none;
-	//padding-top: -100px;
-}
-.in, .collapsing {
-	text-align: right;
-	border: none;
-}
-//// AFTER AFFIXING
-.affix {
-	// It's weird on iOS Safari
-	background: $white;
-	margin-top: 0;
-	// box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-	border-bottom: 3px solid $midnight-blue;
-
-	a {
-		color: $black;
-	}
-	.hvr-underline-reveal:before {
-		background: $black;
-	}
-}
-
-/* ==========================================================================
-   	TOP Styles
-   ========================================================================== */
-
-#top {
-	@include full-screen;
-	background-image: url('../img/bat_mitzvah.jpg');
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: cover;
-	box-shadow: inset 0px 0px 100px 0px darken($top-color2, 20%);
-}
-.overlay {
-	@include full-screen;
-	text-align: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: darken($top-color1, 12%);
-}
-#party {
-	h1, b {
-		text-shadow: 0 2px 1px $black;
-		font-size: 7.5vmax;
-	}
-
-	h1 {
-		font-family: $top-font;
-		font-weight: 300;
-		letter-spacing: 3px;
-		padding-top: 23vh;
-	}
-	p, h1, h2, a, b {
-		color: $white;
-	}
-	a.btn {
-		font-family: $btn-font;
-		color: $white;
-		font-size: 1.5rem;
-		text-transform: uppercase;
-		height: 85px;
-		min-width: 130px;
-		max-width: 150px;
-		position: absolute;
-		bottom: 0px;
-		right: 0;
-		left: 0;
-		margin: auto;
-		border-radius: 170px 170px 0px 0px;
-		padding: 27px 15px 0px 15px;
-		background: $top-btn-clr;
-		border: none;
-		line-height: 1.5em;
-		transition: all 0.2s ease;
-		i {
-			font-size: 3rem;
-		}
-		&:hover {
-			color: $white;
-			background: darken($top-btn-clr, 8%);
-			height: 84px;
-		}
-	}
-}
-
-#party b, #party h1 {
-	font-size: 7vmax;
-
-}
-
-/* ==========================================================================
-   	ABOUT Styles
-   ========================================================================== */
-
-#about {
-	@include full-screen;
-	height: auto;
-	background: $light-black;
-	@include min-screen(481px){
-		background-image: url('../img/Nico-BM-38.jpg');
-	}
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: cover;
-	border-top: 3px solid $red;
-	position: relative;
-	z-index: -2;
-
-	.abt-us {
-		padding: 5%;
-		background: $red;
-
-		@include min-screen(481px){
-			border-bottom: 3px solid $red;
-		}
-
-		h1 {
-			font-family: $header-font;
-			color: $white;
-			margin: 3% 0 7vmin 0;
-			text-align: center;
-			letter-spacing: 2vmin;
-			line-height: 100%;
-	  		font-size: 10vmin;
-	  		&:after {
-	  			border-bottom: 4px solid $white;
-	  			content: "";
-				display: block;
-				position: relative;
-				top: 20px;
-				width: 40vmin;
-				z-index: 0;
-				margin-right: auto;
-				margin-left: auto;
-	  		}
-		}
-		p {
-			font-size: 2rem;
-			line-height: 1.7;
-			color:	$white;
-			text-align: left;
-			padding: 1% 5% 2% 5%;
-			font-weight: 300;
-			letter-spacing: 1px;
-		}
-	}
-
-	#about-img-overlay {
-		@include min-screen(481px){
-			background: rgba(4, 30, 60, 0.6);
-		}
-
-		text-align: center;
-		color: $white;
-		min-height: 65vh;
-
-		h1 {
-			color: $white;
-		}
-		small {
-			color: $white;
-		}
-	}
-
-	#statistics {
-		padding: 16vh 5%;
-		@include max-screen(481px){
-			background: $light-black;
-		}
-
-		h1 {
-			font-size: 4.5rem;
-			text-shadow: 0 1px 1px $black;
-			margin-bottom: 0;
-			padding-bottom: 0;
-		}
-		h4 {
-			margin: 0;
-		}
-		.statistic {
-			&:after {
-	  			border-bottom: 4px solid $red;
-	  			content: "";
-				display: block;
-				position: relative;
-				top: 20px;
-				left: -5px;
-				width: 5vmax;
-				z-index: 0;
-				margin-right: auto;
-				margin-left: auto;
-	  		}
-		}
-	}
-
-	#tri-up {
-		position: absolute;
-		bottom: -1px;
-		left: -1vw;
-		width: 0;
-		height: 0;
-		transform: scale(.999);
-		border-left: 51vw inset rgba(255, 255, 255, 0);
-		border-right: 51vw inset rgba(255, 255, 255, 0);
-		border-bottom: 8vw solid $services-color;
-	}
-}
-
-/* ==========================================================================
-   	WHAT WE DO Styles
-   ========================================================================== */
-
-#what-we-do {
-	background-color: $services-color;
-	padding: 0 5% 5% 5%;
-	text-align: left;
-	min-height: 60vh;
-
-	#service-row, #wwd-h1 {
-		text-align: center;
-	}
-
-	h1 {
-		height: 0;
-		font-family: $header-font;
-		color: $white;
-		margin: 0 0 7vmin 0;//-1vmin 0 7vmin 0;
-		letter-spacing: 2vmin;
-		line-height: 100%;
-  		font-size: 6vmin;
-	}
-
-	#service-row {
-		padding: 5% 0 5% 0;
-	}
-}
-
-/* ==========================================================================
-   	FOOTER Styles
-   ========================================================================== */
-
-footer {
-	height: 20vh;
-	padding-top: 2%;
-	background: $footer-color;
-	color: $white;
-}
-
-
-/*	|||\  //||	||	||++++  ||+++
-	|||\\// ||	||	||==||	||
-	|||	\/	||	||	++++||	||+++
-
-/* ==========================================================================
-   	Hover Styles
-   ========================================================================== */
-
-/* Underline Reveal */
-.hvr-underline-reveal {
-	//padding-bottom: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-reveal:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: $white;
-  height: 2px;
-  -webkit-transform: translateY(3px);
-  transform: translateY(3px);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-
-
-
-
+/*********************
+EXTRA LARGE
+This is for the larger monitors and possibly full screen viewers.
+*********************/
+@media only screen and (min-width: $x-large) {
+	@import "breakpoints/xl";
+} // end of media query

@@ -1,0 +1,41 @@
+$white:				#FFF;
+$black:				#131B21;
+$light-black:		#1C1E26;
+$dark-gray:			#303946;
+$off-white:			#f5f5f2;
+
+$red3:				#e3483e;//#d62e29;
+$red2:				#d62e29;
+$red:				mix($red3, $red2, 50%);
+$purple:			#372d3b;
+$light-purple:		#4F3043;
+
+$mid-blue:			#116A9A;
+$blue:				#074B80;
+$light-blue:		#29B0E5;
+$dark-blue:			#072D42;
+$deep-blue:			#0C197A;
+$midnight-blue:		#051E2C;
+$blue-gray:			#34495e;
+$aqua-blue:			rgb(19,78,94);
+$aqua-blue1:		rgba(19,78,94,.8);
+$aqua-blue2:		rgba(19,78,94,.55);
+
+$green:				rgb(113,178,128);
+$light-green:		#4DE7B8;
+$turquoise:			#00c1af;
+
+
+/////////////////
+// ASSIGNMENTS //
+/////////////////
+
+$top-color1:		$aqua-blue2;
+$top-color2:		$aqua-blue1;
+$top-btn-clr:		$red;
+
+$about-color:		$light-black;
+
+$services-color:	$turquoise;
+
+$footer-color:		$light-black;
