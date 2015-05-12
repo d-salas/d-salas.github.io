@@ -372,8 +372,12 @@ ul.nav {
 #what-we-do {
 	background-color: $services-color;
 	padding: 0 5% 5% 5%;
-	text-align: center;
+	text-align: left;
 	min-height: 60vh;
+
+	#service-row, #wwd-h1 {
+		text-align: center;
+	}
 
 	h1 {
 		height: 0;
