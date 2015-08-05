@@ -1,0 +1,273 @@
+/*
+X-tra small screens. Like iPhones.
+*/
+
+/* ==========================================================================
+   	GENERAL Styles
+   ========================================================================== */
+
+* {
+	font-family: $main-font;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+	background-image: url('../img/paper_fibers.png');
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: 100%;
+}
+
+p {
+	line-height: 150%;
+}
+
+/* ==========================================================================
+   	LOGO Styles
+   ========================================================================== */
+
+a.navbar-brand {
+	font-size: 4rem;
+	z-index: 100;
+	// line-height: 100%;
+	padding-top: 16px;
+}
+a.navbar-brand, #mss-hero b {
+	font-family: $top-font;
+}
+
+/* ==========================================================================
+   	NAVBAR Styles
+   ========================================================================== */
+
+.nav {
+	margin-top: 0;
+}
+
+.navbar {
+	margin-top: 0px;
+	margin-bottom: 0;
+	border-radius: 0;
+	z-index: 100;
+}
+#navbar-menu {
+	float:right; 
+}
+ul.nav {
+	list-style-type: none;
+	&:last-child {
+		margin-bottom: 16px;
+	}
+}
+.navbar-nav li {
+	cursor: pointer;
+	font-family: $nav-font;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	padding: 15px 3vw 4px 3vw;
+	letter-spacing: 1px;
+}
+.navbar-toggle {
+	font-size: 4.5rem;
+	padding: 2px 15px;
+	height:50px;
+	margin: 0 0;
+	line-height: 100%;
+}
+/* BEFORE AFFIXING */
+.affix-top {
+	// @extend .z-depth-1;
+	// @extend .blue, .darken-4;
+	background: $white;
+	margin-top: 0;
+	// border-bottom: 1px solid $black;
+	a {
+		color: $black;
+	}
+	.hvr-underline-reveal:before {
+		background: $black;
+	}
+}
+/* WHILE COLLAPSING */
+.collapsing {
+}
+.in, .collapsing {
+	text-align: right;
+	border: none;
+}
+/* AFTER AFFIXING */
+.affix {
+	// It's weird on iOS Safari
+	@extend .z-depth-1;
+	// @extend .blue, .darken-4;
+	background: $white;
+	margin-top: 0;
+	// border-bottom: 1px solid $black;
+	a {
+		color: $gold;
+	}
+	// .navbar-nav li {
+	// 	color: $black;
+	// }
+	.hvr-underline-reveal:before {
+		background: $gold;
+	}
+}
+
+/* ==========================================================================
+   	TOP Styles
+   ========================================================================== */
+
+#top {
+	// @include full-screen;
+	background-image: url('../img/paper_fibers.png');
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: 100%;
+	// box-shadow: inset 0px 40px 200px -51px darken($top-color2, 20%);
+	img {
+		width: 95vw;
+	}
+}
+#mss-hero {
+	// @include full-screen;
+	text-align: center;
+	
+	h1 {
+		font-size: 7.5vmax;
+		font-family: $top-font;
+		font-weight: 300;
+		letter-spacing: 3px;
+		padding-top: 8vh;
+		padding-bottom: 0;
+	}
+	h2 {
+		font-weight: 400;
+		font-size: 3vmax;
+		padding: 0vh 8% 0 8%;
+	}
+	p, h1, h2, a {
+		color: $black;
+	}
+	a.btn {
+		font-family: $btn-font;
+		font-weight: bold;
+		color: $black;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		height: 85px;
+		min-width: 130px;
+		max-width: 150px;
+		margin: 2vh auto 4vh auto;
+		border: 2px solid black;
+		padding: 20px 15px 0px 15px;
+		background: transparent;
+		line-height: 1.5em;
+		
+		i {
+			font-size: 3rem;
+		}
+		&:hover {
+
+		}
+	}
+}
+
+#mss-hero b, #mss-hero h1 {
+	font-size: 7vmax;
+
+}
+
+/* ==========================================================================
+   	GETTING THERE Styles
+   ========================================================================== */
+
+#about {
+	padding: 5%;
+	background: $about-color;
+
+	h1 {
+		
+	}
+	h2 {
+		text-align: center;
+		// color: $white;
+		color: $gold;
+	}
+	p {
+		font-size: 1.6rem;
+		line-height: 1.7;
+		color:	$white;
+		text-align: left;
+		padding: 5% 5% 2% 5%;
+		font-weight: 100;
+		// letter-spacing: 1px;
+	}
+}
+
+/* ==========================================================================
+   	WHAT WE DO Styles
+   ========================================================================== */
+
+#choose-font {
+	background-color: white;
+	padding: 5% 5% 5% 5%;
+	text-align: left;
+	min-height: 60vh;
+
+	#service-row, #wwd-h1 {
+		text-align: center;
+	}
+
+	h1 {
+		height: 0;
+		font-family: $header-font;
+		color: $white;
+		margin: 0 0 7vmin 0;//-1vmin 0 7vmin 0;
+		// letter-spacing: 2vmin;
+		line-height: 100%;
+  		font-size: 8vmin;
+	}
+
+	#service-row {
+		padding: 5% 0 5% 0;
+	}
+}
+
+/* ==========================================================================
+   	FOOTER Styles
+   ========================================================================== */
+
+footer {
+	height: 20vh;
+	padding-top: 2%;
+	background: $black;
+	color: $white;
+}
+
+
+
+	// h1 {
+	// 	font-family: $header-font;
+	// 	color: $white;
+	// 	margin: 3% 0 7vmin 0;
+	// 	text-align: center;
+	// 	letter-spacing: 1vmin;
+	// 	line-height: 100%;
+ //  		font-size: 10vmin;
+ //  		&:after {
+ //  			border-bottom: 4px solid $white;
+ //  			content: "";
+	// 		display: block;
+	// 		position: relative;
+	// 		top: 20px;
+	// 		width: 40vmin;
+	// 		z-index: 0;
+	// 		margin-right: auto;
+	// 		margin-left: auto;
+ //  		}
+	// }

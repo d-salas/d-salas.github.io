@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=$("#mss-nav");$(window).scroll(function(){$(this).scrollTop()>10?(a.addClass("affix"),a.removeClass("affix-top")):(a.addClass("affix-top"),a.removeClass("affix"))})});
