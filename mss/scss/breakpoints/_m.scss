@@ -215,9 +215,27 @@ ul.nav {
 	}
 
 	#font-row {
-		padding: 3% 10%;
+		padding: 3% 8% 0 8%;
+	}
+	a.btn {
+		// margin: 0% auto 3.5% auto;
+
+		&:hover {
+			color: $black;
+			background: $golden-yellow;
+		}
 	}
 
+	#sample-text {
+		.panel {
+			#fonts, #washes {
+				text-align: left;
+			}
+			#washes {
+				padding-top: 0;
+			}
+		}
+	}
 }
 
 /* ==========================================================================

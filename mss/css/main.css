@@ -1939,7 +1939,7 @@ ul.nav {
    	DOWNLOAD Styles
    ========================================================================== */
 #download-sec {
-  padding: 6% 5% 0% 5%;
+  padding: 5% 5% 0% 5%;
   background-color: #ffe082;
   position: relative; }
   #download-sec:after {
@@ -1986,7 +1986,6 @@ ul.nav {
 #choose-font {
   background-color: #fff9c4;
   padding: 5%;
-  text-align: left;
   min-height: 60vh;
   position: relative; }
   #choose-font:after {
@@ -2012,18 +2011,43 @@ ul.nav {
   #choose-font #font-h2 {
     text-align: center; }
   #choose-font #font-row {
-    text-align: left; }
+    text-align: left;
+    padding-bottom: 2%; }
   #choose-font #sample-text {
-    height: 400px; }
-    #choose-font #sample-text p {
-      font-size: 3rem; }
+    margin: 3% auto 0 auto; }
+    #choose-font #sample-text .panel {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      border-radius: 0;
+      padding: 2%; }
+      #choose-font #sample-text .panel .panel-body {
+        padding: 5%;
+        border: 8px solid #ffe082; }
+      #choose-font #sample-text .panel p {
+        font-size: 2rem;
+        line-height: 120%; }
+      #choose-font #sample-text .panel hr {
+        border-top: 2px dotted #ffe082;
+        margin-bottom: 30px; }
+      #choose-font #sample-text .panel #fonts, #choose-font #sample-text .panel #washes {
+        text-align: center; }
+      #choose-font #sample-text .panel #washes {
+        padding-top: 15px; }
   #choose-font p {
     font-size: 1.9rem;
     line-height: 1.7;
-    text-align: left;
     font-weight: 500; }
-  #choose-font #service-row {
-    padding: 5% 0 5% 0; }
+  #choose-font ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1.7rem;
+    list-style-type: none; }
+  #choose-font a.btn {
+    margin: 4% auto 0% auto;
+    font-size: 130%;
+    border: 2px solid black;
+    padding: 20px 15px 20px 15px;
+    background: transparent;
+    color: #131B21; }
 
 /* ==========================================================================
    	ACKNOWLEDGMENT Styles
@@ -2238,7 +2262,14 @@ For tablets and smaller laptops
   #choose-font h2 {
     font-size: 5vmin; }
   #choose-font #font-row {
-    padding: 3% 10%; }
+    padding: 3% 8% 0 8%; }
+  #choose-font a.btn:hover {
+    color: #131B21;
+    background: #ffe082; }
+  #choose-font #sample-text .panel #fonts, #choose-font #sample-text .panel #washes {
+    text-align: left; }
+  #choose-font #sample-text .panel #washes {
+    padding-top: 0; }
 
   /* ==========================================================================
      	FOOTER Styles

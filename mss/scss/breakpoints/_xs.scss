@@ -68,7 +68,13 @@ a.navbar-brand, #mss-hero b {
 	border-radius: 0;
 	z-index: 100000;
 }
+button.navbar-toggle {
+	// border: 2px solid $black;
+	// padding: 0;
+	// margin: 10px
+}
 #menu-icon {
+	// border: 2px solid $black;
 	transition: all .2s linear;
 	&.down {
 		transform:rotate(180deg);
@@ -275,7 +281,7 @@ ul.nav {
    ========================================================================== */
 
 #download-sec {
-	padding: 6% 5% 0% 5%;
+	padding: 5% 5% 0% 5%;
 	background-color: $golden-yellow;
 	@include jagged($golden-yellow, 30, bottom);
 
@@ -311,7 +317,7 @@ ul.nav {
 #choose-font {
 	background-color: $light-yellow;
 	padding: 5%;
-	text-align: left;
+	// text-align: left;
 	min-height: 60vh;
 	@include jagged($light-yellow, 30, bottom);
 
@@ -320,12 +326,37 @@ ul.nav {
 	}
 	#font-row {
 		text-align: left;
+		padding-bottom: 2%;
 	}
 		
 	#sample-text {
-		height: 400px;
-		p {
-			font-size: 3rem;
+		margin: 3% auto 0 auto;
+		.panel {
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+			border-radius: 0;
+			padding: 2%;
+			.panel-body {
+				padding: 5%;
+				border: 8px solid $golden-yellow;
+			}
+			p {
+				font-size: 2rem;
+				line-height: 120%;
+				// padding: 5%;
+				// margin: 0;
+				// border: 8px solid $golden-yellow;
+			}
+			hr {
+				border-top: 2px dotted $golden-yellow;
+				margin-bottom: 30px;
+			}
+			#fonts, #washes {
+				// padding-top: 15px;
+				text-align: center;
+			}
+			#washes {
+				padding-top: 15px;
+			}
 		}
 	}
 
@@ -335,12 +366,25 @@ ul.nav {
 	p {
 		font-size: 1.9rem;
 		line-height: 1.7;
-		text-align: left;
+		// text-align: left;
 		font-weight: 500;
 	}
 
-	#service-row {
-		padding: 5% 0 5% 0;
+	ul {
+		// text-align: center;
+		padding: 0;
+		margin: 0;
+		font-size: 1.7rem;
+		list-style-type: none;
+	}
+
+	a.btn {
+		margin: 4% auto 0% auto;
+		font-size: 130%;
+		border: 2px solid black;
+		padding: 20px 15px 20px 15px;
+		background: transparent;
+		color: $black;
 	}
 }
 
