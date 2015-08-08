@@ -1785,6 +1785,12 @@ ul.nav {
   ul.nav:last-child {
     margin-bottom: 16px; }
 
+.nav > li > a {
+  display: inline;
+  padding: 0; }
+  .nav > li > a:hover {
+    background: transparent; }
+
 .navbar-nav li {
   cursor: pointer;
   font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -1822,7 +1828,9 @@ ul.nav {
   margin-top: 0;
   border-bottom: 2px solid #131B21; }
   .affix a {
-    color: #ffe082; }
+    color: #131B21; }
+    .affix a.navbar-brand {
+      color: #ffe082; }
   .affix .hvr-underline-reveal:before {
     background: #ffe082; }
 
@@ -1977,7 +1985,7 @@ ul.nav {
    ========================================================================== */
 #choose-font {
   background-color: #fff9c4;
-  padding: 5% 5% 5% 5%;
+  padding: 5%;
   text-align: left;
   min-height: 60vh;
   position: relative; }
@@ -2005,6 +2013,10 @@ ul.nav {
     text-align: center; }
   #choose-font #font-row {
     text-align: left; }
+  #choose-font #sample-text {
+    height: 400px; }
+    #choose-font #sample-text p {
+      font-size: 3rem; }
   #choose-font p {
     font-size: 1.9rem;
     line-height: 1.7;
@@ -2017,16 +2029,20 @@ ul.nav {
    	ACKNOWLEDGMENT Styles
    ========================================================================== */
 #choose-ack {
-  background: #ffe082; }
+  background: #ffe082;
+  padding: 5%; }
 
 /* ==========================================================================
    	FOOTER Styles
    ========================================================================== */
 footer {
-  height: 20vh;
   padding-top: 2%;
-  height: 300px;
+  height: 70vh;
   color: #ffe082; }
+  footer i {
+    padding: 3%; }
+  footer h2 {
+    font-family: "Ovo", Cambria, Times New Roman, Times, serif; }
 
 /*********************
 SMALL
@@ -2180,6 +2196,8 @@ For tablets and smaller laptops
     #about a.btn:hover {
       color: #131B21;
       background: #ffe082; }
+  #about p {
+    padding: 2% 8% 2% 8%; }
 
   /* ==========================================================================
      	DOWNLOAD Styles
@@ -2207,15 +2225,20 @@ For tablets and smaller laptops
       height: 0; }
     to {
       height: 100%; } }
+    #download-sec p {
+      text-align: center;
+      padding: 6% 4% 2% 4%; }
     #download-sec a.btn:hover {
       color: #131B21;
       background: #fff9c4; }
 
   /* ==========================================================================
-     	WHAT WE DO Styles
+     	CHOOSE STYLE Styles
      ========================================================================== */
   #choose-font h2 {
     font-size: 5vmin; }
+  #choose-font #font-row {
+    padding: 3% 10%; }
 
   /* ==========================================================================
      	FOOTER Styles
@@ -2252,7 +2275,7 @@ Adds resource intensive styles.
      	ABOUT Styles
      ========================================================================== */
   #about #abt-row {
-    padding: 3% 10% 1% 10%; }
+    padding: 3% 8% 1% 8%; }
   #about h2 {
     font-size: 45px; }
   #about a.btn {

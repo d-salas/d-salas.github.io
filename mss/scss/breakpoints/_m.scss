@@ -60,7 +60,7 @@ ul.nav {
 		margin-bottom: 0px;
 	}
 }
-.navbar-nav li {
+.navbar-nav li a{
 	
 }
 .navbar-toggle {
@@ -157,6 +157,9 @@ ul.nav {
 	#abt-row {
 		padding: 3% 5% 1% 5%;
 	}
+	img {
+		// padding-top: 20%;
+	}
 	h2 {
 		margin: 3% auto 3.5% auto;
 		font-size: 40px;
@@ -172,8 +175,7 @@ ul.nav {
 	}
 	p {
 		// font-size: 1.7rem;
-		// padding: 10% 0% 2% 15%;
-		// padding: 5% 0% 2% 15%;
+		padding: 2% 8% 2% 8%;
 	}
 }
 
@@ -189,7 +191,8 @@ ul.nav {
 
 	}
 	p {
-
+		text-align: center;
+		padding: 6% 4% 2% 4%;
 	}
 	a.btn {
 		&:hover {
@@ -200,7 +203,7 @@ ul.nav {
 }
 
 /* ==========================================================================
-   	WHAT WE DO Styles
+   	CHOOSE STYLE Styles
    ========================================================================== */
 
 #choose-font {
@@ -211,8 +214,10 @@ ul.nav {
 		font-size: 5vmin;
 	}
 
-	#service-row {
+	#font-row {
+		padding: 3% 10%;
 	}
+
 }
 
 /* ==========================================================================

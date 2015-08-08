@@ -83,7 +83,14 @@ ul.nav {
 		margin-bottom: 16px;
 	}
 }
-.navbar-nav li {
+.nav>li>a {
+    display: inline;
+    padding: 0;
+    &:hover {
+		background: transparent;
+    }
+}
+.navbar-nav li{
 	cursor: pointer;
 	font-family: $nav-font;
 	font-weight: 700;
@@ -129,7 +136,10 @@ ul.nav {
 	margin-top: 0;
 	border-bottom: 2px solid $black;
 	a {
-		color: $golden-yellow;
+		color: $black;
+		&.navbar-brand {
+			color: $golden-yellow;
+		}
 	}
 	// .navbar-nav li {
 	// 	color: $black;
@@ -300,7 +310,7 @@ ul.nav {
 
 #choose-font {
 	background-color: $light-yellow;
-	padding: 5% 5% 5% 5%;
+	padding: 5%;
 	text-align: left;
 	min-height: 60vh;
 	@include jagged($light-yellow, 30, bottom);
@@ -311,16 +321,14 @@ ul.nav {
 	#font-row {
 		text-align: left;
 	}
+		
+	#sample-text {
+		height: 400px;
+		p {
+			font-size: 3rem;
+		}
+	}
 
-	// h1 {
-	// 	height: 0;
-	// 	font-family: $header-font;
-	// 	color: $black;
-	// 	margin: 0 0 7vmin 0;//-1vmin 0 7vmin 0;
-	// 	// letter-spacing: 2vmin;
-	// 	line-height: 100%;
- //  		font-size: 8vmin;
-	// }
 	h2 {
 		// font-size: 7vmin;
 	}
@@ -342,6 +350,7 @@ ul.nav {
 
 #choose-ack {
 	background: $golden-yellow;
+	padding: 5%;
 }
 
 
@@ -351,9 +360,14 @@ ul.nav {
    ========================================================================== */
 
 footer {
-	height: 20vh;
+	i {
+		padding: 3%;
+	}
+	h2 {
+		font-family: $top-font;
+	}
 	padding-top: 2%;
-	height: 300px;
+	height: 70vh;
 	// background: $lighter-yellow;
 	// color: $black;
 	@extend .indigo, .darken-1;
