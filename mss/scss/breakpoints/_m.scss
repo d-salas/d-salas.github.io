@@ -21,6 +21,11 @@ p {
 br {
 
 }
+
+.purple-btn {
+	color: $golden-yellow;
+	background: #3A3961;//#512F54;//#3949ab;//$light-yellow;
+}
 a.btn {
 	transition: all 0.2s ease;
 	position: relative;
@@ -120,7 +125,7 @@ ul.nav {
 		&:hover {
 			// color: $white;
 			color: $golden-yellow;
-			background: #3949ab;//$light-yellow;
+			background: #3A3961;//#512F54;//#3949ab;//$light-yellow;
 		}
 	}
 }
@@ -169,8 +174,9 @@ ul.nav {
 	a.btn {
 		margin: 0% auto 3.5% auto;
 		&:hover {
-			color: $black;
-			background: $golden-yellow;
+			// color: $black;
+			// background: $golden-yellow;
+			@extend .purple-btn;
 		}
 	}
 	p {
@@ -196,8 +202,9 @@ ul.nav {
 	}
 	a.btn {
 		&:hover {
-			color: $black;
-			background: $light-yellow;
+			// color: $black;
+			// background: $light-yellow;
+			@extend .purple-btn;
 		}
 	}
 }
@@ -221,8 +228,9 @@ ul.nav {
 		// margin: 0% auto 3.5% auto;
 
 		&:hover {
-			color: $black;
-			background: $golden-yellow;
+			// color: $black;
+			// background: $golden-yellow;
+			@extend .purple-btn;
 		}
 	}
 

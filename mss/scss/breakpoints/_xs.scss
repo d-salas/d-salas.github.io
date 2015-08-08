@@ -225,9 +225,12 @@ ul.nav {
    ========================================================================== */
 
 #text-box {
-	// background: $dark-blue;
-	@extend .indigo, .darken-1;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	background: $indigo-violet;
+	// @extend .indigo, .darken-3;
+	// @extend .deep-purple, .darken-3;
+	// @extend .blue, .darken-3;
+
+	// box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	// @extend .amber-text, .text-lighten-3; 
 	color: $golden-yellow;
 	// @include jagged(#3949ab, 30, bottom);
@@ -412,9 +415,9 @@ footer {
 	}
 	padding-top: 2%;
 	height: 70vh;
-	// background: $lighter-yellow;
-	// color: $black;
-	@extend .indigo, .darken-1;
+	// @extend .indigo, .darken-3;
+	// @extend .blue, .darken-4;
+	background: $indigo-violet;
 	color: $golden-yellow;
 }
 

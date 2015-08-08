@@ -120,7 +120,7 @@ Take up the whole dang window
 .materialize-red-text {
   color: #e51c23 !important; }
 
-.materialize-red.darken-1, .materialize-red#text-box, footer.materialize-red {
+.materialize-red.darken-1 {
   background-color: #d0181e !important; }
 
 .materialize-red-text.text-darken-1 {
@@ -180,7 +180,7 @@ Take up the whole dang window
 .red-text {
   color: #F44336 !important; }
 
-.red.darken-1, .red#text-box, footer.red {
+.red.darken-1 {
   background-color: #E53935 !important; }
 
 .red-text.text-darken-1 {
@@ -264,7 +264,7 @@ Take up the whole dang window
 .pink-text {
   color: #e91e63 !important; }
 
-.pink.darken-1, .pink#text-box, footer.pink {
+.pink.darken-1 {
   background-color: #d81b60 !important; }
 
 .pink-text.text-darken-1 {
@@ -348,7 +348,7 @@ Take up the whole dang window
 .purple-text {
   color: #9c27b0 !important; }
 
-.purple.darken-1, .purple#text-box, footer.purple {
+.purple.darken-1 {
   background-color: #8e24aa !important; }
 
 .purple-text.text-darken-1 {
@@ -432,7 +432,7 @@ Take up the whole dang window
 .deep-purple-text {
   color: #673ab7 !important; }
 
-.deep-purple.darken-1, .deep-purple#text-box, footer.deep-purple {
+.deep-purple.darken-1 {
   background-color: #5e35b1 !important; }
 
 .deep-purple-text.text-darken-1 {
@@ -480,85 +480,85 @@ Take up the whole dang window
 .deep-purple-text.text-accent-4 {
   color: #6200ea !important; }
 
-.indigo.lighten-5, .lighten-5#text-box, footer.lighten-5 {
+.indigo.lighten-5 {
   background-color: #e8eaf6 !important; }
 
 .indigo-text.text-lighten-5 {
   color: #e8eaf6 !important; }
 
-.indigo.lighten-4, .lighten-4#text-box, footer.lighten-4 {
+.indigo.lighten-4 {
   background-color: #c5cae9 !important; }
 
 .indigo-text.text-lighten-4 {
   color: #c5cae9 !important; }
 
-.indigo.lighten-3, .lighten-3#text-box, footer.lighten-3 {
+.indigo.lighten-3 {
   background-color: #9fa8da !important; }
 
 .indigo-text.text-lighten-3 {
   color: #9fa8da !important; }
 
-.indigo.lighten-2, .lighten-2#text-box, footer.lighten-2 {
+.indigo.lighten-2 {
   background-color: #7986cb !important; }
 
 .indigo-text.text-lighten-2 {
   color: #7986cb !important; }
 
-.indigo.lighten-1, .lighten-1#text-box, footer.lighten-1 {
+.indigo.lighten-1 {
   background-color: #5c6bc0 !important; }
 
 .indigo-text.text-lighten-1 {
   color: #5c6bc0 !important; }
 
-.indigo, #text-box, footer {
+.indigo {
   background-color: #3f51b5 !important; }
 
 .indigo-text {
   color: #3f51b5 !important; }
 
-.indigo.darken-1, #text-box, footer {
+.indigo.darken-1 {
   background-color: #3949ab !important; }
 
 .indigo-text.text-darken-1 {
   color: #3949ab !important; }
 
-.indigo.darken-2, .darken-2#text-box, footer.darken-2 {
+.indigo.darken-2 {
   background-color: #303f9f !important; }
 
 .indigo-text.text-darken-2 {
   color: #303f9f !important; }
 
-.indigo.darken-3, .darken-3#text-box, footer.darken-3 {
+.indigo.darken-3 {
   background-color: #283593 !important; }
 
 .indigo-text.text-darken-3 {
   color: #283593 !important; }
 
-.indigo.darken-4, .darken-4#text-box, footer.darken-4 {
+.indigo.darken-4 {
   background-color: #1a237e !important; }
 
 .indigo-text.text-darken-4 {
   color: #1a237e !important; }
 
-.indigo.accent-1, .accent-1#text-box, footer.accent-1 {
+.indigo.accent-1 {
   background-color: #8c9eff !important; }
 
 .indigo-text.text-accent-1 {
   color: #8c9eff !important; }
 
-.indigo.accent-2, .accent-2#text-box, footer.accent-2 {
+.indigo.accent-2 {
   background-color: #536dfe !important; }
 
 .indigo-text.text-accent-2 {
   color: #536dfe !important; }
 
-.indigo.accent-3, .accent-3#text-box, footer.accent-3 {
+.indigo.accent-3 {
   background-color: #3d5afe !important; }
 
 .indigo-text.text-accent-3 {
   color: #3d5afe !important; }
 
-.indigo.accent-4, .accent-4#text-box, footer.accent-4 {
+.indigo.accent-4 {
   background-color: #304ffe !important; }
 
 .indigo-text.text-accent-4 {
@@ -600,7 +600,7 @@ Take up the whole dang window
 .blue-text {
   color: #2196F3 !important; }
 
-.blue.darken-1, .blue#text-box, footer.blue {
+.blue.darken-1 {
   background-color: #1E88E5 !important; }
 
 .blue-text.text-darken-1 {
@@ -684,7 +684,7 @@ Take up the whole dang window
 .light-blue-text {
   color: #03a9f4 !important; }
 
-.light-blue.darken-1, .light-blue#text-box, footer.light-blue {
+.light-blue.darken-1 {
   background-color: #039be5 !important; }
 
 .light-blue-text.text-darken-1 {
@@ -768,7 +768,7 @@ Take up the whole dang window
 .cyan-text {
   color: #00bcd4 !important; }
 
-.cyan.darken-1, .cyan#text-box, footer.cyan {
+.cyan.darken-1 {
   background-color: #00acc1 !important; }
 
 .cyan-text.text-darken-1 {
@@ -852,7 +852,7 @@ Take up the whole dang window
 .teal-text {
   color: #009688 !important; }
 
-.teal.darken-1, .teal#text-box, footer.teal {
+.teal.darken-1 {
   background-color: #00897b !important; }
 
 .teal-text.text-darken-1 {
@@ -936,7 +936,7 @@ Take up the whole dang window
 .green-text {
   color: #4CAF50 !important; }
 
-.green.darken-1, .green#text-box, footer.green {
+.green.darken-1 {
   background-color: #43A047 !important; }
 
 .green-text.text-darken-1 {
@@ -1020,7 +1020,7 @@ Take up the whole dang window
 .light-green-text {
   color: #8bc34a !important; }
 
-.light-green.darken-1, .light-green#text-box, footer.light-green {
+.light-green.darken-1 {
   background-color: #7cb342 !important; }
 
 .light-green-text.text-darken-1 {
@@ -1104,7 +1104,7 @@ Take up the whole dang window
 .lime-text {
   color: #cddc39 !important; }
 
-.lime.darken-1, .lime#text-box, footer.lime {
+.lime.darken-1 {
   background-color: #c0ca33 !important; }
 
 .lime-text.text-darken-1 {
@@ -1188,7 +1188,7 @@ Take up the whole dang window
 .yellow-text {
   color: #ffeb3b !important; }
 
-.yellow.darken-1, .yellow#text-box, footer.yellow {
+.yellow.darken-1 {
   background-color: #fdd835 !important; }
 
 .yellow-text.text-darken-1 {
@@ -1278,7 +1278,7 @@ Take up the whole dang window
 .amber-text {
   color: #ffc107 !important; }
 
-.amber.darken-1, .amber#text-box, footer.amber {
+.amber.darken-1 {
   background-color: #ffb300 !important; }
 
 .amber-text.text-darken-1 {
@@ -1362,7 +1362,7 @@ Take up the whole dang window
 .orange-text {
   color: #ff9800 !important; }
 
-.orange.darken-1, .orange#text-box, footer.orange {
+.orange.darken-1 {
   background-color: #fb8c00 !important; }
 
 .orange-text.text-darken-1 {
@@ -1446,7 +1446,7 @@ Take up the whole dang window
 .deep-orange-text {
   color: #ff5722 !important; }
 
-.deep-orange.darken-1, .deep-orange#text-box, footer.deep-orange {
+.deep-orange.darken-1 {
   background-color: #f4511e !important; }
 
 .deep-orange-text.text-darken-1 {
@@ -1530,7 +1530,7 @@ Take up the whole dang window
 .brown-text {
   color: #795548 !important; }
 
-.brown.darken-1, .brown#text-box, footer.brown {
+.brown.darken-1 {
   background-color: #6d4c41 !important; }
 
 .brown-text.text-darken-1 {
@@ -1590,7 +1590,7 @@ Take up the whole dang window
 .blue-grey-text {
   color: #607d8b !important; }
 
-.blue-grey.darken-1, .blue-grey#text-box, footer.blue-grey {
+.blue-grey.darken-1 {
   background-color: #546e7a !important; }
 
 .blue-grey-text.text-darken-1 {
@@ -1650,7 +1650,7 @@ Take up the whole dang window
 .grey-text {
   color: #9e9e9e !important; }
 
-.grey.darken-1, .grey#text-box, footer.grey {
+.grey.darken-1 {
   background-color: #757575 !important; }
 
 .grey-text.text-darken-1 {
@@ -1883,7 +1883,7 @@ ul.nav {
    	GETTING THERE Styles
    ========================================================================== */
 #text-box {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background: #3A3961;
   color: #ffe082; }
 
 #about {
@@ -2062,6 +2062,7 @@ ul.nav {
 footer {
   padding-top: 2%;
   height: 70vh;
+  background: #3A3961;
   color: #ffe082; }
   footer i {
     padding: 3%; }
@@ -2148,6 +2149,10 @@ For tablets and smaller laptops
   /* ==========================================================================
      	GENERAL Styles
      ========================================================================== */
+  .purple-btn, #about a.btn:hover, #download-sec a.btn:hover, #choose-font a.btn:hover {
+    color: #ffe082;
+    background: #3A3961; }
+
   a.btn {
     transition: all 0.2s ease;
     position: relative;
@@ -2195,7 +2200,7 @@ For tablets and smaller laptops
       width: 600px; }
     #top a.btn:hover {
       color: #ffe082;
-      background: #3949ab; }
+      background: #3A3961; }
 
   #mss-hero h1 {
     font-size: 6vmax;
@@ -2217,9 +2222,6 @@ For tablets and smaller laptops
     font-weight: 200; }
   #about a.btn {
     margin: 0% auto 3.5% auto; }
-    #about a.btn:hover {
-      color: #131B21;
-      background: #ffe082; }
   #about p {
     padding: 2% 8% 2% 8%; }
 
@@ -2252,9 +2254,6 @@ For tablets and smaller laptops
     #download-sec p {
       text-align: center;
       padding: 6% 4% 2% 4%; }
-    #download-sec a.btn:hover {
-      color: #131B21;
-      background: #fff9c4; }
 
   /* ==========================================================================
      	CHOOSE STYLE Styles
@@ -2263,9 +2262,6 @@ For tablets and smaller laptops
     font-size: 5vmin; }
   #choose-font #font-row {
     padding: 3% 8% 0 8%; }
-  #choose-font a.btn:hover {
-    color: #131B21;
-    background: #ffe082; }
   #choose-font #sample-text .panel #fonts, #choose-font #sample-text .panel #washes {
     text-align: left; }
   #choose-font #sample-text .panel #washes {
