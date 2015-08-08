@@ -162,7 +162,7 @@ ul.nav {
 	// @include full-screen;
 	text-align: center;
 	h1 {
-		font-size: 7.5vmax;
+		font-size: 7vmax;
 		font-family: $top-font;
 		font-weight: 300;
 		letter-spacing: 3px;
@@ -199,11 +199,9 @@ ul.nav {
 
 		}
 	}
-}
-
-#mss-hero b, #mss-hero h1 {
-	font-size: 7vmax;
-
+	#letter-div {
+		min-height: 100px;
+	}
 }
 
 /* ==========================================================================
