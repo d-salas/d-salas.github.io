@@ -119,8 +119,8 @@ ul.nav {
 	a.btn {
 		&:hover {
 			// color: $white;
-			color: $black;
-			background: $golden-yellow;
+			color: $golden-yellow;
+			background: #3949ab;//$light-yellow;
 		}
 	}
 }
@@ -154,6 +154,9 @@ ul.nav {
 // 	background-size: cover;
 
 #about {
+	#abt-row {
+		padding: 3% 5% 1% 5%;
+	}
 	h2 {
 		margin: 3% auto 3.5% auto;
 		font-size: 40px;
@@ -164,7 +167,7 @@ ul.nav {
 		margin: 0% auto 3.5% auto;
 		&:hover {
 			color: $black;
-			background: $light-yellow;
+			background: $golden-yellow;
 		}
 	}
 	p {
@@ -174,8 +177,27 @@ ul.nav {
 	}
 }
 
+/* ==========================================================================
+   	DOWNLOAD Styles
+   ========================================================================== */
 
-// }
+#download-sec {
+	background-color: $golden-yellow;
+	@include jagged($golden-yellow, 30, bottom);
+
+	h2 {
+
+	}
+	p {
+
+	}
+	a.btn {
+		&:hover {
+			color: $black;
+			background: $light-yellow;
+		}
+	}
+}
 
 /* ==========================================================================
    	WHAT WE DO Styles
@@ -185,8 +207,8 @@ ul.nav {
 	#service-row, #wwd-h1 {
 	}
 
-	h1 {
-		font-size: 6vmin;
+	h2 {
+		font-size: 5vmin;
 	}
 
 	#service-row {

@@ -34,6 +34,18 @@ Take up the whole dang window
   transition: box-shadow .25s;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+/* 
+  Border-serrated - a zig zag triangle border with linear gradient
+*/
+/**
+ * Jagged Border
+ *
+ * $location - [top, bottom, left, right]
+ * $type - [fill, border]
+ * $side - [inside, outside]
+ *
+ * @param {Object} data - xhr
+ */
 /* ==========================================================================
    	Hover Styles
    ========================================================================== */
@@ -108,10 +120,10 @@ Take up the whole dang window
 .materialize-red-text {
   color: #e51c23 !important; }
 
-.materialize-red.darken-1, .materialize-red#text-box {
+.materialize-red.darken-1, .materialize-red#text-box, footer.materialize-red {
   background-color: #d0181e !important; }
 
-.materialize-red-text.text-darken-1, .materialize-red-text.affix {
+.materialize-red-text.text-darken-1 {
   color: #d0181e !important; }
 
 .materialize-red.darken-2 {
@@ -168,10 +180,10 @@ Take up the whole dang window
 .red-text {
   color: #F44336 !important; }
 
-.red.darken-1, .red#text-box {
+.red.darken-1, .red#text-box, footer.red {
   background-color: #E53935 !important; }
 
-.red-text.text-darken-1, .red-text.affix {
+.red-text.text-darken-1 {
   color: #E53935 !important; }
 
 .red.darken-2 {
@@ -252,10 +264,10 @@ Take up the whole dang window
 .pink-text {
   color: #e91e63 !important; }
 
-.pink.darken-1, .pink#text-box {
+.pink.darken-1, .pink#text-box, footer.pink {
   background-color: #d81b60 !important; }
 
-.pink-text.text-darken-1, .pink-text.affix {
+.pink-text.text-darken-1 {
   color: #d81b60 !important; }
 
 .pink.darken-2 {
@@ -336,10 +348,10 @@ Take up the whole dang window
 .purple-text {
   color: #9c27b0 !important; }
 
-.purple.darken-1, .purple#text-box {
+.purple.darken-1, .purple#text-box, footer.purple {
   background-color: #8e24aa !important; }
 
-.purple-text.text-darken-1, .purple-text.affix {
+.purple-text.text-darken-1 {
   color: #8e24aa !important; }
 
 .purple.darken-2 {
@@ -420,10 +432,10 @@ Take up the whole dang window
 .deep-purple-text {
   color: #673ab7 !important; }
 
-.deep-purple.darken-1, .deep-purple#text-box {
+.deep-purple.darken-1, .deep-purple#text-box, footer.deep-purple {
   background-color: #5e35b1 !important; }
 
-.deep-purple-text.text-darken-1, .deep-purple-text.affix {
+.deep-purple-text.text-darken-1 {
   color: #5e35b1 !important; }
 
 .deep-purple.darken-2 {
@@ -468,88 +480,88 @@ Take up the whole dang window
 .deep-purple-text.text-accent-4 {
   color: #6200ea !important; }
 
-.indigo.lighten-5, .lighten-5#text-box {
+.indigo.lighten-5, .lighten-5#text-box, footer.lighten-5 {
   background-color: #e8eaf6 !important; }
 
-.indigo-text.text-lighten-5, .text-lighten-5.affix {
+.indigo-text.text-lighten-5 {
   color: #e8eaf6 !important; }
 
-.indigo.lighten-4, .lighten-4#text-box {
+.indigo.lighten-4, .lighten-4#text-box, footer.lighten-4 {
   background-color: #c5cae9 !important; }
 
-.indigo-text.text-lighten-4, .text-lighten-4.affix {
+.indigo-text.text-lighten-4 {
   color: #c5cae9 !important; }
 
-.indigo.lighten-3, .lighten-3#text-box {
+.indigo.lighten-3, .lighten-3#text-box, footer.lighten-3 {
   background-color: #9fa8da !important; }
 
-.indigo-text.text-lighten-3, .text-lighten-3.affix {
+.indigo-text.text-lighten-3 {
   color: #9fa8da !important; }
 
-.indigo.lighten-2, .lighten-2#text-box {
+.indigo.lighten-2, .lighten-2#text-box, footer.lighten-2 {
   background-color: #7986cb !important; }
 
-.indigo-text.text-lighten-2, .text-lighten-2.affix {
+.indigo-text.text-lighten-2 {
   color: #7986cb !important; }
 
-.indigo.lighten-1, .lighten-1#text-box {
+.indigo.lighten-1, .lighten-1#text-box, footer.lighten-1 {
   background-color: #5c6bc0 !important; }
 
-.indigo-text.text-lighten-1, .text-lighten-1.affix {
+.indigo-text.text-lighten-1 {
   color: #5c6bc0 !important; }
 
-.indigo, #text-box {
+.indigo, #text-box, footer {
   background-color: #3f51b5 !important; }
 
-.indigo-text, .affix {
+.indigo-text {
   color: #3f51b5 !important; }
 
-.indigo.darken-1, #text-box {
+.indigo.darken-1, #text-box, footer {
   background-color: #3949ab !important; }
 
-.indigo-text.text-darken-1, .affix {
+.indigo-text.text-darken-1 {
   color: #3949ab !important; }
 
-.indigo.darken-2, .darken-2#text-box {
+.indigo.darken-2, .darken-2#text-box, footer.darken-2 {
   background-color: #303f9f !important; }
 
-.indigo-text.text-darken-2, .text-darken-2.affix {
+.indigo-text.text-darken-2 {
   color: #303f9f !important; }
 
-.indigo.darken-3, .darken-3#text-box {
+.indigo.darken-3, .darken-3#text-box, footer.darken-3 {
   background-color: #283593 !important; }
 
-.indigo-text.text-darken-3, .text-darken-3.affix {
+.indigo-text.text-darken-3 {
   color: #283593 !important; }
 
-.indigo.darken-4, .darken-4#text-box {
+.indigo.darken-4, .darken-4#text-box, footer.darken-4 {
   background-color: #1a237e !important; }
 
-.indigo-text.text-darken-4, .text-darken-4.affix {
+.indigo-text.text-darken-4 {
   color: #1a237e !important; }
 
-.indigo.accent-1, .accent-1#text-box {
+.indigo.accent-1, .accent-1#text-box, footer.accent-1 {
   background-color: #8c9eff !important; }
 
-.indigo-text.text-accent-1, .text-accent-1.affix {
+.indigo-text.text-accent-1 {
   color: #8c9eff !important; }
 
-.indigo.accent-2, .accent-2#text-box {
+.indigo.accent-2, .accent-2#text-box, footer.accent-2 {
   background-color: #536dfe !important; }
 
-.indigo-text.text-accent-2, .text-accent-2.affix {
+.indigo-text.text-accent-2 {
   color: #536dfe !important; }
 
-.indigo.accent-3, .accent-3#text-box {
+.indigo.accent-3, .accent-3#text-box, footer.accent-3 {
   background-color: #3d5afe !important; }
 
-.indigo-text.text-accent-3, .text-accent-3.affix {
+.indigo-text.text-accent-3 {
   color: #3d5afe !important; }
 
-.indigo.accent-4, .accent-4#text-box {
+.indigo.accent-4, .accent-4#text-box, footer.accent-4 {
   background-color: #304ffe !important; }
 
-.indigo-text.text-accent-4, .text-accent-4.affix {
+.indigo-text.text-accent-4 {
   color: #304ffe !important; }
 
 .blue.lighten-5 {
@@ -588,10 +600,10 @@ Take up the whole dang window
 .blue-text {
   color: #2196F3 !important; }
 
-.blue.darken-1, .blue#text-box {
+.blue.darken-1, .blue#text-box, footer.blue {
   background-color: #1E88E5 !important; }
 
-.blue-text.text-darken-1, .blue-text.affix {
+.blue-text.text-darken-1 {
   color: #1E88E5 !important; }
 
 .blue.darken-2 {
@@ -672,10 +684,10 @@ Take up the whole dang window
 .light-blue-text {
   color: #03a9f4 !important; }
 
-.light-blue.darken-1, .light-blue#text-box {
+.light-blue.darken-1, .light-blue#text-box, footer.light-blue {
   background-color: #039be5 !important; }
 
-.light-blue-text.text-darken-1, .light-blue-text.affix {
+.light-blue-text.text-darken-1 {
   color: #039be5 !important; }
 
 .light-blue.darken-2 {
@@ -756,10 +768,10 @@ Take up the whole dang window
 .cyan-text {
   color: #00bcd4 !important; }
 
-.cyan.darken-1, .cyan#text-box {
+.cyan.darken-1, .cyan#text-box, footer.cyan {
   background-color: #00acc1 !important; }
 
-.cyan-text.text-darken-1, .cyan-text.affix {
+.cyan-text.text-darken-1 {
   color: #00acc1 !important; }
 
 .cyan.darken-2 {
@@ -840,10 +852,10 @@ Take up the whole dang window
 .teal-text {
   color: #009688 !important; }
 
-.teal.darken-1, .teal#text-box {
+.teal.darken-1, .teal#text-box, footer.teal {
   background-color: #00897b !important; }
 
-.teal-text.text-darken-1, .teal-text.affix {
+.teal-text.text-darken-1 {
   color: #00897b !important; }
 
 .teal.darken-2 {
@@ -924,10 +936,10 @@ Take up the whole dang window
 .green-text {
   color: #4CAF50 !important; }
 
-.green.darken-1, .green#text-box {
+.green.darken-1, .green#text-box, footer.green {
   background-color: #43A047 !important; }
 
-.green-text.text-darken-1, .green-text.affix {
+.green-text.text-darken-1 {
   color: #43A047 !important; }
 
 .green.darken-2 {
@@ -1008,10 +1020,10 @@ Take up the whole dang window
 .light-green-text {
   color: #8bc34a !important; }
 
-.light-green.darken-1, .light-green#text-box {
+.light-green.darken-1, .light-green#text-box, footer.light-green {
   background-color: #7cb342 !important; }
 
-.light-green-text.text-darken-1, .light-green-text.affix {
+.light-green-text.text-darken-1 {
   color: #7cb342 !important; }
 
 .light-green.darken-2 {
@@ -1092,10 +1104,10 @@ Take up the whole dang window
 .lime-text {
   color: #cddc39 !important; }
 
-.lime.darken-1, .lime#text-box {
+.lime.darken-1, .lime#text-box, footer.lime {
   background-color: #c0ca33 !important; }
 
-.lime-text.text-darken-1, .lime-text.affix {
+.lime-text.text-darken-1 {
   color: #c0ca33 !important; }
 
 .lime.darken-2 {
@@ -1176,10 +1188,10 @@ Take up the whole dang window
 .yellow-text {
   color: #ffeb3b !important; }
 
-.yellow.darken-1, .yellow#text-box {
+.yellow.darken-1, .yellow#text-box, footer.yellow {
   background-color: #fdd835 !important; }
 
-.yellow-text.text-darken-1, .yellow-text.affix {
+.yellow-text.text-darken-1 {
   color: #fdd835 !important; }
 
 .yellow.darken-2 {
@@ -1266,10 +1278,10 @@ Take up the whole dang window
 .amber-text {
   color: #ffc107 !important; }
 
-.amber.darken-1, .amber#text-box {
+.amber.darken-1, .amber#text-box, footer.amber {
   background-color: #ffb300 !important; }
 
-.amber-text.text-darken-1, .amber-text.affix {
+.amber-text.text-darken-1 {
   color: #ffb300 !important; }
 
 .amber.darken-2 {
@@ -1350,10 +1362,10 @@ Take up the whole dang window
 .orange-text {
   color: #ff9800 !important; }
 
-.orange.darken-1, .orange#text-box {
+.orange.darken-1, .orange#text-box, footer.orange {
   background-color: #fb8c00 !important; }
 
-.orange-text.text-darken-1, .orange-text.affix {
+.orange-text.text-darken-1 {
   color: #fb8c00 !important; }
 
 .orange.darken-2 {
@@ -1434,10 +1446,10 @@ Take up the whole dang window
 .deep-orange-text {
   color: #ff5722 !important; }
 
-.deep-orange.darken-1, .deep-orange#text-box {
+.deep-orange.darken-1, .deep-orange#text-box, footer.deep-orange {
   background-color: #f4511e !important; }
 
-.deep-orange-text.text-darken-1, .deep-orange-text.affix {
+.deep-orange-text.text-darken-1 {
   color: #f4511e !important; }
 
 .deep-orange.darken-2 {
@@ -1518,10 +1530,10 @@ Take up the whole dang window
 .brown-text {
   color: #795548 !important; }
 
-.brown.darken-1, .brown#text-box {
+.brown.darken-1, .brown#text-box, footer.brown {
   background-color: #6d4c41 !important; }
 
-.brown-text.text-darken-1, .brown-text.affix {
+.brown-text.text-darken-1 {
   color: #6d4c41 !important; }
 
 .brown.darken-2 {
@@ -1578,10 +1590,10 @@ Take up the whole dang window
 .blue-grey-text {
   color: #607d8b !important; }
 
-.blue-grey.darken-1, .blue-grey#text-box {
+.blue-grey.darken-1, .blue-grey#text-box, footer.blue-grey {
   background-color: #546e7a !important; }
 
-.blue-grey-text.text-darken-1, .blue-grey-text.affix {
+.blue-grey-text.text-darken-1 {
   color: #546e7a !important; }
 
 .blue-grey.darken-2 {
@@ -1638,10 +1650,10 @@ Take up the whole dang window
 .grey-text {
   color: #9e9e9e !important; }
 
-.grey.darken-1, .grey#text-box {
+.grey.darken-1, .grey#text-box, footer.grey {
   background-color: #757575 !important; }
 
-.grey-text.text-darken-1, .grey-text.affix {
+.grey-text.text-darken-1 {
   color: #757575 !important; }
 
 .grey.darken-2 {
@@ -1719,10 +1731,23 @@ html, body {
   overflow-x: hidden; }
 
 body {
-  background: #fff9c4; }
+  background: #fffde7; }
 
 p {
   line-height: 150%; }
+
+.zigzag {
+  position: relative;
+  width: 100%;
+  height: 200px; }
+
+.zigzag:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px; }
 
 /* ==========================================================================
    	LOGO Styles
@@ -1746,6 +1771,11 @@ a.navbar-brand, #mss-hero b {
   margin-bottom: 0;
   border-radius: 0;
   z-index: 100000; }
+
+#menu-icon {
+  transition: all .2s linear; }
+  #menu-icon.down {
+    transform: rotate(180deg); }
 
 #navbar-menu {
   float: right; }
@@ -1800,7 +1830,7 @@ ul.nav {
    	TOP Styles
    ========================================================================== */
 #top {
-  background: #fff9c4; }
+  background: #fffde7; }
   #top img {
     position: relative;
     z-index: 0;
@@ -1847,13 +1877,34 @@ ul.nav {
    ========================================================================== */
 #text-box {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  color: #fff9c4; }
+  color: #ffe082; }
 
 #about {
-  background: #ffe082;
-  background-size: 100%;
+  background-size: 20px 40px;
+  background: #fff9c4;
+  position: relative;
   position: relative;
   z-index: 10; }
+  #about:after {
+    background-repeat: repeat-x;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff9c4%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+@keyframes slide-hoz {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes slide-vet {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
   #about h2 {
     text-align: center;
     color: #ffe082;
@@ -1878,27 +1929,88 @@ ul.nav {
     max-width: 400px; }
 
 /* ==========================================================================
+   	DOWNLOAD Styles
+   ========================================================================== */
+#download-sec {
+  padding: 6% 5% 0% 5%;
+  background-color: #ffe082;
+  position: relative; }
+  #download-sec:after {
+    background-repeat: repeat-x;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+@keyframes slide-hoz {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes slide-vet {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+  #download-sec h2 {
+    text-align: center;
+    color: #131B21;
+    margin: 3% auto 3% auto; }
+  #download-sec p {
+    font-size: 1.9rem;
+    line-height: 1.7;
+    text-align: left;
+    padding: 6% 8% 2% 8%;
+    font-weight: 500; }
+  #download-sec a.btn {
+    margin: 4% auto 8% auto;
+    font-size: 130%;
+    border: 2px solid black;
+    padding: 20px 15px 20px 15px;
+    background: transparent;
+    color: #131B21; }
+
+/* ==========================================================================
    	CHOOSE FONT Styles
    ========================================================================== */
 #choose-font {
   background-color: #fff9c4;
   padding: 5% 5% 5% 5%;
   text-align: left;
-  min-height: 60vh; }
-  #choose-font #font-h1 {
-    text-align: center;
-    padding: 50% auto; }
+  min-height: 60vh;
+  position: relative; }
+  #choose-font:after {
+    background-repeat: repeat-x;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff9c4%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+@keyframes slide-hoz {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes slide-vet {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+  #choose-font #font-h2 {
+    text-align: center; }
   #choose-font #font-row {
     text-align: left; }
-  #choose-font h1 {
-    height: 0;
-    font-family: "Muli", Helvetica, Arial, sans-serif;
-    color: #131B21;
-    margin: 0 0 7vmin 0;
-    line-height: 100%;
-    font-size: 8vmin; }
-  #choose-font h2 {
-    font-size: 150%; }
+  #choose-font p {
+    font-size: 1.9rem;
+    line-height: 1.7;
+    text-align: left;
+    font-weight: 500; }
   #choose-font #service-row {
     padding: 5% 0 5% 0; }
 
@@ -1914,8 +2026,8 @@ ul.nav {
 footer {
   height: 20vh;
   padding-top: 2%;
-  background: #131B21;
-  color: #FFF; }
+  height: 300px;
+  color: #ffe082; }
 
 /*********************
 SMALL
@@ -1954,6 +2066,32 @@ For slightly less small devices
   #about a.btn {
     margin: 4% auto 6% auto; }
 
+  /* ==========================================================================
+     	DOWNLOAD Styles
+     ========================================================================== */
+  #download-sec {
+    background-color: #ffe082;
+    position: relative; }
+    #download-sec:after {
+      background-repeat: repeat-x;
+      content: '';
+      position: absolute;
+      z-index: 10;
+      height: 15px;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+  @keyframes slide-hoz {
+    from {
+      width: 0; }
+    to {
+      width: 100%; } }
+  @keyframes slide-vet {
+    from {
+      height: 0; }
+    to {
+      height: 100%; } }
   /* ==========================================================================
      	WHAT WE DO Styles
      ========================================================================== */
@@ -2017,8 +2155,8 @@ For tablets and smaller laptops
     #top img {
       width: 600px; }
     #top a.btn:hover {
-      color: #131B21;
-      background: #ffe082; }
+      color: #ffe082;
+      background: #3949ab; }
 
   #mss-hero h1 {
     font-size: 6vmax;
@@ -2031,6 +2169,8 @@ For tablets and smaller laptops
   /* ==========================================================================
      	ABOUT Styles
      ========================================================================== */
+  #about #abt-row {
+    padding: 3% 5% 1% 5%; }
   #about h2 {
     margin: 3% auto 3.5% auto;
     font-size: 40px;
@@ -2040,13 +2180,43 @@ For tablets and smaller laptops
     margin: 0% auto 3.5% auto; }
     #about a.btn:hover {
       color: #131B21;
+      background: #ffe082; }
+
+  /* ==========================================================================
+     	DOWNLOAD Styles
+     ========================================================================== */
+  #download-sec {
+    background-color: #ffe082;
+    position: relative; }
+    #download-sec:after {
+      background-repeat: repeat-x;
+      content: '';
+      position: absolute;
+      z-index: 10;
+      height: 15px;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+  @keyframes slide-hoz {
+    from {
+      width: 0; }
+    to {
+      width: 100%; } }
+  @keyframes slide-vet {
+    from {
+      height: 0; }
+    to {
+      height: 100%; } }
+    #download-sec a.btn:hover {
+      color: #131B21;
       background: #fff9c4; }
 
   /* ==========================================================================
      	WHAT WE DO Styles
      ========================================================================== */
-  #choose-font h1 {
-    font-size: 6vmin; }
+  #choose-font h2 {
+    font-size: 5vmin; }
 
   /* ==========================================================================
      	FOOTER Styles
@@ -2082,13 +2252,15 @@ Adds resource intensive styles.
   /* ==========================================================================
      	ABOUT Styles
      ========================================================================== */
+  #about #abt-row {
+    padding: 3% 10% 1% 10%; }
   #about h2 {
     font-size: 45px; }
   #about a.btn {
     font-size: 130%; }
 
   /* ==========================================================================
-     	WHAT WE DO Styles
+     	STYLE Styles
      ========================================================================== */
   /* ==========================================================================
      	FOOTER Styles

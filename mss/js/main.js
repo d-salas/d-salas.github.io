@@ -21,7 +21,9 @@ $( document ).ready(function() {
 	    }
   	});
 
-
+	$("#menu-icon").click(function(){
+    	$(this).toggleClass("down"); 
+	});
 
 	// ("#my_image").attr("src", "first.jpg")
 

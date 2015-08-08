@@ -19,11 +19,25 @@ body {
 	// background-repeat: repeat;
 	// background-position: center top;
 	// background-size: 100%;
-	background: $light-yellow;
+	background: $lighter-yellow;
 }
 
 p {
 	line-height: 150%;
+}
+
+.zigzag {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.zigzag:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
 }
 
 /* ==========================================================================
@@ -53,6 +67,12 @@ a.navbar-brand, #mss-hero b {
 	margin-bottom: 0;
 	border-radius: 0;
 	z-index: 100000;
+}
+#menu-icon {
+	transition: all .2s linear;
+	&.down {
+		transform:rotate(180deg);
+	}
 }
 #navbar-menu {
 	float:right; 
@@ -104,7 +124,7 @@ ul.nav {
 .affix {
 	// It's weird on iOS Safari
 	@extend .z-depth-1;
-	@extend .indigo-text, .text-darken-1;
+	// @extend .indigo-text, .text-darken-1;
 	background: $white;
 	margin-top: 0;
 	border-bottom: 2px solid $black;
@@ -130,7 +150,7 @@ ul.nav {
 	// background-position: center top;
 	// background-size: 100%;
 	// @extend .red, .accent-1;
-	background: $light-yellow;
+	background: $lighter-yellow;
 	img {
 		position: relative;
 		z-index: 0;
@@ -195,18 +215,22 @@ ul.nav {
 	@extend .indigo, .darken-1;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	// @extend .amber-text, .text-lighten-3; 
-	color: $light-yellow;
+	color: $golden-yellow;
+	// @include jagged(#3949ab, 30, bottom);
+	// @include jagged(#3949ab, 30, top);
 }
 
 
 #about {
-	// padding: 5%;
-	background: $golden-yellow;
-	// @extend .yellow, .lighten-5;
+  	background-size: 20px 40px;
+	background: $light-yellow;
+	@include jagged($light-yellow, 30, bottom);
+	// @include jagged($golden-yellow, 30, bottom);
 
-	background-size: 100%;
 	position: relative;
 	z-index: 10;
+	
+
 	h2 {
 		text-align: center;
 		color: $golden-yellow;
@@ -239,36 +263,74 @@ ul.nav {
 }
 
 /* ==========================================================================
+   	DOWNLOAD Styles
+   ========================================================================== */
+
+#download-sec {
+	padding: 6% 5% 0% 5%;
+	background-color: $golden-yellow;
+	@include jagged($golden-yellow, 30, bottom);
+
+	h2 {
+		text-align: center;
+		color: $black;
+		// font-size: 120%;
+		margin: 3% auto 3% auto;
+	}
+	p {
+		font-size: 1.9rem;
+		line-height: 1.7;
+		// color:	$white;
+		text-align: left;
+		padding: 6% 8% 2% 8%;
+		font-weight: 500;
+		// letter-spacing: 1px;
+	}
+	a.btn {
+		margin: 4% auto 8% auto;
+		font-size: 130%;
+		border: 2px solid black;
+		padding: 20px 15px 20px 15px;
+		background: transparent;
+		color: $black;
+	}
+}
+
+/* ==========================================================================
    	CHOOSE FONT Styles
    ========================================================================== */
 
 #choose-font {
 	background-color: $light-yellow;
-	// @extend .indigo, .accent-1;
 	padding: 5% 5% 5% 5%;
 	text-align: left;
 	min-height: 60vh;
+	@include jagged($light-yellow, 30, bottom);
 
-	#font-h1 {
+	#font-h2 {
 		text-align: center;
-		padding: 50% auto;
 	}
 	#font-row {
 		text-align: left;
 	}
 
-	h1 {
-		height: 0;
-		font-family: $header-font;
-		color: $black;
-		margin: 0 0 7vmin 0;//-1vmin 0 7vmin 0;
-		// letter-spacing: 2vmin;
-		line-height: 100%;
-  		font-size: 8vmin;
-	}
+	// h1 {
+	// 	height: 0;
+	// 	font-family: $header-font;
+	// 	color: $black;
+	// 	margin: 0 0 7vmin 0;//-1vmin 0 7vmin 0;
+	// 	// letter-spacing: 2vmin;
+	// 	line-height: 100%;
+ //  		font-size: 8vmin;
+	// }
 	h2 {
-
-		font-size: 150%;
+		// font-size: 7vmin;
+	}
+	p {
+		font-size: 1.9rem;
+		line-height: 1.7;
+		text-align: left;
+		font-weight: 500;
 	}
 
 	#service-row {
@@ -293,8 +355,11 @@ ul.nav {
 footer {
 	height: 20vh;
 	padding-top: 2%;
-	background: $black;
-	color: $white;
+	height: 300px;
+	// background: $lighter-yellow;
+	// color: $black;
+	@extend .indigo, .darken-1;
+	color: $golden-yellow;
 }
 
 
