@@ -24,7 +24,8 @@ br {
 
 .purple-btn {
 	color: $golden-yellow;
-	background: #3A3961;//#512F54;//#3949ab;//$light-yellow;
+	background: $indigo-violet;//#512F54;//#3949ab;//$light-yellow;
+	border: 2px solid $indigo-violet;
 }
 a.btn {
 	transition: all 0.2s ease;
