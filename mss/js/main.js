@@ -2,6 +2,12 @@
 
 $( document ).ready(function() {
 
+	var letters = ['img/letter-1.png', 'img/letter-2.png', 'img/letter-3.png'];
+        var index = 0,
+        $img = $('#letter-img');
+
+    $('#letter-div').height($img.height());
+	
 	//// Affix the navbar ////
 	// $('#esp-nav').affix({
 	// 	offset: {
@@ -26,12 +32,6 @@ $( document ).ready(function() {
 	});
 
 	// ("#my_image").attr("src", "first.jpg")
-
-	var letters = ['img/letter-1.png', 'img/letter-2.png', 'img/letter-3.png'];
-        var index = 0,
-        $img = $('#letter-img');
-
-    $('#letter-div').height($img.height());
 
     function rotateImage()
 	{
