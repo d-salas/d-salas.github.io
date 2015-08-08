@@ -21,6 +21,16 @@ p {
 br {
 
 }
+a.btn {
+	transition: all 0.2s ease;
+	position: relative;
+	z-index: 1000;
+	i {
+	}
+	&:hover {
+		box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
 
 /* ==========================================================================
    	LOGO Styles
@@ -105,30 +115,27 @@ ul.nav {
 	img {
 		width: 600px;
 	}
+
+	a.btn {
+		&:hover {
+			// color: $white;
+			color: $black;
+			background: $golden-yellow;
+		}
+	}
 }
 
 #mss-hero {
 	h1 {
 		font-size: 6vmax;
 		padding-top: 9vh;
-		padding-bottom: 1vh;
+		padding-bottom: 0vh;
 	}
 	h2 {
-		padding-top: 1vh;
+		padding-top: 0vh;
 		font-size: 3vmax;
 	}
 	p, h1, h2, a, b {
-	}
-	a.btn {
-		transition: all 0.2s ease;
-		i {
-		}
-		&:hover {
-			color: $white;
-			background: $about-color;
-			// transition: box-shadow .2s;
-  			box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		}
 	}
 }
 
@@ -146,49 +153,28 @@ ul.nav {
 // 	background-position: center top;
 // 	background-size: cover;
 
-	.abt-us {
-
-		h1 {
-
-	  		&:after {
-
-	  		}
-		}
-		p {
-			margin-left: 5%;
-			margin-right: 5%;
+#about {
+	h2 {
+		margin: 3% auto 3.5% auto;
+		font-size: 40px;
+		font-family: $muli;
+		font-weight: 200;		
+	}
+	a.btn {
+		margin: 0% auto 3.5% auto;
+		&:hover {
+			color: $black;
+			background: $light-yellow;
 		}
 	}
-
-	#about-img-overlay {
-		min-height: 60vh;
-		background: rgba(4, 30, 60, 0.6);
-		h1 {
-
-		}
-		small {
-
-		}
+	p {
+		// font-size: 1.7rem;
+		// padding: 10% 0% 2% 15%;
+		// padding: 5% 0% 2% 15%;
 	}
+}
 
-	#statistics {
-		padding: 16vh 5%;
-		background: transparent;
-		h1 {
 
-		}
-		h4 {
-
-		}
-		.statistic {
-			&:after {
-	  		}
-		}
-	}
-
-	#tri-up {
-
-	}
 // }
 
 /* ==========================================================================

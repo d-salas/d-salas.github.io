@@ -23,6 +23,51 @@ $( document ).ready(function() {
 
 
 
+	// ("#my_image").attr("src", "first.jpg")
+
+	var letters = ['img/letter-1.png', 'img/letter-2.png', 'img/letter-3.png'];
+        var index = 0,
+        $img = $('#letter-img');
+
+    $('#letter-div').height($img.height());
+
+    function rotateImage()
+	{
+	  $img.fadeOut('fast', function()
+	  {
+	    $(this).attr('src', letters[index]);
+
+	    $(this).fadeIn('fast', function()
+	    {
+	      if (index === letters.length-1)
+	      {
+	        index = 0;
+	      }
+	      else
+	      {
+	        index++;
+	      }
+	    });
+	  });
+	}
+	
+	setInterval (rotateImage, 2500);
+
+	// for the window resize
+	$(window).resize(function() {
+	    $('#letter-div').height($img.height());
+	});
+
+    
+    // setInterval(function ()
+    // {
+    //     $div.fadeOut(function ()
+    //     {
+    //         $div.attr("src", letters[i]);
+
+    //     });
+    // }, 1500);
+
 
 
 	// var overlayheight = $("overlay").height();

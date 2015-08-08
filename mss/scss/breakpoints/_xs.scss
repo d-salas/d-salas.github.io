@@ -15,10 +15,11 @@ html, body {
     overflow-x: hidden;
 }
 body {
-	background-image: url('../img/paper_fibers.png');
-	background-repeat: repeat;
-	background-position: center top;
-	background-size: 100%;
+	// background-image: url('../img/paper_fibers.png');
+	// background-repeat: repeat;
+	// background-position: center top;
+	// background-size: 100%;
+	background: $light-yellow;
 }
 
 p {
@@ -51,7 +52,7 @@ a.navbar-brand, #mss-hero b {
 	margin-top: 0px;
 	margin-bottom: 0;
 	border-radius: 0;
-	z-index: 100;
+	z-index: 100000;
 }
 #navbar-menu {
 	float:right; 
@@ -84,7 +85,7 @@ ul.nav {
 	// @extend .blue, .darken-4;
 	background: $white;
 	margin-top: 0;
-	// border-bottom: 1px solid $black;
+	border-bottom: 2px solid $black;
 	a {
 		color: $black;
 	}
@@ -103,18 +104,18 @@ ul.nav {
 .affix {
 	// It's weird on iOS Safari
 	@extend .z-depth-1;
-	// @extend .blue, .darken-4;
+	@extend .indigo-text, .text-darken-1;
 	background: $white;
 	margin-top: 0;
-	// border-bottom: 1px solid $black;
+	border-bottom: 2px solid $black;
 	a {
-		color: $gold;
+		color: $golden-yellow;
 	}
 	// .navbar-nav li {
 	// 	color: $black;
 	// }
 	.hvr-underline-reveal:before {
-		background: $gold;
+		background: $golden-yellow;
 	}
 }
 
@@ -124,25 +125,28 @@ ul.nav {
 
 #top {
 	// @include full-screen;
-	background-image: url('../img/paper_fibers.png');
-	background-repeat: repeat;
-	background-position: center top;
-	background-size: 100%;
-	// box-shadow: inset 0px 40px 200px -51px darken($top-color2, 20%);
+	// background-image: url('../img/paper_fibers.png');
+	// background-repeat: repeat;
+	// background-position: center top;
+	// background-size: 100%;
+	// @extend .red, .accent-1;
+	background: $light-yellow;
 	img {
-		width: 95vw;
+		position: relative;
+		z-index: 0;
+		width: 90vw;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	}
 }
 #mss-hero {
 	// @include full-screen;
 	text-align: center;
-	
 	h1 {
 		font-size: 7.5vmax;
 		font-family: $top-font;
 		font-weight: 300;
 		letter-spacing: 3px;
-		padding-top: 8vh;
+		padding-top: 60px;
 		padding-bottom: 0;
 	}
 	h2 {
@@ -186,57 +190,101 @@ ul.nav {
    	GETTING THERE Styles
    ========================================================================== */
 
-#about {
-	padding: 5%;
-	background: $about-color;
+#text-box {
+	// background: $dark-blue;
+	@extend .indigo, .darken-1;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	// @extend .amber-text, .text-lighten-3; 
+	color: $light-yellow;
+}
 
-	h1 {
-		
-	}
+
+#about {
+	// padding: 5%;
+	background: $golden-yellow;
+	// @extend .yellow, .lighten-5;
+
+	background-size: 100%;
+	position: relative;
+	z-index: 10;
 	h2 {
 		text-align: center;
-		// color: $white;
-		color: $gold;
+		color: $golden-yellow;
+		font-size: 120%;
+		margin: 3% auto 3% auto;
 	}
 	p {
-		font-size: 1.6rem;
+		font-size: 1.9rem;
 		line-height: 1.7;
-		color:	$white;
+		// color:	$white;
 		text-align: left;
-		padding: 5% 5% 2% 5%;
-		font-weight: 100;
+		padding: 6% 8% 2% 8%;
+		font-weight: 500;
 		// letter-spacing: 1px;
+	}
+	a.btn {
+		margin: 4% auto 8% auto;
+		font-size: 130%;
+		border: 2px solid black;
+		padding: 20px 15px 20px 15px;
+		background: transparent;
+		color: $black;
+	}
+
+	img {
+		width: 100%;
+		margin: auto;
+		max-width: 400px;
 	}
 }
 
 /* ==========================================================================
-   	WHAT WE DO Styles
+   	CHOOSE FONT Styles
    ========================================================================== */
 
 #choose-font {
-	background-color: white;
+	background-color: $light-yellow;
+	// @extend .indigo, .accent-1;
 	padding: 5% 5% 5% 5%;
 	text-align: left;
 	min-height: 60vh;
 
-	#service-row, #wwd-h1 {
+	#font-h1 {
 		text-align: center;
+		padding: 50% auto;
+	}
+	#font-row {
+		text-align: left;
 	}
 
 	h1 {
 		height: 0;
 		font-family: $header-font;
-		color: $white;
+		color: $black;
 		margin: 0 0 7vmin 0;//-1vmin 0 7vmin 0;
 		// letter-spacing: 2vmin;
 		line-height: 100%;
   		font-size: 8vmin;
+	}
+	h2 {
+
+		font-size: 150%;
 	}
 
 	#service-row {
 		padding: 5% 0 5% 0;
 	}
 }
+
+/* ==========================================================================
+   	ACKNOWLEDGMENT Styles
+   ========================================================================== */
+
+#choose-ack {
+	background: $golden-yellow;
+}
+
+
 
 /* ==========================================================================
    	FOOTER Styles

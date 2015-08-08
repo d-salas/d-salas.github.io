@@ -87,8 +87,10 @@ ul.nav {
    ========================================================================== */
 
 #top {
+	// min-height: 100vh;
 	img {
 		width: 500px;
+		margin: auto;
 	}
 }
 #mss-hero {
@@ -122,46 +124,25 @@ ul.nav {
    	ABOUT Styles
    ========================================================================== */
 
-// #about {
-
-	.abt-us {
-
-		h1 {
-
-	  		&:after {
-
-	  		}
-		}
-		p {
-			
-		}
+#about {
+	h2 {
+		font-size: 5vw;
+		font-weight: 300;
+		margin: 3% auto 4% auto;
 	}
-
-	#about-img-overlay {
-		h1 {
-
-		}
-		small {
-
-		}
+	p {
+		// padding: 5% 0% 2% 15%;
 	}
-
-	#statistics {
-
-		h1 {
-
-		}
-		h4 {
-
-		}
-		.statistic {
-			&:after {
-	  		}
-		}
+	a.btn {
+		margin: 4% auto 6% auto;
 	}
-
-	#tri-up {
+	img {
+		// margin: 0 5% 0 0;
 	}
+}
+
+
+
 // }
 
 /* ==========================================================================
