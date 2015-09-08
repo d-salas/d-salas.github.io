@@ -410,7 +410,7 @@ ul.nav {
    	CHOOSE FONT Styles
    ========================================================================== */
 
-#choose-font {
+#customize {
 	background-color: $light-yellow;
 	padding: 3% 3% 5% 3%;
 	@include jagged($light-yellow, 30, bottom);
@@ -439,11 +439,12 @@ ul.nav {
 				border-top: 2px dotted $golden-yellow;
 				margin-bottom: 30px;
 			}
-			#fonts, #washes {
-			}
-			#washes {
-				padding-top: 15px;
-			}
+		}
+		.col-sm-6 {
+			text-align: center;
+		}
+		button {
+			margin-bottom: 15px;
 		}
 	}
 

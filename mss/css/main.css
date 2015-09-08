@@ -2090,11 +2090,11 @@ ul.nav {
 /* ==========================================================================
    	CHOOSE FONT Styles
    ========================================================================== */
-#choose-font {
+#customize {
   background-color: #fff9c4;
   padding: 3% 3% 5% 3%;
   position: relative; }
-  #choose-font:after {
+  #customize:after {
     background-repeat: repeat-x;
     content: '';
     position: absolute;
@@ -2114,36 +2114,38 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
-  #choose-font h2 {
+  #customize h2 {
     text-align: center;
     font-size: 4rem;
     margin: 3% 0; }
-  #choose-font #sample-text {
+  #customize #sample-text {
     margin: 0% auto 0 auto; }
-    #choose-font #sample-text .panel {
+    #customize #sample-text .panel {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       border-radius: 0;
       padding: 2%; }
-      #choose-font #sample-text .panel .panel-body {
+      #customize #sample-text .panel .panel-body {
         padding: 5%; }
-      #choose-font #sample-text .panel p {
+      #customize #sample-text .panel p {
         font-size: 2rem;
         line-height: 120%; }
-      #choose-font #sample-text .panel hr {
+      #customize #sample-text .panel hr {
         border-top: 2px dotted #ffe082;
         margin-bottom: 30px; }
-      #choose-font #sample-text .panel #washes {
-        padding-top: 15px; }
-  #choose-font p {
+    #customize #sample-text .col-sm-6 {
+      text-align: center; }
+    #customize #sample-text button {
+      margin-bottom: 15px; }
+  #customize p {
     font-size: 1.9rem;
     line-height: 1.7;
     font-weight: 500; }
-  #choose-font ul {
+  #customize ul {
     padding: 0;
     margin: 0;
     font-size: 1.7rem;
     list-style-type: none; }
-  #choose-font a.btn {
+  #customize a.btn {
     margin: 4% auto 0% auto;
     font-size: 130%;
     border: 2px solid black;
@@ -2268,7 +2270,7 @@ For tablets and smaller laptops
   /* ==========================================================================
      	GENERAL Styles
      ========================================================================== */
-  .purple-btn, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download-sec a.btn:hover, #choose-font a.btn:hover {
+  .purple-btn, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download-sec a.btn:hover, #customize a.btn:hover {
     color: #ffe082;
     background: #3A3961;
     border: 2px solid #3A3961; }
@@ -2416,13 +2418,15 @@ For tablets and smaller laptops
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
-  #choose-font h2 {
-    font-size: 4rem; }
-  #choose-font #font-row {
-    padding: 3% 8% 0 8%; }
-  #choose-font #sample-text .panel #fonts, #choose-font #sample-text .panel #washes {
+  #customize #sample-text .col-sm-6 {
     text-align: left; }
-  #choose-font #sample-text .panel #washes {
+  #customize h2 {
+    font-size: 4rem; }
+  #customize #font-row {
+    padding: 3% 8% 0 8%; }
+  #customize #sample-text .panel #fonts, #customize #sample-text .panel #washes {
+    text-align: left; }
+  #customize #sample-text .panel #washes {
     padding-top: 0; }
 
   /* ==========================================================================

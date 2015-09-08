@@ -288,8 +288,11 @@ ul.nav {
    	CUSTOMIZE Styles
    ========================================================================== */
 
-#choose-font {
-	#service-row, #wwd-h1 {
+#customize {
+	#sample-text {
+		.col-sm-6 {
+			text-align: left;
+		}
 	}
 
 	h2 {
