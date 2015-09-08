@@ -89,7 +89,7 @@ ul.nav {
 #top {
 	// min-height: 100vh;
 	img {
-		width: 500px;
+		// width: 500px;
 		margin: auto;
 	}
 }
@@ -99,7 +99,8 @@ ul.nav {
 	}
 
 	h1 {
-		
+		padding-top: 65px;
+		padding-bottom: 15px;
 	}
 	h2 {
 		font-weight: 300;
@@ -114,6 +115,11 @@ ul.nav {
 
 		}
 	}
+	#mss-logo {
+		img {
+			// margin-bottom: 200px;
+		}
+	}
 }
 
 #mss-hero b, #mss-hero h1 {
@@ -125,19 +131,70 @@ ul.nav {
    ========================================================================== */
 
 #about {
-	h2 {
-		font-size: 5vw;
-		font-weight: 300;
-		margin: 3% auto 4% auto;
+	#text-box {
+		h2 {
+			text-align: center;
+			color: $golden-yellow;
+			// font-size: 1.8rem;
+			margin: 3% auto 3% auto;
+			font-size: 4vw;
+			font-weight: 300;
+			margin: 3% auto 4% auto;
+		}
+	}
+	#abt-row {
+
+		h2 {
+			color: $black;
+			font-size: 4rem;
+		}
 	}
 	p {
-		// padding: 5% 0% 2% 15%;
+		font-size: 1.6rem;
+		padding: 0% 10% 0% 10%;
 	}
 	a.btn {
 		margin: 4% auto 6% auto;
 	}
 	img {
 		// margin: 0 5% 0 0;
+	}
+}
+
+/* ==========================================================================
+   	HOWITWORKS Styles
+   ========================================================================== */
+
+#how-it-works {
+	h2 {
+		// color: $black;
+		font-size: 4rem;
+		// margin: 3% auto;
+	}
+	#how-top {
+		p {
+			font-size: 1.6rem;
+		}
+	}
+	a.btn {
+		margin: 4% auto 3% auto;
+	}
+}
+
+/* ==========================================================================
+   	SIGNUP Styles
+   ========================================================================== */
+
+#sign-up {
+
+	h2 {
+
+	}
+	a.btn {
+
+	}
+	p {
+
 	}
 }
 
@@ -161,7 +218,7 @@ ul.nav {
 }
 
 /* ==========================================================================
-   	WHAT WE DO Styles
+   	CUSTOMIZE Styles
    ========================================================================== */
 
 #choose-font {

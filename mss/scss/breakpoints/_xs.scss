@@ -13,17 +13,28 @@ X-tra small screens. Like iPhones.
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    // 
+}
+html {
+	font-size: 62.5%;
 }
 body {
 	// background-image: url('../img/paper_fibers.png');
 	// background-repeat: repeat;
 	// background-position: center top;
 	// background-size: 100%;
+	font-size: 1.4rem;
 	background: $lighter-yellow;
 }
 
 p {
 	line-height: 150%;
+}
+h1 {
+	font-size: 2.4rem;
+}
+h2 {
+	font-family: $top-font;
 }
 
 .zigzag {
@@ -39,6 +50,21 @@ p {
   width: 100%;
   height: 10px;
 }
+.divider {
+	height: 35px;
+    width: 50px;
+    margin: 0px auto;
+    background: url(../img/divider.png) no-repeat scroll center transparent;
+    margin-bottom: 3%;
+}
+
+.transparent-button {
+	font-size: 130%;
+	border: 2px solid black;
+	padding: 20px 15px 20px 15px;
+	background: transparent;
+	color: $black;
+}
 
 /* ==========================================================================
    	LOGO Styles
@@ -49,6 +75,10 @@ a.navbar-brand {
 	z-index: 100;
 	// line-height: 100%;
 	padding-top: 16px;
+	img {
+		// height: 40px;
+		// display: inline;
+	}
 }
 a.navbar-brand, #mss-hero b {
 	font-family: $top-font;
@@ -102,7 +132,7 @@ ul.nav {
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 1.6rem;
-	padding: 15px 3vw 4px 3vw;
+	padding: 15px 2vw 4px 2vw;
 	letter-spacing: 1px;
 }
 .navbar-toggle {
@@ -144,14 +174,14 @@ ul.nav {
 	a {
 		color: $black;
 		&.navbar-brand {
-			color: $golden-yellow;
+			color: $indigo-violet;
 		}
 	}
 	// .navbar-nav li {
 	// 	color: $black;
 	// }
 	.hvr-underline-reveal:before {
-		background: $golden-yellow;
+		background: $black;
 	}
 }
 
@@ -161,16 +191,17 @@ ul.nav {
 
 #top {
 	// @include full-screen;
-	// background-image: url('../img/paper_fibers.png');
+
+	// background-image: url('../img/desk.jpeg');
 	// background-repeat: repeat;
 	// background-position: center top;
 	// background-size: 100%;
 	// @extend .red, .accent-1;
-	background: $lighter-yellow;
-	img {
+	// background: $lighter-yellow;
+	#letter-div>img {
 		position: relative;
 		z-index: 0;
-		width: 90vw;
+		// width: 90vw;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	}
 }
@@ -187,7 +218,7 @@ ul.nav {
 	}
 	h2 {
 		font-weight: 400;
-		font-size: 3vmax;
+		// font-size: 3vmax;
 		padding: 0vh 8% 0 8%;
 	}
 	p, h1, h2, a {
@@ -202,7 +233,7 @@ ul.nav {
 		height: 85px;
 		min-width: 130px;
 		max-width: 150px;
-		margin: 2vh auto 4vh auto;
+		margin: 2vh auto 5vh auto;
 		border: 2px solid black;
 		padding: 20px 15px 0px 15px;
 		background: transparent;
@@ -218,80 +249,142 @@ ul.nav {
 	#letter-div {
 		min-height: 200px;
 	}
+	#mss-logo-top {
+		// height: 10vh;
+		text-align: center;
+		// margin-top: 80px;
+		height: 30vh;
+		img {
+			width: auto;
+			height: 100%;
+			margin: 0 auto;
+		}
+	}
 }
 
 /* ==========================================================================
-   	GETTING THERE Styles
+   	ABOUT Styles
    ========================================================================== */
 
 #text-box {
 	background: $indigo-violet;
-	// @extend .indigo, .darken-3;
-	// @extend .deep-purple, .darken-3;
-	// @extend .blue, .darken-3;
-
-	// box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-	// @extend .amber-text, .text-lighten-3; 
 	color: $golden-yellow;
-	// @include jagged(#3949ab, 30, bottom);
-	// @include jagged(#3949ab, 30, top);
 }
 
 
 #about {
   	background-size: 20px 40px;
 	background: $light-yellow;
-	@include jagged($light-yellow, 30, bottom);
-	// @include jagged($golden-yellow, 30, bottom);
-
 	position: relative;
 	z-index: 10;
+	@include jagged($light-yellow, 30, bottom);
 	
-
-	h2 {
-		text-align: center;
-		color: $golden-yellow;
-		font-size: 120%;
-		margin: 3% auto 3% auto;
+	#text-box {
+		h2 {
+			text-align: center;
+			color: $golden-yellow;
+			font-size: 2.0rem;
+			margin: 3% auto 3% auto;
+		}
+	}
+	#abt-row {
+		padding: 3% 0 3% 0;
+		h2 {
+			color: $black;
+			font-size: 4rem;
+			margin: 3% auto;
+		}
 	}
 	p {
-		font-size: 1.9rem;
+		font-size: 1.5rem;
 		line-height: 1.7;
-		// color:	$white;
 		text-align: left;
-		padding: 6% 8% 2% 8%;
+		padding: 0% 11% 0% 11%;
 		font-weight: 500;
 		// letter-spacing: 1px;
 	}
 	a.btn {
-		margin: 4% auto 8% auto;
-		font-size: 130%;
-		border: 2px solid black;
-		padding: 20px 15px 20px 15px;
-		background: transparent;
-		color: $black;
+		margin: 4% auto 6% auto;
+		@extend .transparent-button;
 	}
 
 	img {
-		width: 100%;
+		width: 70%;
 		margin: auto;
-		max-width: 400px;
 	}
 }
+
+/* ==========================================================================
+   	HOW IT WORKS Styles
+   ========================================================================== */
+
+#how-it-works {
+	padding: 6% 3% 5% 3%;
+	text-align: center;
+	background-color: $golden-yellow;
+	@include jagged($golden-yellow, 30, bottom);
+	h2 {
+		color: $black;
+		font-size: 4rem;
+		margin: 3% auto;
+	}
+	.col-xs-12 {
+		margin: 15px 0 15px 0;
+	}
+
+	#how-top {
+		p {
+			padding: 0 5% 0 5%;
+			font-size: 1.5rem;
+			text-align: left;
+		}
+	}
+	a.btn {
+		margin: 5% auto 5% auto;
+		@extend .transparent-button;
+	}
+}
+
+
+/* ==========================================================================
+   	SIGNUP Styles
+   ========================================================================== */
+
+#sign-up {
+	padding: 6% 3% 5% 3%;
+	background-color: $light-yellow;
+	// min-height: 60vh;
+	@include jagged($light-yellow, 30, bottom);
+	h2 {
+		color: $black;
+		font-size: 4rem;
+		margin: 3% auto;
+	}
+	p {
+		margin: 0 5%;
+		font-size: 1.9rem;
+		line-height: 1.7;
+	}
+	a.btn {
+		margin: 3% auto 2% auto;
+		@extend .transparent-button;
+	}
+}
+
 
 /* ==========================================================================
    	DOWNLOAD Styles
    ========================================================================== */
 
 #download-sec {
-	padding: 5% 5% 0% 5%;
+	padding: 6% 3% 5% 3%;
 	background-color: $golden-yellow;
 	@include jagged($golden-yellow, 30, bottom);
 
 	h2 {
 		text-align: center;
 		color: $black;
-		// font-size: 120%;
+		font-size: 4rem;
 		margin: 3% auto 3% auto;
 	}
 	p {
@@ -299,12 +392,12 @@ ul.nav {
 		line-height: 1.7;
 		// color:	$white;
 		text-align: left;
-		padding: 6% 8% 2% 8%;
+		padding: 1% 8% 0% 8%;
 		font-weight: 500;
 		// letter-spacing: 1px;
 	}
 	a.btn {
-		margin: 4% auto 8% auto;
+		margin: 4% auto 2% auto;
 		font-size: 130%;
 		border: 2px solid black;
 		padding: 20px 15px 20px 15px;
@@ -319,43 +412,34 @@ ul.nav {
 
 #choose-font {
 	background-color: $light-yellow;
-	padding: 5%;
-	// text-align: left;
-	min-height: 60vh;
+	padding: 3% 3% 5% 3%;
 	@include jagged($light-yellow, 30, bottom);
 
-	#font-h2 {
+	h2 {
 		text-align: center;
-	}
-	#font-row {
-		text-align: left;
-		padding-bottom: 2%;
+		font-size: 4rem;
+		margin: 3% 0;
 	}
 		
 	#sample-text {
-		margin: 3% auto 0 auto;
+		margin: 0% auto 0 auto;
 		.panel {
 			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 			border-radius: 0;
 			padding: 2%;
 			.panel-body {
 				padding: 5%;
-				border: 8px solid $golden-yellow;
+				// border: 8px solid $golden-yellow;
 			}
 			p {
 				font-size: 2rem;
 				line-height: 120%;
-				// padding: 5%;
-				// margin: 0;
-				// border: 8px solid $golden-yellow;
 			}
 			hr {
 				border-top: 2px dotted $golden-yellow;
 				margin-bottom: 30px;
 			}
 			#fonts, #washes {
-				// padding-top: 15px;
-				text-align: center;
 			}
 			#washes {
 				padding-top: 15px;
@@ -363,9 +447,6 @@ ul.nav {
 		}
 	}
 
-	h2 {
-		// font-size: 7vmin;
-	}
 	p {
 		font-size: 1.9rem;
 		line-height: 1.7;
@@ -391,14 +472,6 @@ ul.nav {
 	}
 }
 
-/* ==========================================================================
-   	ACKNOWLEDGMENT Styles
-   ========================================================================== */
-
-#choose-ack {
-	background: $golden-yellow;
-	padding: 5%;
-}
 
 
 

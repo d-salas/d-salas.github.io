@@ -10,7 +10,7 @@ $( document ).ready(function() {
 	
 	//// Affix the navbar ////
 	// $('#esp-nav').affix({
-	// 	offset: {
+	// 	offset: {le
 	// 		top: 10
 	// 	}
 	// });
@@ -58,6 +58,17 @@ $( document ).ready(function() {
 	// for the window resize
 	$(window).resize(function() {
 	    $('#letter-div').height($img.height());
+	});
+
+
+	$("#select1").change(function() {
+	    if(typeof $(this).data('options') === "undefined"){
+	        /*Taking an array of all options-2 and kind of embedding it on the select1*/
+	        $(this).data('options', $('#select2 option').clone());
+	    }
+	    var id = $(this).val();
+	    var options = $(this).data('options').filter('[value=' + id + ']');
+	    $('#select2').html(options);
 	});
 
     

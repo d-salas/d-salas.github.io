@@ -55,6 +55,7 @@ a.navbar-brand, #mss-hero b {
 
 .navbar {
 	margin-top: 25px;
+	padding: 0 3vw 0 3vw;
 	transition: all 0.3s ease;
 }
 #navbar-menu {
@@ -119,14 +120,15 @@ ul.nav {
 #top {
 	background-attachment: fixed;
 	img {
-		width: 600px;
+		// width: 600px;
 	}
 
 	a.btn {
 		&:hover {
 			// color: $white;
+			border: 2px solid $indigo-violet;
 			color: $golden-yellow;
-			background: #3A3961;//#512F54;//#3949ab;//$light-yellow;
+			background: $indigo-violet;//#512F54;//#3949ab;//$light-yellow;
 		}
 	}
 }
@@ -134,15 +136,23 @@ ul.nav {
 #mss-hero {
 	h1 {
 		font-size: 6vmax;
-		padding-top: 9vh;
-		padding-bottom: 0vh;
+		padding-top: 70px;
+		padding-bottom: 30px;
 	}
 	h2 {
-		padding-top: 0vh;
-		font-size: 3vmax;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		font-size: 3.5rem;
+		max-width: 70vw;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	p, h1, h2, a, b {
 	}
+	#mss-logo {
+		height: 40vh;
+	}
+
 }
 
 #mss-hero b, #mss-hero h1 {
@@ -160,29 +170,91 @@ ul.nav {
 // 	background-size: cover;
 
 #about {
+	#letter-div {
+		height: 100%;
+		// width: 100%;
+		vertical-align: middle;
+		img {
+		padding-top: 20%;
+		width: 100%;
+	}
+	}
+	// h2 {
+	// 	margin: 3% auto 3% auto;
+	// 	font-size: 2rem;
+	// 	font-weight: 200;		
+	// }
+	#text-box {
+		h2 {
+			font-size: 4.5vw;
+		}
+	}
 	#abt-row {
-		padding: 3% 5% 1% 5%;
+		padding: 3% 10% 3% 10%;
+		h2 {
+			// color: $black;
+			// font-size: 4rem;
+			// margin: 3% auto;
+		}
 	}
-	img {
-		// padding-top: 20%;
-	}
-	h2 {
-		margin: 3% auto 3.5% auto;
-		font-size: 40px;
-		font-family: $muli;
-		font-weight: 200;		
+	p {
+		max-width: 70vw;
+		font-size: 1.7rem;
+		// padding: 0% 8% 0% 8%;
 	}
 	a.btn {
-		margin: 0% auto 3.5% auto;
+		margin: 4% auto 3.5% auto;
 		&:hover {
 			// color: $black;
 			// background: $golden-yellow;
 			@extend .purple-btn;
 		}
 	}
+}
+
+
+/* ==========================================================================
+   	HOWITWORKS Styles
+   ========================================================================== */
+
+#how-it-works {
+	padding: 3% 3% 3% 3%;
+	#how-top {
+		p {
+			font-size: 1.7rem;
+			max-width: 70vw;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	#how-icon-row {
+		margin: 2.4% 0 1% 0;
+	}
+	a.btn {
+		margin: 3% auto 3% auto;
+		&:hover {
+			@extend .purple-btn;
+		}
+	}
+}
+
+/* ==========================================================================
+   	SIGNUP Styles
+   ========================================================================== */
+
+#sign-up {
+	h2 {
+		font-size: 4rem;
+	}
 	p {
-		// font-size: 1.7rem;
-		padding: 2% 8% 2% 8%;
+		max-width: 70vw;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	a.btn {
+		&:hover {
+			@extend .purple-btn;
+		}
 	}
 }
 
@@ -199,19 +271,21 @@ ul.nav {
 	}
 	p {
 		text-align: center;
-		padding: 6% 4% 2% 4%;
+		// padding: 1% 4% 1% 4%;
+		padding: 1% 0% 0% 0%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 70vw;
 	}
 	a.btn {
 		&:hover {
-			// color: $black;
-			// background: $light-yellow;
 			@extend .purple-btn;
 		}
 	}
 }
 
 /* ==========================================================================
-   	CHOOSE STYLE Styles
+   	CUSTOMIZE Styles
    ========================================================================== */
 
 #choose-font {
@@ -219,7 +293,7 @@ ul.nav {
 	}
 
 	h2 {
-		font-size: 5vmin;
+		font-size: 4rem;
 	}
 
 	#font-row {

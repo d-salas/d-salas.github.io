@@ -1730,11 +1730,21 @@ html, body {
   max-width: 100%;
   overflow-x: hidden; }
 
+html {
+  font-size: 62.5%; }
+
 body {
+  font-size: 1.4rem;
   background: #fffde7; }
 
 p {
   line-height: 150%; }
+
+h1 {
+  font-size: 2.4rem; }
+
+h2 {
+  font-family: "Ovo", Cambria, Times New Roman, Times, serif; }
 
 .zigzag {
   position: relative;
@@ -1748,6 +1758,20 @@ p {
   top: -10px;
   width: 100%;
   height: 10px; }
+
+.divider {
+  height: 35px;
+  width: 50px;
+  margin: 0px auto;
+  background: url(../img/divider.png) no-repeat scroll center transparent;
+  margin-bottom: 3%; }
+
+.transparent-button, #about a.btn, #how-it-works a.btn, #sign-up a.btn {
+  font-size: 130%;
+  border: 2px solid black;
+  padding: 20px 15px 20px 15px;
+  background: transparent;
+  color: #131B21; }
 
 /* ==========================================================================
    	LOGO Styles
@@ -1797,7 +1821,7 @@ ul.nav {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.6rem;
-  padding: 15px 3vw 4px 3vw;
+  padding: 15px 2vw 4px 2vw;
   letter-spacing: 1px; }
 
 .navbar-toggle {
@@ -1830,20 +1854,17 @@ ul.nav {
   .affix a {
     color: #131B21; }
     .affix a.navbar-brand {
-      color: #ffe082; }
+      color: #3A3961; }
   .affix .hvr-underline-reveal:before {
-    background: #ffe082; }
+    background: #131B21; }
 
 /* ==========================================================================
    	TOP Styles
    ========================================================================== */
-#top {
-  background: #fffde7; }
-  #top img {
-    position: relative;
-    z-index: 0;
-    width: 90vw;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+#top #letter-div > img {
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 #mss-hero {
   text-align: center; }
@@ -1856,7 +1877,6 @@ ul.nav {
     padding-bottom: 0; }
   #mss-hero h2 {
     font-weight: 400;
-    font-size: 3vmax;
     padding: 0vh 8% 0 8%; }
   #mss-hero p, #mss-hero h1, #mss-hero h2, #mss-hero a {
     color: #131B21; }
@@ -1869,7 +1889,7 @@ ul.nav {
     height: 85px;
     min-width: 130px;
     max-width: 150px;
-    margin: 2vh auto 4vh auto;
+    margin: 2vh auto 5vh auto;
     border: 2px solid black;
     padding: 20px 15px 0px 15px;
     background: transparent;
@@ -1878,9 +1898,16 @@ ul.nav {
       font-size: 3rem; }
   #mss-hero #letter-div {
     min-height: 200px; }
+  #mss-hero #mss-logo-top {
+    text-align: center;
+    height: 30vh; }
+    #mss-hero #mss-logo-top img {
+      width: auto;
+      height: 100%;
+      margin: 0 auto; }
 
 /* ==========================================================================
-   	GETTING THERE Styles
+   	ABOUT Styles
    ========================================================================== */
 #text-box {
   background: #3A3961;
@@ -1890,8 +1917,8 @@ ul.nav {
   background-size: 20px 40px;
   background: #fff9c4;
   position: relative;
-  position: relative;
-  z-index: 10; }
+  z-index: 10;
+  position: relative; }
   #about:after {
     background-repeat: repeat-x;
     content: '';
@@ -1912,34 +1939,113 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
-  #about h2 {
+  #about #text-box h2 {
     text-align: center;
     color: #ffe082;
-    font-size: 120%;
+    font-size: 2.0rem;
     margin: 3% auto 3% auto; }
+  #about #abt-row {
+    padding: 3% 0 3% 0; }
+    #about #abt-row h2 {
+      color: #131B21;
+      font-size: 4rem;
+      margin: 3% auto; }
   #about p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     line-height: 1.7;
     text-align: left;
-    padding: 6% 8% 2% 8%;
+    padding: 0% 11% 0% 11%;
     font-weight: 500; }
   #about a.btn {
-    margin: 4% auto 8% auto;
-    font-size: 130%;
-    border: 2px solid black;
-    padding: 20px 15px 20px 15px;
-    background: transparent;
-    color: #131B21; }
+    margin: 4% auto 6% auto; }
   #about img {
-    width: 100%;
-    margin: auto;
-    max-width: 400px; }
+    width: 70%;
+    margin: auto; }
+
+/* ==========================================================================
+   	HOW IT WORKS Styles
+   ========================================================================== */
+#how-it-works {
+  padding: 6% 3% 5% 3%;
+  text-align: center;
+  background-color: #ffe082;
+  position: relative; }
+  #how-it-works:after {
+    background-repeat: repeat-x;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+@keyframes slide-hoz {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes slide-vet {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+  #how-it-works h2 {
+    color: #131B21;
+    font-size: 4rem;
+    margin: 3% auto; }
+  #how-it-works .col-xs-12 {
+    margin: 15px 0 15px 0; }
+  #how-it-works #how-top p {
+    padding: 0 5% 0 5%;
+    font-size: 1.5rem;
+    text-align: left; }
+  #how-it-works a.btn {
+    margin: 5% auto 5% auto; }
+
+/* ==========================================================================
+   	SIGNUP Styles
+   ========================================================================== */
+#sign-up {
+  padding: 6% 3% 5% 3%;
+  background-color: #fff9c4;
+  position: relative; }
+  #sign-up:after {
+    background-repeat: repeat-x;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff9c4%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+@keyframes slide-hoz {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes slide-vet {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+  #sign-up h2 {
+    color: #131B21;
+    font-size: 4rem;
+    margin: 3% auto; }
+  #sign-up p {
+    margin: 0 5%;
+    font-size: 1.9rem;
+    line-height: 1.7; }
+  #sign-up a.btn {
+    margin: 3% auto 2% auto; }
 
 /* ==========================================================================
    	DOWNLOAD Styles
    ========================================================================== */
 #download-sec {
-  padding: 5% 5% 0% 5%;
+  padding: 6% 3% 5% 3%;
   background-color: #ffe082;
   position: relative; }
   #download-sec:after {
@@ -1965,15 +2071,16 @@ ul.nav {
   #download-sec h2 {
     text-align: center;
     color: #131B21;
+    font-size: 4rem;
     margin: 3% auto 3% auto; }
   #download-sec p {
     font-size: 1.9rem;
     line-height: 1.7;
     text-align: left;
-    padding: 6% 8% 2% 8%;
+    padding: 1% 8% 0% 8%;
     font-weight: 500; }
   #download-sec a.btn {
-    margin: 4% auto 8% auto;
+    margin: 4% auto 2% auto;
     font-size: 130%;
     border: 2px solid black;
     padding: 20px 15px 20px 15px;
@@ -1985,8 +2092,7 @@ ul.nav {
    ========================================================================== */
 #choose-font {
   background-color: #fff9c4;
-  padding: 5%;
-  min-height: 60vh;
+  padding: 3% 3% 5% 3%;
   position: relative; }
   #choose-font:after {
     background-repeat: repeat-x;
@@ -2008,28 +2114,24 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
-  #choose-font #font-h2 {
-    text-align: center; }
-  #choose-font #font-row {
-    text-align: left;
-    padding-bottom: 2%; }
+  #choose-font h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 3% 0; }
   #choose-font #sample-text {
-    margin: 3% auto 0 auto; }
+    margin: 0% auto 0 auto; }
     #choose-font #sample-text .panel {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       border-radius: 0;
       padding: 2%; }
       #choose-font #sample-text .panel .panel-body {
-        padding: 5%;
-        border: 8px solid #ffe082; }
+        padding: 5%; }
       #choose-font #sample-text .panel p {
         font-size: 2rem;
         line-height: 120%; }
       #choose-font #sample-text .panel hr {
         border-top: 2px dotted #ffe082;
         margin-bottom: 30px; }
-      #choose-font #sample-text .panel #fonts, #choose-font #sample-text .panel #washes {
-        text-align: center; }
       #choose-font #sample-text .panel #washes {
         padding-top: 15px; }
   #choose-font p {
@@ -2048,13 +2150,6 @@ ul.nav {
     padding: 20px 15px 20px 15px;
     background: transparent;
     color: #131B21; }
-
-/* ==========================================================================
-   	ACKNOWLEDGMENT Styles
-   ========================================================================== */
-#choose-ack {
-  background: #ffe082;
-  padding: 5%; }
 
 /* ==========================================================================
    	FOOTER Styles
@@ -2090,22 +2185,46 @@ For slightly less small devices
      	TOP Styles
      ========================================================================== */
   #top img {
-    width: 500px;
     margin: auto; }
 
+  #mss-hero h1 {
+    padding-top: 65px;
+    padding-bottom: 15px; }
   #mss-hero h2 {
     font-weight: 300; }
 
   /* ==========================================================================
      	ABOUT Styles
      ========================================================================== */
-  #about h2 {
-    font-size: 5vw;
+  #about #text-box h2 {
+    text-align: center;
+    color: #ffe082;
+    margin: 3% auto 3% auto;
+    font-size: 4vw;
     font-weight: 300;
     margin: 3% auto 4% auto; }
+  #about #abt-row h2 {
+    color: #131B21;
+    font-size: 4rem; }
+  #about p {
+    font-size: 1.6rem;
+    padding: 0% 10% 0% 10%; }
   #about a.btn {
     margin: 4% auto 6% auto; }
 
+  /* ==========================================================================
+     	HOWITWORKS Styles
+     ========================================================================== */
+  #how-it-works h2 {
+    font-size: 4rem; }
+  #how-it-works #how-top p {
+    font-size: 1.6rem; }
+  #how-it-works a.btn {
+    margin: 4% auto 3% auto; }
+
+  /* ==========================================================================
+     	SIGNUP Styles
+     ========================================================================== */
   /* ==========================================================================
      	DOWNLOAD Styles
      ========================================================================== */
@@ -2133,7 +2252,7 @@ For slightly less small devices
     to {
       height: 100%; } }
   /* ==========================================================================
-     	WHAT WE DO Styles
+     	CUSTOMIZE Styles
      ========================================================================== */
   /* ==========================================================================
      	FOOTER Styles
@@ -2149,7 +2268,7 @@ For tablets and smaller laptops
   /* ==========================================================================
      	GENERAL Styles
      ========================================================================== */
-  .purple-btn, #about a.btn:hover, #download-sec a.btn:hover, #choose-font a.btn:hover {
+  .purple-btn, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download-sec a.btn:hover, #choose-font a.btn:hover {
     color: #ffe082;
     background: #3A3961;
     border: 2px solid #3A3961; }
@@ -2169,6 +2288,7 @@ For tablets and smaller laptops
      ========================================================================== */
   .navbar {
     margin-top: 25px;
+    padding: 0 3vw 0 3vw;
     transition: all 0.3s ease; }
 
   ul.nav:last-child {
@@ -2197,34 +2317,68 @@ For tablets and smaller laptops
      ========================================================================== */
   #top {
     background-attachment: fixed; }
-    #top img {
-      width: 600px; }
     #top a.btn:hover {
+      border: 2px solid #3A3961;
       color: #ffe082;
       background: #3A3961; }
 
   #mss-hero h1 {
     font-size: 6vmax;
-    padding-top: 9vh;
-    padding-bottom: 0vh; }
+    padding-top: 70px;
+    padding-bottom: 30px; }
   #mss-hero h2 {
-    padding-top: 0vh;
-    font-size: 3vmax; }
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 3.5rem;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto; }
+  #mss-hero #mss-logo {
+    height: 40vh; }
 
   /* ==========================================================================
      	ABOUT Styles
      ========================================================================== */
+  #about #letter-div {
+    height: 100%;
+    vertical-align: middle; }
+    #about #letter-div img {
+      padding-top: 20%;
+      width: 100%; }
+  #about #text-box h2 {
+    font-size: 4.5vw; }
   #about #abt-row {
-    padding: 3% 5% 1% 5%; }
-  #about h2 {
-    margin: 3% auto 3.5% auto;
-    font-size: 40px;
-    font-family: "Muli", Helvetica, Arial, sans-serif;
-    font-weight: 200; }
-  #about a.btn {
-    margin: 0% auto 3.5% auto; }
+    padding: 3% 10% 3% 10%; }
   #about p {
-    padding: 2% 8% 2% 8%; }
+    max-width: 70vw;
+    font-size: 1.7rem; }
+  #about a.btn {
+    margin: 4% auto 3.5% auto; }
+
+  /* ==========================================================================
+     	HOWITWORKS Styles
+     ========================================================================== */
+  #how-it-works {
+    padding: 3% 3% 3% 3%; }
+    #how-it-works #how-top p {
+      font-size: 1.7rem;
+      max-width: 70vw;
+      margin-left: auto;
+      margin-right: auto; }
+    #how-it-works #how-icon-row {
+      margin: 2.4% 0 1% 0; }
+    #how-it-works a.btn {
+      margin: 3% auto 3% auto; }
+
+  /* ==========================================================================
+     	SIGNUP Styles
+     ========================================================================== */
+  #sign-up h2 {
+    font-size: 4rem; }
+  #sign-up p {
+    max-width: 70vw;
+    margin-right: auto;
+    margin-left: auto; }
 
   /* ==========================================================================
      	DOWNLOAD Styles
@@ -2254,13 +2408,16 @@ For tablets and smaller laptops
       height: 100%; } }
     #download-sec p {
       text-align: center;
-      padding: 6% 4% 2% 4%; }
+      padding: 1% 0% 0% 0%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 70vw; }
 
   /* ==========================================================================
-     	CHOOSE STYLE Styles
+     	CUSTOMIZE Styles
      ========================================================================== */
   #choose-font h2 {
-    font-size: 5vmin; }
+    font-size: 4rem; }
   #choose-font #font-row {
     padding: 3% 8% 0 8%; }
   #choose-font #sample-text .panel #fonts, #choose-font #sample-text .panel #washes {
@@ -2294,23 +2451,39 @@ Adds resource intensive styles.
      	TOP Styles
      ========================================================================== */
   #mss-hero h1 {
-    font-size: 6rem;
-    padding-top: 10vh; }
-  #mss-hero h2 {
-    font-size: 3rem; }
+    font-size: 6rem; }
 
   /* ==========================================================================
      	ABOUT Styles
      ========================================================================== */
+  #about #letter-div img {
+    padding-top: 0; }
+  #about #text-box h2 {
+    font-size: 4.7rem; }
   #about #abt-row {
-    padding: 3% 8% 1% 8%; }
-  #about h2 {
-    font-size: 45px; }
+    padding: 2% 18vw 2% 18vw; }
+    #about #abt-row h2 {
+      font-size: 5rem; }
+  #about p {
+    max-width: 70vw;
+    padding-right: 0;
+    padding-left: 0; }
   #about a.btn {
     font-size: 130%; }
 
   /* ==========================================================================
-     	STYLE Styles
+     	HOWITWORKS Styles
+     ========================================================================== */
+  #how-it-works h2 {
+    font-size: 4.7rem; }
+  #how-it-works #how-top p {
+    max-width: 70vw; }
+
+  /* ==========================================================================
+     	SIGNUP Styles
+     ========================================================================== */
+  /* ==========================================================================
+     	CUSTOMIZE Styles
      ========================================================================== */
   /* ==========================================================================
      	FOOTER Styles

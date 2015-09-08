@@ -92,12 +92,12 @@ ul.nav {
 #mss-hero {
 	h1 {
 		font-size: 6rem;
-		padding-top: 10vh;
+		// padding-top: 10vh;
 	}
 
 	h2 {
 		// padding-top: 3vh;
-		font-size: 3rem;
+		// max-width: 70vw;
 	}
 	p, h1, h2, a, b {
 	}
@@ -110,37 +110,66 @@ ul.nav {
 	}
 }
 
-#mss-hero b, #mss-hero h1 {
-	
-}
 
 /* ==========================================================================
    	ABOUT Styles
    ========================================================================== */
 
 #about {
+	#letter-div {
+		img {
+			padding-top: 0;
+		}
+	}
+	#text-box {
+		h2 {
+			font-size: 4.7rem;
+		}
+	}
 	#abt-row {
-		padding: 3% 8% 1% 8%;
-	}
-	img {
-		// padding-top: 0;
-	}
-	h2 {
-		font-size: 45px;		
-		// margin: 0px auto 1% auto;
+		padding: 2% 18vw 2% 18vw;
+		h2 {
+			font-size: 5rem;
+		}
 	}
 
 	p {
-		// margin: 0 5% 5% 5%;
+		max-width: 70vw;
+		padding-right: 0;
+		padding-left: 0;
 	}
 
 	a.btn {
+		// padding-top: 1%;
 		font-size: 130%;
 	}
 }
 
 /* ==========================================================================
-   	STYLE Styles
+   	HOWITWORKS Styles
+   ========================================================================== */
+
+#how-it-works {
+	h2 {
+		font-size: 4.7rem;
+	}
+	#how-top {
+		p {
+			max-width: 70vw;
+		}
+	}
+}
+
+/* ==========================================================================
+   	SIGNUP Styles
+   ========================================================================== */
+
+#sign-up {
+
+}
+
+/* ==========================================================================
+   	CUSTOMIZE Styles
    ========================================================================== */
 
 #choose-font {
