@@ -2353,6 +2353,8 @@ For tablets and smaller laptops
     padding: 3% 10% 3% 10%; }
   #about p {
     max-width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 1.7rem; }
   #about a.btn {
     margin: 4% auto 3.5% auto; }
