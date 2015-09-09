@@ -54,21 +54,26 @@ $( document ).ready(function() {
 
 
 	// FOR CUSTOMIZER DROPDOWNS
-	// $('.selectpicker').selectpicker();
-	// use event-picker li data-original-index="0" ?
-  // 	$("span:contains(Wedding)").parent().click(function() {
-		// console.log("Yep");
-	 //    $('.font-picker').find('[value=Rochester]').remove();
-	 //    $('.font-picker').selectpicker('refresh');
-  // 	});
-
-  	if ($("span:contains(Rochester)").parent().parent().hasClass('selected')) {
-		console.log("Rochester selected");
-		// $("#sample-letter").css("font-family", )
+	$('.selectpicker').selectpicker();
+	
+  	$("span:contains(Wedding)").parent().click(function() {
+		console.log("Wedding selected");
 	    // $('.font-picker').find('[value=Rochester]').remove();
 	    // $('.font-picker').selectpicker('refresh');
-  	} 
+  	});
 
+  	// This isn't really working
+  	if ($("span:contains(Wedding)").parent().parent().hasClass('selected')) {
+		console.log("Wedding");
+		$('.calligraphy-picker').prop('disabled',false);
+	    $('.calligraphy-picker').selectpicker('refresh');
+  	} 
+  	else {
+  		$('.calligraphy-picker').prop('disabled',true);
+	    $('.calligraphy-picker').selectpicker('refresh');
+  	}
+
+  	// CHANGE FONTS BASED ON DROPDOWN SELECTION
   	$(".font-picker").change(function() {
     	//alert($(this).val());
     	$("#sample-letter>p").css("font-family", $(this).val());

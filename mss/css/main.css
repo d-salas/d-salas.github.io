@@ -2119,7 +2119,7 @@ ul.nav {
         border-top: 2px dotted #ffe082;
         margin-bottom: 30px; }
     #customize #sample-text #sample-letter p {
-      font-family: "Rochester"; }
+      font-family: "Petrona"; }
     #customize #sample-text .col-sm-6 {
       text-align: center; }
     #customize #sample-text .btn-group {
@@ -2340,6 +2340,11 @@ For tablets and smaller laptops
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
+  #customize #sample-text #customizers {
+    margin-top: 25px;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto; }
   #customize #sample-text .panel {
     max-width: 70vw;
     margin-left: auto;
