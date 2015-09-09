@@ -75,8 +75,8 @@ Take up the whole dang window
   transform: translateY(3px);
   -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
@@ -1738,7 +1738,10 @@ body {
   background: #fffde7; }
 
 p {
-  line-height: 150%; }
+  line-height: 150%;
+  max-width: 75vw;
+  margin-right: auto;
+  margin-left: auto; }
 
 h1 {
   font-size: 2.4rem; }
@@ -1760,17 +1763,25 @@ h2 {
   height: 10px; }
 
 .divider {
-  height: 35px;
-  width: 50px;
-  margin: 0px auto;
+  height: 60px;
+  width: 133px;
+  background-size: 100% 100%;
+  margin: 0px auto 3vw auto;
   background: url(../img/divider.png) no-repeat scroll center transparent;
-  margin-bottom: 3%; }
+  background-size: 100% 100%; }
+  .divider img {
+    height: auto;
+    width: 100px; }
 
-.transparent-button, #about a.btn, #how-it-works a.btn, #sign-up a.btn {
-  font-size: 130%;
+.transparent-button, #mss-hero a.btn, #about a.btn, #how-it-works a.btn, #sign-up a.btn, #download-section a.btn, #checkout a.btn, #customize a.btn {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5em;
   border: 2px solid black;
   padding: 20px 15px 20px 15px;
+  margin: 3vw auto 0 auto;
   background: transparent;
+  text-transform: uppercase;
   color: #131B21; }
 
 /* ==========================================================================
@@ -1818,7 +1829,7 @@ ul.nav {
 .navbar-nav li {
   cursor: pointer;
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 1.6rem;
   padding: 15px 2vw 4px 2vw;
@@ -1881,19 +1892,11 @@ ul.nav {
   #mss-hero p, #mss-hero h1, #mss-hero h2, #mss-hero a {
     color: #131B21; }
   #mss-hero a.btn {
-    font-family: "Muli", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color: #131B21;
-    font-size: 1.5rem;
-    text-transform: uppercase;
     height: 85px;
     min-width: 130px;
     max-width: 150px;
     margin: 2vh auto 5vh auto;
-    border: 2px solid black;
-    padding: 20px 15px 0px 15px;
-    background: transparent;
-    line-height: 1.5em; }
+    padding: 20px 15px 0px 15px; }
     #mss-hero a.btn i {
       font-size: 3rem; }
   #mss-hero #letter-div {
@@ -1909,12 +1912,7 @@ ul.nav {
 /* ==========================================================================
    	ABOUT Styles
    ========================================================================== */
-#text-box {
-  background: #3A3961;
-  color: #ffe082; }
-
 #about {
-  background-size: 20px 40px;
   background: #fff9c4;
   position: relative;
   z-index: 10;
@@ -1939,25 +1937,24 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
-  #about #text-box h2 {
-    text-align: center;
-    color: #ffe082;
-    font-size: 2.0rem;
-    margin: 3% auto 3% auto; }
+  #about #text-box {
+    background: #3A3961; }
+    #about #text-box h2 {
+      text-align: center;
+      color: #ffe082;
+      font-size: 2.0rem;
+      margin: 3% auto 3% auto; }
   #about #abt-row {
-    padding: 3% 0 3% 0; }
+    padding: 8vw 5vw; }
     #about #abt-row h2 {
       color: #131B21;
       font-size: 4rem;
-      margin: 3% auto; }
+      margin: 0 auto 3vw auto; }
   #about p {
     font-size: 1.5rem;
     line-height: 1.7;
     text-align: left;
-    padding: 0% 11% 0% 11%;
     font-weight: 500; }
-  #about a.btn {
-    margin: 4% auto 6% auto; }
   #about img {
     width: 70%;
     margin: auto; }
@@ -1966,7 +1963,7 @@ ul.nav {
    	HOW IT WORKS Styles
    ========================================================================== */
 #how-it-works {
-  padding: 6% 3% 5% 3%;
+  padding: 8vw 5vw;
   text-align: center;
   background-color: #ffe082;
   position: relative; }
@@ -1993,21 +1990,19 @@ ul.nav {
   #how-it-works h2 {
     color: #131B21;
     font-size: 4rem;
-    margin: 3% auto; }
+    margin: 0 auto 3vw auto; }
   #how-it-works .col-xs-12 {
     margin: 15px 0 15px 0; }
   #how-it-works #how-top p {
-    padding: 0 5% 0 5%;
     font-size: 1.5rem;
+    line-height: 1.7;
     text-align: left; }
-  #how-it-works a.btn {
-    margin: 5% auto 5% auto; }
 
 /* ==========================================================================
    	SIGNUP Styles
    ========================================================================== */
 #sign-up {
-  padding: 6% 3% 5% 3%;
+  padding: 8vw 5vw;
   background-color: #fff9c4;
   position: relative; }
   #sign-up:after {
@@ -2033,68 +2028,19 @@ ul.nav {
   #sign-up h2 {
     color: #131B21;
     font-size: 4rem;
-    margin: 3% auto; }
+    margin: 0 auto 3vw auto; }
   #sign-up p {
-    margin: 0 5%;
     font-size: 1.9rem;
     line-height: 1.7; }
-  #sign-up a.btn {
-    margin: 3% auto 2% auto; }
 
 /* ==========================================================================
    	DOWNLOAD Styles
    ========================================================================== */
-#download-sec {
-  padding: 6% 3% 5% 3%;
-  background-color: #ffe082;
-  position: relative; }
-  #download-sec:after {
-    background-repeat: repeat-x;
-    content: '';
-    position: absolute;
-    z-index: 10;
-    height: 15px;
-    left: 0;
-    right: 0;
-    bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
-@keyframes slide-hoz {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
-@keyframes slide-vet {
-  from {
-    height: 0; }
-  to {
-    height: 100%; } }
-  #download-sec h2 {
-    text-align: center;
-    color: #131B21;
-    font-size: 4rem;
-    margin: 3% auto 3% auto; }
-  #download-sec p {
-    font-size: 1.9rem;
-    line-height: 1.7;
-    text-align: left;
-    padding: 1% 8% 0% 8%;
-    font-weight: 500; }
-  #download-sec a.btn {
-    margin: 4% auto 2% auto;
-    font-size: 130%;
-    border: 2px solid black;
-    padding: 20px 15px 20px 15px;
-    background: transparent;
-    color: #131B21; }
-
-/* ==========================================================================
-   	CHOOSE FONT Styles
-   ========================================================================== */
-#customize {
+#download-section, #checkout {
+  padding: 8vw 5vw;
   background-color: #fff9c4;
-  padding: 3% 3% 5% 3%;
   position: relative; }
-  #customize:after {
+  #download-section:after, #checkout:after {
     background-repeat: repeat-x;
     content: '';
     position: absolute;
@@ -2114,28 +2060,77 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
+  #download-section h2, #checkout h2 {
+    text-align: center;
+    color: #131B21;
+    font-size: 4rem;
+    margin: 0 auto 3vw auto; }
+  #download-section p, #checkout p {
+    padding: 0;
+    font-size: 1.9rem;
+    line-height: 1.7;
+    text-align: center;
+    font-weight: 500; }
+
+/* ==========================================================================
+   	CUSTOMIZE Styles
+   ========================================================================== */
+#customize {
+  padding: 8vw 5vw;
+  background-color: #ffe082;
+  position: relative; }
+  #customize:after {
+    background-repeat: repeat-x;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+@keyframes slide-hoz {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes slide-vet {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
   #customize h2 {
     text-align: center;
     font-size: 4rem;
-    margin: 3% 0; }
+    margin: 0 auto 3vw auto; }
   #customize #sample-text {
     margin: 0% auto 0 auto; }
     #customize #sample-text .panel {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       border-radius: 0;
-      padding: 2%; }
+      padding: 2%;
+      margin: 3vw auto 0 auto; }
       #customize #sample-text .panel .panel-body {
         padding: 5%; }
       #customize #sample-text .panel p {
         font-size: 2rem;
-        line-height: 120%; }
+        line-height: 125%; }
       #customize #sample-text .panel hr {
         border-top: 2px dotted #ffe082;
         margin-bottom: 30px; }
+    #customize #sample-text #sample-letter p {
+      font-family: "Rochester"; }
     #customize #sample-text .col-sm-6 {
       text-align: center; }
-    #customize #sample-text button {
-      margin-bottom: 15px; }
+    #customize #sample-text .btn-group {
+      margin-bottom: 15px;
+      width: 100%; }
+      #customize #sample-text .btn-group .dropdown-menu {
+        width: 100%;
+        text-align: left; }
+      #customize #sample-text .btn-group button {
+        border: 2px solid black;
+        width: 100%; }
   #customize p {
     font-size: 1.9rem;
     line-height: 1.7;
@@ -2145,14 +2140,10 @@ ul.nav {
     margin: 0;
     font-size: 1.7rem;
     list-style-type: none; }
-  #customize a.btn {
-    margin: 4% auto 0% auto;
-    font-size: 130%;
-    border: 2px solid black;
-    padding: 20px 15px 20px 15px;
-    background: transparent;
-    color: #131B21; }
 
+/* ==========================================================================
+   	CHECKOUT Styles
+   ========================================================================== */
 /* ==========================================================================
    	FOOTER Styles
    ========================================================================== */
@@ -2201,18 +2192,13 @@ For slightly less small devices
   #about #text-box h2 {
     text-align: center;
     color: #ffe082;
-    margin: 3% auto 3% auto;
     font-size: 4vw;
-    font-weight: 300;
-    margin: 3% auto 4% auto; }
+    font-weight: 300; }
   #about #abt-row h2 {
     color: #131B21;
     font-size: 4rem; }
   #about p {
-    font-size: 1.6rem;
-    padding: 0% 10% 0% 10%; }
-  #about a.btn {
-    margin: 4% auto 6% auto; }
+    font-size: 1.6rem; }
 
   /* ==========================================================================
      	HOWITWORKS Styles
@@ -2221,8 +2207,6 @@ For slightly less small devices
     font-size: 4rem; }
   #how-it-works #how-top p {
     font-size: 1.6rem; }
-  #how-it-works a.btn {
-    margin: 4% auto 3% auto; }
 
   /* ==========================================================================
      	SIGNUP Styles
@@ -2230,29 +2214,6 @@ For slightly less small devices
   /* ==========================================================================
      	DOWNLOAD Styles
      ========================================================================== */
-  #download-sec {
-    background-color: #ffe082;
-    position: relative; }
-    #download-sec:after {
-      background-repeat: repeat-x;
-      content: '';
-      position: absolute;
-      z-index: 10;
-      height: 15px;
-      left: 0;
-      right: 0;
-      bottom: -15px;
-      background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
-  @keyframes slide-hoz {
-    from {
-      width: 0; }
-    to {
-      width: 100%; } }
-  @keyframes slide-vet {
-    from {
-      height: 0; }
-    to {
-      height: 100%; } }
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
@@ -2270,7 +2231,10 @@ For tablets and smaller laptops
   /* ==========================================================================
      	GENERAL Styles
      ========================================================================== */
-  .purple-btn, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download-sec a.btn:hover, #customize a.btn:hover {
+  p {
+    max-width: 60vw; }
+
+  .purple-btn, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download-section a.btn:hover, #checkout a.btn:hover, #customize a.btn:hover {
     color: #ffe082;
     background: #3A3961;
     border: 2px solid #3A3961; }
@@ -2295,6 +2259,10 @@ For tablets and smaller laptops
 
   ul.nav:last-child {
     margin-bottom: 0px; }
+
+  .navbar-nav li {
+    font-size: 1.5rem;
+    padding: 15px 1vw 4px 1vw; }
 
   .affix-top {
     background: transparent;
@@ -2335,8 +2303,8 @@ For tablets and smaller laptops
     max-width: 70vw;
     margin-left: auto;
     margin-right: auto; }
-  #mss-hero #mss-logo {
-    height: 40vh; }
+  #mss-hero #mss-logo-top {
+    height: 35vh; }
 
   /* ==========================================================================
      	ABOUT Styles
@@ -2349,83 +2317,39 @@ For tablets and smaller laptops
       width: 100%; }
   #about #text-box h2 {
     font-size: 4.5vw; }
-  #about #abt-row {
-    padding: 3% 10% 3% 10%; }
   #about p {
-    max-width: 70vw;
-    margin-right: auto;
-    margin-left: auto;
     font-size: 1.7rem; }
-  #about a.btn {
-    margin: 4% auto 3.5% auto; }
 
   /* ==========================================================================
      	HOWITWORKS Styles
      ========================================================================== */
-  #how-it-works {
-    padding: 3% 3% 3% 3%; }
-    #how-it-works #how-top p {
-      font-size: 1.7rem;
-      max-width: 70vw;
-      margin-left: auto;
-      margin-right: auto; }
-    #how-it-works #how-icon-row {
-      margin: 2.4% 0 1% 0; }
-    #how-it-works a.btn {
-      margin: 3% auto 3% auto; }
+  #how-it-works #how-top p {
+    font-size: 1.7rem; }
+  #how-it-works #how-icon-row {
+    margin: 3vw auto 0 auto; }
 
   /* ==========================================================================
      	SIGNUP Styles
      ========================================================================== */
-  #sign-up h2 {
-    font-size: 4rem; }
-  #sign-up p {
-    max-width: 70vw;
-    margin-right: auto;
-    margin-left: auto; }
-
   /* ==========================================================================
      	DOWNLOAD Styles
      ========================================================================== */
-  #download-sec {
-    background-color: #ffe082;
-    position: relative; }
-    #download-sec:after {
-      background-repeat: repeat-x;
-      content: '';
-      position: absolute;
-      z-index: 10;
-      height: 15px;
-      left: 0;
-      right: 0;
-      bottom: -15px;
-      background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
-  @keyframes slide-hoz {
-    from {
-      width: 0; }
-    to {
-      width: 100%; } }
-  @keyframes slide-vet {
-    from {
-      height: 0; }
-    to {
-      height: 100%; } }
-    #download-sec p {
-      text-align: center;
-      padding: 1% 0% 0% 0%;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 70vw; }
+  #download-section p, #checkout p {
+    text-align: center; }
 
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
+  #customize #sample-text .panel {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto; }
   #customize #sample-text .col-sm-6 {
     text-align: left; }
-  #customize h2 {
-    font-size: 4rem; }
-  #customize #font-row {
-    padding: 3% 8% 0 8%; }
+  #customize #sample-text #customize-options {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60vw; }
   #customize #sample-text .panel #fonts, #customize #sample-text .panel #washes {
     text-align: left; }
   #customize #sample-text .panel #washes {
@@ -2453,6 +2377,10 @@ Adds resource intensive styles.
   /* ==========================================================================
      	NAVBAR Styles
      ========================================================================== */
+  .navbar-nav li {
+    font-size: 1.6rem;
+    padding: 15px 2vw 4px 2vw; }
+
   /* ==========================================================================
      	TOP Styles
      ========================================================================== */
@@ -2466,24 +2394,14 @@ Adds resource intensive styles.
     padding-top: 0; }
   #about #text-box h2 {
     font-size: 4.7rem; }
-  #about #abt-row {
-    padding: 2% 18vw 2% 18vw; }
-    #about #abt-row h2 {
-      font-size: 5rem; }
-  #about p {
-    max-width: 70vw;
-    padding-right: 0;
-    padding-left: 0; }
-  #about a.btn {
-    font-size: 130%; }
+  #about #abt-row h2 {
+    font-size: 5rem; }
 
   /* ==========================================================================
      	HOWITWORKS Styles
      ========================================================================== */
   #how-it-works h2 {
     font-size: 4.7rem; }
-  #how-it-works #how-top p {
-    max-width: 70vw; }
 
   /* ==========================================================================
      	SIGNUP Styles

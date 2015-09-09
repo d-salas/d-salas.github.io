@@ -1738,7 +1738,10 @@ body {
   background: #fffde7; }
 
 p {
-  line-height: 150%; }
+  line-height: 150%;
+  max-width: 75vw;
+  margin-right: auto;
+  margin-left: auto; }
 
 h1 {
   font-size: 2.4rem; }
@@ -1760,10 +1763,23 @@ h2 {
   height: 10px; }
 
 .divider {
-  height: 35px;
-  width: 50px;
-  margin: 0px auto;
-  background: url(../img/divider.png) no-repeat scroll center transparent; }
+  /* height: 35px; */
+  /* width: 50px; */
+  margin: 0px auto 3vw auto;
+  background: url(../img/divider.png) no-repeat scroll center transparent;
+  }
+
+.transparent-button, #mss-hero a.btn, #about a.btn, #how-it-works a.btn, #sign-up a.btn, #download-section a.btn, #checkout a.btn, #customize a.btn {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  border: 2px solid black;
+  padding: 20px 15px 20px 15px;
+  margin: 3vw auto 0 auto;
+  background: transparent;
+  text-transform: uppercase;
+  color: #131B21; }
 
 /* ==========================================================================
    	LOGO Styles
@@ -1873,40 +1889,27 @@ ul.nav {
   #mss-hero p, #mss-hero h1, #mss-hero h2, #mss-hero a {
     color: #131B21; }
   #mss-hero a.btn {
-    font-family: "Muli", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color: #131B21;
-    font-size: 1.5rem;
-    text-transform: uppercase;
     height: 85px;
     min-width: 130px;
     max-width: 150px;
-    margin: 2vh auto 4vh auto;
-    border: 2px solid black;
-    padding: 20px 15px 0px 15px;
-    background: transparent;
-    line-height: 1.5em; }
+    margin: 2vh auto 5vh auto;
+    padding: 20px 15px 0px 15px; }
     #mss-hero a.btn i {
       font-size: 3rem; }
   #mss-hero #letter-div {
     min-height: 200px; }
-  #mss-hero #mss-logo {
+  #mss-hero #mss-logo-top {
     text-align: center;
     height: 30vh; }
-    #mss-hero #mss-logo img {
+    #mss-hero #mss-logo-top img {
       width: auto;
       height: 100%;
       margin: 0 auto; }
 
 /* ==========================================================================
-   	GETTING THERE Styles
+   	ABOUT Styles
    ========================================================================== */
-#text-box {
-  background: #3A3961;
-  color: #ffe082; }
-
 #about {
-  background-size: 20px 40px;
   background: #fff9c4;
   position: relative;
   z-index: 10;
@@ -1931,28 +1934,24 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
-  #about #text-box h2 {
-    text-align: center;
-    color: #ffe082;
-    font-size: 2.0rem;
-    margin: 3% auto 3% auto; }
-  #about #abt-row h2 {
-    color: #131B21;
-    font-size: 4rem; }
+  #about #text-box {
+    background: #3A3961; }
+    #about #text-box h2 {
+      text-align: center;
+      color: #ffe082;
+      font-size: 2.0rem;
+      margin: 3% auto 3% auto; }
+  #about #abt-row {
+    padding: 8vw 5vw; }
+    #about #abt-row h2 {
+      color: #131B21;
+      font-size: 4rem;
+      margin: 0 auto 3vw auto; }
   #about p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     line-height: 1.7;
     text-align: left;
-    /* padding: 6% 12% 2% 12%; */
-    font-weight: 500;
-    }
-  #about a.btn {
-    margin: 4% auto 8% auto;
-    font-size: 130%;
-    border: 2px solid black;
-    padding: 20px 15px 20px 15px;
-    background: transparent;
-    color: #131B21; }
+    font-weight: 500; }
   #about img {
     width: 70%;
     margin: auto; }
@@ -1961,7 +1960,8 @@ ul.nav {
    	HOW IT WORKS Styles
    ========================================================================== */
 #how-it-works {
-  padding: 5% 5% 0% 5%;
+  padding: 8vw 5vw;
+  text-align: center;
   background-color: #ffe082;
   position: relative; }
   #how-it-works:after {
@@ -1984,58 +1984,23 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
-/* ==========================================================================
-   	DOWNLOAD Styles
-   ========================================================================== */
-#download-sec {
-  padding: 5% 5% 0% 5%;
-  background-color: #ffe082;
-  position: relative; }
-  #download-sec:after {
-    background-repeat: repeat-x;
-    content: '';
-    position: absolute;
-    z-index: 10;
-    height: 15px;
-    left: 0;
-    right: 0;
-    bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
-@keyframes slide-hoz {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
-@keyframes slide-vet {
-  from {
-    height: 0; }
-  to {
-    height: 100%; } }
-  #download-sec h2 {
-    text-align: center;
+  #how-it-works h2 {
     color: #131B21;
-    margin: 3% auto 3% auto; }
-  #download-sec p {
-    font-size: 1.9rem;
+    font-size: 4rem;
+    margin: 0 auto 3vw auto; }
+  #how-it-works .col-xs-12 {
+    margin: 15px 0 15px 0; }
+  #how-it-works #how-top p {
+    font-size: 1.5rem;
     line-height: 1.7;
-    text-align: left;
-    padding: 6% 8% 2% 8%;
-    font-weight: 500; }
-  #download-sec a.btn {
-    margin: 4% auto 8% auto;
-    font-size: 130%;
-    border: 2px solid black;
-    padding: 20px 15px 20px 15px;
-    background: transparent;
-    color: #131B21; }
+    text-align: left; }
 
 /* ==========================================================================
    	SIGNUP Styles
    ========================================================================== */
 #sign-up {
+  padding: 8vw 5vw;
   background-color: #fff9c4;
-  padding: 5%;
-  min-height: 60vh;
   position: relative; }
   #sign-up:after {
     background-repeat: repeat-x;
@@ -2057,15 +2022,22 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
+  #sign-up h2 {
+    color: #131B21;
+    font-size: 4rem;
+    margin: 0 auto 3vw auto; }
+  #sign-up p {
+    font-size: 1.9rem;
+    line-height: 1.7; }
+
 /* ==========================================================================
-   	CHOOSE FONT Styles
+   	DOWNLOAD Styles
    ========================================================================== */
-#choose-font {
+#download-section, #checkout {
+  padding: 8vw 5vw;
   background-color: #fff9c4;
-  padding: 5%;
-  min-height: 60vh;
   position: relative; }
-  #choose-font:after {
+  #download-section:after, #checkout:after {
     background-repeat: repeat-x;
     content: '';
     position: absolute;
@@ -2085,54 +2057,84 @@ ul.nav {
     height: 0; }
   to {
     height: 100%; } }
-  #choose-font #font-h2 {
-    text-align: center; }
-  #choose-font #font-row {
-    text-align: left;
-    padding-bottom: 2%; }
-  #choose-font #sample-text {
-    margin: 3% auto 0 auto; }
-    #choose-font #sample-text .panel {
+  #download-section h2, #checkout h2 {
+    text-align: center;
+    color: #131B21;
+    font-size: 4rem;
+    margin: 0 auto 3vw auto; }
+  #download-section p, #checkout p {
+    padding: 0;
+    font-size: 1.9rem;
+    line-height: 1.7;
+    text-align: center;
+    font-weight: 500; }
+
+/* ==========================================================================
+   	CUSTOMIZE Styles
+   ========================================================================== */
+#customize {
+  padding: 8vw 5vw;
+  background-color: #ffe082;
+  position: relative; }
+  #customize:after {
+    background-repeat: repeat-x;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+@keyframes slide-hoz {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes slide-vet {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+  #customize h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 auto 3vw auto; }
+  #customize #sample-text {
+    margin: 0% auto 0 auto; }
+    #customize #sample-text .panel {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       border-radius: 0;
-      padding: 2%; }
-      #choose-font #sample-text .panel .panel-body {
-        padding: 5%;
-        border: 8px solid #ffe082; }
-      #choose-font #sample-text .panel p {
+      padding: 2%;
+      margin: 3vw auto 0 auto; }
+      #customize #sample-text .panel .panel-body {
+        padding: 5%; }
+      #customize #sample-text .panel p {
         font-size: 2rem;
-        line-height: 120%; }
-      #choose-font #sample-text .panel hr {
+        line-height: 125%; }
+      #customize #sample-text .panel hr {
         border-top: 2px dotted #ffe082;
         margin-bottom: 30px; }
-      #choose-font #sample-text .panel #fonts, #choose-font #sample-text .panel #washes {
-        text-align: center; }
-      #choose-font #sample-text .panel #washes {
-        padding-top: 15px; }
-  #choose-font p {
+    #customize #sample-text .col-sm-6 {
+      text-align: center; }
+    #customize #sample-text .btn-group {
+      margin-bottom: 15px;
+      width: 100%; }
+      #customize #sample-text .btn-group button {
+        width: 100%; }
+  #customize p {
     font-size: 1.9rem;
     line-height: 1.7;
     font-weight: 500; }
-  #choose-font ul {
+  #customize ul {
     padding: 0;
     margin: 0;
     font-size: 1.7rem;
     list-style-type: none; }
-  #choose-font a.btn {
-    margin: 4% auto 0% auto;
-    font-size: 130%;
-    border: 2px solid black;
-    padding: 20px 15px 20px 15px;
-    background: transparent;
-    color: #131B21; }
 
 /* ==========================================================================
-   	ACKNOWLEDGMENT Styles
+   	CHECKOUT Styles
    ========================================================================== */
-#choose-ack {
-  background: #ffe082;
-  padding: 5%; }
-
 /* ==========================================================================
    	FOOTER Styles
    ========================================================================== */
@@ -2181,46 +2183,30 @@ For slightly less small devices
   #about #text-box h2 {
     text-align: center;
     color: #ffe082;
-    margin: 3% auto 3% auto;
     font-size: 4vw;
-    font-weight: 300;
-    margin: 3% auto 4% auto; }
+    font-weight: 300; }
   #about #abt-row h2 {
     color: #131B21;
     font-size: 4rem; }
   #about p {
-    padding: 6% 10% 2% 10%; }
-  #about a.btn {
-    margin: 4% auto 6% auto; }
+    font-size: 1.6rem; }
 
+  /* ==========================================================================
+     	HOWITWORKS Styles
+     ========================================================================== */
+  #how-it-works h2 {
+    font-size: 4rem; }
+  #how-it-works #how-top p {
+    font-size: 1.6rem; }
+
+  /* ==========================================================================
+     	SIGNUP Styles
+     ========================================================================== */
   /* ==========================================================================
      	DOWNLOAD Styles
      ========================================================================== */
-  #download-sec {
-    background-color: #ffe082;
-    position: relative; }
-    #download-sec:after {
-      background-repeat: repeat-x;
-      content: '';
-      position: absolute;
-      z-index: 10;
-      height: 15px;
-      left: 0;
-      right: 0;
-      bottom: -15px;
-      background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
-  @keyframes slide-hoz {
-    from {
-      width: 0; }
-    to {
-      width: 100%; } }
-  @keyframes slide-vet {
-    from {
-      height: 0; }
-    to {
-      height: 100%; } }
   /* ==========================================================================
-     	WHAT WE DO Styles
+     	CUSTOMIZE Styles
      ========================================================================== */
   /* ==========================================================================
      	FOOTER Styles
@@ -2236,7 +2222,10 @@ For tablets and smaller laptops
   /* ==========================================================================
      	GENERAL Styles
      ========================================================================== */
-  .purple-btn, #about a.btn:hover, #download-sec a.btn:hover, #choose-font a.btn:hover {
+  p {
+    max-width: 60vw; }
+
+  .purple-btn, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download-section a.btn:hover, #checkout a.btn:hover, #customize a.btn:hover {
     color: #ffe082;
     background: #3A3961;
     border: 2px solid #3A3961; }
@@ -2261,6 +2250,10 @@ For tablets and smaller laptops
 
   ul.nav:last-child {
     margin-bottom: 0px; }
+
+  .navbar-nav li {
+    font-size: 1.5rem;
+    padding: 15px 5px 4px 5px; }
 
   .affix-top {
     background: transparent;
@@ -2297,71 +2290,60 @@ For tablets and smaller laptops
   #mss-hero h2 {
     padding-top: 20px;
     padding-bottom: 10px;
-    font-size: 3vmax; }
+    font-size: 3.5rem;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto; }
   #mss-hero #mss-logo {
     height: 40vh; }
 
   /* ==========================================================================
      	ABOUT Styles
      ========================================================================== */
-  #about #abt-row {
-    padding: 3% 8% 1% 8%; }
   #about #letter-div {
     height: 100%;
     vertical-align: middle; }
     #about #letter-div img {
       padding-top: 20%;
       width: 100%; }
-  #about h2 {
-    margin: 3% auto 3.5% auto;
-    font-size: 40px;
-    font-weight: 200; }
-  #about a.btn {
-    margin: 4% auto 3.5% auto; }
+  #about #text-box h2 {
+    font-size: 4.5vw; }
   #about p {
-    font-size: 1.7rem;
-    padding: 2% 8% 2% 8%; }
+    font-size: 1.7rem; }
 
+  /* ==========================================================================
+     	HOWITWORKS Styles
+     ========================================================================== */
+  #how-it-works #how-top p {
+    font-size: 1.7rem; }
+  #how-it-works #how-icon-row {
+    margin: 3vw auto 0 auto; }
+
+  /* ==========================================================================
+     	SIGNUP Styles
+     ========================================================================== */
   /* ==========================================================================
      	DOWNLOAD Styles
      ========================================================================== */
-  #download-sec {
-    background-color: #ffe082;
-    position: relative; }
-    #download-sec:after {
-      background-repeat: repeat-x;
-      content: '';
-      position: absolute;
-      z-index: 10;
-      height: 15px;
-      left: 0;
-      right: 0;
-      bottom: -15px;
-      background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
-  @keyframes slide-hoz {
-    from {
-      width: 0; }
-    to {
-      width: 100%; } }
-  @keyframes slide-vet {
-    from {
-      height: 0; }
-    to {
-      height: 100%; } }
-    #download-sec p {
-      text-align: center;
-      padding: 6% 4% 2% 4%; }
+  #download-section p, #checkout p {
+    text-align: center; }
 
   /* ==========================================================================
-     	CHOOSE STYLE Styles
+     	CUSTOMIZE Styles
      ========================================================================== */
-  #choose-font h2 {
-    font-size: 5vmin; }
-  #choose-font #font-row {
-    padding: 3% 8% 0 8%; }
-  #choose-font #sample-text .panel #fonts, #choose-font #sample-text .panel #washes {
+  #customize #sample-text .panel {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto; }
+  #customize #sample-text .col-sm-6 {
     text-align: left; }
-  #choose-font #sample-text .panel #washes {
+  #customize #sample-text #customize-options {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60vw; }
+  #customize #sample-text .panel #fonts, #customize #sample-text .panel #washes {
+    text-align: left; }
+  #customize #sample-text .panel #washes {
     padding-top: 0; }
 
   /* ==========================================================================
@@ -2386,28 +2368,37 @@ Adds resource intensive styles.
   /* ==========================================================================
      	NAVBAR Styles
      ========================================================================== */
+  .navbar-nav li {
+    font-size: 1.6rem;
+    padding: 15px 2vw 4px 2vw; }
+
   /* ==========================================================================
      	TOP Styles
      ========================================================================== */
   #mss-hero h1 {
     font-size: 6rem; }
-  #mss-hero h2 {
-    font-size: 3rem; }
 
   /* ==========================================================================
      	ABOUT Styles
      ========================================================================== */
-  #about #abt-row {
-    padding: 4% 8% 1% 8%; }
   #about #letter-div img {
     padding-top: 0; }
-  #about h2 {
-    font-size: 45px; }
-  #about a.btn {
-    font-size: 130%; }
+  #about #text-box h2 {
+    font-size: 4.7rem; }
+  #about #abt-row h2 {
+    font-size: 5rem; }
 
   /* ==========================================================================
-     	STYLE Styles
+     	HOWITWORKS Styles
+     ========================================================================== */
+  #how-it-works h2 {
+    font-size: 4.7rem; }
+
+  /* ==========================================================================
+     	SIGNUP Styles
+     ========================================================================== */
+  /* ==========================================================================
+     	CUSTOMIZE Styles
      ========================================================================== */
   /* ==========================================================================
      	FOOTER Styles

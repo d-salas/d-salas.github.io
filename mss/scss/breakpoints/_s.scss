@@ -135,11 +135,8 @@ ul.nav {
 		h2 {
 			text-align: center;
 			color: $golden-yellow;
-			// font-size: 1.8rem;
-			margin: 3% auto 3% auto;
 			font-size: 4vw;
 			font-weight: 300;
-			margin: 3% auto 4% auto;
 		}
 	}
 	#abt-row {
@@ -151,10 +148,10 @@ ul.nav {
 	}
 	p {
 		font-size: 1.6rem;
-		padding: 0% 10% 0% 10%;
+		// padding: 0% 10% 0% 10%;
 	}
 	a.btn {
-		margin: 4% auto 6% auto;
+		// margin: 4% auto 6% auto;
 	}
 	img {
 		// margin: 0 5% 0 0;
@@ -177,7 +174,7 @@ ul.nav {
 		}
 	}
 	a.btn {
-		margin: 4% auto 3% auto;
+		// margin: 4% auto 3% auto;
 	}
 }
 
@@ -188,7 +185,7 @@ ul.nav {
 #sign-up {
 
 	h2 {
-
+		// font-size: 4rem;
 	}
 	a.btn {
 
@@ -202,10 +199,7 @@ ul.nav {
    	DOWNLOAD Styles
    ========================================================================== */
 
-#download-sec {
-	background-color: $golden-yellow;
-	@include jagged($golden-yellow, 30, bottom);
-
+#download-section {
 	h2 {
 
 	}

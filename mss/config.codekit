@@ -15,7 +15,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3959,
+		"initialSize": 16106,
 		"inputAbbreviatedPath": "\/apple-touch-icon.png",
 		"outputAbbreviatedPath": "\/apple-touch-icon.png",
 		"outputPathIsOutsideProject": 0,
@@ -27,6 +27,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/_media-queries.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/bootstrap-select.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/bootstrap-select.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -662,6 +671,17 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/img\/Ampersand.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.16449e+06,
+		"inputAbbreviatedPath": "\/img\/Ampersand.jpg",
+		"outputAbbreviatedPath": "\/img\/Ampersand.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/desk.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -677,9 +697,20 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1961,
+		"initialSize": 27794,
 		"inputAbbreviatedPath": "\/img\/divider.png",
 		"outputAbbreviatedPath": "\/img\/divider.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/divider1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3832,
+		"inputAbbreviatedPath": "\/img\/divider1.png",
+		"outputAbbreviatedPath": "\/img\/divider1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -761,6 +792,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/Roadster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.43072e+06,
+		"inputAbbreviatedPath": "\/img\/Roadster.jpg",
+		"outputAbbreviatedPath": "\/img\/Roadster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/Savannah Tree.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.59275e+06,
+		"inputAbbreviatedPath": "\/img\/Savannah Tree.jpg",
+		"outputAbbreviatedPath": "\/img\/Savannah Tree.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/secretary.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -768,6 +821,17 @@
 		"initialSize": 15073,
 		"inputAbbreviatedPath": "\/img\/secretary.png",
 		"outputAbbreviatedPath": "\/img\/secretary.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/Wreath.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.4647e+06,
+		"inputAbbreviatedPath": "\/img\/Wreath.jpg",
+		"outputAbbreviatedPath": "\/img\/Wreath.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -7690,6 +7754,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/vendor\/bootstrap-select.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/bootstrap-select.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/bootstrap-select.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/vendor\/bootstrap.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -8002,7 +8077,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3482,
+		"initialSize": 48999,
 		"inputAbbreviatedPath": "\/tile.png",
 		"outputAbbreviatedPath": "\/tile.png",
 		"outputPathIsOutsideProject": 0,

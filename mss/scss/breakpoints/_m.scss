@@ -15,7 +15,7 @@ html, body {
 }
 
 p {
-
+	max-width: 60vw;
 }
 
 br {
@@ -67,8 +67,9 @@ ul.nav {
 		margin-bottom: 0px;
 	}
 }
-.navbar-nav li a{
-	
+.navbar-nav li {
+	font-size: 1.5rem;
+	padding: 15px 1vw 4px 1vw;
 }
 .navbar-toggle {
 
@@ -149,8 +150,8 @@ ul.nav {
 	}
 	p, h1, h2, a, b {
 	}
-	#mss-logo {
-		height: 40vh;
+	#mss-logo-top {
+		height: 35vh;
 	}
 
 }
@@ -175,22 +176,17 @@ ul.nav {
 		// width: 100%;
 		vertical-align: middle;
 		img {
-		padding-top: 20%;
-		width: 100%;
+			padding-top: 20%;
+			width: 100%;
+		}
 	}
-	}
-	// h2 {
-	// 	margin: 3% auto 3% auto;
-	// 	font-size: 2rem;
-	// 	font-weight: 200;		
-	// }
 	#text-box {
 		h2 {
 			font-size: 4.5vw;
 		}
 	}
 	#abt-row {
-		padding: 3% 10% 3% 10%;
+		// padding: 3% 10% 3% 10%;
 		h2 {
 			// color: $black;
 			// font-size: 4rem;
@@ -198,17 +194,11 @@ ul.nav {
 		}
 	}
 	p {
-		max-width: 70vw;
-		margin-right: auto;
-		margin-left: auto;
 		font-size: 1.7rem;
-		// padding: 0% 8% 0% 8%;
 	}
 	a.btn {
-		margin: 4% auto 3.5% auto;
+		// margin: 4% auto 3.5% auto;
 		&:hover {
-			// color: $black;
-			// background: $golden-yellow;
 			@extend .purple-btn;
 		}
 	}
@@ -220,20 +210,17 @@ ul.nav {
    ========================================================================== */
 
 #how-it-works {
-	padding: 3% 3% 3% 3%;
+	// padding: 3% 3% 3% 3%;
 	#how-top {
 		p {
 			font-size: 1.7rem;
-			max-width: 70vw;
-			margin-left: auto;
-			margin-right: auto;
 		}
 	}
 	#how-icon-row {
-		margin: 2.4% 0 1% 0;
+		margin: 3vw auto 0 auto;
 	}
 	a.btn {
-		margin: 3% auto 3% auto;
+		// margin: 3% auto 3% auto;
 		&:hover {
 			@extend .purple-btn;
 		}
@@ -246,12 +233,9 @@ ul.nav {
 
 #sign-up {
 	h2 {
-		font-size: 4rem;
 	}
 	p {
-		max-width: 70vw;
-		margin-right: auto;
-		margin-left: auto;
+
 	}
 	a.btn {
 		&:hover {
@@ -264,20 +248,15 @@ ul.nav {
    	DOWNLOAD Styles
    ========================================================================== */
 
-#download-sec {
-	background-color: $golden-yellow;
-	@include jagged($golden-yellow, 30, bottom);
-
+#download-section {
 	h2 {
 
 	}
 	p {
 		text-align: center;
 		// padding: 1% 4% 1% 4%;
-		padding: 1% 0% 0% 0%;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 70vw;
+		// padding: 1% 0% 0% 0%;
+
 	}
 	a.btn {
 		&:hover {
@@ -292,17 +271,26 @@ ul.nav {
 
 #customize {
 	#sample-text {
+		.panel {
+			max-width: 70vw;
+			margin-left: auto;
+			margin-right: auto;
+		}
 		.col-sm-6 {
 			text-align: left;
 		}
+		#customize-options {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 60vw;
+		}
+	}
+
+	p {
+
 	}
 
 	h2 {
-		font-size: 4rem;
-	}
-
-	#font-row {
-		padding: 3% 8% 0 8%;
 	}
 	a.btn {
 		// margin: 0% auto 3.5% auto;

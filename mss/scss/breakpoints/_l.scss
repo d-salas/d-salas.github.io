@@ -46,7 +46,8 @@ ul.nav {
 	}
 }
 .navbar-nav li {
-	
+	font-size: 1.6rem;
+	padding: 15px 2vw 4px 2vw;
 }
 .navbar-toggle {
 
@@ -127,21 +128,19 @@ ul.nav {
 		}
 	}
 	#abt-row {
-		padding: 2% 18vw 2% 18vw;
+		// padding: 2% 18vw 2% 18vw;
 		h2 {
 			font-size: 5rem;
 		}
 	}
 
 	p {
-		max-width: 70vw;
-		padding-right: 0;
-		padding-left: 0;
+
 	}
 
 	a.btn {
 		// padding-top: 1%;
-		font-size: 130%;
+		// font-size: 130%;
 	}
 }
 
@@ -155,7 +154,7 @@ ul.nav {
 	}
 	#how-top {
 		p {
-			max-width: 70vw;
+			// max-width: 70vw;
 		}
 	}
 }

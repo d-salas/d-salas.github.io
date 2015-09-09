@@ -8,13 +8,6 @@ $( document ).ready(function() {
 
     $('#letter-div').height($img.height());
 	
-	//// Affix the navbar ////
-	// $('#esp-nav').affix({
-	// 	offset: {le
-	// 		top: 10
-	// 	}
-	// });
-	
 	// This is because Bootstrap's affix kind of sux.
 	var nav = $("#mss-nav");
 	$(window).scroll(function() {
@@ -33,64 +26,53 @@ $( document ).ready(function() {
 
 	// ("#my_image").attr("src", "first.jpg")
 
-    function rotateImage()
+	function rotateImage()
 	{
-	  $img.fadeOut('fast', function()
-	  {
-	    $(this).attr('src', letters[index]);
+		$img.fadeOut('fast', function()
+		{
+			$(this).attr('src', letters[index]);
 
-	    $(this).fadeIn('fast', function()
-	    {
-	      if (index === letters.length-1)
-	      {
-	        index = 0;
-	      }
-	      else
-	      {
-	        index++;
-	      }
-	    });
-	  });
+			$(this).fadeIn('fast', function()
+			{
+				if (index === letters.length-1)
+				{
+					index = 0;
+				}
+				else
+				{
+					index++;
+				}
+			});
+		});
 	}
-	
 	setInterval (rotateImage, 2500);
 
 	// for the window resize
-	$(window).resize(function() {
-	    $('#letter-div').height($img.height());
-	});
-
-
-	$("#select1").change(function() {
-	    if(typeof $(this).data('options') === "undefined"){
-	        /*Taking an array of all options-2 and kind of embedding it on the select1*/
-	        $(this).data('options', $('#select2 option').clone());
-	    }
-	    var id = $(this).val();
-	    var options = $(this).data('options').filter('[value=' + id + ']');
-	    $('#select2').html(options);
-	});
-
-    
-    // setInterval(function ()
-    // {
-    //     $div.fadeOut(function ()
-    //     {
-    //         $div.attr("src", letters[i]);
-
-    //     });
-    // }, 1500);
-
-
-
-	// var overlayheight = $("overlay").height();
- //    $("#sidebar").height(bodyheight);
-
-	// for the window resize
 	// $(window).resize(function() {
-	//     var bodyheight = $(document).height();
-	//     $("#sidebar").height(bodyheight);
+	//     $('#letter-div').height($img.height());
 	// });
+
+
+	// FOR CUSTOMIZER DROPDOWNS
+	// $('.selectpicker').selectpicker();
+	// use event-picker li data-original-index="0" ?
+  // 	$("span:contains(Wedding)").parent().click(function() {
+		// console.log("Yep");
+	 //    $('.font-picker').find('[value=Rochester]').remove();
+	 //    $('.font-picker').selectpicker('refresh');
+  // 	});
+
+  	if ($("span:contains(Rochester)").parent().parent().hasClass('selected')) {
+		console.log("Rochester selected");
+		// $("#sample-letter").css("font-family", )
+	    // $('.font-picker').find('[value=Rochester]').remove();
+	    // $('.font-picker').selectpicker('refresh');
+  	} 
+
+  	$(".font-picker").change(function() {
+    	//alert($(this).val());
+    	$("#sample-letter>p").css("font-family", $(this).val());
+	});
 
 
     //// STELLAR / SKROLLR ////
