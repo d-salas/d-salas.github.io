@@ -2528,9 +2528,6 @@ Adds resource intensive styles.
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
-  #customize #customizers {
-    margin-top: 3vw; }
-
   /* ==========================================================================
      	FOOTER Styles
      ========================================================================== */ }
@@ -2538,7 +2535,7 @@ Adds resource intensive styles.
 EXTRA LARGE
 This is for the larger monitors and possibly full screen viewers.
 *********************/
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1200px) {
   /*
   X-tra large screens. Like bigass monitors.
   */
@@ -2563,6 +2560,9 @@ This is for the larger monitors and possibly full screen viewers.
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
+  #customize #customizers {
+    margin-top: 3vw; }
+
   /* ==========================================================================
      	FOOTER Styles
      ========================================================================== */ }
