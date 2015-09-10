@@ -26,6 +26,14 @@ body {
 	font-size: 1.4rem;
 	background: $lighter-yellow;
 }
+a {
+	color: $mss-blue;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+		color: darken($mss-blue, 10%);
+	}
+}
 
 p {
 	line-height: 150%;
@@ -76,6 +84,7 @@ h2 {
 	margin: 3vw auto 0 auto;
 	background: transparent;
 	text-transform: uppercase;
+	text-decoration: none;
 	color: $black;
 
 }
@@ -87,6 +96,7 @@ h2 {
 a.navbar-brand {
 	font-size: 4rem;
 	z-index: 100;
+	text-decoration: none;
 	// line-height: 100%;
 	padding-top: 16px;
 	img {
@@ -381,7 +391,7 @@ ul.nav {
 		padding: 0;
 		font-size: 1.9rem;
 		line-height: 1.7;
-		text-align: center;
+		// text-align: center;
 		font-weight: 500;
 	}
 	a.btn {
@@ -410,7 +420,8 @@ ul.nav {
 			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 			border-radius: 0;
 			padding: 2%;
-			margin: 3vw auto 0 auto;
+			margin: 3vw auto;
+			// background: $lighter-yellow;
 			.panel-body {
 				padding: 5%;
 				// border: 8px solid $golden-yellow;
@@ -418,7 +429,11 @@ ul.nav {
 			p {
 				font-size: 2rem;
 				line-height: 125%;
+				&:last-of-type {
+				    margin-bottom: 0;
+				}
 			}
+
 			hr {
 				border-top: 2px dotted $golden-yellow;
 				margin-bottom: 30px;
@@ -427,6 +442,22 @@ ul.nav {
 		#sample-letter {
 			p {
 				font-family: "Petrona";
+			}
+			img {
+				width: 33%;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+	#customizers {
+		margin-left: auto;
+		margin-right: auto;
+		#pickers {
+			p#paper-desc {
+				margin-top: 10px;
+				max-width: 100%;
+				font-size: 1.7rem;
 			}
 		}
 		.col-sm-6 {
@@ -445,6 +476,14 @@ ul.nav {
 				border: 2px solid black;
 				width: 100%;
 			}
+		}
+		.wedding-notice {
+			display: none;
+			font-size: 1.5rem;
+			// padding: 10px 0 20px 0;
+		}
+		#calligraphy-notice {
+			font-size: 1.5rem;
 		}
 	}
 
@@ -474,26 +513,69 @@ ul.nav {
 
 #checkout {
 	@extend #download-section;
-	// padding: $section-padding;
-	// background-color: $light-yellow;
-	// @include jagged($light-yellow, 30, bottom);
+	#pricing {
+		max-width: 80vw;
+		width: 100%;
+		height: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	p {
+		font-size: 1.7rem;
+		&.smaller {
+			font-size: 1.5rem;
+			// max-width: 80vw;
+		}
+		&.smallest {
+			font-size: 1.4rem;
+			text-align: center;
+		}
+		&.bigger {
+			font-size: 2rem;
+			// text-align: center;
+			margin-top: 20px;
+		}
+	}
+	tbody, table, td {
+		border: 2px solid $black;
+		text-align: center;
+		padding: 1vw;
+		font-size: 1.9rem;
+	}
+	table {
+		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+		margin: 2vw auto 3vw auto;
+		max-width: 87vw;
+		// border-collapse: collapse;
+		background-color: $lighter-yellow;
+		padding: 5vw;
+		margin-left: auto;
+		margin-right: auto;
+		border: none;
+		td {
+			// border: 2px solid $golden-yellow;
+			padding: 10px;
+		}
+		th {
+			padding: 2vw;
+			background-color: $indigo-violet;
+			border: 2px solid $indigo-violet;
+			color: $golden-yellow;
+			text-align: center;
+		}
+	}
+}
 
-	// h2 {
-	// 	text-align: center;
-	// 	color: $black;
-	// 	font-size: 4rem;
-	// 	margin: 0 auto 3vw auto;
-	// }
-	// p {
-	// 	padding: 0;
-	// 	font-size: 1.9rem;
-	// 	line-height: 1.7;
-	// 	text-align: center;
-	// 	font-weight: 500;
-	// }
-	// a.btn {
-	// 	@extend .transparent-button;
-	// }
+/* ==========================================================================
+   	PRIVACY POLICY Styles
+   ========================================================================== */
+
+#privacy {
+	@extend #download-section;
+	min-height: 80vh;
+	p {
+		margin-top: 22vh;
+	}
 }
 
 
@@ -502,39 +584,27 @@ ul.nav {
    ========================================================================== */
 
 footer {
+	padding-top: 3vw;
+	padding-bottom: 5vw;
+	min-height: 40vh;
+	// @extend .indigo, .darken-3;
+	// @extend .blue, .darken-4;
+	background: $indigo-violet;
+	color: $golden-yellow;
+
 	i {
 		padding: 3%;
 	}
 	h2 {
 		font-family: $top-font;
 	}
-	padding-top: 2%;
-	height: 70vh;
-	// @extend .indigo, .darken-3;
-	// @extend .blue, .darken-4;
-	background: $indigo-violet;
-	color: $golden-yellow;
+	a {
+		color: $golden-yellow;
+		text-decoration: underline;
+		text-decoration-style: dotted;
+		&:hover {
+			text-decoration: underline;
+			color: darken($light-yellow, 20%);
+		}
+	}
 }
-
-
-
-	// h1 {
-	// 	font-family: $header-font;
-	// 	color: $white;
-	// 	margin: 3% 0 7vmin 0;
-	// 	text-align: center;
-	// 	letter-spacing: 1vmin;
-	// 	line-height: 100%;
- //  		font-size: 10vmin;
- //  		&:after {
- //  			border-bottom: 4px solid $white;
- //  			content: "";
-	// 		display: block;
-	// 		position: relative;
-	// 		top: 20px;
-	// 		width: 40vmin;
-	// 		z-index: 0;
-	// 		margin-right: auto;
-	// 		margin-left: auto;
- //  		}
-	// }

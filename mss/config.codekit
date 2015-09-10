@@ -624,7 +624,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1961,
+		"initialSize": 27794,
 		"inputAbbreviatedPath": "\/img\/divider.png",
 		"outputAbbreviatedPath": "\/img\/divider.png",
 		"outputPathIsOutsideProject": 0,
@@ -730,13 +730,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/Savannah Tree.jpg": {
+	"\/img\/savannahtree.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3.59275e+06,
-		"inputAbbreviatedPath": "\/img\/Savannah Tree.jpg",
-		"outputAbbreviatedPath": "\/img\/Savannah Tree.jpg",
+		"inputAbbreviatedPath": "\/img\/savannahtree.jpg",
+		"outputAbbreviatedPath": "\/img\/savannahtree.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -936,6 +936,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/privacypolicy.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/privacypolicy.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/scss\/breakpoints\/_l.scss": {
 		"createSourceMap": 0,

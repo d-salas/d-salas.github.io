@@ -3,6 +3,39 @@
 
 	Import all the partials and breakpoint files here.
    ========================================================================== */
+@font-face {
+  font-family: "untitled-font-1";
+  src: url("fonts/untitled-font-1.eot");
+  src: url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"), url("fonts/untitled-font-1.woff") format("woff"), url("fonts/untitled-font-1.ttf") format("truetype"), url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-pen-streamline:before {
+  content: "a"; }
+
 /*
 Take up the whole dang window
 */
@@ -1737,6 +1770,12 @@ body {
   font-size: 1.4rem;
   background: #fffde7; }
 
+a {
+  color: #ffe082;
+  text-decoration: underline; }
+  a:hover {
+    color: #cf9b00; }
+
 p {
   line-height: 150%;
   max-width: 75vw;
@@ -1782,6 +1821,7 @@ h2 {
   margin: 3vw auto 0 auto;
   background: transparent;
   text-transform: uppercase;
+  text-decoration: none;
   color: #131B21; }
 
 /* ==========================================================================
@@ -1790,6 +1830,7 @@ h2 {
 a.navbar-brand {
   font-size: 4rem;
   z-index: 100;
+  text-decoration: none;
   padding-top: 16px; }
 
 a.navbar-brand, #mss-hero b {
@@ -2069,8 +2110,9 @@ ul.nav {
     padding: 0;
     font-size: 1.9rem;
     line-height: 1.7;
-    text-align: center;
-    font-weight: 500; }
+    /* text-align: center; */
+    font-weight: 500;
+    }
 
 /* ==========================================================================
    	CUSTOMIZE Styles
@@ -2109,28 +2151,46 @@ ul.nav {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       border-radius: 0;
       padding: 2%;
-      margin: 3vw auto 0 auto; }
+      margin: 3vw auto; }
       #customize #sample-text .panel .panel-body {
         padding: 5%; }
       #customize #sample-text .panel p {
         font-size: 2rem;
         line-height: 125%; }
+        #customize #sample-text .panel p:last-of-type {
+          margin-bottom: 0; }
       #customize #sample-text .panel hr {
         border-top: 2px dotted #ffe082;
         margin-bottom: 30px; }
     #customize #sample-text #sample-letter p {
       font-family: "Petrona"; }
-    #customize #sample-text .col-sm-6 {
+    #customize #sample-text #sample-letter img {
+      width: 33%;
+      display: block;
+      margin: 0 auto; }
+  #customize #customizers {
+    margin-left: auto;
+    margin-right: auto; }
+    #customize #customizers #pickers p#paper-desc {
+      margin-top: 10px;
+      max-width: 100%;
+      font-size: 1.7rem; }
+    #customize #customizers .col-sm-6 {
       text-align: center; }
-    #customize #sample-text .btn-group {
+    #customize #customizers .btn-group {
       margin-bottom: 15px;
       width: 100%; }
-      #customize #sample-text .btn-group .dropdown-menu {
+      #customize #customizers .btn-group .dropdown-menu {
         width: 100%;
         text-align: left; }
-      #customize #sample-text .btn-group button {
+      #customize #customizers .btn-group button {
         border: 2px solid black;
         width: 100%; }
+    #customize #customizers .wedding-notice {
+      display: none;
+      font-size: 1.5rem; }
+    #customize #customizers #calligraphy-notice {
+      font-size: 1.5rem; }
   #customize p {
     font-size: 1.9rem;
     line-height: 1.7;
@@ -2335,26 +2395,28 @@ For tablets and smaller laptops
      	DOWNLOAD Styles
      ========================================================================== */
   #download-section p, #checkout p {
-    text-align: center; }
+    /* text-align: center; */
+    }
 
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
-  #customize #sample-text {
+  #customize #sample-text .panel {
     max-width: 70vw;
     margin-left: auto;
-    margin-right: auto;
-    }
-    #customize #sample-text .col-sm-6 {
-      text-align: left; }
-    #customize #sample-text #customize-options {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 60vw; }
-  #customize #sample-text .panel #fonts, #customize #sample-text .panel #washes {
+    margin-right: auto; }
+  #customize #sample-text .col-sm-6 {
     text-align: left; }
-  #customize #sample-text .panel #washes {
-    padding-top: 0; }
+  #customize #sample-text #letter-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60vw; }
+  #customize #customizers #pickers {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto; }
+  #customize #customizers .col-sm-6 {
+    text-align: left; }
 
   /* ==========================================================================
      	FOOTER Styles
@@ -2410,6 +2472,9 @@ Adds resource intensive styles.
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
+  #customize #customizers {
+    margin-top: 3vw; }
+
   /* ==========================================================================
      	FOOTER Styles
      ========================================================================== */ }
