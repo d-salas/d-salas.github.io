@@ -54,7 +54,10 @@ $( document ).ready(function() {
 
 
 	// FOR CUSTOMIZER DROPDOWNS
-	$('.selectpicker').selectpicker("mobile");
+	$('.selectpicker').selectpicker();
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    	$('.selectpicker').selectpicker('mobile');
+	}
 
   	// CHANGE FONTS BASED ON DROPDOWN SELECTION
   	$(".font-picker").change(function() {
