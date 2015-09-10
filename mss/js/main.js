@@ -54,24 +54,7 @@ $( document ).ready(function() {
 
 
 	// FOR CUSTOMIZER DROPDOWNS
-	$('.selectpicker').selectpicker();
-	
-  // 	$("span:contains(Wedding)").parent().click(function() {
-		// console.log("Wedding selected");
-	 //    // $('.font-picker').find('[value=Rochester]').remove();
-	 //    // $('.font-picker').selectpicker('refresh');
-  // 	});
-
-  	// This isn't really working
-  // 	while ($("span:contains(Wedding)").parent().parent().hasClass('selected')) {
-		// // console.log("Wedding");
-		// $('.calligraphy-picker').prop('disabled',true);
-	 //    $('.calligraphy-picker').selectpicker('refresh');
-  // 	} 
-  	// else {
-  	// 	$('.calligraphy-picker').prop('disabled',true);
-	  //   $('.calligraphy-picker').selectpicker('refresh');
-  	// }
+	$('.selectpicker').selectpicker("mobile");
 
   	// CHANGE FONTS BASED ON DROPDOWN SELECTION
   	$(".font-picker").change(function() {
