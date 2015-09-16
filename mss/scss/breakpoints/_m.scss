@@ -43,6 +43,11 @@ a.btn {
    ========================================================================== */
 
 a.navbar-brand {
+	// padding-top: 12px;
+	img#mss-logo-navbar {
+		// position: relative;
+		top: 34px;
+	}
 
 }
 a.navbar-brand, #mss-hero b {
@@ -55,6 +60,7 @@ a.navbar-brand, #mss-hero b {
 
 .navbar {
 	margin-top: 25px;
+	// height: 77px;
 	padding: 0 3vw 0 3vw;
 	transition: all 0.3s ease;
 }
@@ -130,6 +136,10 @@ ul.nav {
 			border: 2px solid $indigo-violet;
 			color: $golden-yellow;
 			background: $indigo-violet;//#512F54;//#3949ab;//$light-yellow;
+			i {
+				position: relative;
+				top: 1px;
+			}
 		}
 	}
 }
@@ -248,7 +258,7 @@ ul.nav {
    	DOWNLOAD Styles
    ========================================================================== */
 
-#download-section {
+#download {
 	h2 {
 
 	}
@@ -323,6 +333,25 @@ ul.nav {
    ========================================================================== */
 
 #checkout {
+	#pricing {
+		.col-sm-6 {
+			// text-align: center;
+			&:first-of-type {
+				// padding-right: 0;
+			}
+			&:last-of-type {
+				// padding-left: 0;
+			}
+		}
+		table {
+			&:first-of-type {
+				// margin-right: 0;
+			}
+			&:last-of-type {
+				// margin-left: 0;
+			}
+		}
+	}
 	p {
 		&.smaller {
 			max-width: 45vw;
@@ -337,5 +366,7 @@ ul.nav {
    ========================================================================== */
 
 footer {
-
+	img {
+		padding-top: 20px;
+	}
 }

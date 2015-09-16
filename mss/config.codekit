@@ -598,13 +598,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/Ampersand.jpg": {
+	"\/img\/ampersand.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.16449e+06,
-		"inputAbbreviatedPath": "\/img\/Ampersand.jpg",
-		"outputAbbreviatedPath": "\/img\/Ampersand.jpg",
+		"inputAbbreviatedPath": "\/img\/ampersand.jpg",
+		"outputAbbreviatedPath": "\/img\/ampersand.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -686,6 +686,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/mss-sil.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 139923,
+		"inputAbbreviatedPath": "\/img\/mss-sil.png",
+		"outputAbbreviatedPath": "\/img\/mss-sil.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/mss-top.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -752,13 +763,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/Wreath.jpg": {
+	"\/img\/wreath.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.4647e+06,
-		"inputAbbreviatedPath": "\/img\/Wreath.jpg",
-		"outputAbbreviatedPath": "\/img\/Wreath.jpg",
+		"inputAbbreviatedPath": "\/img\/wreath.jpg",
+		"outputAbbreviatedPath": "\/img\/wreath.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -877,6 +888,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.fittext.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.fittext-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/jquery.scrollTo.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.scrollTo-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

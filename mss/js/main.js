@@ -2,14 +2,31 @@
 
 $( document ).ready(function() {
 
-	var letters = ['img/letter-1.png', 'img/letter-2.png', 'img/letter-3.png'];
-        var index = 0,
-        $img = $('#letter-img');
+	$('a[href^="#"]').on('click', function(event) {
+	    var target = $( $(this).attr('href') );
+	    // console.log(target);
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top - 50
+	        }, 1000);
+	    }
+	});
 
-    $('#letter-div').height($img.height());
 	
 	// This is because Bootstrap's affix kind of sux.
 	var nav = $("#mss-nav");
+	var top = $("#mss-hero");
+	var logo = $(".navbar-brand");
+	// var logoImg = $("#mss-logo-navbar");
+    if( $(this).scrollTop() > 10 ) {
+	    nav.addClass("affix");
+	    nav.removeClass("affix-top");
+    }
+    if( $(this).scrollTop() > top.outerHeight() ) {
+    	logo.addClass("visible-logo");
+    	// logoImg.fadeIn();
+    }
 	$(window).scroll(function() {
 	    if( $(this).scrollTop() > 10 ) {
 	      nav.addClass("affix");
@@ -18,39 +35,24 @@ $( document ).ready(function() {
 	      nav.addClass("affix-top");
 	      nav.removeClass("affix");
 	    }
+	    if( $(this).scrollTop() > top.outerHeight() ) {
+	    	logo.addClass("visible-logo");
+	    	// logoImg.fadeIn();
+	    }
+	    else {
+	    	logo.removeClass("visible-logo");
+	    	// logoImg.fadeOut();
+	    }
   	});
 
 	$("#menu-icon").click(function(){
     	$(this).toggleClass("down"); 
 	});
 
-	// ("#my_image").attr("src", "first.jpg")
-
-	function rotateImage()
-	{
-		$img.fadeOut('fast', function()
-		{
-			$(this).attr('src', letters[index]);
-
-			$(this).fadeIn('fast', function()
-			{
-				if (index === letters.length-1)
-				{
-					index = 0;
-				}
-				else
-				{
-					index++;
-				}
-			});
-		});
-	}
-	setInterval (rotateImage, 2500);
-
 	// for the window resize
-	// $(window).resize(function() {
-	//     $('#letter-div').height($img.height());
-	// });
+	$(window).resize(function() {
+
+	});
 
 
 	// FOR CUSTOMIZER DROPDOWNS
@@ -204,7 +206,7 @@ $( document ).ready(function() {
 		}
 	});
 
-	// GOTTA ENABLE CALLIGRAPHY BASED ON EVENT TYPE
+	// GOTTA ENABLE/DISABLE CALLIGRAPHY BASED ON EVENT TYPE
 	$(".service-picker").change(function() {
 		var service = $(this).val();
 		// console.log(service);
@@ -221,19 +223,35 @@ $( document ).ready(function() {
 	});
 
 
-    //// STELLAR / SKROLLR ////
-
-    // var s = skrollr.init();
-
-	// if(!Modernizr.touch){ 
-	// 	$.stellar({
- //  			horizontalScrolling: false,
- //  			responsive: true
-	// 	});
-
-	// 	$( window ).resize(function() {
-	// 		$.stellar('refresh');
-	// 	});
-	// }
 
 });
+
+
+// var letters = ['img/letter-1.png', 'img/letter-2.png', 'img/letter-3.png'];
+ //        var index = 0,
+ //        $img = $('#letter-img');
+
+ //    $('#letter-div').height($img.height());
+
+	// ("#my_image").attr("src", "first.jpg")
+
+	// function rotateImage()
+	// {
+	// 	$img.fadeOut('fast', function()
+	// 	{
+	// 		$(this).attr('src', letters[index]);
+
+	// 		$(this).fadeIn('fast', function()
+	// 		{
+	// 			if (index === letters.length-1)
+	// 			{
+	// 				index = 0;
+	// 			}
+	// 			else
+	// 			{
+	// 				index++;
+	// 			}
+	// 		});
+	// 	});
+	// }
+	// setInterval (rotateImage, 2500);

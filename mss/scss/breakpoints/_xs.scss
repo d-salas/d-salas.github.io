@@ -93,15 +93,30 @@ h2 {
    	LOGO Styles
    ========================================================================== */
 
+a.navbar-brand.visible-logo {
+	#mss-text {
+		padding-left: 40px;	
+	}
+	img#mss-logo-navbar {
+		display: inline;
+	}
+}
 a.navbar-brand {
+	padding-top: 17px;
 	font-size: 4rem;
 	z-index: 100;
 	text-decoration: none;
-	// line-height: 100%;
-	padding-top: 16px;
-	img {
-		// height: 40px;
-		// display: inline;
+	#mss-text {
+		transition: all .5s ease;
+		font-family: $top-font;
+	}
+	img#mss-logo-navbar {
+		transition: all .5s ease;
+		display: none;
+		position: absolute;
+		top: 9px;
+		padding-right: 8px;
+		height: 33px;
 	}
 }
 a.navbar-brand, #mss-hero b {
@@ -146,7 +161,9 @@ ul.nav {
 .nav>li>a {
     display: inline;
     padding: 0;
+    user-select: none;
     &:hover {
+    	user-select: none;
 		background: transparent;
     }
 }
@@ -157,7 +174,7 @@ ul.nav {
 	text-transform: uppercase;
 	font-size: 1.6rem;
 	padding: 15px 2vw 4px 2vw;
-	letter-spacing: 1px;
+	// letter-spacing: 1px;
 }
 .navbar-toggle {
 	font-size: 4.5rem;
@@ -376,7 +393,7 @@ ul.nav {
    	DOWNLOAD Styles
    ========================================================================== */
 
-#download-section {
+#download {
 	padding: $section-padding;
 	background-color: $light-yellow;
 	@include jagged($light-yellow, 30, bottom);
@@ -420,7 +437,7 @@ ul.nav {
 			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 			border-radius: 0;
 			padding: 2%;
-			margin: 3vw auto;
+			margin: 3vw auto 2vw auto;
 			// background: $lighter-yellow;
 			.panel-body {
 				padding: 5%;
@@ -450,6 +467,13 @@ ul.nav {
 			}
 		}
 	}
+	.wedding-notice {
+		text-align: center;
+		display: none;
+		font-size: 1.5rem;
+		@extend .red-text, .text-darken-2;
+		// padding: 10px 0 20px 0;
+	}
 	#customizers {
 		margin-left: auto;
 		margin-right: auto;
@@ -476,11 +500,6 @@ ul.nav {
 				border: 2px solid black;
 				width: 100%;
 			}
-		}
-		.wedding-notice {
-			display: none;
-			font-size: 1.5rem;
-			// padding: 10px 0 20px 0;
 		}
 		#calligraphy-notice {
 			font-size: 1.5rem;
@@ -512,7 +531,7 @@ ul.nav {
    ========================================================================== */
 
 #checkout {
-	@extend #download-section;
+	@extend #download;
 	#pricing {
 		max-width: 80vw;
 		width: 100%;
@@ -571,7 +590,7 @@ ul.nav {
    ========================================================================== */
 
 #privacy {
-	@extend #download-section;
+	@extend #download;
 	min-height: 80vh;
 	p {
 		margin-top: 22vh;
@@ -606,5 +625,9 @@ footer {
 			text-decoration: underline;
 			color: darken($light-yellow, 20%);
 		}
+	}
+	img {
+		padding-top: 10px;
+		width: 100px;
 	}
 }
