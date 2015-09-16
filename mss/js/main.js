@@ -35,7 +35,7 @@ $( document ).ready(function() {
 	      nav.addClass("affix-top");
 	      nav.removeClass("affix");
 	    }
-	    if( $(this).scrollTop() > (top.outerHeight() - 35) ) {
+	    if( $(this).scrollTop() > (top.outerHeight() - 33) ) {
 	    	logo.addClass("visible-logo");
 	    	// logoImg.fadeIn();
 	    }
