@@ -2465,7 +2465,7 @@ For tablets and smaller laptops
   #customize #customizers .col-sm-6 {
     text-align: left; }
   #customize #custom-orders p {
-    max-width: 67vw; }
+    max-width: 66.7vw; }
 
   /* ==========================================================================
      	CHECKOUT Styles
@@ -2531,8 +2531,9 @@ Adds resource intensive styles.
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
-  #customize #customizers #pickers p#paper-desc {
-    font-size: 1.5rem; }
+  #customize #custom-orders p {
+    max-width: 67.4vw;
+    font-size: 1.6rem; }
 
   /* ==========================================================================
      	FOOTER Styles
@@ -2566,6 +2567,8 @@ This is for the larger monitors and possibly full screen viewers.
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
+  #customize #customizers #pickers p#paper-desc {
+    font-size: 1.5rem; }
   #customize #custom-orders {
     margin-top: 2vw; }
     #customize #custom-orders p {
