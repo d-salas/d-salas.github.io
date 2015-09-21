@@ -1835,7 +1835,7 @@ a.navbar-brand.visible-logo img#mss-logo-navbar {
   display: inline; }
 
 a.navbar-brand {
-  padding-top: 16px;
+  padding-top: 17px;
   font-size: 4rem;
   z-index: 100;
   text-decoration: none; }
@@ -1846,7 +1846,7 @@ a.navbar-brand {
     transition: all .5s ease;
     display: none;
     position: absolute;
-    top: 8px;
+    top: 9px;
     padding-right: 8px;
     height: 33px; }
 
