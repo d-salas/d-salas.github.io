@@ -60,14 +60,14 @@ $( document ).ready(function() {
 	function setPosition(){
 		var logoTop = mssLogo.offset().top; 
 		var logoLeft = mssLogo.offset().left;
-		typed.css("top", logoTop+10);
-		typed.css("left", logoLeft-40);
+		typed.css("top", logoTop+13);
+		typed.css("left", logoLeft-35);
 	}
 	setPosition();
 	$(window).resize(setPosition);
 
 	$("#typed").typed({
-        strings: ["Acknowledgements", "Invitations", "Announcements"],
+        strings: ["Acknowledgements", "      Invitations", "  Announcements"],
         // stringsElement: $('#typed-strings'),
         typeSpeed: 50,
         backDelay: 500,
