@@ -1767,8 +1767,9 @@ html {
   font-size: 62.5%; }
 
 body {
+  color: #131B21;
   font-size: 1.4rem;
-  background: #fffde7; }
+  background: #fff176; }
 
 a {
   color: #00B0EA;
@@ -1803,7 +1804,7 @@ h2 {
   height: 10px; }
 
 .divider {
-  height: 60px;
+  height: 35px;
   width: 133px;
   background-size: 100% 100%;
   margin: 0px auto 3vw auto;
@@ -1813,7 +1814,7 @@ h2 {
     height: auto;
     width: 100px; }
 
-.transparent-button, #mss-hero a.btn, #about a.btn, #how-it-works a.btn, #sign-up a.btn, #download a.btn, #checkout a.btn, #privacy a.btn, #customize a.btn {
+.transparent-button, #mss-hero a.btn, #about a.btn, #how-it-works a.btn, #download a.btn, #checkout a.btn, #privacy a.btn, #customize a.btn {
   font-family: "Muli", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.5em;
@@ -1829,12 +1830,12 @@ h2 {
    	LOGO Styles
    ========================================================================== */
 a.navbar-brand.visible-logo #mss-text {
-  padding-left: 45px; }
+  padding-left: 40px; }
 a.navbar-brand.visible-logo img#mss-logo-navbar {
   display: inline; }
 
 a.navbar-brand {
-  padding-top: 16px;
+  padding-top: 17px;
   font-size: 4rem;
   z-index: 100;
   text-decoration: none; }
@@ -1845,7 +1846,7 @@ a.navbar-brand {
     transition: all .5s ease;
     display: none;
     position: absolute;
-    top: 33px;
+    top: 9px;
     padding-right: 8px;
     height: 33px; }
 
@@ -1930,10 +1931,9 @@ ul.nav {
 /* ==========================================================================
    	TOP Styles
    ========================================================================== */
-#top #letter-div > img {
-  position: relative;
-  z-index: 0;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+#top {
+  border: 2px solid #131B21;
+  margin: 1%; }
 
 #mss-hero {
   text-align: center; }
@@ -1947,8 +1947,17 @@ ul.nav {
   #mss-hero h2 {
     font-weight: 400;
     padding: 0vh 8% 0 8%; }
+    #mss-hero h2 sup {
+      font-family: "Ovo", Cambria, Times New Roman, Times, serif;
+      font-size: 65%; }
   #mss-hero p, #mss-hero h1, #mss-hero h2, #mss-hero a {
     color: #131B21; }
+  #mss-hero #typed {
+    position: absolute;
+    font-size: 1.3rem;
+    text-align: center; }
+  #mss-hero .typed-cursor {
+    display: none; }
   #mss-hero a.btn {
     height: 85px;
     min-width: 130px;
@@ -1957,8 +1966,6 @@ ul.nav {
     padding: 20px 15px 0px 15px; }
     #mss-hero a.btn i {
       font-size: 3rem; }
-  #mss-hero #letter-div {
-    min-height: 200px; }
   #mss-hero #mss-logo-top {
     text-align: center;
     height: 30vh; }
@@ -1971,9 +1978,9 @@ ul.nav {
    	ABOUT Styles
    ========================================================================== */
 #about {
-  background: #fff9c4;
   position: relative;
   z-index: 10;
+  background-color: #FFFCD5;
   position: relative; }
   #about:after {
     background-repeat: repeat-x;
@@ -1984,7 +1991,7 @@ ul.nav {
     left: 0;
     right: 0;
     bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff9c4%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23FFFCD5%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
 @keyframes slide-hoz {
   from {
     width: 0; }
@@ -1996,12 +2003,16 @@ ul.nav {
   to {
     height: 100%; } }
   #about #text-box {
-    background: #3A3961; }
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    background: #00B0EA; }
     #about #text-box h2 {
-      text-align: center;
-      color: #ffe082;
+      max-width: 75%;
+      color: #FFF;
       font-size: 2.0rem;
       margin: 3% auto 3% auto; }
+      #about #text-box h2 sup {
+        font-family: "Ovo", Cambria, Times New Roman, Times, serif;
+        font-size: 65%; }
   #about #abt-row {
     padding: 8vw 5vw; }
     #about #abt-row h2 {
@@ -2023,7 +2034,7 @@ ul.nav {
 #how-it-works {
   padding: 8vw 5vw;
   text-align: center;
-  background-color: #ffe082;
+  background-color: #fff59d;
   position: relative; }
   #how-it-works:after {
     background-repeat: repeat-x;
@@ -2034,7 +2045,7 @@ ul.nav {
     left: 0;
     right: 0;
     bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff59d%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
 @keyframes slide-hoz {
   from {
     width: 0; }
@@ -2046,7 +2057,6 @@ ul.nav {
   to {
     height: 100%; } }
   #how-it-works h2 {
-    color: #131B21;
     font-size: 4rem;
     margin: 0 auto 3vw auto; }
   #how-it-works .col-xs-12 {
@@ -2059,44 +2069,12 @@ ul.nav {
 /* ==========================================================================
    	SIGNUP Styles
    ========================================================================== */
-#sign-up {
-  padding: 8vw 5vw;
-  background-color: #fff9c4;
-  position: relative; }
-  #sign-up:after {
-    background-repeat: repeat-x;
-    content: '';
-    position: absolute;
-    z-index: 10;
-    height: 15px;
-    left: 0;
-    right: 0;
-    bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff9c4%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
-@keyframes slide-hoz {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
-@keyframes slide-vet {
-  from {
-    height: 0; }
-  to {
-    height: 100%; } }
-  #sign-up h2 {
-    color: #131B21;
-    font-size: 4rem;
-    margin: 0 auto 3vw auto; }
-  #sign-up p {
-    font-size: 1.9rem;
-    line-height: 1.7; }
-
 /* ==========================================================================
    	DOWNLOAD Styles
    ========================================================================== */
 #download, #checkout, #privacy {
   padding: 8vw 5vw;
-  background-color: #fff9c4;
+  background-color: #FFFCD5;
   position: relative; }
   #download:after, #checkout:after, #privacy:after {
     background-repeat: repeat-x;
@@ -2107,7 +2085,7 @@ ul.nav {
     left: 0;
     right: 0;
     bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff9c4%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23FFFCD5%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
 @keyframes slide-hoz {
   from {
     width: 0; }
@@ -2134,7 +2112,7 @@ ul.nav {
    ========================================================================== */
 #customize {
   padding: 8vw 5vw;
-  background-color: #ffe082;
+  background-color: #fff59d;
   position: relative; }
   #customize:after {
     background-repeat: repeat-x;
@@ -2145,7 +2123,7 @@ ul.nav {
     left: 0;
     right: 0;
     bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ffe082%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff59d%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
 @keyframes slide-hoz {
   from {
     width: 0; }
@@ -2166,7 +2144,7 @@ ul.nav {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       border-radius: 0;
       padding: 2%;
-      margin: 3vw auto 2vw auto; }
+      margin: 3vw auto 3vw auto; }
       #customize #sample-text .panel .panel-body {
         padding: 5%; }
       #customize #sample-text .panel p {
@@ -2245,18 +2223,16 @@ ul.nav {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   margin: 2vw auto 3vw auto;
   max-width: 87vw;
-  background-color: #fffde7;
+  background-color: #FFF;
   padding: 5vw;
   margin-left: auto;
-  margin-right: auto;
-  border: none; }
+  margin-right: auto; }
   #checkout table td {
     padding: 10px; }
   #checkout table th {
     padding: 2vw;
-    background-color: #3A3961;
-    border: 2px solid #3A3961;
-    color: #ffe082;
+    background-color: #00B0EA;
+    color: #FFF;
     text-align: center; }
 
 /* ==========================================================================
@@ -2273,23 +2249,20 @@ ul.nav {
 footer {
   padding-top: 3vw;
   padding-bottom: 5vw;
-  min-height: 40vh;
-  background: #3A3961;
-  color: #FFE082;
-  }
+  min-height: 90vh;
+  background: #fff176;
+  color: #131B21; }
   footer i {
     padding: 3%; }
   footer h2 {
     font-family: "Ovo", Cambria, Times New Roman, Times, serif; }
   footer a {
-    color: #ffe082;
     text-decoration: underline;
     text-decoration-style: dotted; }
     footer a:hover {
-      text-decoration: underline;
-      color: #ffef5e; }
+      text-decoration: underline; }
   footer img {
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100px; }
 
 /*********************
@@ -2325,8 +2298,6 @@ For slightly less small devices
      	ABOUT Styles
      ========================================================================== */
   #about #text-box h2 {
-    text-align: center;
-    color: #ffe082;
     font-size: 4vw;
     font-weight: 300; }
   #about #abt-row h2 {
@@ -2369,10 +2340,10 @@ For tablets and smaller laptops
   p {
     max-width: 60vw; }
 
-  .purple-btn, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download a.btn:hover, #checkout a.btn:hover, #privacy a.btn:hover, #customize a.btn:hover {
-    color: #ffe082;
-    background: #3A3961;
-    border: 2px solid #3A3961; }
+  .hvr-btn, #top a.btn:hover, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download a.btn:hover, #checkout a.btn:hover, #privacy a.btn:hover, #customize a.btn:hover {
+    color: #FFF;
+    background: #00B0EA;
+    border: 2px solid #00B0EA; }
 
   a.btn {
     transition: all 0.2s ease;
@@ -2384,6 +2355,9 @@ For tablets and smaller laptops
   /* ==========================================================================
      	LOGO Styles
      ========================================================================== */
+  a.navbar-brand img#mss-logo-navbar {
+    top: 34px; }
+
   /* ==========================================================================
      	NAVBAR Styles
      ========================================================================== */
@@ -2422,13 +2396,6 @@ For tablets and smaller laptops
      ========================================================================== */
   #top {
     background-attachment: fixed; }
-    #top a.btn:hover {
-      border: 2px solid #3A3961;
-      color: #ffe082;
-      background: #3A3961; }
-      #top a.btn:hover i {
-        position: relative;
-        top: 1px; }
 
   #mss-hero h1 {
     font-size: 6vmax;
@@ -2438,9 +2405,10 @@ For tablets and smaller laptops
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 3.5rem;
-    max-width: 70vw;
+    max-width: 73vw;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    }
   #mss-hero #mss-logo-top {
     height: 35vh; }
 
@@ -2477,8 +2445,7 @@ For tablets and smaller laptops
      ========================================================================== */
   #customize #sample-text .panel {
     max-width: 70vw;
-    margin-left: auto;
-    margin-right: auto; }
+    margin: 3vw auto 2vw auto; }
   #customize #sample-text .col-sm-6 {
     text-align: left; }
   #customize #sample-text #letter-text {
@@ -2500,7 +2467,9 @@ For tablets and smaller laptops
 
   /* ==========================================================================
      	FOOTER Styles
-     ========================================================================== */ }
+     ========================================================================== */
+  footer img {
+    padding-top: 20px; } }
 /*********************
 LARGE
 This is the average viewing window. So Desktops, Laptops, and

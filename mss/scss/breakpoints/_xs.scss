@@ -19,12 +19,13 @@ html {
 	font-size: 62.5%;
 }
 body {
+	color: $black;
 	// background-image: url('../img/paper_fibers.png');
 	// background-repeat: repeat;
 	// background-position: center top;
 	// background-size: 100%;
 	font-size: 1.4rem;
-	background: $lighter-yellow;
+	background: $mss-top;
 }
 a {
 	color: $mss-blue;
@@ -62,7 +63,7 @@ h2 {
   height: 10px;
 }
 .divider {
-	height: 60px;
+	height: 35px;
 	width: 133px;
     background-size: 100% 100%;
     margin: 0px auto 3vw auto;
@@ -231,6 +232,8 @@ ul.nav {
    ========================================================================== */
 
 #top {
+	border: 2px solid $black;
+	margin: 1%;
 	// @include full-screen;
 
 	// background-image: url('../img/desk.jpeg');
@@ -239,12 +242,6 @@ ul.nav {
 	// background-size: 100%;
 	// @extend .red, .accent-1;
 	// background: $lighter-yellow;
-	#letter-div>img {
-		position: relative;
-		z-index: 0;
-		// width: 90vw;
-		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-	}
 }
 #mss-hero {
 	// @include full-screen;
@@ -260,10 +257,26 @@ ul.nav {
 	h2 {
 		font-weight: 400;
 		padding: 0vh 8% 0 8%;
+		sup {
+			font-family: $top-font;
+			font-size: 65%;
+		}
 	}
 	p, h1, h2, a {
 		color: $black;
 	}
+
+	#typed {
+		position: absolute;
+		// left: 15%;
+		// top: 37%;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+	.typed-cursor {
+		display: none;
+	}
+
 	a.btn {
 		@extend .transparent-button;
 		height: 85px;
@@ -275,9 +288,6 @@ ul.nav {
 		i {
 			font-size: 3rem;
 		}
-	}
-	#letter-div {
-		min-height: 200px;
 	}
 	#mss-logo-top {
 		// height: 10vh;
@@ -297,18 +307,24 @@ ul.nav {
    ========================================================================== */
 
 #about {
-	background: $light-yellow;
 	position: relative;
 	z-index: 10;
-	@include jagged($light-yellow, 30, bottom);
-	
+	background-color: $mss-odd;
+	@include jagged($mss-odd, 30, bottom);
+
 	#text-box {
-		background: $indigo-violet;
+		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+		background: $mss-blue;
+		// border: 4px solid $black;
 		h2 {
-			text-align: center;
-			color: $golden-yellow;
+			max-width: 75%;
+			color: $white;
 			font-size: 2.0rem;
 			margin: 3% auto 3% auto;
+			sup {
+				font-family: $top-font;
+				font-size: 65%;
+			}
 		}
 	}
 	#abt-row {
@@ -342,10 +358,10 @@ ul.nav {
 #how-it-works {
 	padding: $section-padding;
 	text-align: center;
-	background-color: $golden-yellow;
-	@include jagged($golden-yellow, 30, bottom);
+	background-color: $mss-even;
+	@include jagged($mss-even, 30, bottom);
+	// color: $white;
 	h2 {
-		color: $black;
 		font-size: 4rem;
 		margin: 0 auto 3vw auto;
 	}
@@ -370,23 +386,23 @@ ul.nav {
    	SIGNUP Styles
    ========================================================================== */
 
-#sign-up {
-	padding: $section-padding;
-	background-color: $light-yellow;
-	@include jagged($light-yellow, 30, bottom);
-	h2 {
-		color: $black;
-		font-size: 4rem;
-		margin: 0 auto 3vw auto;
-	}
-	p {
-		font-size: 1.9rem;
-		line-height: 1.7;
-	}
-	a.btn {
-		@extend .transparent-button;
-	}
-}
+// #sign-up {
+// 	padding: $section-padding;
+// 	background-color: $mss-odd;
+// 	@include jagged($mss-odd, 30, bottom);
+// 	h2 {
+// 		color: $black;
+// 		font-size: 4rem;
+// 		margin: 0 auto 3vw auto;
+// 	}
+// 	p {
+// 		font-size: 1.9rem;
+// 		line-height: 1.7;
+// 	}
+// 	a.btn {
+// 		@extend .transparent-button;
+// 	}
+// }
 
 
 /* ==========================================================================
@@ -395,8 +411,8 @@ ul.nav {
 
 #download {
 	padding: $section-padding;
-	background-color: $light-yellow;
-	@include jagged($light-yellow, 30, bottom);
+	background-color: $mss-odd;
+	@include jagged($mss-odd, 30, bottom);
 
 	h2 {
 		text-align: center;
@@ -422,8 +438,8 @@ ul.nav {
 
 #customize {
 	padding: $section-padding;
-	background-color: $golden-yellow;
-	@include jagged($golden-yellow, 30, bottom);
+	background-color: $mss-even;
+	@include jagged($mss-even, 30, bottom);
 
 	h2 {
 		text-align: center;
@@ -437,7 +453,7 @@ ul.nav {
 			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 			border-radius: 0;
 			padding: 2%;
-			margin: 3vw auto 2vw auto;
+			margin: 3vw auto 3vw auto;
 			// background: $lighter-yellow;
 			.panel-body {
 				padding: 5%;
@@ -481,7 +497,7 @@ ul.nav {
 			p#paper-desc {
 				margin-top: 10px;
 				max-width: 100%;
-				font-size: 1.7rem;
+				font-size: 1.6rem;
 			}
 		}
 		.col-sm-6 {
@@ -502,7 +518,14 @@ ul.nav {
 			}
 		}
 		#calligraphy-notice {
-			font-size: 1.5rem;
+			font-size: 1.4rem;
+		}
+	}
+	#custom-orders {
+		// margin-top: 1vw;
+		p {
+			max-width: 100%;
+			font-size: 1.6rem;
 		}
 	}
 
@@ -566,20 +589,20 @@ ul.nav {
 		margin: 2vw auto 3vw auto;
 		max-width: 87vw;
 		// border-collapse: collapse;
-		background-color: $lighter-yellow;
+		background-color: $white;
 		padding: 5vw;
 		margin-left: auto;
 		margin-right: auto;
-		border: none;
+		// border: none;
 		td {
 			// border: 2px solid $golden-yellow;
 			padding: 10px;
 		}
 		th {
 			padding: 2vw;
-			background-color: $indigo-violet;
-			border: 2px solid $indigo-violet;
-			color: $golden-yellow;
+			background-color: $mss-blue;
+			// border: 2px solid $mss-blue;
+			color: $white;
 			text-align: center;
 		}
 	}
@@ -605,11 +628,9 @@ ul.nav {
 footer {
 	padding-top: 3vw;
 	padding-bottom: 5vw;
-	min-height: 40vh;
-	// @extend .indigo, .darken-3;
-	// @extend .blue, .darken-4;
-	background: $indigo-violet;
-	color: $golden-yellow;
+	min-height: 90vh;
+	background: $mss-yellow;
+	color: $black;
 
 	i {
 		padding: 3%;
@@ -618,12 +639,12 @@ footer {
 		font-family: $top-font;
 	}
 	a {
-		color: $golden-yellow;
+		// color: $mss-yellow;
 		text-decoration: underline;
 		text-decoration-style: dotted;
 		&:hover {
 			text-decoration: underline;
-			color: darken($light-yellow, 20%);
+			// color: darken($light-yellow, 20%);
 		}
 	}
 	img {

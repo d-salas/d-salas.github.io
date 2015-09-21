@@ -1,16 +1,34 @@
 $white:				#FFF;
 $black:				#131B21;
+$beige:				#ECECEC;
+
 $gold:				#D4BD7C;
 $golden-yellow:		#ffe082;
-$beige:				#ECECEC;
+
 $light-yellow:		#fff9c4;
+$light-yellow:		#fff59d;
+
+$yellow-accent-1:	#ffff8d;
+$yellow-accent:		#fff176;
+
 $lighter-yellow:	#fffde7;
+$lighter-yellow:	#FFFCD5;
+
+$bright-yellow: 	#ffee58;
+
 $indigo-violet:		#3A3961;
 
-
 $navy-blue:			#132640;
-$dark-blue:			#072940;
+$dark-blue:			#01579b;
+
 $mss-blue:			#00B0EA;
+$mss-yellow:		$yellow-accent;
+
+$mss-top:			$mss-yellow;
+$mss-odd:			$lighter-yellow;
+$mss-even:			$light-yellow;//$yellow-accent;
+
+
 
 // /////////////////
 // // ASSIGNMENTS //

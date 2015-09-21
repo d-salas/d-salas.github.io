@@ -22,10 +22,10 @@ br {
 
 }
 
-.purple-btn {
-	color: $golden-yellow;
-	background: $indigo-violet;//#512F54;//#3949ab;//$light-yellow;
-	border: 2px solid $indigo-violet;
+.hvr-btn {
+	color: $white;
+	background: $mss-blue;
+	border: 2px solid $mss-blue;
 }
 a.btn {
 	transition: all 0.2s ease;
@@ -132,13 +132,10 @@ ul.nav {
 
 	a.btn {
 		&:hover {
-			// color: $white;
-			border: 2px solid $indigo-violet;
-			color: $golden-yellow;
-			background: $indigo-violet;//#512F54;//#3949ab;//$light-yellow;
+			@extend .hvr-btn;
 			i {
-				position: relative;
-				top: 1px;
+				// position: relative;
+				// top: 1px;
 			}
 		}
 	}
@@ -154,9 +151,12 @@ ul.nav {
 		padding-top: 20px;
 		padding-bottom: 10px;
 		font-size: 3.5rem;
-		max-width: 70vw;
+		max-width: 73vw;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	#typed {
+		font-size: 1.7rem;
 	}
 	p, h1, h2, a, b {
 	}
@@ -209,7 +209,7 @@ ul.nav {
 	a.btn {
 		// margin: 4% auto 3.5% auto;
 		&:hover {
-			@extend .purple-btn;
+			@extend .hvr-btn;
 		}
 	}
 }
@@ -232,7 +232,7 @@ ul.nav {
 	a.btn {
 		// margin: 3% auto 3% auto;
 		&:hover {
-			@extend .purple-btn;
+			@extend .hvr-btn;
 		}
 	}
 }
@@ -249,7 +249,7 @@ ul.nav {
 	}
 	a.btn {
 		&:hover {
-			@extend .purple-btn;
+			@extend .hvr-btn;
 		}
 	}
 }
@@ -270,7 +270,7 @@ ul.nav {
 	}
 	a.btn {
 		&:hover {
-			@extend .purple-btn;
+			@extend .hvr-btn;
 		}
 	}
 }
@@ -283,8 +283,7 @@ ul.nav {
 	#sample-text {
 		.panel {
 			max-width: 70vw;
-			margin-left: auto;
-			margin-right: auto;
+			margin: 3vw auto 2vw auto;
 		}
 		.col-sm-6 {
 			text-align: left;
@@ -309,6 +308,13 @@ ul.nav {
 			text-align: left;
 		}
 	}
+	#custom-orders {
+		// margin-top: 2vw;
+		p {
+			max-width: 67vw;
+			// font-size: 1.6rem;
+		}
+	}
 
 	p {
 
@@ -322,7 +328,7 @@ ul.nav {
 		&:hover {
 			// color: $black;
 			// background: $golden-yellow;
-			@extend .purple-btn;
+			@extend .hvr-btn;
 		}
 	}
 

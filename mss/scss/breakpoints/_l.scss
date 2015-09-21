@@ -95,12 +95,8 @@ ul.nav {
 		font-size: 6rem;
 		// padding-top: 10vh;
 	}
-
-	h2 {
-		// padding-top: 3vh;
-		// max-width: 70vw;
-	}
-	p, h1, h2, a, b {
+	#typed {
+		font-size: 1.9rem;
 	}
 	a.btn {
 		i {
@@ -172,6 +168,13 @@ ul.nav {
    ========================================================================== */
 
 #customize {
+	#customizers {
+		#pickers {
+			p#paper-desc {
+				font-size: 1.5rem;
+			}
+		}
+	}
 	#sample-text {
 	}
 	#customizers {

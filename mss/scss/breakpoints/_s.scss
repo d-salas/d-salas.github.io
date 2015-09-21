@@ -94,10 +94,9 @@ ul.nav {
 	}
 }
 #mss-hero {
-	h1, b {
-
+	#typed {
+		font-size: 1.5rem;
 	}
-
 	h1 {
 		padding-top: 65px;
 		padding-bottom: 15px;
@@ -105,8 +104,7 @@ ul.nav {
 	h2 {
 		font-weight: 300;
 	}
-	p, h1, h2, a, b {
-	}
+
 	a.btn {
 		
 		i {
@@ -133,8 +131,6 @@ ul.nav {
 #about {
 	#text-box {
 		h2 {
-			text-align: center;
-			color: $golden-yellow;
 			font-size: 4vw;
 			font-weight: 300;
 		}

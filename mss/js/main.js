@@ -1,7 +1,7 @@
 /*jshint undef:false */
 
 $( document ).ready(function() {
-
+	// For smooth scrolling
 	$('a[href^="#"]').on('click', function(event) {
 	    var target = $( $(this).attr('href') );
 	    // console.log(target);
@@ -12,7 +12,6 @@ $( document ).ready(function() {
 	        }, 1000);
 	    }
 	});
-
 	
 	// This is because Bootstrap's affix kind of sux.
 	var nav = $("#mss-nav");
@@ -45,14 +44,53 @@ $( document ).ready(function() {
 	    }
   	});
 
+	// Animate the menu icon when it's clicked.
 	$("#menu-icon").click(function(){
     	$(this).toggleClass("down"); 
 	});
 
-	// for the window resize
-	// $(window).resize(function() {
+	// var screenWidth = $(window).width();
 
-	// });
+
+
+
+	var typed = $('#typed');
+	// var typedContainer = $('.typed-wrap');
+	var mssLogo = $('#mss-logo-top>img');
+	function setPosition(){
+		var logoTop = mssLogo.offset().top; 
+		var logoLeft = mssLogo.offset().left;
+		typed.css("top", logoTop+10);
+		typed.css("left", logoLeft-40);
+	}
+	setPosition();
+	$(window).resize(setPosition);
+
+	$("#typed").typed({
+        strings: ["Acknowledgements", "Invitations", "Announcements"],
+        // stringsElement: $('#typed-strings'),
+        typeSpeed: 50,
+        backDelay: 500,
+        loop: true,
+        contentType: 'html', // or text
+        loopCount: false,
+    });
+
+
+
+	// function setPosition() {
+	// 	var typedHeight = $('.typed').outerHeight();
+	// 	typedContainer.height(typedHeight);
+	// 	// console.log(typedHeight);
+	// }
+	// setHeight();
+
+	// for the window resize
+	// $(window).resize(setHeight);
+
+
+
+	// $(window).resize(setHeight);
 
 
 	// FOR CUSTOMIZER DROPDOWNS
