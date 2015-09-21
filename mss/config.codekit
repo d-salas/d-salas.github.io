@@ -598,13 +598,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/ampersand.jpg": {
+	"\/img\/Ampersand.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.16449e+06,
-		"inputAbbreviatedPath": "\/img\/ampersand.jpg",
-		"outputAbbreviatedPath": "\/img\/ampersand.jpg",
+		"inputAbbreviatedPath": "\/img\/Ampersand.jpg",
+		"outputAbbreviatedPath": "\/img\/Ampersand.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

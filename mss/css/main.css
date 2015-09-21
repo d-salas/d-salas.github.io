@@ -1835,7 +1835,7 @@ a.navbar-brand.visible-logo img#mss-logo-navbar {
   display: inline; }
 
 a.navbar-brand {
-  padding-top: 17px;
+  padding-top: 16px;
   font-size: 4rem;
   z-index: 100;
   text-decoration: none; }
@@ -1846,7 +1846,7 @@ a.navbar-brand {
     transition: all .5s ease;
     display: none;
     position: absolute;
-    top: 9px;
+    top: 8px;
     padding-right: 8px;
     height: 33px; }
 
@@ -2213,8 +2213,7 @@ ul.nav {
   #checkout p.smaller {
     font-size: 1.5rem; }
   #checkout p.smallest {
-    font-size: 1.4rem;
-    text-align: center; }
+    font-size: 1.4rem; }
   #checkout p.bigger {
     font-size: 2rem;
     margin-top: 20px; }
@@ -2362,7 +2361,7 @@ For tablets and smaller laptops
      	LOGO Styles
      ========================================================================== */
   a.navbar-brand img#mss-logo-navbar {
-    top: 34px; }
+    top: 33px; }
 
   /* ==========================================================================
      	NAVBAR Styles
@@ -2537,6 +2536,14 @@ Adds resource intensive styles.
     font-size: 1.6rem; }
 
   /* ==========================================================================
+     	CHECKOUT Styles
+     ========================================================================== */
+  #checkout p.smallest {
+    margin-top: 5vw;
+    font-size: 1.5rem;
+    max-width: 30vw; }
+
+  /* ==========================================================================
      	FOOTER Styles
      ========================================================================== */ }
 /*********************
@@ -2569,7 +2576,7 @@ This is for the larger monitors and possibly full screen viewers.
      	CUSTOMIZE Styles
      ========================================================================== */
   #customize #customizers #pickers p#paper-desc {
-    font-size: 1.5rem; }
+    font-size: 1.55rem; }
   #customize #custom-orders {
     margin-top: 2.5vw; }
     #customize #custom-orders p {

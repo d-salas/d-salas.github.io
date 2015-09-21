@@ -103,7 +103,7 @@ a.navbar-brand.visible-logo {
 	}
 }
 a.navbar-brand {
-	padding-top: 17px;
+	padding-top: 16px;
 	font-size: 4rem;
 	z-index: 100;
 	text-decoration: none;
@@ -115,7 +115,7 @@ a.navbar-brand {
 		transition: all .5s ease;
 		display: none;
 		position: absolute;
-		top: 9px;
+		top: 8px;
 		padding-right: 8px;
 		height: 33px;
 	}
@@ -571,7 +571,7 @@ ul.nav {
 		}
 		&.smallest {
 			font-size: 1.4rem;
-			text-align: center;
+			// text-align: center;
 		}
 		&.bigger {
 			font-size: 2rem;

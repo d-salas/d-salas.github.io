@@ -67,7 +67,7 @@ $( document ).ready(function() {
 	$(window).resize(setPosition);
 
 	$("#typed").typed({
-        strings: ["Acknowledgements", "      Invitations", "  Announcements"],
+        strings: ["Acknowledgements", "     Invitations", "  Announcements"],
         // stringsElement: $('#typed-strings'),
         typeSpeed: 50,
         backDelay: 500,
