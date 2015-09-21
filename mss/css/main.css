@@ -2184,7 +2184,8 @@ ul.nav {
         border: 2px solid black;
         width: 100%; }
     #customize #customizers #calligraphy-notice {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      text-align: left; }
   #customize #custom-orders p {
     max-width: 100%;
     font-size: 1.6rem; }
@@ -2465,7 +2466,7 @@ For tablets and smaller laptops
   #customize #customizers .col-sm-6 {
     text-align: left; }
   #customize #custom-orders p {
-    max-width: 66.7vw; }
+    max-width: 66.88vw; }
 
   /* ==========================================================================
      	CHECKOUT Styles
@@ -2570,7 +2571,7 @@ This is for the larger monitors and possibly full screen viewers.
   #customize #customizers #pickers p#paper-desc {
     font-size: 1.5rem; }
   #customize #custom-orders {
-    margin-top: 2vw; }
+    margin-top: 2.5vw; }
     #customize #custom-orders p {
       max-width: 60vw;
       font-size: 1.9rem; }
