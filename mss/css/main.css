@@ -1775,8 +1775,7 @@ a {
   color: #00B0EA;
   text-decoration: none; }
   a:hover {
-    text-decoration: none;
-    color: #008ab7; }
+    text-decoration: underline; }
 
 p {
   line-height: 150%;
@@ -1804,11 +1803,11 @@ h2 {
   height: 10px; }
 
 .divider {
-  height: 35px;
-  width: 133px;
+  height: 15px;
+  width: 150px;
   background-size: 100% 100%;
   margin: 0px auto 3vw auto;
-  background: url(../img/divider.png) no-repeat scroll center transparent;
+  background: url(../img/line-divider.png) no-repeat scroll center transparent;
   background-size: 100% 100%; }
   .divider img {
     height: auto;
@@ -1923,8 +1922,6 @@ ul.nav {
   border-bottom: 2px solid #131B21; }
   .affix a {
     color: #131B21; }
-    .affix a.navbar-brand {
-      color: #3A3961; }
   .affix .hvr-underline-reveal:before {
     background: #131B21; }
 
@@ -2013,6 +2010,8 @@ ul.nav {
       #about #text-box h2 sup {
         font-family: "Ovo", Cambria, Times New Roman, Times, serif;
         font-size: 65%; }
+  #about sup {
+    font-size: 65%; }
   #about #abt-row {
     padding: 8vw 5vw; }
     #about #abt-row h2 {

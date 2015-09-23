@@ -1775,8 +1775,7 @@ a {
   color: #00B0EA;
   text-decoration: none; }
   a:hover {
-    text-decoration: none;
-    color: #008ab7; }
+    text-decoration: underline; }
 
 p {
   line-height: 150%;
@@ -1804,11 +1803,11 @@ h2 {
   height: 10px; }
 
 .divider {
-  height: 35px;
-  width: 133px;
+  height: 15px;
+  width: 150px;
   background-size: 100% 100%;
   margin: 0px auto 3vw auto;
-  background: url(../img/divider.png) no-repeat scroll center transparent;
+  background: url(../img/line-divider.png) no-repeat scroll center transparent;
   background-size: 100% 100%; }
   .divider img {
     height: auto;
@@ -1923,8 +1922,6 @@ ul.nav {
   border-bottom: 2px solid #131B21; }
   .affix a {
     color: #131B21; }
-    .affix a.navbar-brand {
-      color: #3A3961; }
   .affix .hvr-underline-reveal:before {
     background: #131B21; }
 
@@ -2013,6 +2010,8 @@ ul.nav {
       #about #text-box h2 sup {
         font-family: "Ovo", Cambria, Times New Roman, Times, serif;
         font-size: 65%; }
+  #about sup {
+    font-size: 65%; }
   #about #abt-row {
     padding: 8vw 5vw; }
     #about #abt-row h2 {
@@ -2171,7 +2170,7 @@ ul.nav {
     #customize #customizers #pickers p#paper-desc {
       margin-top: 10px;
       max-width: 100%;
-      font-size: 1.7rem; }
+      font-size: 1.6rem; }
     #customize #customizers .col-sm-6 {
       text-align: center; }
     #customize #customizers .btn-group {
@@ -2184,7 +2183,11 @@ ul.nav {
         border: 2px solid black;
         width: 100%; }
     #customize #customizers #calligraphy-notice {
-      font-size: 1.5rem; }
+      font-size: 1.4rem;
+      text-align: left; }
+  #customize #custom-orders p {
+    max-width: 100%;
+    font-size: 1.6rem; }
   #customize p {
     font-size: 1.9rem;
     line-height: 1.7;
@@ -2209,8 +2212,7 @@ ul.nav {
   #checkout p.smaller {
     font-size: 1.5rem; }
   #checkout p.smallest {
-    font-size: 1.4rem;
-    text-align: center; }
+    font-size: 1.4rem; }
   #checkout p.bigger {
     font-size: 2rem;
     margin-top: 20px; }
@@ -2226,7 +2228,8 @@ ul.nav {
   background-color: #FFF;
   padding: 5vw;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  }
   #checkout table td {
     padding: 10px; }
   #checkout table th {
@@ -2288,6 +2291,8 @@ For slightly less small devices
   #top img {
     margin: auto; }
 
+  #mss-hero #typed {
+    font-size: 1.5rem; }
   #mss-hero h1 {
     padding-top: 65px;
     padding-bottom: 15px; }
@@ -2356,7 +2361,7 @@ For tablets and smaller laptops
      	LOGO Styles
      ========================================================================== */
   a.navbar-brand img#mss-logo-navbar {
-    top: 34px; }
+    top: 33px; }
 
   /* ==========================================================================
      	NAVBAR Styles
@@ -2407,8 +2412,9 @@ For tablets and smaller laptops
     font-size: 3.5rem;
     max-width: 73vw;
     margin-left: auto;
-    margin-right: auto;
-    }
+    margin-right: auto; }
+  #mss-hero #typed {
+    font-size: 1.7rem; }
   #mss-hero #mss-logo-top {
     height: 35vh; }
 
@@ -2458,6 +2464,8 @@ For tablets and smaller laptops
     margin-right: auto; }
   #customize #customizers .col-sm-6 {
     text-align: left; }
+  #customize #custom-orders p {
+    max-width: 66.88vw; }
 
   /* ==========================================================================
      	CHECKOUT Styles
@@ -2498,6 +2506,8 @@ Adds resource intensive styles.
      ========================================================================== */
   #mss-hero h1 {
     font-size: 6rem; }
+  #mss-hero #typed {
+    font-size: 1.9rem; }
 
   /* ==========================================================================
      	ABOUT Styles
@@ -2521,6 +2531,18 @@ Adds resource intensive styles.
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
+  #customize #custom-orders p {
+    max-width: 67.4vw;
+    font-size: 1.6rem; }
+
+  /* ==========================================================================
+     	CHECKOUT Styles
+     ========================================================================== */
+  #checkout p.smallest {
+    margin-top: 5vw;
+    font-size: 1.5rem;
+    max-width: 30vw; }
+
   /* ==========================================================================
      	FOOTER Styles
      ========================================================================== */ }
@@ -2553,6 +2575,13 @@ This is for the larger monitors and possibly full screen viewers.
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
+  #customize #customizers #pickers p#paper-desc {
+    font-size: 1.55rem; }
+  #customize #custom-orders {
+    margin-top: 2.5vw; }
+    #customize #custom-orders p {
+      max-width: 60vw;
+      font-size: 1.9rem; }
   #customize #customizers {
     margin-top: 3vw; }
 

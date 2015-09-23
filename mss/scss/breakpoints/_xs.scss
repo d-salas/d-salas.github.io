@@ -31,8 +31,8 @@ a {
 	color: $mss-blue;
 	text-decoration: none;
 	&:hover {
-		text-decoration: none;
-		color: darken($mss-blue, 10%);
+		text-decoration: underline;
+		// color: darken($mss-blue, 10%);
 	}
 }
 
@@ -63,11 +63,11 @@ h2 {
   height: 10px;
 }
 .divider {
-	height: 35px;
-	width: 133px;
+	height: 15px;
+	width: 150px;
     background-size: 100% 100%;
     margin: 0px auto 3vw auto;
-    background: url(../img/divider.png) no-repeat scroll center transparent;
+    background: url(../img/line-divider.png) no-repeat scroll center transparent;
     background-size: 100% 100%;
     img {
     	height: auto;
@@ -216,7 +216,7 @@ ul.nav {
 	a {
 		color: $black;
 		&.navbar-brand {
-			color: $indigo-violet;
+			// color: $indigo-violet;
 		}
 	}
 	// .navbar-nav li {
@@ -326,6 +326,9 @@ ul.nav {
 				font-size: 65%;
 			}
 		}
+	}
+	sup {
+		font-size: 65%;
 	}
 	#abt-row {
 		padding: $section-padding;

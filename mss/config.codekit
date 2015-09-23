@@ -697,6 +697,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/line-divider.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5011,
+		"inputAbbreviatedPath": "\/img\/line-divider.png",
+		"outputAbbreviatedPath": "\/img\/line-divider.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/mss-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -752,13 +763,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/roadster.jpg": {
+	"\/img\/Roadster.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3.43072e+06,
-		"inputAbbreviatedPath": "\/img\/roadster.jpg",
-		"outputAbbreviatedPath": "\/img\/roadster.jpg",
+		"inputAbbreviatedPath": "\/img\/Roadster.jpg",
+		"outputAbbreviatedPath": "\/img\/Roadster.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -785,13 +796,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/wreath.jpg": {
+	"\/img\/Wreath.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.4647e+06,
-		"inputAbbreviatedPath": "\/img\/wreath.jpg",
-		"outputAbbreviatedPath": "\/img\/wreath.jpg",
+		"inputAbbreviatedPath": "\/img\/Wreath.jpg",
+		"outputAbbreviatedPath": "\/img\/Wreath.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
