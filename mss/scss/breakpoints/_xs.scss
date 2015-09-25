@@ -49,6 +49,10 @@ h2 {
 	font-family: $top-font;
 }
 
+.hidden {
+	display: none;
+}
+
 .zigzag {
   position: relative;
   width: 100%;
@@ -608,6 +612,26 @@ ul.nav {
 			// border: 2px solid $mss-blue;
 			color: $white;
 			text-align: center;
+		}
+	}
+
+	form.paypal-form {
+		table {
+			box-shadow: none;
+			background-color: transparent;
+			border: none;
+		}
+		tbody, table, td {
+			border: none;
+		}
+		button, input{
+			// margin-bottom: 15px;
+			border: 2px solid black;
+			width: 100%;
+		}
+		input.paypal-img {
+			border: none;
+			width: auto;
 		}
 	}
 }

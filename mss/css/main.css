@@ -1789,6 +1789,9 @@ h1 {
 h2 {
   font-family: "Ovo", Cambria, Times New Roman, Times, serif; }
 
+.hidden {
+  display: none; }
+
 .zigzag {
   position: relative;
   width: 100%;
@@ -2236,6 +2239,18 @@ ul.nav {
     background-color: #00B0EA;
     color: #FFF;
     text-align: center; }
+#checkout form.paypal-form table {
+  box-shadow: none;
+  background-color: transparent;
+  border: none; }
+#checkout form.paypal-form tbody, #checkout form.paypal-form table, #checkout form.paypal-form td {
+  border: none; }
+#checkout form.paypal-form button, #checkout form.paypal-form input {
+  border: 2px solid black;
+  width: 100%; }
+#checkout form.paypal-form input.paypal-img {
+  border: none;
+  width: auto; }
 
 /* ==========================================================================
    	PRIVACY POLICY Styles
@@ -2375,7 +2390,7 @@ For tablets and smaller laptops
 
   .navbar-nav li {
     font-size: 1.5rem;
-    padding: 15px 1vw 4px 1vw; }
+    padding: 14px 1vw 4px 1vw; }
 
   .affix-top {
     background: transparent;
@@ -2498,7 +2513,7 @@ Adds resource intensive styles.
      ========================================================================== */
   .navbar-nav li {
     font-size: 1.6rem;
-    padding: 15px 2vw 4px 2vw; }
+    padding: 14px 2vw 4px 2vw; }
 
   /* ==========================================================================
      	TOP Styles

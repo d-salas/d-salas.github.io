@@ -373,7 +373,7 @@
 
                 <div class="col-sm-12">
 
-                    <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <!-- <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="8FQW2B8KC53CA">
                         <table>
@@ -381,7 +381,7 @@
                                 <input type="hidden" name="on0" value="Quantity">Quantity
                             </td></tr>
                             <tr><td>
-                                <select name="os0">
+                                <select class="selectpicker" name="os0">
                                     <option value="25-100">25-100 $70.00 USD</option>
                                     <option value="100-150">100-150 $100.00 USD</option>
                                     <option value="150+">150+ $150.00 USD</option>
@@ -391,23 +391,63 @@
                                 <input type="hidden" name="on1" value="Package options">Package options
                             </td></tr>
                             <tr><td>
-                                <select name="os1">
+                                <select class="selectpicker" name="os1">
                                     <option value="Digital printing">Digital printing </option>
                                     <option value="Callig">Callig </option>
                                     <option value="Engraving">Engraving </option>
                                 </select> 
                             </td></tr>
                             <tr><td>
-                                <input type="hidden" name="on2" value="Your Name">Your Name
+                                <input id="paypal-name" type="hidden" name="on2" value="Your Name">Your Name
                             </td></tr>
                             <tr><td>
                                 <input type="text" name="os2" maxlength="200">
                             </td></tr>
                         </table>
                         <input type="hidden" name="currency_code" value="USD">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <div class="text-center"><input class="paypal-img" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></div>
                         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                     </form> -->
+
+                    <form class="paypal-form" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="RUB2DZMVJNL9C">
+                        <table>
+                        <tr><td><input type="hidden" name="on0" value="Quantity">Quantity</td></tr><tr><td><select class="selectpicker" name="os0">
+                            <option value="25-100">25-100 $50.00 USD</option>
+                            <option value="100-150">100-150 $100.00 USD</option>
+                            <option value="150+">150+ $150.00 USD</option>
+                        </select> </td></tr>
+                        <tr><td><input type="hidden" name="on1" value="Name:">Name:</td></tr><tr><td><input id="paypal-name" type="text" name="os1" maxlength="200"></td></tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <div class="text-center"><input class="paypal-img" id="paypal-btn1" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></div>
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+
+
+
+                    <form class="paypal-form" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GLXUFZ3J288R8">
+                        <table>
+                        <tr><td><input type="hidden" name="on0" value="Add-ons">Add-ons</td></tr><tr><td><select class="selectpicker" name="os0">
+                            <option value="Digital Printing">Digital Printing $5.00 USD</option>
+                            <option value="Engraving">Engraving $10.00 USD</option>
+                            <option value="Embossing">Embossing $10.00 USD</option>
+                            <option value="Letterpress">Letterpress $15.00 USD</option>
+                        </select> </td></tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <div class="text-center"><input class="paypal-img" id="paypal-btn2" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></div>
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+
+
+
+
+
+
 
                     <p class="bigger text-center">Email us your order form and we'll take care of the rest.</p>
                 </div>

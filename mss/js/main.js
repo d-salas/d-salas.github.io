@@ -49,11 +49,7 @@ $( document ).ready(function() {
     	$(this).toggleClass("down"); 
 	});
 
-	// var screenWidth = $(window).width();
-
-
-
-
+	// Logo typing shit
 	var typed = $('#typed');
 	// var typedContainer = $('.typed-wrap');
 	var mssLogo = $('#mss-logo-top>img');
@@ -260,7 +256,25 @@ $( document ).ready(function() {
 		}
 	});
 
+	// PAYPAL FORM STUFF
+	var name = $('#paypal-name');
+	var paybtn = $('.paypal-img');
+	var paybtn1 = $('#paypal-btn1');
+	var paybtn2 = $('#paypal-btn2');
+	paybtn.addClass('hidden');
 
+	name.on('input', function(){
+		if (name.val().trim().length === 0) {
+			paybtn1.addClass('hidden');
+		}
+		else {
+			paybtn1.removeClass('hidden');
+		}
+	});
+
+	paybtn1.on('click', function(){
+		paybtn2.removeClass('hidden');
+	});
 
 });
 
