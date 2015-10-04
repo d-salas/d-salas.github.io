@@ -1816,7 +1816,7 @@ h2 {
     height: auto;
     width: 100px; }
 
-.transparent-button, #mss-hero a.btn, #about a.btn, #how-it-works a.btn, #download a.btn, #checkout a.btn, #privacy a.btn, #customize a.btn {
+.transparent-button, #mss-hero a.btn, #about a.btn, #how-it-works a.btn, #download a.btn, #checkout a.btn, #privacy a.btn, #customize a.btn, #checkout form.paypal-form .paypal-btn {
   font-family: "Muli", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.5em;
@@ -2204,14 +2204,30 @@ ul.nav {
 /* ==========================================================================
    	CHECKOUT Styles
    ========================================================================== */
-#checkout #pricing {
-  max-width: 80vw;
-  width: 100%;
-  height: 100%;
+#checkout .pricing {
   margin-right: auto;
   margin-left: auto; }
+  #checkout .pricing tbody, #checkout .pricing table, #checkout .pricing td {
+    border: 2px solid #131B21;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1.9rem; }
+  #checkout .pricing table {
+    width: 100%;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    margin: 2vw auto 3vw auto;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto; }
+    #checkout .pricing table td {
+      padding: 10px; }
+    #checkout .pricing table th {
+      padding: 2vw;
+      background-color: #00B0EA;
+      color: #FFF;
+      text-align: center; }
 #checkout p {
-  font-size: 1.7rem; }
+  font-size: 1.9rem; }
   #checkout p.smaller {
     font-size: 1.5rem; }
   #checkout p.smallest {
@@ -2219,38 +2235,35 @@ ul.nav {
   #checkout p.bigger {
     font-size: 2rem;
     margin-top: 20px; }
-#checkout tbody, #checkout table, #checkout td {
-  border: 2px solid #131B21;
-  text-align: center;
-  padding: 1vw;
-  font-size: 1.9rem; }
-#checkout table {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-  margin: 2vw auto 3vw auto;
-  max-width: 87vw;
-  background-color: #FFF;
-  padding: 5vw;
-  margin-left: auto;
-  margin-right: auto; }
-  #checkout table td {
-    padding: 10px; }
-  #checkout table th {
-    padding: 2vw;
-    background-color: #00B0EA;
-    color: #FFF;
-    text-align: center; }
 #checkout form.paypal-form table {
   box-shadow: none;
   background-color: transparent;
-  border: none; }
+  border: none;
+  width: 100%;
+  text-align: center; }
 #checkout form.paypal-form tbody, #checkout form.paypal-form table, #checkout form.paypal-form td {
+  font-size: 1.9rem;
   border: none; }
 #checkout form.paypal-form button, #checkout form.paypal-form input {
   border: 2px solid black;
   width: 100%; }
+#checkout form.paypal-form .btn-group {
+  margin-bottom: 15px;
+  width: 100%; }
 #checkout form.paypal-form input.paypal-img {
   border: none;
   width: auto; }
+#checkout form.paypal-form .paypal-btn {
+  margin-top: 15px;
+  transition: all .25s ease; }
+  #checkout form.paypal-form .paypal-btn#paypal-btn2 {
+    margin-top: 0; }
+  #checkout form.paypal-form .paypal-btn.disabled {
+    border: 2px solid grey !important;
+    color: grey !important;
+    cursor: not-allowed !important; }
+#checkout form.paypal-form .pay-label {
+  padding-bottom: 5px; }
 
 /* ==========================================================================
    	PRIVACY POLICY Styles
@@ -2486,6 +2499,10 @@ For tablets and smaller laptops
      ========================================================================== */
   #checkout p.smaller {
     max-width: 45vw; }
+  #checkout form.paypal-form:first-of-type {
+    margin: 2vw auto 0 auto; }
+  #checkout form.paypal-form table {
+    text-align: left; }
 
   /* ==========================================================================
      	FOOTER Styles

@@ -91,9 +91,6 @@ $( document ).ready(function() {
 
 	// FOR CUSTOMIZER DROPDOWNS
 	$('.selectpicker').selectpicker();
-	// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
- //    	$('.selectpicker').selectpicker('mobile');
-	// }
 
   	// CHANGE FONTS BASED ON DROPDOWN SELECTION
   	$(".font-picker").change(function() {
@@ -103,6 +100,8 @@ $( document ).ready(function() {
   	var statImg = $("#stationery-img");
 	// CHANGE STATIONERY IMAGE BASED ON DROPDOWN SELECTION
   	$(".stationery-picker").change(function() {
+  		console.log(stationeryForm);
+
   		var pic = $(this).val();
 
   		if (pic === "Ampersand") { 
@@ -127,6 +126,12 @@ $( document ).ready(function() {
 	var gift = $('option:contains(Gift acknowledgement)');
 	var invite = $('option:contains(Invitation)');
 
+	// var eventForm = $('#event-form');
+	// var typeForm = $('#type-form');
+	// var fontForm = $('#font-form');
+	// var stationeryForm = $('#stationery-form');
+	// var calligraphyForm = $('#calligraphy-form');
+
 	$('.service-picker').prop('disabled',true);
 	$('.stationery-picker').prop('disabled',true);
 	$('.calligraphy-picker').prop('disabled',true);
@@ -137,6 +142,9 @@ $( document ).ready(function() {
 
 	$(".event-picker").change(function() {
 		$('.service-picker').prop('disabled',false);
+		quantpick.prop('disabled',false);
+		quantpick.selectpicker('refresh');
+
 		var event = $(this).val();
 		// console.log(event);
 		if (event.indexOf("Baby") >= 0) { // SHOW SHOWER, ANNOUNCE, AND GIFT. STATIONERY
@@ -258,22 +266,74 @@ $( document ).ready(function() {
 
 	// PAYPAL FORM STUFF
 	var name = $('#paypal-name');
-	var paybtn = $('.paypal-img');
+	var paybtn = $('.paypal-btn');
 	var paybtn1 = $('#paypal-btn1');
 	var paybtn2 = $('#paypal-btn2');
-	paybtn.addClass('hidden');
+	var quantpick = $('.quantity-picker');
+	var addpick = $('.addon-picker');
 
-	name.on('input', function(){
-		if (name.val().trim().length === 0) {
-			paybtn1.addClass('hidden');
-		}
-		else {
-			paybtn1.removeClass('hidden');
+	addpick.prop('disabled',true);
+	addpick.selectpicker('refresh');
+
+	quantpick.prop('disabled',true);
+	quantpick.selectpicker('refresh');
+
+	paybtn.click(function(e) {
+		if($(this).hasClass('disabled')) {
+		   e.preventDefault();
 		}
 	});
 
-	paybtn1.on('click', function(){
-		paybtn2.removeClass('hidden');
+	quantpick.change(function() {
+		var quantity = $(this).val();
+		if (name.val().trim().length >= 3) {
+			paybtn1.removeClass('disabled');
+			$(this).unbind('click');
+			addpick.prop('disabled',false);
+			addpick.selectpicker('refresh');
+		}
+		if(quantity === null) {
+			paybtn1.addClass('disabled');
+			paybtn2.addClass('disabled');
+			addpick.prop('disabled',true);
+			addpick.selectpicker('refresh');
+		}
+	});
+
+	name.on('input', function(){
+		if (quantpick.val() === null && name.val().trim().length < 3) {
+			paybtn1.addClass('disabled');
+			paybtn2.addClass('disabled');
+			addpick.prop('disabled',true);
+			addpick.selectpicker('refresh');
+		}
+		else if(quantpick.val() !== null && name.val().trim().length >= 3) {
+			paybtn1.removeClass('disabled');
+			$(this).unbind('click');
+			addpick.prop('disabled',false);
+			addpick.selectpicker('refresh');
+		}
+		else {
+			paybtn1.addClass('disabled');
+			paybtn2.addClass('disabled');
+		}
+	});
+
+	paybtn1.click(function(){
+		if(!paybtn1.hasClass('disabled')) {
+			paybtn2.removeClass('disabled');
+			addpick.prop('disabled',false);
+			addpick.selectpicker('refresh');
+		}
+	});
+
+	$('#quantity-form').submit(function(e){
+		if($('.event-picker').val() === null || $('.service-picker').val() === null) {
+			alert("Fill out the customizer first.");
+			e.preventDefault();
+		}
+		$('#paypal-name-hidden').val("Name: " + name.val() + "; Event: " + $('.event-picker').val() + "; Type: " + $('.service-picker').val() + "; Font: " + $('.font-picker').val() + "; Image: " + $('.stationery-picker').val() + "; Calligraphy: " + $('.calligraphy-picker').val());
+		console.log($('#paypal-name-hidden').val());
 	});
 
 });

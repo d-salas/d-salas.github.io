@@ -339,7 +339,7 @@ ul.nav {
    ========================================================================== */
 
 #checkout {
-	#pricing {
+	.pricing {
 		.col-sm-6 {
 			// text-align: center;
 			&:first-of-type {
@@ -361,6 +361,21 @@ ul.nav {
 	p {
 		&.smaller {
 			max-width: 45vw;
+		}
+	}
+
+	form.paypal-form {
+		&:first-of-type{
+			margin: 2vw auto 0 auto;
+		}
+		table {
+			text-align: left;
+		}
+		tbody, table, td {
+			// width: 100%;
+		}
+		button, input{
+			// width: 100%;
 		}
 	}
 }

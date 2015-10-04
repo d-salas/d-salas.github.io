@@ -563,15 +563,45 @@ ul.nav {
 
 #checkout {
 	@extend #download;
-	#pricing {
-		max-width: 80vw;
-		width: 100%;
-		height: 100%;
+	.pricing {
+		// max-width: 80vw;
+		// width: 100%;
+		// height: 100%;
 		margin-right: auto;
 		margin-left: auto;
+
+		tbody, table, td {
+			border: 2px solid $black;
+			text-align: center;
+			padding: 1vw;
+			font-size: 1.9rem;
+		}
+		table {
+			width: 100%;
+			box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+			margin: 2vw auto 3vw auto;
+			// max-width: 87vw;
+			// border-collapse: collapse;
+			background-color: $white;
+			// padding: 5vw;
+			margin-left: auto;
+			margin-right: auto;
+			// border: none;
+			td {
+				// border: 2px solid $golden-yellow;
+				padding: 10px;
+			}
+			th {
+				padding: 2vw;
+				background-color: $mss-blue;
+				// border: 2px solid $mss-blue;
+				color: $white;
+				text-align: center;
+			}
+		}
 	}
 	p {
-		font-size: 1.7rem;
+		font-size: 1.9rem;
 		&.smaller {
 			font-size: 1.5rem;
 			// max-width: 80vw;
@@ -586,42 +616,17 @@ ul.nav {
 			margin-top: 20px;
 		}
 	}
-	tbody, table, td {
-		border: 2px solid $black;
-		text-align: center;
-		padding: 1vw;
-		font-size: 1.9rem;
-	}
-	table {
-		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-		margin: 2vw auto 3vw auto;
-		max-width: 87vw;
-		// border-collapse: collapse;
-		background-color: $white;
-		padding: 5vw;
-		margin-left: auto;
-		margin-right: auto;
-		// border: none;
-		td {
-			// border: 2px solid $golden-yellow;
-			padding: 10px;
-		}
-		th {
-			padding: 2vw;
-			background-color: $mss-blue;
-			// border: 2px solid $mss-blue;
-			color: $white;
-			text-align: center;
-		}
-	}
 
 	form.paypal-form {
 		table {
 			box-shadow: none;
 			background-color: transparent;
 			border: none;
+			width: 100%;
+			text-align: center;
 		}
 		tbody, table, td {
+			font-size: 1.9rem;
 			border: none;
 		}
 		button, input{
@@ -629,9 +634,31 @@ ul.nav {
 			border: 2px solid black;
 			width: 100%;
 		}
+		.btn-group{
+			margin-bottom: 15px;
+			width: 100%;
+		}
 		input.paypal-img {
 			border: none;
 			width: auto;
+		}
+		.paypal-btn {
+			@extend .transparent-button;
+			margin-top: 15px;
+			transition: all .25s ease;
+			&#paypal-btn2{
+				margin-top: 0;
+			}
+			
+			&.disabled {
+				// pointer-events: none;
+				border: 2px solid grey !important;
+				color: grey !important;
+				cursor: not-allowed !important;
+			}
+		}
+		.pay-label {
+			padding-bottom: 5px;
 		}
 	}
 }
