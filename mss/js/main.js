@@ -51,43 +51,24 @@ $( document ).ready(function() {
 
 	// Logo typing shit
 	var typed = $('#typed');
-	// var typedContainer = $('.typed-wrap');
 	var mssLogo = $('#mss-logo-top>img');
 	function setPosition(){
 		var logoTop = mssLogo.offset().top; 
 		var logoLeft = mssLogo.offset().left;
-		typed.css("top", logoTop+13);
+		typed.css("top", logoTop);
 		typed.css("left", logoLeft-35);
 	}
 	setPosition();
 	$(window).resize(setPosition);
 
 	$("#typed").typed({
-        strings: ["Acknowledgements", "     Invitations", "  Announcements"],
-        // stringsElement: $('#typed-strings'),
+        strings: ["\n    Thank You!", "So glad you \ncould make it...", "I was thrilled to \nbe able to celebrate...", "\nMerci, Grazie, Xiè xie!", "\n      It's a Boy!", "We are thrilled to\nannounce..."],
         typeSpeed: 50,
         backDelay: 500,
         loop: true,
         contentType: 'html', // or text
         loopCount: false,
     });
-
-
-
-	// function setPosition() {
-	// 	var typedHeight = $('.typed').outerHeight();
-	// 	typedContainer.height(typedHeight);
-	// 	// console.log(typedHeight);
-	// }
-	// setHeight();
-
-	// for the window resize
-	// $(window).resize(setHeight);
-
-
-
-	// $(window).resize(setHeight);
-
 
 	// FOR CUSTOMIZER DROPDOWNS
 	$('.selectpicker').selectpicker();
@@ -337,33 +318,3 @@ $( document ).ready(function() {
 	});
 
 });
-
-
-// var letters = ['img/letter-1.png', 'img/letter-2.png', 'img/letter-3.png'];
- //        var index = 0,
- //        $img = $('#letter-img');
-
- //    $('#letter-div').height($img.height());
-
-	// ("#my_image").attr("src", "first.jpg")
-
-	// function rotateImage()
-	// {
-	// 	$img.fadeOut('fast', function()
-	// 	{
-	// 		$(this).attr('src', letters[index]);
-
-	// 		$(this).fadeIn('fast', function()
-	// 		{
-	// 			if (index === letters.length-1)
-	// 			{
-	// 				index = 0;
-	// 			}
-	// 			else
-	// 			{
-	// 				index++;
-	// 			}
-	// 		});
-	// 	});
-	// }
-	// setInterval (rotateImage, 2500);

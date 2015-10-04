@@ -1955,7 +1955,7 @@ ul.nav {
   #mss-hero #typed {
     position: absolute;
     font-size: 1.3rem;
-    text-align: center; }
+    text-align: left; }
   #mss-hero .typed-cursor {
     display: none; }
   #mss-hero a.btn {
