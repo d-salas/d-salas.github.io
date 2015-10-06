@@ -81,7 +81,7 @@ $( document ).ready(function() {
 	});
 
   	var statImg = $("#stationery-img");
-  	// var loader = $("#loading-icon");
+  	var loader = $("#loading-icon");
   	// var imgOffset = statImg.offset();
   	// console.log(imgOffset);
   	// console.log(statImg);
@@ -92,22 +92,30 @@ $( document ).ready(function() {
 
   		if (pic === "Ampersand") { 
   			statImg.fadeOut();
+  			loader.fadeIn();
   			statImg.attr("src", "./img/ampersand.jpg");
+  			loader.fadeOut();
   			statImg.fadeIn();
   		}
   		if (pic === "Wreath") { 
   			statImg.fadeOut();
+			loader.fadeIn();
   			statImg.attr("src", "./img/wreath.jpg");
+  			loader.fadeOut();
   			statImg.fadeIn();
   		}
   		if (pic === "Roadster") { 
   			statImg.fadeOut();
+			loader.fadeIn();
   			statImg.attr("src", "./img/roadster.jpg");
+  			loader.fadeOut();  			
   			statImg.fadeIn();
   		}
   		if (pic === "Savannah tree") {
   			statImg.fadeOut(); 
+			loader.fadeIn();
   			statImg.attr("src", "./img/savannahtree.jpg");
+  			loader.fadeOut();  			
   			statImg.fadeIn();
   			// window.setTimeout( function() {
 

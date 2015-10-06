@@ -2169,7 +2169,8 @@ ul.nav {
       font-size: 3.5rem;
       position: absolute;
       bottom: 10px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: none; }
   #customize .wedding-notice {
     text-align: center;
     display: none;
