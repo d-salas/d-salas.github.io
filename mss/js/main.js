@@ -83,21 +83,30 @@ $( document ).ready(function() {
   	var statImg = $("#stationery-img");
 	// CHANGE STATIONERY IMAGE BASED ON DROPDOWN SELECTION
   	$(".stationery-picker").change(function() {
-  		console.log(stationeryForm);
-
   		var pic = $(this).val();
 
   		if (pic === "Ampersand") { 
+  			statImg.fadeOut();
   			statImg.attr("src", "./img/ampersand.jpg");
+  			statImg.fadeIn();
   		}
   		if (pic === "Wreath") { 
+  			statImg.fadeOut();
   			statImg.attr("src", "./img/wreath.jpg");
+  			statImg.fadeIn();
   		}
   		if (pic === "Roadster") { 
+  			statImg.fadeOut();
   			statImg.attr("src", "./img/roadster.jpg");
+  			statImg.fadeIn();
   		}
-  		if (pic === "Savannah tree") { 
+  		if (pic === "Savannah tree") {
+  			statImg.fadeOut(); 
   			statImg.attr("src", "./img/savannahtree.jpg");
+  			statImg.fadeIn();
+  			// window.setTimeout( function() {
+
+  			// }, 5000 )
   		}
 	});  	
 
@@ -233,8 +242,10 @@ $( document ).ready(function() {
 
 	// GOTTA ENABLE/DISABLE CALLIGRAPHY BASED ON EVENT TYPE
 	$(".service-picker").change(function() {
-		var service = $(this).val();
+		var service = $(this).val().toString().replace(/[^a-z0-9\s]/gi, '');
+		// var replaced = service.replace(/[^a-z0-9\s]/gi, '');
 		// console.log(service);
+
 		if (service === "Announcement" || service === "Celebration invitation" || service === "Invitation" || service === "Save the date" || service === "Shower invitation"){
 			// console.log("one of those");
 			$('.calligraphy-picker').prop('disabled',false);

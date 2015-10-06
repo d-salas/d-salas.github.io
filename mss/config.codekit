@@ -598,13 +598,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/Ampersand.jpg": {
+	"\/img\/ampersand.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.16449e+06,
-		"inputAbbreviatedPath": "\/img\/Ampersand.jpg",
-		"outputAbbreviatedPath": "\/img\/Ampersand.jpg",
+		"inputAbbreviatedPath": "\/img\/ampersand.jpg",
+		"outputAbbreviatedPath": "\/img\/ampersand.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -763,13 +763,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/Roadster.jpg": {
+	"\/img\/roadster.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3.43072e+06,
-		"inputAbbreviatedPath": "\/img\/Roadster.jpg",
-		"outputAbbreviatedPath": "\/img\/Roadster.jpg",
+		"inputAbbreviatedPath": "\/img\/roadster.jpg",
+		"outputAbbreviatedPath": "\/img\/roadster.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -796,13 +796,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/Wreath.jpg": {
+	"\/img\/wreath.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.4647e+06,
-		"inputAbbreviatedPath": "\/img\/Wreath.jpg",
-		"outputAbbreviatedPath": "\/img\/Wreath.jpg",
+		"inputAbbreviatedPath": "\/img\/wreath.jpg",
+		"outputAbbreviatedPath": "\/img\/wreath.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

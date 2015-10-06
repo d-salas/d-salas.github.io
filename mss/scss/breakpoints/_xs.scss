@@ -487,6 +487,16 @@ ul.nav {
 				width: 33%;
 				display: block;
 				margin: 0 auto;
+				position: relative;
+				z-index: 10;
+			}
+			i {
+				font-size: 3.5rem;
+				position: absolute;
+				// bottom: 80px;
+				margin: 0 auto;
+				// top: -100px;
+				// z-index: -1;
 			}
 		}
 	}
