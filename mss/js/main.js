@@ -94,29 +94,29 @@ $( document ).ready(function() {
   			statImg.fadeOut();
   			loader.fadeIn();
   			statImg.attr("src", "./img/ampersand.jpg");
-  			loader.fadeOut();
   			statImg.fadeIn();
+  			loader.fadeOut();
   		}
   		if (pic === "Wreath") { 
   			statImg.fadeOut();
 			loader.fadeIn();
   			statImg.attr("src", "./img/wreath.jpg");
-  			loader.fadeOut();
   			statImg.fadeIn();
+  			loader.fadeOut();
   		}
   		if (pic === "Roadster") { 
   			statImg.fadeOut();
 			loader.fadeIn();
-  			statImg.attr("src", "./img/roadster.jpg");
-  			loader.fadeOut();  			
+  			statImg.attr("src", "./img/roadster.jpg");  			
   			statImg.fadeIn();
+  			loader.fadeOut();
   		}
   		if (pic === "Savannah tree") {
   			statImg.fadeOut(); 
 			loader.fadeIn();
-  			statImg.attr("src", "./img/savannahtree.jpg");
-  			loader.fadeOut();  			
+  			statImg.attr("src", "./img/savannahtree.jpg"); 			
   			statImg.fadeIn();
+  			loader.fadeOut();
   			// window.setTimeout( function() {
 
   			// }, 5000 )
