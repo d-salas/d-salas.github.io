@@ -310,7 +310,7 @@ $( document ).ready(function() {
 
 	$('#quantity-form').submit(function(e){
 		if($('.event-picker').val() === null || $('.service-picker').val() === null) {
-			alert("Fill out the customizer first.");
+			alert("Please make sure all available options of the Customizer are filled out before placing your order.");
 			e.preventDefault();
 		}
 		$('#paypal-name-hidden').val("Name: " + name.val() + "; Event: " + $('.event-picker').val() + "; Type: " + $('.service-picker').val() + "; Font: " + $('.font-picker').val() + "; Image: " + $('.stationery-picker').val() + "; Calligraphy: " + $('.calligraphy-picker').val());

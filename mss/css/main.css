@@ -2259,8 +2259,8 @@ ul.nav {
   #checkout form.paypal-form .paypal-btn#paypal-btn2 {
     margin-top: 0; }
   #checkout form.paypal-form .paypal-btn.disabled {
-    border: 2px solid grey !important;
-    color: grey !important;
+    outline: none;
+    opacity: .35;
     cursor: not-allowed !important; }
 #checkout form.paypal-form .pay-label {
   padding-bottom: 5px; }
@@ -2499,6 +2499,13 @@ For tablets and smaller laptops
      ========================================================================== */
   #checkout p.smaller {
     max-width: 45vw; }
+  #checkout form.paypal-form .paypal-btn:hover {
+    background-color: black;
+    color: white; }
+  #checkout form.paypal-form .paypal-btn.disabled:hover {
+    background-color: initial;
+    color: initial;
+    box-shadow: none; }
   #checkout form.paypal-form:first-of-type {
     margin: 2vw auto 0 auto; }
   #checkout form.paypal-form table {

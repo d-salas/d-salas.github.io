@@ -644,6 +644,8 @@ ul.nav {
 		}
 		.paypal-btn {
 			@extend .transparent-button;
+			// background-color: black;
+			// color: white;
 			margin-top: 15px;
 			transition: all .25s ease;
 			&#paypal-btn2{
@@ -652,8 +654,10 @@ ul.nav {
 			
 			&.disabled {
 				// pointer-events: none;
-				border: 2px solid grey !important;
-				color: grey !important;
+				// border: 2px solid grey !important;
+				// color: grey !important;
+				outline: none;
+				opacity: .35;
 				cursor: not-allowed !important;
 			}
 		}
