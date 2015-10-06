@@ -81,6 +81,11 @@ $( document ).ready(function() {
 	});
 
   	var statImg = $("#stationery-img");
+  	// var loader = $("#loading-icon");
+  	// var imgOffset = statImg.offset();
+  	// console.log(imgOffset);
+  	// console.log(statImg);
+  	// loader.css("top", imgOffset.top);
 	// CHANGE STATIONERY IMAGE BASED ON DROPDOWN SELECTION
   	$(".stationery-picker").change(function() {
   		var pic = $(this).val();

@@ -1955,7 +1955,7 @@ ul.nav {
   #mss-hero #typed {
     position: absolute;
     font-size: 1.3rem;
-    text-align: center; }
+    text-align: left; }
   #mss-hero .typed-cursor {
     display: none; }
   #mss-hero a.btn {
@@ -2162,7 +2162,15 @@ ul.nav {
     #customize #sample-text #sample-letter img {
       width: 33%;
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      position: relative;
+      z-index: 10; }
+    #customize #sample-text #sample-letter i {
+      font-size: 3.5rem;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0px;
+      }
   #customize .wedding-notice {
     text-align: center;
     display: none;
@@ -2227,7 +2235,7 @@ ul.nav {
       color: #FFF;
       text-align: center; }
 #checkout p {
-  font-size: 1.7rem; }
+  font-size: 1.9rem; }
   #checkout p.smaller {
     font-size: 1.5rem; }
   #checkout p.smallest {
@@ -2243,8 +2251,7 @@ ul.nav {
   text-align: center; }
 #checkout form.paypal-form tbody, #checkout form.paypal-form table, #checkout form.paypal-form td {
   font-size: 1.9rem;
-  border: none;
-  }
+  border: none; }
 #checkout form.paypal-form button, #checkout form.paypal-form input {
   border: 2px solid black;
   width: 100%; }
@@ -2259,11 +2266,10 @@ ul.nav {
   transition: all .25s ease; }
   #checkout form.paypal-form .paypal-btn#paypal-btn2 {
     margin-top: 0; }
-#checkout form.paypal-form .disabled {
-  pointer-events: none;
-  border: 2px solid grey !important;
-  color: grey !important;
-  cursor: not-allowed !important; }
+  #checkout form.paypal-form .paypal-btn.disabled {
+    outline: none;
+    opacity: .35;
+    cursor: not-allowed !important; }
 #checkout form.paypal-form .pay-label {
   padding-bottom: 5px; }
 
@@ -2501,6 +2507,13 @@ For tablets and smaller laptops
      ========================================================================== */
   #checkout p.smaller {
     max-width: 45vw; }
+  #checkout form.paypal-form .paypal-btn:hover {
+    background-color: black;
+    color: white; }
+  #checkout form.paypal-form .paypal-btn.disabled:hover {
+    background-color: initial;
+    color: initial;
+    box-shadow: none; }
   #checkout form.paypal-form:first-of-type {
     margin: 2vw auto 0 auto; }
   #checkout form.paypal-form table {
