@@ -2168,9 +2168,10 @@ ul.nav {
     #customize #sample-text #sample-letter i {
       font-size: 3.5rem;
       position: absolute;
-      bottom: 10px;
+      bottom: 15px;
       margin: 0 auto;
-      display: none; }
+      display: none;
+      width: 100%; }
   #customize .wedding-notice {
     text-align: center;
     display: none;
