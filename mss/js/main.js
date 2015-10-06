@@ -71,7 +71,9 @@ $( document ).ready(function() {
     });
 
 	// FOR CUSTOMIZER DROPDOWNS
-	$('.selectpicker').selectpicker();
+	$('.selectpicker').selectpicker({
+		hideDisabled: 'true'
+	});
 
   	// CHANGE FONTS BASED ON DROPDOWN SELECTION
   	$(".font-picker").change(function() {
@@ -309,7 +311,7 @@ $( document ).ready(function() {
 	});
 
 	$('#quantity-form').submit(function(e){
-		if($('.event-picker').val() === null || $('.service-picker').val() === null) {
+		if($('.event-picker').val() === null || $('.service-picker').val() === null || $('.service-picker').val().length < 1 || $('.service-picker').val() === "null") {
 			alert("Please make sure all available options of the Customizer are filled out before placing your order.");
 			e.preventDefault();
 		}
