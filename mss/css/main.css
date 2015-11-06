@@ -1769,13 +1769,12 @@ html {
 body {
   color: #131B21;
   font-size: 1.4rem;
-  background: #fff176; }
+  background-color: #FFFCD5; }
 
 a {
-  color: #00B0EA;
-  text-decoration: none; }
+  color: #032C56; }
   a:hover {
-    text-decoration: underline; }
+    color: #054587; }
 
 p {
   line-height: 150%;
@@ -1953,6 +1952,7 @@ ul.nav {
   #mss-hero p, #mss-hero h1, #mss-hero h2, #mss-hero a {
     color: #131B21; }
   #mss-hero #typed {
+    display: none;
     position: absolute;
     font-size: 1.3rem;
     text-align: left; }
@@ -2004,7 +2004,7 @@ ul.nav {
     height: 100%; } }
   #about #text-box {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-    background: #00B0EA; }
+    background: #032C56; }
     #about #text-box h2 {
       max-width: 75%;
       color: #FFF;
@@ -2232,7 +2232,7 @@ ul.nav {
       padding: 10px; }
     #checkout .pricing table th {
       padding: 2vw;
-      background-color: #00B0EA;
+      background-color: #032C56;
       color: #FFF;
       text-align: center; }
 #checkout p {
@@ -2383,8 +2383,8 @@ For tablets and smaller laptops
 
   .hvr-btn, #top a.btn:hover, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download a.btn:hover, #checkout a.btn:hover, #privacy a.btn:hover, #customize a.btn:hover {
     color: #FFF;
-    background: #00B0EA;
-    border: 2px solid #00B0EA; }
+    background: #032C56;
+    border: 2px solid #032C56; }
 
   a.btn {
     transition: all 0.2s ease;
@@ -2448,7 +2448,8 @@ For tablets and smaller laptops
     font-size: 3.5rem;
     max-width: 73vw;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    text-align: left; }
   #mss-hero #typed {
     font-size: 1.7rem; }
   #mss-hero #mss-logo-top {

@@ -708,6 +708,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/mss-logo copy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104347,
+		"inputAbbreviatedPath": "\/img\/mss-logo copy.png",
+		"outputAbbreviatedPath": "\/img\/mss-logo copy.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/mss-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
