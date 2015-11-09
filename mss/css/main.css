@@ -102,7 +102,7 @@ Take up the whole dang window
   left: 0;
   right: 0;
   bottom: 0;
-  background: #FFF;
+  background: #f7f7f7;
   height: 2px;
   -webkit-transform: translateY(3px);
   transform: translateY(3px);
@@ -1769,7 +1769,7 @@ html {
 body {
   color: #131B21;
   font-size: 1.4rem;
-  background-color: #FFFCD5; }
+  background-color: #f7f7f7; }
 
 a {
   color: #032C56; }
@@ -1904,7 +1904,7 @@ ul.nav {
 
 /* BEFORE AFFIXING */
 .affix-top {
-  background: #FFF;
+  background: #f7f7f7;
   margin-top: 0;
   border-bottom: 2px solid #131B21; }
   .affix-top a {
@@ -1919,7 +1919,7 @@ ul.nav {
 
 /* AFTER AFFIXING */
 .affix {
-  background: #FFF;
+  background: #f7f7f7;
   margin-top: 0;
   border-bottom: 2px solid #131B21; }
   .affix a {
@@ -1980,7 +1980,7 @@ ul.nav {
 #about {
   position: relative;
   z-index: 10;
-  background-color: #FFFCD5;
+  background-color: #f7f7f7;
   position: relative; }
   #about:after {
     background-repeat: repeat-x;
@@ -1991,7 +1991,7 @@ ul.nav {
     left: 0;
     right: 0;
     bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23FFFCD5%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23f7f7f7%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
 @keyframes slide-hoz {
   from {
     width: 0; }
@@ -2007,7 +2007,7 @@ ul.nav {
     background: #032C56; }
     #about #text-box h2 {
       max-width: 75%;
-      color: #FFF;
+      color: #f7f7f7;
       font-size: 2.0rem;
       margin: 3% auto 3% auto; }
       #about #text-box h2 sup {
@@ -2036,7 +2036,7 @@ ul.nav {
 #how-it-works {
   padding: 8vw 5vw;
   text-align: center;
-  background-color: #fff59d;
+  background-color: #ECECEC;
   position: relative; }
   #how-it-works:after {
     background-repeat: repeat-x;
@@ -2047,7 +2047,7 @@ ul.nav {
     left: 0;
     right: 0;
     bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff59d%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ECECEC%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
 @keyframes slide-hoz {
   from {
     width: 0; }
@@ -2076,7 +2076,7 @@ ul.nav {
    ========================================================================== */
 #download, #checkout, #privacy {
   padding: 8vw 5vw;
-  background-color: #FFFCD5;
+  background-color: #f7f7f7;
   position: relative; }
   #download:after, #checkout:after, #privacy:after {
     background-repeat: repeat-x;
@@ -2087,7 +2087,7 @@ ul.nav {
     left: 0;
     right: 0;
     bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23FFFCD5%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23f7f7f7%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
 @keyframes slide-hoz {
   from {
     width: 0; }
@@ -2114,7 +2114,7 @@ ul.nav {
    ========================================================================== */
 #customize {
   padding: 8vw 5vw;
-  background-color: #fff59d;
+  background-color: #ECECEC;
   position: relative; }
   #customize:after {
     background-repeat: repeat-x;
@@ -2125,7 +2125,7 @@ ul.nav {
     left: 0;
     right: 0;
     bottom: -15px;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23fff59d%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230px%22%20height%3D%2215px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22%23ECECEC%22%20transform%3D%22scale%281.875%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E"); }
 @keyframes slide-hoz {
   from {
     width: 0; }
@@ -2225,7 +2225,7 @@ ul.nav {
     width: 100%;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     margin: 2vw auto 3vw auto;
-    background-color: #FFF;
+    background-color: #f7f7f7;
     margin-left: auto;
     margin-right: auto; }
     #checkout .pricing table td {
@@ -2233,7 +2233,7 @@ ul.nav {
     #checkout .pricing table th {
       padding: 2vw;
       background-color: #032C56;
-      color: #FFF;
+      color: #f7f7f7;
       text-align: center; }
 #checkout p {
   font-size: 1.9rem; }
@@ -2289,8 +2289,8 @@ footer {
   padding-top: 3vw;
   padding-bottom: 5vw;
   min-height: 90vh;
-  background: #fff176;
-  color: #131B21; }
+  background: rgba(0, 104, 68, 0.72);
+  color: #f7f7f7; }
   footer i {
     padding: 3%; }
   footer h2 {
@@ -2382,7 +2382,7 @@ For tablets and smaller laptops
     max-width: 60vw; }
 
   .hvr-btn, #top a.btn:hover, #about a.btn:hover, #how-it-works a.btn:hover, #sign-up a.btn:hover, #download a.btn:hover, #checkout a.btn:hover, #privacy a.btn:hover, #customize a.btn:hover {
-    color: #FFF;
+    color: #f7f7f7;
     background: #032C56;
     border: 2px solid #032C56; }
 
@@ -2420,7 +2420,7 @@ For tablets and smaller laptops
     .affix-top, .affix-top a {
       color: #131B21; }
     .affix-top .in, .affix-top .collapsing {
-      background: #FFF;
+      background: #f7f7f7;
       color: #131B21; }
     .affix-top .in {
       background: none;
