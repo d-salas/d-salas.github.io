@@ -2160,16 +2160,17 @@ ul.nav {
     #customize #sample-text #sample-letter p {
       font-family: "Petrona"; }
     #customize #sample-text #sample-letter img {
-      width: 33%;
+      width: 30%;
       display: block;
       margin: 0 auto;
+      margin-bottom: 25px;
       position: relative;
       z-index: 10; }
-    #customize #sample-text #sample-letter i {
+    #customize #sample-text #sample-letter #loading-icon {
       font-size: 3.5rem;
       position: absolute;
       left: 46%;
-      bottom: 10px;
+      top: 30px;
       margin: 0 auto;
       display: none; }
   #customize .wedding-notice {
@@ -2289,7 +2290,7 @@ footer {
   padding-top: 3vw;
   padding-bottom: 5vw;
   min-height: 90vh;
-  background: rgba(0, 104, 68, 0.72);
+  background: #7995B3;
   color: #f7f7f7; }
   footer i {
     padding: 3%; }
@@ -2448,8 +2449,7 @@ For tablets and smaller laptops
     font-size: 3.5rem;
     max-width: 73vw;
     margin-left: auto;
-    margin-right: auto;
-    text-align: left; }
+    margin-right: auto; }
   #mss-hero #typed {
     font-size: 1.7rem; }
   #mss-hero #mss-logo-top {
@@ -2532,7 +2532,7 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. 
 Adds resource intensive styles.
 *********************/
-@media only screen and (min-width: 1030px) {
+@media only screen and (min-width: 992px) {
   /*
   Large screens. Like laptops and desktops.
   */
@@ -2554,6 +2554,9 @@ Adds resource intensive styles.
      ========================================================================== */
   #mss-hero h1 {
     font-size: 6rem; }
+  #mss-hero h2#tagline {
+    padding-left: 0;
+    text-align: left; }
   #mss-hero #typed {
     font-size: 1.9rem; }
 

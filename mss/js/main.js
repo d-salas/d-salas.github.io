@@ -203,6 +203,24 @@ $( document ).ready(function() {
           	$('.stationery-picker').selectpicker('refresh');
           	$('.service-picker').selectpicker('refresh');
 		}
+		if (event.indexOf("Bar/Bat Mitzvah") >= 0) { 
+			console.log("bar bat mitzvah");
+
+			$('.stationery-picker').prop('disabled',false);
+			announce.removeAttr('disabled');
+			celeb.removeAttr('disabled');
+			gift.removeAttr('disabled');
+			invite.removeAttr('disabled');
+			statImg.css("display", "block");
+
+			shower.attr('disabled', '');
+			ack.attr('disabled', '');
+			date.attr('disabled', '');
+			$(".wedding-notice").hide();
+
+			$('.stationery-picker').selectpicker('refresh');
+          	$('.service-picker').selectpicker('refresh');
+		}
 		if (event.indexOf("Bridal") >= 0) { //SHOW INVITE & GIFT. STATIONERY
 			$('.stationery-picker').prop('disabled',false);
 			invite.removeAttr('disabled');

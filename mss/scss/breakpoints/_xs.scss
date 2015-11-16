@@ -485,17 +485,18 @@ ul.nav {
 				font-family: "Petrona";
 			}
 			img {
-				width: 33%;
+				width: 30%;
 				display: block;
 				margin: 0 auto;
+				margin-bottom: 25px;
 				position: relative;
 				z-index: 10;
 			}
-			i {
+			#loading-icon {
 				font-size: 3.5rem;
 				position: absolute;
 				left: 46%;
-				bottom: 10px;
+				top: 30px;
 				margin: 0 auto;
 				display: none;
 				// width: 100%;
@@ -702,7 +703,7 @@ footer {
 	padding-top: 3vw;
 	padding-bottom: 5vw;
 	min-height: 90vh;
-	background: rgba(0, 104, 68, 0.72);
+	background: $grey-blue;
 	color: $white;
 
 	i {
