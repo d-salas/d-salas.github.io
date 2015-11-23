@@ -85,7 +85,8 @@ ul.nav {
 	// margin-top: 25px;
 	background: transparent;
 	border-bottom: none;
-	&, a { color: $black}
+	&, a { //color: $black
+	}
 
 	.in, .collapsing {
 		background: $white;
@@ -294,6 +295,20 @@ ul.nav {
 			margin-left: auto;
 			margin-right: auto;
 			max-width: 60vw;
+		}
+		#sample-letter {
+			.card-images {
+				height: 170px;
+			}
+			img {
+				height: 170px;
+			}
+			#loading-icon-container{
+				height: 170px;
+				#loading-icon {
+					top: 60px;
+				}
+			}
 		}
 	}
 	#customizers {

@@ -1,1 +1,0 @@
-$(document).foundation({"magellan-expedition":{active_class:"active",threshold:0,destination_threshold:20,throttle_delay:50,fixed_top:0,offset_by_height:!0}});

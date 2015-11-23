@@ -214,27 +214,27 @@
 
                         <div id="letter-text">
                             <div class="col-xs-12" id="sample-letter">
-                                <div class="text-center">
-                                    <img src="img/ampersand.jpg" alt="Stationery image" id="stationery-img">
-                                    <span class="text-center"><i id="loading-icon" class="fa fa-circle-o-notch fa-spin"></i></span>
+                                <div class="card-images">
+                                    <img src="img/cards/alphabet-letter.png" alt="Stationery image" id="stationery-img">
+                                    <div id="loading-icon-container"><i id="loading-icon" class="fa fa-circle-o-notch fa-spin"></i></div>
                                 </div>
-                                <p>Dear Jack and John,</p>
+                                <p>Dear Cindy and Paul,</p>
                                 <p>We love the glass tray. I know we will cherish it for many years to come and it will always remind us of you. Thanks you so much for such a thoughtful gift.</p>
                                 <p>We were so happy you were able to make it to the wedding and were able to share in our joy. Your presence truly made the day complete.</p>
                                 <p class="text-center">Lots of love,<br>
-                                Cindy and Paul
+                                Maureen and Jack
                                 </p>
                                 <!-- <hr> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="wedding-notice">* For weddings, we'll let you provide your own stationery.</p>
+                <p class="wedding-notice">* For weddings, we'll let you provide your own stationery.</p> 
             </div>
             <div id="customizers" class="col-xs-12 col-lg-6 col-lg-pull-6">
                 <div id="pickers">
                     <div class="col-xs-12 col-sm-6">
-                        <p>Event type:</p> 
+                        <p>*Event type:</p> 
                         <form id="event-form">
                         <select name="event" class="selectpicker show-tick event-picker" multiple data-max-options="1">
                             <option name="event" value="Baby">Baby</option>
@@ -247,20 +247,51 @@
                         </select>
                         </form>
     
-                        <p>Correspondence type:</p> 
+                        <p>*Correspondence type:</p> 
                         <form id="type-form">
                         <select class="selectpicker show-tick service-picker" multiple data-max-options="1">
-                            <option name="correspondence-type" value="Invitation" data-icon="glyphicon-pencil">Invitation</option>
-                            <option name="correspondence-type" value="Announcement" data-icon="glyphicon-pencil">Announcement</option>
-                            <option name="correspondence-type" value="Celebration invitation" data-icon="glyphicon-pencil">Celebration invitation</option>
+                            <option name="correspondence-type" value="Invitation">Invitation</option>  <!-- data-icon="glyphicon-pencil" -->
+                            <option name="correspondence-type" value="Announcement">Announcement</option>
+                            <option name="correspondence-type" value="Celebration invitation">Celebration invitation</option>
                             <option name="correspondence-type" value="Gift acknowledgement">Gift acknowledgement</option>
-                            <option name="correspondence-type" value="Save the date" data-icon="glyphicon-pencil">Save the date</option>
-                            <option name="correspondence-type" value="Shower invitation" data-icon="glyphicon-pencil">Shower invitation</option>
+                            <option name="correspondence-type" value="Save the date">Save the date</option>
+                            <option name="correspondence-type" value="Shower invitation">Shower invitation</option>
                             <option name="correspondence-type" value="Acknowledgement">Acknowledgement</option>
                         </select>
                         </form>
 
-                        <p>Font:</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p><span class="wedding-notice">* </span>*Stationery image options:</p> 
+                        <form id="stationery-form">
+                        <select class="selectpicker show-tick stationery-picker">
+                            <option name="stationery" value="Alphabet Letter">Alphabet Letter</option>
+                            <option name="stationery" value="Ampersand">Ampersand</option>
+                            <option name="stationery" value="Ballerina Mouse">Ballerina Mouse</option>
+                            <option name="stationery" value="Beauty (Chinese characters)">Beauty (Chinese characters)</option>
+                            <option name="stationery" value="Bicycle">Bicycle</option>
+                            <option name="stationery" value="Books">Books</option>
+                            <option name="stationery" value="Bowtie">Bowtie</option>
+                            <option name="stationery" value="Dress">Dress</option>
+                            <option name="stationery" value="Frog">Frog</option>
+                            <option name="stationery" value="Gold Mouse">Gold Mouse</option>
+                            <option name="stationery" value="Lion">Lion</option>
+                            <option name="stationery" value="Mermaid">Mermaid</option>
+                            <option name="stationery" value="Nest">Nest</option>
+                            <option name="stationery" value="Pocketwatch">Pocketwatch</option>
+                            <option name="stationery" value="Roadster">Roadster</option>
+                            <option name="stationery" value="Sailboat">Sailboat</option>
+                            <option name="stationery" value="Savannah Tree">Savannah Tree</option>
+                            <option name="stationery" value="Skyline">Skyline</option>
+                            <option name="stationery" value="Tent">Tent</option>
+                            <option name="stationery" value="Turtle">Turtle</option>
+                            <option name="stationery" value="Wreath">Wreath</option>
+                            <option name="stationery" value="Yoga Pose">Yoga Pose</option>
+                            <option name="stationery" value="Zebra">Zebra</option>
+                        </select>
+                        </form>
+
+                        <p>*Font:</p>
                         <form id="font-form">
                         <select class="selectpicker show-tick font-picker">
                             <option name="font" value="Petrona">Petrona</option>
@@ -272,19 +303,8 @@
                             <option name="font" value="Princess Sofia">Princess Sofia</option>
                         </select>
                         </form>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <p><span class="wedding-notice">* </span>Stationery image options:</p> 
-                        <form id="stationery-form">
-                        <select class="selectpicker show-tick stationery-picker">
-                            <option name="stationery" value="Ampersand">Ampersand</option>
-                            <option name="stationery" value="Wreath">Wreath</option>
-                            <option name="stationery" value="Roadster">Roadster</option>
-                            <option name="stationery" value="Savannah tree">Savannah tree</option>
-                        </select>
-                        </form>
     
-                        <p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;Calligraphy options:</p>
+                        <!-- <p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;Calligraphy options:</p>
                         <form id="calligraphy-form">
                         <select class="selectpicker show-tick calligraphy-picker">
                             <option name="calligraphy" value="Option 1">Option 1</option>
@@ -293,9 +313,14 @@
                         </form>
 
                         </form>
-                        <p id="calligraphy-notice"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;&nbsp;For announcements and invitations, our team of professional calligriphers will address and stamp your envelopes for that exquisite, personal touch.<p>
+                        <p id="calligraphy-notice"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;&nbsp;For announcements and invitations, our team of professional calligriphers will address and stamp your envelopes for that exquisite, personal touch.<p> -->
                     </div>
                     <div class="col-xs-12">
+                        <p class="text-center">
+                            <small>
+                                *Required
+                            </small>
+                        </p> 
                         <p id="paper-desc">All of our correspondence are hand crafted on premier Crane Social 120lb card stock. Crane & Co. has been making premier papers since 1801. It is hard to believe that not a single tree falls to make these 100% cotton papers. Crane uses remnants of textile and cotton seed manufacturing to make its product. Very beautiful.  Very green.</p>
                     </div>
 
@@ -401,12 +426,12 @@
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="RUB2DZMVJNL9C">
                         <table>
-                        <tr><td class="pay-label"><input type="hidden" name="on0" value="Quantity">Quantity (Select an event type first):</td></tr><tr><td><select class="selectpicker quantity-picker" multiple data-max-options="1" name="os0">
+                        <tr><td class="pay-label"><input type="hidden" name="on0" value="Quantity">Quantity<span id="hide-on-select">&nbsp;(Select an event type above first)</span>:</td></tr><tr><td><select class="selectpicker quantity-picker" multiple data-max-options="1" name="os0">
                             <option value="25-100">25-100 $50.00 USD</option>
                             <option value="100-150">100-150 $100.00 USD</option>
                             <option value="150+">150+ $150.00 USD</option>
                         </select> </td></tr>
-                        <tr><td class="pay-label"><input type="hidden" name="on1" value="Options">Name:</td></tr><tr><td><input class="hidden" id="paypal-name-hidden" type="text" name="os1" maxlength="200"><input id="paypal-name" type="text" maxlength="200"></td></tr>
+                        <tr><td class="pay-label"><input type="hidden" name="on1" value="Options">Name (First and Last):</td></tr><tr><td><input class="hidden" id="paypal-name-hidden" type="text" name="os1" maxlength="200"><input id="paypal-name" type="text" maxlength="200"></td></tr>
                         </table>
                         <input type="hidden" name="currency_code" value="USD">
                         <!-- <div class="text-center"><input class="paypal-img" id="paypal-btn1" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></div> -->
@@ -451,7 +476,7 @@
                     <h2>Modern Social Secretary</h2>
                     <p>
                         <div class="text-center">
-                            <img src="img/mss-logo.png" alt="Modern Social Secretary">
+                            <img src="img/mss-logo-silhouette.png" alt="Modern Social Secretary">
                         </div>
                     </p>
                     <i class="fa fa-twitter-square fa-3x"></i><i class="fa fa-facebook-square fa-3x"></i><i class="fa fa-instagram fa-3x"></i>

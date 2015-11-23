@@ -138,7 +138,7 @@ ul.nav {
 	#abt-row {
 
 		h2 {
-			color: $black;
+			// color: $black;
 			font-size: 4rem;
 		}
 	}
@@ -212,8 +212,21 @@ ul.nav {
    ========================================================================== */
 
 #customize {
-	#customizers {
-		
+	#sample-text{
+		#sample-letter {
+			.card-images {
+				height: 130px;
+			}
+			img {
+				height: 130px;
+			}
+			#loading-icon-container{
+				height: 130px;
+				#loading-icon {
+					top: 50px;
+				}
+			}
+		}
 	}
 }
 

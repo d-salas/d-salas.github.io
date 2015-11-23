@@ -90,37 +90,213 @@ $( document ).ready(function() {
   	$(".stationery-picker").change(function() {
   		var pic = $(this).val();
 
+		if (pic === "Alphabet Letter") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/alphabet-letter.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
   		if (pic === "Ampersand") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/ampersand.jpg");
-  			statImg.fadeIn();
-  			loader.fadeOut();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/ampersand.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
   		}
-  		if (pic === "Wreath") { 
+  		if (pic === "Ballerina Mouse") { 
   			statImg.fadeOut();
-			loader.fadeIn();
-  			statImg.attr("src", "./img/wreath.jpg");
-  			statImg.fadeIn();
-  			loader.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/ballerina-mouse.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Beauty (Chinese characters)") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/chinese-beauty.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Bicycle") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/bicycle.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Books") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/books.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Bowtie") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/bowtie.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Dress") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/dress.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Frog") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/frog.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Gold Mouse") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/mouse.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Lion") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/lion.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Mermaid") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/mermaid.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Nest") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/nest.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Pocketwatch") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/pocketwatch.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
   		}
   		if (pic === "Roadster") { 
   			statImg.fadeOut();
-			loader.fadeIn();
-  			statImg.attr("src", "./img/roadster.jpg");  			
-  			statImg.fadeIn();
-  			loader.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/roadster.png");
+	  			statImg.fadeIn();
+				loader.fadeOut();
+  			}, 1000);
   		}
-  		if (pic === "Savannah tree") {
-  			statImg.fadeOut(); 
-			loader.fadeIn();
-  			statImg.attr("src", "./img/savannahtree.jpg"); 			
-  			statImg.fadeIn();
-  			loader.fadeOut();
-  			// window.setTimeout( function() {
-
-  			// }, 5000 )
+  		if (pic === "Sailboat") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/sailboat.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
   		}
+  		if (pic === "Savannah Tree") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/savannahtree.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Skyline") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/skyline.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Tent") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/tent.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Turtle") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+				statImg.attr("src", "./img/cards/turtle.png");
+				statImg.fadeIn();
+				loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Wreath") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/wreath.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Yoga Pose") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+	  			statImg.attr("src", "./img/cards/yogapose.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}
+  		if (pic === "Zebra") { 
+  			statImg.fadeOut();
+  			loader.fadeIn();
+  			window.setTimeout(function(){
+  				statImg.attr("src", "./img/cards/zebra.png");
+	  			statImg.fadeIn();
+	  			loader.fadeOut();
+  			}, 1000);
+  		}  		
 	});  	
 
 	var celeb = $('option:contains(Celebration invitation)');
@@ -137,6 +313,8 @@ $( document ).ready(function() {
 	// var stationeryForm = $('#stationery-form');
 	// var calligraphyForm = $('#calligraphy-form');
 
+	var cardImgs = $('.card-images');
+
 	$('.service-picker').prop('disabled',true);
 	$('.stationery-picker').prop('disabled',true);
 	$('.calligraphy-picker').prop('disabled',true);
@@ -151,6 +329,12 @@ $( document ).ready(function() {
 		quantpick.selectpicker('refresh');
 
 		var event = $(this).val();
+		if (event !== null) {
+			$('#hide-on-select').css('display', 'none');
+		}
+		else {
+			$('#hide-on-select').css('display', 'inline');
+		}
 		// console.log(event);
 		if (event.indexOf("Baby") >= 0) { // SHOW SHOWER, ANNOUNCE, AND GIFT. STATIONERY
 			// What to show
@@ -159,6 +343,7 @@ $( document ).ready(function() {
 			announce.removeAttr('disabled');
 			gift.removeAttr('disabled');
 			statImg.css("display", "block");
+			cardImgs.css("display", "block");
 
 			// What to hide
 			celeb.attr('disabled', '');
@@ -177,6 +362,7 @@ $( document ).ready(function() {
 			celeb.removeAttr('disabled');
 			gift.removeAttr('disabled');
 			statImg.css("display", "block");
+			cardImgs.css("display", "block");
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -199,6 +385,7 @@ $( document ).ready(function() {
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
 			statImg.css("display", "none");
+			cardImgs.css("display", "none");
 
           	$('.stationery-picker').selectpicker('refresh');
           	$('.service-picker').selectpicker('refresh');
@@ -212,6 +399,7 @@ $( document ).ready(function() {
 			gift.removeAttr('disabled');
 			invite.removeAttr('disabled');
 			statImg.css("display", "block");
+			cardImgs.css("display", "block");
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -226,6 +414,7 @@ $( document ).ready(function() {
 			invite.removeAttr('disabled');
 			gift.removeAttr('disabled');
 			statImg.css("display", "block");
+			cardImgs.css("display", "block");
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -243,6 +432,7 @@ $( document ).ready(function() {
 			celeb.removeAttr('disabled');
 			gift.removeAttr('disabled');
 			statImg.css("display", "block");
+			cardImgs.css("display", "block");
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -258,6 +448,7 @@ $( document ).ready(function() {
 			announce.removeAttr('disabled');
 			ack.removeAttr('disabled');
 			statImg.css("display", "block");
+			cardImgs.css("display", "block");
 
 			shower.attr('disabled', '');
 			gift.attr('disabled', '');

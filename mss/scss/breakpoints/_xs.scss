@@ -464,7 +464,7 @@ ul.nav {
 			margin: 3vw auto 3vw auto;
 			// background: $lighter-yellow;
 			.panel-body {
-				padding: 5%;
+				padding: 15px 1%;
 				// border: 8px solid $golden-yellow;
 			}
 			p {
@@ -481,27 +481,37 @@ ul.nav {
 			}
 		}
 		#sample-letter {
+			// position: relative;
 			p {
 				font-family: "Petrona";
 			}
 			img {
-				width: 30%;
+				// width: 30%;
+				height: 100px;
 				display: block;
 				margin: 0 auto;
-				margin-bottom: 25px;
+				// margin-bottom: 25px;
 				position: relative;
 				z-index: 10;
 			}
-			#loading-icon {
-				font-size: 3.5rem;
-				position: absolute;
-				left: 46%;
-				top: 30px;
-				margin: 0 auto;
-				display: none;
+			.card-images {
+				height: 100px;
+				margin-bottom: 25px;
+			}
+			#loading-icon-container{
 				// width: 100%;
-				// top: -100px;
-				// z-index: -1;
+				height: 100px;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				margin: 0 auto;
+				#loading-icon {
+					font-size: 3.5rem;
+					position: relative;
+					top: 30px;
+					display: none;
+				}
 			}
 		}
 	}
@@ -703,7 +713,7 @@ footer {
 	padding-top: 3vw;
 	padding-bottom: 5vw;
 	min-height: 90vh;
-	background: $grey-blue;
+	background: $mss-blue;
 	color: $white;
 
 	i {
@@ -713,7 +723,7 @@ footer {
 		font-family: $top-font;
 	}
 	a {
-		// color: $mss-yellow;
+		color: $white;
 		text-decoration: underline;
 		text-decoration-style: dotted;
 		&:hover {

@@ -2148,7 +2148,7 @@ ul.nav {
       padding: 2%;
       margin: 3vw auto 3vw auto; }
       #customize #sample-text .panel .panel-body {
-        padding: 5%; }
+        padding: 15px 1%; }
       #customize #sample-text .panel p {
         font-size: 2rem;
         line-height: 125%; }
@@ -2160,19 +2160,26 @@ ul.nav {
     #customize #sample-text #sample-letter p {
       font-family: "Petrona"; }
     #customize #sample-text #sample-letter img {
-      width: 30%;
+      height: 100px;
       display: block;
       margin: 0 auto;
-      margin-bottom: 25px;
       position: relative;
       z-index: 10; }
-    #customize #sample-text #sample-letter #loading-icon {
-      font-size: 3.5rem;
+    #customize #sample-text #sample-letter .card-images {
+      height: 100px;
+      margin-bottom: 25px; }
+    #customize #sample-text #sample-letter #loading-icon-container {
+      height: 100px;
       position: absolute;
-      left: 46%;
-      top: 30px;
-      margin: 0 auto;
-      display: none; }
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0 auto; }
+      #customize #sample-text #sample-letter #loading-icon-container #loading-icon {
+        font-size: 3.5rem;
+        position: relative;
+        top: 30px;
+        display: none; }
   #customize .wedding-notice {
     text-align: center;
     display: none;
@@ -2290,13 +2297,14 @@ footer {
   padding-top: 3vw;
   padding-bottom: 5vw;
   min-height: 90vh;
-  background: #7995B3;
+  background: #032C56;
   color: #f7f7f7; }
   footer i {
     padding: 3%; }
   footer h2 {
     font-family: "Ovo", Cambria, Times New Roman, Times, serif; }
   footer a {
+    color: #f7f7f7;
     text-decoration: underline;
     text-decoration-style: dotted; }
     footer a:hover {
@@ -2343,7 +2351,6 @@ For slightly less small devices
     font-size: 4vw;
     font-weight: 300; }
   #about #abt-row h2 {
-    color: #131B21;
     font-size: 4rem; }
   #about p {
     font-size: 1.6rem; }
@@ -2365,6 +2372,15 @@ For slightly less small devices
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
+  #customize #sample-text #sample-letter .card-images {
+    height: 130px; }
+  #customize #sample-text #sample-letter img {
+    height: 130px; }
+  #customize #sample-text #sample-letter #loading-icon-container {
+    height: 130px; }
+    #customize #sample-text #sample-letter #loading-icon-container #loading-icon {
+      top: 50px; }
+
   /* ==========================================================================
      	FOOTER Styles
      ========================================================================== */ }
@@ -2418,8 +2434,6 @@ For tablets and smaller laptops
   .affix-top {
     background: transparent;
     border-bottom: none; }
-    .affix-top, .affix-top a {
-      color: #131B21; }
     .affix-top .in, .affix-top .collapsing {
       background: #f7f7f7;
       color: #131B21; }
@@ -2495,6 +2509,14 @@ For tablets and smaller laptops
     margin-left: auto;
     margin-right: auto;
     max-width: 60vw; }
+  #customize #sample-text #sample-letter .card-images {
+    height: 170px; }
+  #customize #sample-text #sample-letter img {
+    height: 170px; }
+  #customize #sample-text #sample-letter #loading-icon-container {
+    height: 170px; }
+    #customize #sample-text #sample-letter #loading-icon-container #loading-icon {
+      top: 60px; }
   #customize #customizers #pickers {
     max-width: 70vw;
     margin-left: auto;
