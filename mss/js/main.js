@@ -93,209 +93,231 @@ $( document ).ready(function() {
 		if (pic === "Alphabet Letter") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/alphabet-letter.png");
+  			// statImg.attr("src", "./img/cards/alphabet-letter.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/alphabet-letter.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Ampersand") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/ampersand.png");
+  			// statImg.attr("src", "./img/cards/ampersand.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/ampersand.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Ballerina Mouse") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/ballerina-mouse.png");
+  			// statImg.attr("src", "./img/cards/ballerina-mouse.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/ballerina-mouse.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Beauty (Chinese characters)") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/chinese-beauty.png");
+  			// statImg.attr("src", "./img/cards/chinese-beauty.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/chinese-beauty.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Bicycle") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/bicycle.png");
+  			// statImg.attr("src", "./img/cards/bicycle.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/bicycle.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Books") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/books.png");
+  			// statImg.attr("src", "./img/cards/books.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/books.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Bowtie") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/bowtie.png");
+  			// statImg.attr("src", "./img/cards/bowtie.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/bowtie.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Dress") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/dress.png");
+  			// statImg.attr("src", "./img/cards/dress.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/dress.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Frog") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/frog.png");
+  			// statImg.attr("src", "./img/cards/frog.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/frog.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Gold Mouse") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/mouse.png");
+  			// statImg.attr("src", "./img/cards/mouse.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/mouse.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Lion") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/lion.png");
+  			// statImg.attr("src", "./img/cards/lion.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/lion.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Mermaid") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/mermaid.png");
+  			// statImg.attr("src", "./img/cards/mermaid.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/mermaid.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Nest") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/nest.png");
+  			// statImg.attr("src", "./img/cards/nest.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/nest.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Pocketwatch") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/pocketwatch.png");
+  			// statImg.attr("src", "./img/cards/pocketwatch.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/pocketwatch.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Roadster") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/roadster.png");
+  			// statImg.attr("src", "./img/cards/roadster.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/roadster.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 				loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Sailboat") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/sailboat.png");
+  			// statImg.attr("src", "./img/cards/sailboat.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/sailboat.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Savannah Tree") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/savannahtree.png");
+  			// statImg.attr("src", "./img/cards/savannahtree.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/savannahtree.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Skyline") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/skyline.png");
+  			// statImg.attr("src", "./img/cards/skyline.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/skyline.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Tent") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/tent.png");
+  			// statImg.attr("src", "./img/cards/tent.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/tent.png");}, 250);
 			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Turtle") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/turtle.png");
+  			// statImg.attr("src", "./img/cards/turtle.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/turtle.png");}, 250);
   			window.setTimeout(function(){
 				statImg.fadeIn();
 				loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Wreath") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/wreath.png");
+  			// statImg.attr("src", "./img/cards/wreath.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/wreath.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Yoga Pose") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/yogapose.png");
+  			// statImg.attr("src", "./img/cards/yogapose.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/yogapose.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}
   		if (pic === "Zebra") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			statImg.attr("src", "./img/cards/zebra.png");
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/zebra.png");}, 250);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 2000);
   		}  		
 	});  	
 
