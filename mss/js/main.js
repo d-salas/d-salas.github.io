@@ -93,8 +93,8 @@ $( document ).ready(function() {
 		if (pic === "Alphabet Letter") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/alphabet-letter.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/alphabet-letter.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -102,8 +102,8 @@ $( document ).ready(function() {
   		if (pic === "Ampersand") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/ampersand.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/ampersand.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -111,8 +111,8 @@ $( document ).ready(function() {
   		if (pic === "Ballerina Mouse") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/ballerina-mouse.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/ballerina-mouse.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -120,8 +120,8 @@ $( document ).ready(function() {
   		if (pic === "Beauty (Chinese characters)") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/chinese-beauty.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/chinese-beauty.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -129,8 +129,8 @@ $( document ).ready(function() {
   		if (pic === "Bicycle") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/bicycle.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/bicycle.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -138,8 +138,8 @@ $( document ).ready(function() {
   		if (pic === "Books") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/books.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/books.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -147,8 +147,8 @@ $( document ).ready(function() {
   		if (pic === "Bowtie") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/bowtie.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/bowtie.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -156,8 +156,8 @@ $( document ).ready(function() {
   		if (pic === "Dress") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/dress.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/dress.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -165,8 +165,8 @@ $( document ).ready(function() {
   		if (pic === "Frog") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/frog.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/frog.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -174,8 +174,8 @@ $( document ).ready(function() {
   		if (pic === "Gold Mouse") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/mouse.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/mouse.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -183,8 +183,8 @@ $( document ).ready(function() {
   		if (pic === "Lion") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/lion.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/lion.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -192,8 +192,8 @@ $( document ).ready(function() {
   		if (pic === "Mermaid") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/mermaid.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/mermaid.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -201,8 +201,8 @@ $( document ).ready(function() {
   		if (pic === "Nest") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/nest.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/nest.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -210,8 +210,8 @@ $( document ).ready(function() {
   		if (pic === "Pocketwatch") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/pocketwatch.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/pocketwatch.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -219,8 +219,8 @@ $( document ).ready(function() {
   		if (pic === "Roadster") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/roadster.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/roadster.png");
 	  			statImg.fadeIn();
 				loader.fadeOut();
   			}, 1000);
@@ -228,8 +228,8 @@ $( document ).ready(function() {
   		if (pic === "Sailboat") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/sailboat.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/sailboat.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -237,8 +237,8 @@ $( document ).ready(function() {
   		if (pic === "Savannah Tree") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/savannahtree.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/savannahtree.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -246,8 +246,8 @@ $( document ).ready(function() {
   		if (pic === "Skyline") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/skyline.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/skyline.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -255,8 +255,8 @@ $( document ).ready(function() {
   		if (pic === "Tent") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/tent.png");
 			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/tent.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -264,8 +264,8 @@ $( document ).ready(function() {
   		if (pic === "Turtle") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/turtle.png");
   			window.setTimeout(function(){
-				statImg.attr("src", "./img/cards/turtle.png");
 				statImg.fadeIn();
 				loader.fadeOut();
   			}, 1000);
@@ -273,8 +273,8 @@ $( document ).ready(function() {
   		if (pic === "Wreath") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/wreath.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/wreath.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -282,8 +282,8 @@ $( document ).ready(function() {
   		if (pic === "Yoga Pose") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/yogapose.png");
   			window.setTimeout(function(){
-	  			statImg.attr("src", "./img/cards/yogapose.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
@@ -291,8 +291,8 @@ $( document ).ready(function() {
   		if (pic === "Zebra") { 
   			statImg.fadeOut();
   			loader.fadeIn();
+  			statImg.attr("src", "./img/cards/zebra.png");
   			window.setTimeout(function(){
-  				statImg.attr("src", "./img/cards/zebra.png");
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
   			}, 1000);
