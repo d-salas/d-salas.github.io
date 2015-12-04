@@ -855,6 +855,17 @@ $( document ).ready(function() {
                     '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' +
 		            "<strong>Huzzah!</strong> You have placed your order with PayPal. Now you're ready to email us your contact form so we can begin assembling your correspondence." +
 				'</div>');
+
+			var orderDetails = "Order Details:<br>Name: " + name.val() + ";<br>Event: " + $('.event-picker').val() + ";<br>Type: " + $('.service-picker').val() + ";<br>Font: " + $('.font-picker').val() + ";<br>Image: " + $('.stationery-picker').val();
+			var subject = name.val() + "'s Modern Social Secretary contact form";
+			var emailBody = "Attached is my contact form for Modern Social Secretary. I look forward to previewing my cards!<br><br>" + orderDetails;
+			window.setTimeout(function(){
+				window.location = 'mailto:info@modernsocialsecretary.com?subject=' + subject + '&body=' + emailBody;
+				// window.open(
+					// 'mailto:info@modernsocialsecretary.com?subject=' + subject + '&body=' + emailBody
+					// '_blank' // <- This is what makes it open in a new window.
+				// );
+  			}, 2000);
 		}
 
 		$('#paypal-name-hidden').val("Name: " + name.val() + "; Event: " + $('.event-picker').val() + "; Type: " + $('.service-picker').val() + "; Font: " + $('.font-picker').val() + "; Image: " + $('.stationery-picker').val());
