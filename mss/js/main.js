@@ -848,6 +848,14 @@ $( document ).ready(function() {
 	        }, 1000);
 			e.preventDefault();
 		}
+		else {
+			$(".alert").alert("close");
+			$("#quantity-form").after(
+				'<div class="alert alert-success text-center">' +
+                    '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' +
+		            "<strong>Huzzah!</strong> You have placed your order with PayPal. Now you're ready to email us your contact form so we can begin assembling your correspondence." +
+				'</div>');
+		}
 
 		$('#paypal-name-hidden').val("Name: " + name.val() + "; Event: " + $('.event-picker').val() + "; Type: " + $('.service-picker').val() + "; Font: " + $('.font-picker').val() + "; Image: " + $('.stationery-picker').val());
 		console.log($('#paypal-name-hidden').val());

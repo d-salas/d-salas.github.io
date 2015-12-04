@@ -679,6 +679,24 @@ ul.nav {
 		}
 	}
 
+	.alert {
+		background: transparent;
+		border: 4px solid #3c763d;
+		margin-top: 10px;
+		font-size: 1.4rem;
+		transition: all .2s ease-in-out;
+		.close {
+			color: #3c763d;
+			font-size: 3.5rem;
+			text-decoration: none;
+			margin-left: 7px;
+			opacity: .7;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
 	form.paypal-form {
 		table {
 			box-shadow: none;
