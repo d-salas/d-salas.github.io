@@ -2190,7 +2190,9 @@ ul.nav {
         font-size: 3.5rem;
         position: relative;
         top: 30px;
-        display: none; }
+        display: none;
+        -webkit-animation: fa-spin 2s infinite linear;
+        animation: fa-spin 2s infinite linear; }
   #customize .wedding-notice {
     text-align: center;
     display: none;

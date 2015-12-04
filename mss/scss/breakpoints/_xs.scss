@@ -528,6 +528,8 @@ ul.nav {
 					position: relative;
 					top: 30px;
 					display: none;
+					-webkit-animation: fa-spin 2s infinite linear;
+					animation: fa-spin 2s infinite linear;
 				}
 			}
 		}
