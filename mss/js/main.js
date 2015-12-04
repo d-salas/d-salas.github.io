@@ -355,6 +355,7 @@ $( document ).ready(function() {
 	var wreath = $('option:contains(Wreath)');
 	var yoga = $('option:contains(Yoga Pose)');
 	var zebra = $('option:contains(Zebra)');
+	var noimage = $('option:contains(No image)');
 
 	// var eventForm = $('#event-form');
 	// var typeForm = $('#type-form');
@@ -363,6 +364,8 @@ $( document ).ready(function() {
 	// var calligraphyForm = $('#calligraphy-form');
 
 	var cardImgs = $('.card-images');
+
+	noimage.attr('disabled', '');
 
 	$('.service-picker').prop('disabled',true);
 	$('.stationery-picker').prop('disabled',true);
@@ -406,6 +409,7 @@ $( document ).ready(function() {
 			turtle.removeAttr('disabled');
 			zebra.removeAttr('disabled');
 
+
 			// Which images to hide:
 			ampersand.attr('disabled', '');
 			chinese.attr('disabled', '');
@@ -421,6 +425,7 @@ $( document ).ready(function() {
 			skyline.attr('disabled', '');
 			wreath.attr('disabled', '');
 			yoga.attr('disabled', '');
+			noimage.attr('disabled', '');
 
 			// What else to hide
 			celeb.attr('disabled', '');
@@ -467,6 +472,7 @@ $( document ).ready(function() {
 			turtle.attr('disabled', '');
 			yoga.attr('disabled', '');
 			zebra.attr('disabled', '');
+			noimage.attr('disabled', '');
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -485,6 +491,8 @@ $( document ).ready(function() {
 			$(".wedding-notice").show();
 
 			// No images shown. If necessary, use the ones from engagement.
+			noimage.removeAttr('disabled');
+			$('.stationery-picker').val("No image");
 
 			$('.stationery-picker').prop('disabled',true);
 			celeb.attr('disabled', '');
@@ -533,6 +541,7 @@ $( document ).ready(function() {
 			turtle.attr('disabled', '');
 			wreath.attr('disabled', '');
 			zebra.attr('disabled', '');
+			noimage.attr('disabled', '');
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -580,6 +589,7 @@ $( document ).ready(function() {
 			// Which images to hide:
 			ampersand.attr('disabled', '');
 			roadster.attr('disabled', '');
+			noimage.attr('disabled', '');
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -622,6 +632,7 @@ $( document ).ready(function() {
 			turtle.attr('disabled', '');
 			yoga.attr('disabled', '');
 			zebra.attr('disabled', '');
+			noimage.attr('disabled', '');
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -668,6 +679,7 @@ $( document ).ready(function() {
 			turtle.attr('disabled', '');
 			wreath.attr('disabled', '');
 			zebra.attr('disabled', '');
+			noimage.attr('disabled', '');
 
 			shower.attr('disabled', '');
 			ack.attr('disabled', '');
@@ -711,6 +723,7 @@ $( document ).ready(function() {
 			turtle.attr('disabled', '');
 			wreath.attr('disabled', '');
 			yoga.attr('disabled', '');
+			noimage.attr('disabled', '');
 
 			shower.attr('disabled', '');
 			gift.attr('disabled', '');
@@ -821,9 +834,8 @@ $( document ).ready(function() {
 	});
 
 	$('#quantity-form').submit(function(e){
-		if($('.event-picker').val() === null || $('.service-picker').val() === null || $('.service-picker').val().length < 1 || $('.service-picker').val() === "null") {
-			// alert("Please make sure all available options of the Customizer are filled out before placing your order.");
-			// $(".alert").removeClass('hidden');
+		if($('.event-picker').val() === null || $('.service-picker').val() === null || $('.service-picker').val().length < 1 || $('.service-picker').val() === "null" || $('.stationery-picker').val() === null) {
+			$(".alert").alert("close");
 			$("#required").after(
 				'<div class="alert alert-danger text-center">' +
                     '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' +
@@ -836,7 +848,8 @@ $( document ).ready(function() {
 	        }, 1000);
 			e.preventDefault();
 		}
-		$('#paypal-name-hidden').val("Name: " + name.val() + "; Event: " + $('.event-picker').val() + "; Type: " + $('.service-picker').val() + "; Font: " + $('.font-picker').val() + "; Image: " + $('.stationery-picker').val() + "; Calligraphy: " + $('.calligraphy-picker').val());
+
+		$('#paypal-name-hidden').val("Name: " + name.val() + "; Event: " + $('.event-picker').val() + "; Type: " + $('.service-picker').val() + "; Font: " + $('.font-picker').val() + "; Image: " + $('.stationery-picker').val());
 		console.log($('#paypal-name-hidden').val());
 	});
 

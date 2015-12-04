@@ -364,7 +364,7 @@
 		"strictUnits": 0
 		},
 	"\/css\/font-awesome\/scss\/_animated.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -374,13 +374,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_animated.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_bordered-pulled.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -390,13 +390,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_bordered-pulled.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_core.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -406,13 +406,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_core.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_fixed-width.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -422,13 +422,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_fixed-width.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_icons.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -438,13 +438,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_icons.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_larger.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -454,13 +454,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_larger.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_list.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -470,13 +470,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_list.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_mixins.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -486,13 +486,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_path.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -502,13 +502,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_path.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_rotated-flipped.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -518,13 +518,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_rotated-flipped.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_stacked.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -534,13 +534,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_stacked.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/_variables.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -550,13 +550,13 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/_variables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/font-awesome\/scss\/font-awesome.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -566,10 +566,10 @@
 		"outputAbbreviatedPath": "\/css\/font-awesome\/css\/font-awesome.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/css\/ionicons.css": {
 		"fileType": 16,
@@ -1156,7 +1156,7 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/scss\/breakpoints\/_l.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1166,13 +1166,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_l.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/breakpoints\/_m.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1182,13 +1182,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_m.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/breakpoints\/_s.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1198,13 +1198,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_s.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/breakpoints\/_xl.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1214,13 +1214,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_xl.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/breakpoints\/_xs.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1230,13 +1230,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_xs.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/main.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1246,13 +1246,13 @@
 		"outputAbbreviatedPath": "\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/partials\/_material-colors.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1262,13 +1262,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_material-colors.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/partials\/_media-queries.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1278,13 +1278,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_media-queries.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/partials\/_mixins.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1294,13 +1294,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/partials\/_typography.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1310,13 +1310,13 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_typography.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/scss\/partials\/_variables.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1326,10 +1326,10 @@
 		"outputAbbreviatedPath": "\/scss\/css\/_variables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/tile-wide.png": {
 		"fileType": 32768,
@@ -1956,11 +1956,11 @@
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
-	"sassCreateSourceMap": 0,
+	"sassCreateSourceMap": 1,
 	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 10,
-	"sassOutputStyle": 0,
-	"sassUseLibsass": 0,
+	"sassOutputStyle": 3,
+	"sassUseLibsass": 1,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",
