@@ -94,231 +94,231 @@ $( document ).ready(function() {
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/alphabet-letter.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/alphabet-letter.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/alphabet-letter.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Ampersand") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/ampersand.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/ampersand.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/ampersand.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Ballerina Mouse") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/ballerina-mouse.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/ballerina-mouse.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/ballerina-mouse.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Beauty (Chinese characters)") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/chinese-beauty.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/chinese-beauty.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/chinese-beauty.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Bicycle") { 
   			statImg.fadeOut(10);
   			loader.fadeIn();
   			// window.setTimeout(function(){ loader.fadeIn();}, 250);
   			// statImg.attr("src", "./img/cards/bicycle.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/bicycle.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/bicycle.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Books") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/books.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/books.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/books.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Bowtie") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/bowtie.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/bowtie.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/bowtie.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Dress") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/dress.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/dress.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/dress.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Frog") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/frog.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/frog.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/frog.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Gold Mouse") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/mouse.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/mouse.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/mouse.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Lion") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/lion.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/lion.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/lion.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Mermaid") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/mermaid.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/mermaid.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/mermaid.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Nest") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/nest.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/nest.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/nest.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Pocketwatch") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/pocketwatch.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/pocketwatch.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/pocketwatch.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Roadster") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/roadster.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/roadster.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/roadster.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 				loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Sailboat") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/sailboat.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/sailboat.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/sailboat.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Savannah Tree") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/savannahtree.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/savannahtree.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/savannahtree.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Skyline") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/skyline.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/skyline.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/skyline.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Tent") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/tent.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/tent.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/tent.png");}, 800);
 			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Turtle") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/turtle.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/turtle.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/turtle.png");}, 800);
   			window.setTimeout(function(){
 				statImg.fadeIn();
 				loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Wreath") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/wreath.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/wreath.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/wreath.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Yoga Pose") { 
   			statImg.fadeOut();
   			loader.fadeIn();
   			// statImg.attr("src", "./img/cards/yogapose.png");
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/yogapose.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/yogapose.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}
   		if (pic === "Zebra") { 
   			statImg.fadeOut();
   			loader.fadeIn();
-  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/zebra.png");}, 1000);
+  			window.setTimeout(function(){ statImg.attr("src", "./img/cards/zebra.png");}, 800);
   			window.setTimeout(function(){
 	  			statImg.fadeIn();
 	  			loader.fadeOut();
-  			}, 1000);
+  			}, 800);
   		}  		
 	});  	
 
@@ -383,6 +383,7 @@ $( document ).ready(function() {
 		}
 		else {
 			$('#hide-on-select').css('display', 'inline');
+			event = "nothing";
 		}
 		// console.log(event);
 		if (event.indexOf("Baby") >= 0) { // SHOW SHOWER, ANNOUNCE, AND GIFT. STATIONERY
@@ -484,6 +485,13 @@ $( document ).ready(function() {
 			$(".wedding-notice").show();
 
 			// No images shown. If necessary, use the ones from engagement.
+
+			$('.stationery-picker').prop('disabled',true);
+			celeb.attr('disabled', '');
+			shower.attr('disabled', '');
+			ack.attr('disabled', '');
+			statImg.css("display", "none");
+			cardImgs.css("display", "none");
 
           	$('.stationery-picker').selectpicker('refresh');
           	$('.service-picker').selectpicker('refresh');
@@ -718,19 +726,34 @@ $( document ).ready(function() {
 
 	// GOTTA ENABLE/DISABLE CALLIGRAPHY BASED ON EVENT TYPE
 	$(".service-picker").change(function() {
-		var service = $(this).val().toString().replace(/[^a-z0-9\s]/gi, '');
-		// var replaced = service.replace(/[^a-z0-9\s]/gi, '');
-		// console.log(service);
-
-		if (service === "Announcement" || service === "Celebration invitation" || service === "Invitation" || service === "Save the date" || service === "Shower invitation"){
-			// console.log("one of those");
-			$('.calligraphy-picker').prop('disabled',false);
-			$('.calligraphy-picker').selectpicker('refresh');
+		var service = "";
+		if ( $(this).val() !== null) {
+			service = $(this).val().toString().replace(/[^a-z0-9\s]/gi, '');
 		}
 		else {
-			// console.log("not one of those");	
-			$('.calligraphy-picker').prop('disabled',true);
-			$('.calligraphy-picker').selectpicker('refresh');
+			service = "nothing";
+		}
+
+		// if (service === "Announcement" || service === "Celebration invitation" || service === "Invitation" || service === "Save the date" || service === "Shower invitation"){
+		// 	// console.log("one of those");
+		// 	$('.calligraphy-picker').prop('disabled',false);
+		// 	$('.calligraphy-picker').selectpicker('refresh');
+		// }
+		// else {
+		// 	// console.log("not one of those");	
+		// 	$('.calligraphy-picker').prop('disabled',true);
+		// 	$('.calligraphy-picker').selectpicker('refresh');
+		// }
+
+		if (service === "nothing"){
+			console.log("null service");
+		// 	$('.calligraphy-picker').prop('disabled',false);
+		// 	$('.calligraphy-picker').selectpicker('refresh');
+		}
+		else {
+		// 	// console.log("not one of those");	
+		// 	$('.calligraphy-picker').prop('disabled',true);
+		// 	$('.calligraphy-picker').selectpicker('refresh');
 		}
 	});
 
@@ -800,7 +823,14 @@ $( document ).ready(function() {
 	$('#quantity-form').submit(function(e){
 		if($('.event-picker').val() === null || $('.service-picker').val() === null || $('.service-picker').val().length < 1 || $('.service-picker').val() === "null") {
 			// alert("Please make sure all available options of the Customizer are filled out before placing your order.");
-			$(".alert").removeClass('hidden');
+			// $(".alert").removeClass('hidden');
+			$("#required").after(
+				'<div class="alert alert-danger text-center">' +
+                    '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' +
+		            '<strong>Uh oh!</strong> Please make sure all available options of the Customizer are filled out before placing your order.' +
+				'</div>');
+
+
 			$('html, body').animate({
 	            scrollTop: $("#customizers").offset().top - 50
 	        }, 1000);

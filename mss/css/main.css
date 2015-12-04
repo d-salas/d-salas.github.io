@@ -2198,6 +2198,20 @@ ul.nav {
   #customize #customizers {
     margin-left: auto;
     margin-right: auto; }
+    #customize #customizers #pickers .alert {
+      background: transparent;
+      border: 4px solid #a94442;
+      margin-top: 10px;
+      font-size: 1.4rem;
+      transition: all .2s ease-in-out; }
+      #customize #customizers #pickers .alert .close {
+        color: #a94442;
+        font-size: 3.5rem;
+        text-decoration: none;
+        margin-left: 7px;
+        opacity: .7; }
+        #customize #customizers #pickers .alert .close:hover {
+          opacity: 1; }
     #customize #customizers #pickers p#paper-desc {
       margin-top: 10px;
       max-width: 100%;
@@ -2319,7 +2333,10 @@ footer {
     text-decoration: underline;
     text-decoration-style: dotted; }
     footer a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #006844; }
+    footer a:focus {
+      color: #f7f7f7; }
   footer img {
     padding-top: 10px;
     width: 100px; }

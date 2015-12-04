@@ -543,6 +543,24 @@ ul.nav {
 		margin-left: auto;
 		margin-right: auto;
 		#pickers {
+			.alert {
+				background: transparent;
+				border: 4px solid #a94442;
+				margin-top: 10px;
+				font-size: 1.4rem;
+				transition: all .2s ease-in-out;
+				.close {
+					color: #a94442;
+					font-size: 3.5rem;
+					text-decoration: none;
+					margin-left: 7px;
+					opacity: .7;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+
 			p#paper-desc {
 				margin-top: 10px;
 				max-width: 100%;
@@ -745,7 +763,11 @@ footer {
 		text-decoration-style: dotted;
 		&:hover {
 			text-decoration: underline;
+			color: $mss-green;
 			// color: darken($light-yellow, 20%);
+		}
+		&:focus {
+			color: $white;
 		}
 	}
 	img {
