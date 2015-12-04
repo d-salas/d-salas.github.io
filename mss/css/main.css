@@ -1772,9 +1772,10 @@ body {
   background-color: #f7f7f7; }
 
 a {
-  color: #032C56; }
+  color: #065eb9;
+  text-decoration: underline; }
   a:hover {
-    color: #054587; }
+    color: #1584f7; }
 
 p {
   line-height: 150%;
@@ -1866,6 +1867,13 @@ a.navbar-brand, #mss-hero b {
   border-radius: 0;
   z-index: 100000; }
 
+#menu-text {
+  position: relative;
+  top: -10px;
+  font-size: 1.6rem;
+  padding-right: 10px;
+  letter-spacing: 1px; }
+
 #menu-icon {
   transition: all .2s linear; }
   #menu-icon.down {
@@ -1882,7 +1890,8 @@ ul.nav {
 .nav > li > a {
   display: inline;
   padding: 0;
-  user-select: none; }
+  user-select: none;
+  text-decoration: none; }
   .nav > li > a:hover {
     user-select: none;
     background: transparent; }
@@ -1949,8 +1958,10 @@ ul.nav {
     #mss-hero h2 sup {
       font-family: "Ovo", Cambria, Times New Roman, Times, serif;
       font-size: 65%; }
-  #mss-hero p, #mss-hero h1, #mss-hero h2, #mss-hero a {
+  #mss-hero p, #mss-hero a {
     color: #131B21; }
+  #mss-hero #mss, #mss-hero #tagline {
+    color: #032C56; }
   #mss-hero #typed {
     display: none;
     position: absolute;
@@ -2160,14 +2171,14 @@ ul.nav {
     #customize #sample-text #sample-letter p {
       font-family: "Petrona"; }
     #customize #sample-text #sample-letter img {
-      height: 100px;
       display: block;
       margin: 0 auto;
       position: relative;
       z-index: 10; }
     #customize #sample-text #sample-letter .card-images {
-      height: 100px;
       margin-bottom: 25px; }
+    #customize #sample-text #sample-letter .card-images, #customize #sample-text #sample-letter img {
+      height: 90px; }
     #customize #sample-text #sample-letter #loading-icon-container {
       height: 100px;
       position: absolute;
@@ -2372,10 +2383,8 @@ For slightly less small devices
   /* ==========================================================================
      	CUSTOMIZE Styles
      ========================================================================== */
-  #customize #sample-text #sample-letter .card-images {
-    height: 130px; }
-  #customize #sample-text #sample-letter img {
-    height: 130px; }
+  #customize #sample-text #sample-letter .card-images, #customize #sample-text #sample-letter img {
+    height: 120px; }
   #customize #sample-text #sample-letter #loading-icon-container {
     height: 130px; }
     #customize #sample-text #sample-letter #loading-icon-container #loading-icon {
@@ -2428,8 +2437,8 @@ For tablets and smaller laptops
     margin-bottom: 0px; }
 
   .navbar-nav li {
-    font-size: 1.5rem;
-    padding: 14px 1vw 4px 1vw; }
+    font-size: 1.4rem;
+    padding: 16px 1vw 4px 1vw; }
 
   .affix-top {
     background: transparent;
@@ -2509,10 +2518,8 @@ For tablets and smaller laptops
     margin-left: auto;
     margin-right: auto;
     max-width: 60vw; }
-  #customize #sample-text #sample-letter .card-images {
-    height: 170px; }
-  #customize #sample-text #sample-letter img {
-    height: 170px; }
+  #customize #sample-text #sample-letter .card-images, #customize #sample-text #sample-letter img {
+    height: 150px; }
   #customize #sample-text #sample-letter #loading-icon-container {
     height: 170px; }
     #customize #sample-text #sample-letter #loading-icon-container #loading-icon {

@@ -214,11 +214,8 @@ ul.nav {
 #customize {
 	#sample-text{
 		#sample-letter {
-			.card-images {
-				height: 130px;
-			}
-			img {
-				height: 130px;
+			.card-images, img {
+				height: 120px;
 			}
 			#loading-icon-container{
 				height: 130px;

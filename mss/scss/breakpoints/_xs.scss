@@ -28,11 +28,11 @@ body {
 	background-color: $white;//$mss-odd;
 }
 a {
-	color: $mss-blue;
-	// text-decoration: none;
+	color: lighten($mss-blue, 20%);
+	text-decoration: underline;
 	&:hover {
 		// text-decoration: underline;
-		color: lighten($mss-blue, 10%);
+		color: lighten($mss-blue, 35%);
 	}
 }
 
@@ -147,6 +147,18 @@ button.navbar-toggle {
 	// padding: 0;
 	// margin: 10px
 }
+#menu-text {
+	position: relative;
+	top: -10px;
+
+	font-size: 1.6rem;
+	padding-right: 10px;
+	letter-spacing: 1px;
+
+	// padding-bottom: 10px;
+	// margin-bottom: 15px;
+	// line-height: 50px;
+}
 #menu-icon {
 	// border: 2px solid $black;
 	transition: all .2s linear;
@@ -167,6 +179,7 @@ ul.nav {
     display: inline;
     padding: 0;
     user-select: none;
+    text-decoration: none;
     &:hover {
     	user-select: none;
 		background: transparent;
@@ -266,8 +279,11 @@ ul.nav {
 			font-size: 65%;
 		}
 	}
-	p, h1, h2, a {
+	p, a {
 		color: $black;
+	}
+	#mss, #tagline {
+		color: $mss-blue;
 	}
 
 	#typed {
@@ -487,7 +503,6 @@ ul.nav {
 			}
 			img {
 				// width: 30%;
-				height: 100px;
 				display: block;
 				margin: 0 auto;
 				// margin-bottom: 25px;
@@ -495,8 +510,10 @@ ul.nav {
 				z-index: 10;
 			}
 			.card-images {
-				height: 100px;
 				margin-bottom: 25px;
+			}
+			.card-images, img {
+				height: 90px;
 			}
 			#loading-icon-container{
 				// width: 100%;

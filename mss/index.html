@@ -33,9 +33,9 @@
     <nav class="navbar navbar-fixed-top affix-top" id="mss-nav" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false" aria-controls="navbar">
+            <button type="button" id="down-icon" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-caret-down" id="menu-icon"></i>
+                <span id="menu-text">MENU</span><i class="fa fa-caret-down" id="menu-icon"></i>
                 <!-- <i class="icon ion-navicon"></i> -->
             </button>
           <a class="navbar-brand" href="#top"><img src="img/mss-logo.png" alt="Modern Social Secretary" id="mss-logo-navbar"><span id="mss-text">MSS</span></a>
@@ -47,7 +47,7 @@
                 <li class="hvr-underline-reveal"><a href="#how-it-works">How it works</a></li>
                 <li class="hvr-underline-reveal"><a href="#download">Download</a></li>
                 <li class="hvr-underline-reveal"><a href="#customize">Customize</a></li>
-                <li class="hvr-underline-reveal"><a href="#checkout">Place order</a></li>
+                <li class="hvr-underline-reveal"><a href="#checkout">Order / Contact</a></li>
             </ul>
         </div><!--/.navbar-collapse small screens -->
 
@@ -240,6 +240,7 @@
                             <option name="event" value="Baby">Baby</option>
                             <option name="event" value="Engagement">Engagement</option>
                             <option name="event" value="Wedding">Wedding</option>
+                            <option name="event" value="Birthday">Birthday</option>
                             <option name="event" value="Bar/Bat Mitzvah">Bar/Bat Mitzvah</option>
                             <option name="event" value="Bridal">Bridal</option>
                             <option name="event" value="Graduation">Graduation</option>
@@ -321,6 +322,9 @@
                                 *Required
                             </small>
                         </p> 
+                        <div class="alert alert-danger text-center hidden">
+                            <strong>Uh oh!</strong> Please make sure all available options of the Customizer are filled out before placing your order.
+                        </div>
                         <p id="paper-desc">All of our correspondence are hand crafted on premier Crane Social 120lb card stock. Crane & Co. has been making premier papers since 1801. It is hard to believe that not a single tree falls to make these 100% cotton papers. Crane uses remnants of textile and cotton seed manufacturing to make its product. Very beautiful.  Very green.</p>
                     </div>
 
@@ -353,7 +357,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12"> 
-                    <p class="text-center">Once your cards are customized, you'll be ready to place your order.</p>   
+                    <p class="text-center">Once your cards are customized, you'll be ready to place your order. <br> If you have any questions, you can email us by clicking the button below.</p>   
                 </div>
             </div>
                 <!-- <div id="pricing">     -->
@@ -398,7 +402,7 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th colspan="2">Acknowledgements with envelopes</th>
+                                    <th colspan="2">Correspondence with envelopes</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -426,12 +430,12 @@
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="RUB2DZMVJNL9C">
                         <table>
-                        <tr><td class="pay-label"><input type="hidden" name="on0" value="Quantity">Quantity<span id="hide-on-select">&nbsp;(Select an event type above first)</span>:</td></tr><tr><td><select class="selectpicker quantity-picker" multiple data-max-options="1" name="os0">
+                        <tr><td class="pay-label"><input type="hidden" name="on0" value="Quantity">*Quantity<span id="hide-on-select">&nbsp;(Select an event type above first)</span>:</td></tr><tr><td><select class="selectpicker quantity-picker" multiple data-max-options="1" name="os0">
                             <option value="25-100">25-100 $50.00 USD</option>
                             <option value="100-150">100-150 $100.00 USD</option>
                             <option value="150+">150+ $150.00 USD</option>
                         </select> </td></tr>
-                        <tr><td class="pay-label"><input type="hidden" name="on1" value="Options">Name (First and Last):</td></tr><tr><td><input class="hidden" id="paypal-name-hidden" type="text" name="os1" maxlength="200"><input id="paypal-name" type="text" maxlength="200"></td></tr>
+                        <tr><td class="pay-label"><input type="hidden" name="on1" value="Options">*Name (First and Last):</td></tr><tr><td><input class="hidden" id="paypal-name-hidden" type="text" name="os1" maxlength="200"><input id="paypal-name" type="text" maxlength="200"></td></tr>
                         </table>
                         <input type="hidden" name="currency_code" value="USD">
                         <!-- <div class="text-center"><input class="paypal-img" id="paypal-btn1" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></div> -->
@@ -461,8 +465,8 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <p class="bigger text-center">Once you've placed your order, email us your contact form and we'll take care of the rest.</p>
-                    <a class="btn btn-default" href="mailto:info@modernsocialsecretary.com" role="button">Email form</a>
+                    <p class="bigger text-center">After you've placed your order, email us your contact form and we'll take care of the rest.</p>
+                    <a class="btn btn-default" href="mailto:info@modernsocialsecretary.com" role="button">Email form / Contact us</a>
                 </div>
             </div>
     </section>

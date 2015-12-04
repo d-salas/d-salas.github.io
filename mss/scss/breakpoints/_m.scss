@@ -74,8 +74,8 @@ ul.nav {
 	}
 }
 .navbar-nav li {
-	font-size: 1.5rem;
-	padding: 14px 1vw 4px 1vw;
+	font-size: 1.4rem;
+	padding: 16px 1vw 4px 1vw;
 }
 .navbar-toggle {
 
@@ -297,11 +297,8 @@ ul.nav {
 			max-width: 60vw;
 		}
 		#sample-letter {
-			.card-images {
-				height: 170px;
-			}
-			img {
-				height: 170px;
+			.card-images, img {
+				height: 150px;
 			}
 			#loading-icon-container{
 				height: 170px;
