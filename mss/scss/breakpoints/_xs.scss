@@ -79,6 +79,10 @@ h2 {
     }
 }
 
+.dropdown-menu { 
+	z-index: 10000;
+}
+
 .transparent-button {
 	font-family: $btn-font;
 	// font-weight: bold;
