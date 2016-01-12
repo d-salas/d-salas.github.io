@@ -759,6 +759,34 @@ ul.nav {
 	}
 }
 
+/* ==========================================================================
+   	CONTACT US Styles
+   ========================================================================== */
+
+#contact {
+	@extend #customize;
+	form {
+		text-align: center;
+		max-width: 900px;
+		font-size: 1.9rem;
+		margin: 0 auto;
+		input, textarea {
+			border: 2px solid black;
+			width: 100%;
+		}
+		.field {
+			margin-bottom: 15px;
+		}
+		button {
+			@extend .transparent-button;
+			// background-color: black;
+			// color: white;
+			text-align: center;
+			margin-top: 0px;
+			transition: all .25s ease;
+		}
+	}
+}   
 
 /* ==========================================================================
    	FOOTER Styles

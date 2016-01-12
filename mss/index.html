@@ -47,7 +47,8 @@
                 <li class="hvr-underline-reveal"><a href="#how-it-works">How it works</a></li>
                 <li class="hvr-underline-reveal"><a href="#download">Download</a></li>
                 <li class="hvr-underline-reveal"><a href="#customize">Customize</a></li>
-                <li class="hvr-underline-reveal"><a href="#checkout">Order / Contact</a></li>
+                <li class="hvr-underline-reveal"><a href="#checkout">Order</a></li>
+                <li class="hvr-underline-reveal"><a href="#contact">Contact Us</a></li>
             </ul>
         </div><!--/.navbar-collapse small screens -->
 
@@ -352,129 +353,170 @@
     <!-- CHECKOUT SECTION -->
 
     <section id="checkout">
-            <div class="row">
-                <div class="col-sm-12"> 
-                    <h2>3. Place your order</h2>
-                    <div class="divider text-center">
-                    </div>
+        <div class="row">
+            <div class="col-sm-12"> 
+                <h2>3. Place your order</h2>
+                <div class="divider text-center">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12"> 
-                    <p>Once your cards are customized, you'll be ready to place your order. </p>
-                    <p>If you have any questions before placing an order, you can email us by clicking the button below.</p>   
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12"> 
+                <p>Once your cards are customized, you'll be ready to place your order. </p>
             </div>
-                <!-- <div id="pricing">     -->
-            <div class="row">
-                    <!-- <div class="col-xs-12 col-sm-4 col-sm-push-4 pricing">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th colspan="2">Invitations & Announcements</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Digital Printing</td>
-                                    <td>$5</td>
-                                </tr>
-                                <tr>
-                                    <td>Engraving</td>
-                                    <td rowspan="2">$10</td>
-                                </tr>
-                                <tr>
-                                    <td>Embossing</td>
-                                </tr>
-                                <tr>
-                                    <td>Letterpress</td>
-                                    <td rowspan="3">$15</td>
-                                </tr>
-                                <tr>
-                                    <td>Thermography</td>
-                                </tr>
-                                <tr>
-                                    <td>Offset printing</td>
-                                </tr>
-                                <tr>
-                                    <td>Hand calligraphy*</td>
-                                    <td>$2-5/pc.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div> -->
-                    <div class="col-xs-12 col-sm-6 col-sm-push-6 pricing">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th colspan="2">Correspondence with envelopes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>25 to 100 pieces:</td>
-                                    <td>$50</td>
-                                </tr>
-                                <tr>
-                                    <td>100 to 150 pieces:</td>
-                                    <td>$100</td>
-                                </tr>
-                                <tr>
-                                    <td>150 to 300+ pieces:</td>
-                                    <td>$150</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                <!-- </div>   -->
-                
+        </div>
+            <!-- <div id="pricing">     -->
+        <div class="row">
+                <!-- <div class="col-xs-12 col-sm-4 col-sm-push-4 pricing">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Invitations & Announcements</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Digital Printing</td>
+                                <td>$5</td>
+                            </tr>
+                            <tr>
+                                <td>Engraving</td>
+                                <td rowspan="2">$10</td>
+                            </tr>
+                            <tr>
+                                <td>Embossing</td>
+                            </tr>
+                            <tr>
+                                <td>Letterpress</td>
+                                <td rowspan="3">$15</td>
+                            </tr>
+                            <tr>
+                                <td>Thermography</td>
+                            </tr>
+                            <tr>
+                                <td>Offset printing</td>
+                            </tr>
+                            <tr>
+                                <td>Hand calligraphy*</td>
+                                <td>$2-5/pc.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+                <div class="col-xs-12 col-sm-6 col-sm-push-6 pricing">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Correspondence with envelopes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>25 to 100 pieces:</td>
+                                <td>$50</td>
+                            </tr>
+                            <tr>
+                                <td>100 to 150 pieces:</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>150 to 300+ pieces:</td>
+                                <td>$150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <!-- </div>   -->
+            
 
-                <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6">
 
-                    <form class="paypal-form" id="quantity-form" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="RUB2DZMVJNL9C">
-                        <table>
-                        <tr><td class="pay-label"><input type="hidden" name="on0" value="Quantity">*Quantity<span id="hide-on-select">&nbsp;(Select an event type above first)</span>:</td></tr><tr><td><select class="selectpicker quantity-picker" multiple data-max-options="1" name="os0">
-                            <option value="25-100">25-100 $50.00 USD</option>
-                            <option value="100-150">100-150 $100.00 USD</option>
-                            <option value="150+">150+ $150.00 USD</option>
-                        </select> </td></tr>
-                        <tr><td class="pay-label"><input type="hidden" name="on1" value="Options">*Name (First and Last):</td></tr><tr><td><input class="hidden" id="paypal-name-hidden" type="text" name="os1" maxlength="200"><input id="paypal-name" type="text" maxlength="200"></td></tr>
-                        </table>
-                        <input type="hidden" name="currency_code" value="USD">
-                        <!-- <div class="text-center"><input class="paypal-img" id="paypal-btn1" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></div> -->
-                        <input type="submit" onclick="" value="Add to Cart" name="submit" title="PayPal - The safer, easier way to pay online!" id="paypal-btn1" class="paypal-btn disabled">
+                <form class="paypal-form" id="quantity-form" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="RUB2DZMVJNL9C">
+                    <table>
+                    <tr><td class="pay-label"><input type="hidden" name="on0" value="Quantity">*Quantity<span id="hide-on-select">&nbsp;(Select an event type above first)</span>:</td></tr><tr><td><select class="selectpicker quantity-picker" multiple data-max-options="1" name="os0">
+                        <option value="25-100">25-100 $50.00 USD</option>
+                        <option value="100-150">100-150 $100.00 USD</option>
+                        <option value="150+">150+ $150.00 USD</option>
+                    </select> </td></tr>
+                    <tr><td class="pay-label"><input type="hidden" name="on1" value="Options">*Name (First and Last):</td></tr><tr><td><input class="hidden" id="paypal-name-hidden" type="text" name="os1" maxlength="200"><input id="paypal-name" type="text" maxlength="200"></td></tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD">
+                    <!-- <div class="text-center"><input class="paypal-img" id="paypal-btn1" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></div> -->
+                    <input type="submit" onclick="" value="Add to Cart" name="submit" title="PayPal - The safer, easier way to pay online!" id="paypal-btn1" class="paypal-btn disabled">
 
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
 
 
 
 <!--                     <form class="paypal-form" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="GLXUFZ3J288R8">
-                        <table>
-                        <tr><td class="pay-label"><input type="hidden" name="on0" value="Add-ons">Add-ons (Select a quantity first):</td></tr><tr><td><select class="selectpicker addon-picker" name="os0">
-                            <option value="Digital Printing">Digital Printing $5.00 USD</option>
-                            <option value="Engraving">Engraving $10.00 USD</option>
-                            <option value="Embossing">Embossing $10.00 USD</option>
-                            <option value="Letterpress">Letterpress $15.00 USD</option>
-                        </select> </td></tr>
-                        </table>
-                        <input type="hidden" name="currency_code" value="USD">
-                        <input type="submit" value="Add to Cart" name="submit" title="PayPal - The safer, easier way to pay online!" id="paypal-btn2" class="paypal-btn disabled">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form> -->
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="GLXUFZ3J288R8">
+                    <table>
+                    <tr><td class="pay-label"><input type="hidden" name="on0" value="Add-ons">Add-ons (Select a quantity first):</td></tr><tr><td><select class="selectpicker addon-picker" name="os0">
+                        <option value="Digital Printing">Digital Printing $5.00 USD</option>
+                        <option value="Engraving">Engraving $10.00 USD</option>
+                        <option value="Embossing">Embossing $10.00 USD</option>
+                        <option value="Letterpress">Letterpress $15.00 USD</option>
+                    </select> </td></tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="submit" value="Add to Cart" name="submit" title="PayPal - The safer, easier way to pay online!" id="paypal-btn2" class="paypal-btn disabled">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p class="bigger text-left">After you've placed your order, email us your contact form and we'll take care of the rest.</p>
+                <p class="bigger text-left">Please note that your card will not look exactly like the sample above, but we will email you a test card for your final approval.</p>
+                <a class="btn btn-default" href="mailto:info@modernsocialsecretary.com" role="button">Email form</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <h2>Contact Us</h2>
+                <div class="divider text-center">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <p class="bigger text-left">After you've placed your order, email us your contact form and we'll take care of the rest.</p>
-                    <p class="bigger text-left">Please note that your card will not look exactly like the sample above, but we will email you a test card for your final approval.</p>
-                    <a class="btn btn-default" href="mailto:info@modernsocialsecretary.com" role="button">Email form / Contact us</a>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12"> 
+                <p>If you have any questions, use the form below to contact us.</p>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col"> 
+                <div id="form-messages"></div>
+                <form id="ajax-contact" method="post" action="mailer.php">
+                    <div class="field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="field contact-submit">
+                        <button class="btn btn-default" type="submit">Send your message</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </section>
+        
     </section>
 
     <!-- FOOTER SECTION -->

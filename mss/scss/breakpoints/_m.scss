@@ -74,8 +74,8 @@ ul.nav {
 	}
 }
 .navbar-nav li {
-	font-size: 1.4rem;
-	padding: 16px 1vw 4px 1vw;
+	font-size: 1.3rem;
+	padding: 17px 1vw 4px 1vw;
 }
 .navbar-toggle {
 
@@ -410,6 +410,28 @@ ul.nav {
 	}
 }
 
+/* ==========================================================================
+   	CONTACT US Styles
+   ========================================================================== */
+
+#contact {
+	form {
+		text-align: left;
+		input, textarea {
+		}
+		.contact-submit {
+			text-align: center;
+		}
+		button {
+			text-align: center;
+			margin: 0 auto;
+			&:hover {
+				@extend .hvr-btn;
+				box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+		}
+	}
+}   
 
 
 /* ==========================================================================
