@@ -11,16 +11,20 @@
  	var change = true;
 
  	$('#album-covers img').on('click', function(){
+ 		var currentImage = $(this);
  		var current = this.id;
- 		console.log(current);
- 		// console.log(albumEmbed);
+ 		console.log("current is " + current);
 
  		if( (previous === current) && change ) {
- 			$(albumEmbed[current]).css('display', 'none');
+ 			console.log("previous is also current");
+ 			$(albumEmbed[current]).removeClass('show');
+ 			currentImage.removeClass('active');
  			change = false;
  		} else {
- 			$(albumEmbed[current]).css('display', 'block');
- 			$(albumEmbed[previous]).css('display', 'none');
+ 			console.log("showing " + current);
+ 			$(albumEmbed[current]).addClass('show');
+ 			$(albumEmbed[previous]).removeClass('show');
+ 			currentImage.addClass('active');
  		}
  		previous = current;
  	});
