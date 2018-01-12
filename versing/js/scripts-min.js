@@ -1,0 +1,1 @@
+$(document).ready(function(){var e={nirvanaCover:"#nirvana-embed",tapeCover:"#tape-embed",ndCover:"#nd-embed"},n="",o=!0;$("#album-covers img").on("click",function(){var a=this.id;console.log(a),n===a&&o?($(e[a]).css("display","none"),o=!1):($(e[a]).css("display","block"),$(e[n]).css("display","none")),n=a})});

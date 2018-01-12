@@ -1,0 +1,100 @@
+// Font assignments
+$sans-serif:        (Helvetica, Arial, sans-serif);
+$serif:             (Times, serif);
+
+$title-font:		$serif;
+$body-font:			$sans-serif;
+
+
+// Color assignments
+$background-color: 		#f8f7f2;
+$font-color: 			#3e3e3c;
+$versing-red:			#f15b55;
+
+// Layout assignments
+$max-width: 900px;
+$spacer:	16px;
+$half-spacer: $spacer / 2;
+
+// General styles
+body {
+	background: $background-color;
+	color: $font-color;
+	font-family: $sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+	color: $font-color;
+	&:hover {
+		color: $versing-red;
+		text-decoration: underline;
+	}
+}
+h2 {
+	text-align: center;
+}
+.main {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 $half-spacer;
+}
+
+// Top styles
+.versing-title {
+	font-family: $serif;
+	font-style: italic;
+	font-weight: bold;
+	color: $versing-red;
+	font-size: 64px;
+	text-align: center;
+}
+ul.top-menu {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.top-menu li {
+	list-style: none;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.versing-img img {
+	max-width: 100%;
+}
+
+// Listen
+#album-covers {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	margin-bottom: $spacer;
+
+	img {
+		width: 30%;
+		height: 30%;
+		box-sizing: border-box;
+		border: 3px solid $background-color;
+		cursor: pointer;
+
+		&:hover, &.active {
+			border-color: $versing-red;
+		}
+	}
+}
+.bandcamp-embed {
+	display: none;
+	text-align: center;
+	&:not(:last-of-type) {
+		margin-bottom: $spacer;
+	}
+	&.show {
+		display: block;
+	}
+}
+iframe {
+	max-width: 700px;
+}
