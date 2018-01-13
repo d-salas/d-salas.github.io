@@ -91,6 +91,7 @@
 		previousThumb = currentThumb;
  	});
 
+ 	// Fit YouTube video to screen width
  	$('.youtube-embed').fitVids();
 
 });
