@@ -40,24 +40,24 @@
 
  	if ($(window).width() > 768){
 	 	$('#cmoThumb').on('mouseover', function() {
-	 		$(this).attr('src', '../img/videos/cmo.webp');
+	 		$(this).attr('src', './img/videos/cmo.webp');
 	 	});
 		$('#cmoThumb').on('mouseleave', function() {
-	 		$(this).attr('src', '../img/videos/cmo.jpg');
+	 		$(this).attr('src', './img/videos/cmo.jpg');
 	 	});
 
 	 	$('#vkThumb').on('mouseover', function() {
-	 		$(this).attr('src', '../img/videos/vk.webp');
+	 		$(this).attr('src', './img/videos/vk.webp');
 	 	});
 		$('#vkThumb').on('mouseleave', function() {
-	 		$(this).attr('src', '../img/videos/vk.jpg');
+	 		$(this).attr('src', './img/videos/vk.jpg');
 	 	});
 
 	 	$('#kexpThumb').on('mouseover', function() {
-	 		$(this).attr('src', '../img/videos/kexp.webp');
+	 		$(this).attr('src', './img/videos/kexp.webp');
 	 	});
 		$('#kexpThumb').on('mouseleave', function() {
-	 		$(this).attr('src', '../img/videos/kexp.jpg');
+	 		$(this).attr('src', './img/videos/kexp.jpg');
 	 	});
 	}
 
