@@ -1,9 +1,9 @@
 // Font assignments
-$sans-serif:        (Helvetica, Arial, sans-serif);
-$serif:             (Times, serif);
+$sans-serif:        	(Helvetica, Arial, sans-serif);
+$serif:             	(Times, serif);
 
-$title-font:		$serif;
-$body-font:			$sans-serif;
+$title-font:			$serif;
+$body-font:				$sans-serif;
 
 
 // Color assignments
@@ -12,10 +12,10 @@ $font-color: 			#3e3e3c;
 $versing-red:			#f15b55;
 
 // Layout assignments
-$max-width: 900px;
-$spacer:	16px;
-$half-spacer: $spacer / 2;
-$double-spacer: $spacer * 2;
+$max-width: 			900px;
+$spacer:				16px;
+$half-spacer: 			$spacer / 2;
+$double-spacer: 		$spacer * 2;
 
 // General styles
 body {
