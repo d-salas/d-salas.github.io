@@ -8,7 +8,7 @@
 	<meta name="description" content="a band from seattle">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -18,7 +18,7 @@
 <body>
 	<div class="main">
 		<div class="top">
-			<h1 class="versing-title">VERSING</h1>
+			<h1 class="versing-title">VERSING<br>VERSING<br>VERSING</h1>
 			<ul class="top-menu">
 				<li><a href="https://www.facebook.com/versingtheband/" target="_blank">facebook</a></li>
 				<li><a href="https://www.instagram.com/versing_theband/" target="_blank">instagram</a></li>
@@ -27,14 +27,20 @@
 			</ul>
 			<div class="versing-img"><img src="img/versing-boys.jpg" alt="Versing sitting on a rock in Halifax, NS"></div>
 		</div>
-		<div class="listen">
+		<div class="section listen">
 			<h2>Listen</h2>
 			<div id="album-covers">
-				<img id="nirvanaCover" src="img/nirvana.jpg" alt="Nirvana by Versing">
-				<img id="tapeCover" src="img/tape.jpg" alt="Tape by Versing">
-				<img id="ndCover" src="img/nude-descending.jpg" alt="Nude Descending by Versing">
+				<div>
+					<img id="nirvanaCover" src="img/albums/nirvana.jpg" alt="Nirvana by Versing">
+				</div>
+				<div>
+					<img id="tapeCover" src="img/albums/tape.jpg" alt="Tape by Versing">
+				</div>
+				<div>
+					<img id="ndCover" src="img/albums/nude-descending.jpg" alt="Nude Descending by Versing">
+				</div>
 			</div>
-			<div id="embeds">
+			<div id="bandcamp-embeds">
 				<div class="bandcamp-embed" id="nirvana-embed">
 					<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1827716886/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://versing.bandcamp.com/album/nirvana">Nirvana by Versing</a></iframe>
 				</div>
@@ -46,12 +52,41 @@
 				</div>
 			</div>
 		</div>
-		<div class="watch">
+		<div class="section watch">
 			<h2>Watch</h2>
+			<div id="video-thumbs">
+				<div>
+					<p>Call Me Out</p>
+					<img id="cmoThumb" src="img/videos/cmo.jpg" alt="Call Me Out video">
+				</div>
+				<div>
+					<p>Voight-Kampff</p>
+					<img id="vkThumb" src="img/videos/vk.jpg" alt="Voight-Kampff video">
+				</div>
+				<div>
+					<p>Live on KEXP</p>
+					<img id="kexpThumb" src="img/videos/kexp.jpg" alt="KEXP video">
+				</div>
+			</div>
+			<div id="youtube-embeds">
+				<div class="youtube-embed" id="cmo-embed">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/XgDxonUC9SY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="youtube-embed" id="vk-embed">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/k8gRkCyCZBc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="youtube-embed" id="kexp-embed">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/MfOZl_XHVs0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
 		</div>
+		<footer>
+			<p>:)</p>
+		</footer>
 		
 	</div>
 	<script src="js/zepto.min.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

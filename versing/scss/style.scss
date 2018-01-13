@@ -15,6 +15,7 @@ $versing-red:			#f15b55;
 $max-width: 900px;
 $spacer:	16px;
 $half-spacer: $spacer / 2;
+$double-spacer: $spacer * 2;
 
 // General styles
 body {
@@ -40,6 +41,9 @@ h2 {
 	margin: 0 auto;
 	padding: 0 $half-spacer;
 }
+.section {
+	margin-top: $double-spacer;
+}
 
 // Top styles
 .versing-title {
@@ -48,7 +52,10 @@ h2 {
 	font-weight: bold;
 	color: $versing-red;
 	font-size: 64px;
+	line-height: 67%;
 	text-align: center;
+	user-select: none;
+	cursor: pointer;
 }
 ul.top-menu {
 	padding: 0;
@@ -59,25 +66,31 @@ ul.top-menu {
 .top-menu li {
 	list-style: none;
 	letter-spacing: 1px;
-	font-size: 14px;
+	font-size: 13px;
 }
 .versing-img img {
 	max-width: 100%;
 }
 
-// Listen
-#album-covers {
+// Listen / Watch
+#album-covers, #video-thumbs {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	
 	margin-bottom: $spacer;
-
-	img {
+	
+	div {
+		text-align: center;
 		width: 30%;
-		height: 30%;
+		p {
+			margin-top: 0;
+		}
+	}
+	img {
+		width: 100%;
 		box-sizing: border-box;
-		border: 3px solid $background-color;
+		border: 3px solid transparent;
 		cursor: pointer;
 
 		&:hover, &.active {
@@ -85,16 +98,28 @@ ul.top-menu {
 		}
 	}
 }
-.bandcamp-embed {
+.bandcamp-embed, .youtube-embed {
 	display: none;
 	text-align: center;
-	&:not(:last-of-type) {
-		margin-bottom: $spacer;
-	}
+	margin-bottom: $spacer;
+
 	&.show {
 		display: block;
 	}
 }
-iframe {
+.bandcamp-embed iframe {
+	margin-top: $spacer;
 	max-width: 700px;
+}
+.thumb-title {
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	text-align: center;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
