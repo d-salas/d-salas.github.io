@@ -72,19 +72,20 @@ ul.top-menu {
 }
 
 // Listen / Watch
-#album-covers, #video-thumbs {
+#album-covers, #video-thumbs, #video-names {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	
 	margin-bottom: $spacer;
 	
-	div {
+	div, p {
 		text-align: center;
 		width: 30%;
-		p {
-			margin-top: 0;
-		}
+	}
+	p {
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 	img {
 		width: 100%;
@@ -95,6 +96,22 @@ ul.top-menu {
 		&:hover, &.active {
 			border-color: $versing-red;
 		}
+	}
+}
+#video-names {
+	margin-bottom: 8px;
+}
+.thumb {
+	position: relative;
+}
+.anim {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity .1s ease-in-out;
+	&:hover {
+		opacity: 1;
 	}
 }
 .bandcamp-embed, .youtube-embed {
@@ -118,9 +135,20 @@ iframe {
 }
 
 footer {
+	position: relative;
 	text-align: center;
 	min-height: 50vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+#moving-link {
+	color: $versing-red;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
 }

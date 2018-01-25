@@ -38,28 +38,28 @@
 		previousAlbum = currentImage;
  	});
 
- 	if ($(window).width() > 768){
-	 	$('#cmoThumb').on('mouseover', function() {
-	 		$(this).attr('src', './img/videos/cmo.webp');
-	 	});
-		$('#cmoThumb').on('mouseleave', function() {
-	 		$(this).attr('src', './img/videos/cmo.jpg');
-	 	});
+ // 	if ($(window).width() > 768){
+	//  	$('#cmoThumb').on('mouseover', function() {
+	//  		$(this).attr('src', './img/videos/cmo.webp');
+	//  	});
+	// 	$('#cmoThumb').on('mouseleave', function() {
+	//  		$(this).attr('src', './img/videos/cmo.jpg');
+	//  	});
 
-	 	$('#vkThumb').on('mouseover', function() {
-	 		$(this).attr('src', './img/videos/vk.webp');
-	 	});
-		$('#vkThumb').on('mouseleave', function() {
-	 		$(this).attr('src', './img/videos/vk.jpg');
-	 	});
+	//  	$('#vkThumb').on('mouseover', function() {
+	//  		$(this).attr('src', './img/videos/vk.webp');
+	//  	});
+	// 	$('#vkThumb').on('mouseleave', function() {
+	//  		$(this).attr('src', './img/videos/vk.jpg');
+	//  	});
 
-	 	$('#kexpThumb').on('mouseover', function() {
-	 		$(this).attr('src', './img/videos/kexp.webp');
-	 	});
-		$('#kexpThumb').on('mouseleave', function() {
-	 		$(this).attr('src', './img/videos/kexp.jpg');
-	 	});
-	}
+	//  	$('#kexpThumb').on('mouseover', function() {
+	//  		$(this).attr('src', './img/videos/kexp.webp');
+	//  	});
+	// 	$('#kexpThumb').on('mouseleave', function() {
+	//  		$(this).attr('src', './img/videos/kexp.jpg');
+	//  	});
+	// }
 
 	// Show or hide video embeds based on click
  	var videoEmbed = {
@@ -73,7 +73,12 @@
 
  	$('#video-thumbs img').on('click', function(){
  		var currentThumb = $(this);
- 		var current2 = this.id;
+ 		var current2 = this.className;
+ 		current2 = current2.split(" ");
+ 		current2 = current2[0];
+ 		console.log(currentThumb);
+ 		console.log(current2);
+ 		console.log( $(videoEmbed[current2]) );
 
 		if (current2 === previous2) { // if the current one we're clicking is the same as the last one we clicked
 			$(videoEmbed[current2]).toggleClass('show');
@@ -90,6 +95,28 @@
 		previous2 = current2;
 		previousThumb = currentThumb;
  	});
+
+ 	function move() {
+ 		var link = $(this);
+
+ 		var footerWidth = $('footer').width();
+ 		var footerHeight = $('footer').height();
+
+ 		var linkHeight = link.height();
+ 		var linkWidth = link.width();
+ 		
+ 		var left = Math.floor(Math.random()*(footerWidth - linkWidth)) + "px";
+        var top = Math.floor(Math.random()*(footerHeight - linkHeight)) + "px";
+
+        // console.log("footer height: " + footerHeight);
+        // console.log("top: " + top);
+
+        link.css("left", left);
+        link.css("top", top);
+ 	}
+
+ 	$("#moving-link").on('mouseover', move);
+ 	$("#moving-link").on('click', move);
 
  	// Fit YouTube video to screen width
  	$('.youtube-embed').fitVids();
