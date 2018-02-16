@@ -1,0 +1,108 @@
+// styles
+
+@font-face {
+  font-family: 'Terminus';
+  src: url('/fonts/Terminus.ttf') format('truetype');
+}
+
+$title-font:  'Terminus', monospace;//'Zilla Slab', serif;
+$font-family: $title-font;//"Lucida Console", Monaco, monospace;
+
+$pink: #dc6976;
+$blue: #042949;
+$yellow: #ffe600;
+
+$main-background: $pink;
+$body-background: linear-gradient(130deg, $blue, $pink);
+$reverse-body-background: linear-gradient(130deg, $pink, $blue);
+$text-color: $yellow;
+$spacer: 16px;
+$double-spacer: $spacer * 2;
+$half-spacer: $spacer / 2;
+$thin-border: 1px solid $yellow;
+
+body {
+	background: $body-background;
+	font-smooth: never;
+	margin: 0;
+	color: $text-color;
+	font-family: $font-family;
+}
+#main {
+	height: 100vh;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background: $body-background;
+	text-align: center;
+	padding: $double-spacer;
+	display: flex;
+	justify-content: center;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+h1 {
+	font-family: $title-font;
+	letter-spacing: 4px;
+	font-weight: 500;
+	color: $text-color;
+	margin-top: 0;
+}
+.list-header {
+	margin-bottom: 0;
+}
+ul {
+	padding: 0;
+	margin: 0 auto;
+	// border: $thin-border;
+	list-style: none;
+	// max-width: 500px;
+}
+li {
+	padding: $double-spacer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-top: $thin-border;
+	border-left: $thin-border;
+	border-right: $thin-border;
+	&:last-of-type {
+		// border: none;
+		border-bottom: $thin-border;
+		background: $blue;
+	}
+	&:hover {
+		color: $blue;
+		// text-decoration: underline;
+		cursor: pointer;
+		background: $yellow;
+	}
+}
+
+@media (min-width: 800px) {
+	#main {
+		min-height: 700px;
+		height: 80vh;
+		width: 80vw;
+		max-width: 800px;
+		margin: 10vh;
+		margin-left: auto;
+		margin-right: auto;
+		padding: $double-spacer;
+		display: flex;
+		background: $reverse-body-background;
+	}
+	.container {
+		flex-grow: 1;
+		// width: 100%;
+		// border: $spacer solid $text-color;
+		// background: $reverse-body-background;
+		background: $body-background;
+		padding: $double-spacer;
+		&.inner {
+			background: $reverse-body-background;
+			// background: $body-background;
+		}
+	}
+}

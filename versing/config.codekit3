@@ -7,7 +7,7 @@
 		"uuidString": "8406BD06-CE55-44FE-BEB6-A24F04F2D3B6"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26268",
 "files": {
 	"\/css\/style.css": {
 		"aP": 1,
@@ -68,7 +68,7 @@
 		},
 	"\/img\/videos\/cmo.jpg": {
 		"ft": 16384,
-		"iS": 36782,
+		"iS": 37760,
 		"oA": 0,
 		"oAP": "\/img\/videos\/cmo.jpg",
 		"oF": 0,
@@ -102,7 +102,7 @@
 		},
 	"\/img\/videos\/vk.jpg": {
 		"ft": 16384,
-		"iS": 19966,
+		"iS": 16090,
 		"oA": 0,
 		"oAP": "\/img\/videos\/vk.jpg",
 		"oF": 0,
@@ -194,6 +194,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -757,6 +758,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
