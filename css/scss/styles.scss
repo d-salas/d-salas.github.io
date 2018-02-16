@@ -99,8 +99,9 @@ li {
 		// border: $spacer solid $text-color;
 		// background: $reverse-body-background;
 		background: $body-background;
-		padding: $double-spacer;
+		padding: $spacer;
 		&.inner {
+			padding: $double-spacer;
 			background: $reverse-body-background;
 			// background: $body-background;
 		}

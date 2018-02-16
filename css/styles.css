@@ -69,6 +69,7 @@ li {
   .container {
     flex-grow: 1;
     background: linear-gradient(130deg, #042949, #dc6976);
-    padding: 32px; }
+    padding: 16px; }
     .container.inner {
+      padding: 32px;
       background: linear-gradient(130deg, #dc6976, #042949); } }
