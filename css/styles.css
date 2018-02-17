@@ -22,7 +22,7 @@ body {
   font-family: arial; }
 
 #main {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   box-sizing: border-box;
   text-align: center;
@@ -38,6 +38,7 @@ body {
   justify-content: space-between; }
 
 .name {
+  padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,6 +61,7 @@ h1 {
   z-index: 1; }
 
 #circle {
+  display: none;
   width: 150px;
   height: 150px;
   background: #ffe600;
@@ -132,11 +134,13 @@ li {
       border: none; }
       li:first-of-type:hover {
         border: 1px solid blue; }
-  #circle:hover {
-    width: 200px;
-    height: 200px;
-    border: 1px solid blue;
-    box-shadow: 16px 0px 0 blue;
-    cursor: pointer; }
-    #circle:hover span {
-      opacity: 1; } }
+  #circle {
+    display: block; }
+    #circle:hover {
+      width: 200px;
+      height: 200px;
+      border: 1px solid blue;
+      box-shadow: 16px 0px 0 blue;
+      cursor: pointer; }
+      #circle:hover span {
+        opacity: 1; } }
