@@ -20,6 +20,18 @@ body {
   margin: 0;
   color: blue;
   font-family: arial; }
+  body.pink, body.pink li:not(:last-of-type), body.pink li:not(:last-of-type):hover, body.pink #circle {
+    background: #f58894; }
+  body.pink .name {
+    background: linear-gradient(90deg, #f58894 14px, transparent 1%) center, linear-gradient(#f58894 14px, transparent 1%) center, blue;
+    background-size: 16px 16px;
+    background-position: -4px -4px; }
+  body.pink li:last-of-type {
+    color: #f58894; }
+  body.pink #circle .wink {
+    display: inline; }
+  body.pink #circle .smile {
+    display: none; }
 
 #main {
   min-height: 100vh;
@@ -68,17 +80,19 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  transition: .2s all ease-in-out;
   border: 1px solid blue; }
-  #circle, #circle span {
-    transition: .2s all ease-in-out; }
-  #circle span {
+  #circle, #circle .circle-text {
+    transition: .2s width ease-in-out, .2s height ease-in-out; }
+  #circle .circle-text {
+    user-select: none;
     font-size: 18px;
     opacity: 0;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%) rotate(90deg); }
+  #circle .wink {
+    display: none; }
 
 ul {
   padding: 0;
@@ -143,5 +157,5 @@ li {
       border: 1px solid blue;
       box-shadow: 16px 0px 0 blue;
       cursor: pointer; }
-      #circle:hover span {
+      #circle:hover .circle-text {
         opacity: 1; } }

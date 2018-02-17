@@ -6,12 +6,20 @@ $blue: blue;//#042949;
 $yellow: #ffe600;
 
 $main-background: $yellow;
-$accent-color: $yellow;
 $text-color: $blue;
 $spacer: 16px;
 $double-spacer: $spacer * 2;
 $half-spacer: $spacer / 2;
 $thin-border: 1px solid $blue;
+
+$dot-size: 2px;
+$dot-space: 16px;
+$yellow-background-dots: linear-gradient(90deg, $yellow ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($yellow ($dot-space - $dot-size), transparent 1%) center,
+		$text-color;
+$pink-background-dots: linear-gradient(90deg, $pink ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($pink ($dot-space - $dot-size), transparent 1%) center,
+		$text-color;
 
 // animation
 $distance:-4px;
@@ -33,11 +41,31 @@ $strips-angle:45deg;//90deg;
   background-color: $blue; /* WebKit/Blink Browsers */
   color: $yellow;
 }
+
 body {
 	background: $main-background;
 	margin: 0;
 	color: $text-color;
 	font-family: $font-family;
+	&.pink {
+		&, li:not(:last-of-type), li:not(:last-of-type):hover, #circle {
+			background: $pink;
+		}
+		.name {
+			background: $pink-background-dots;
+		    background-size: 16px 16px;
+		    background-position: -4px -4px;
+		}
+		li:last-of-type {
+			color: $pink;
+		}
+		#circle .wink {
+			display: inline;
+		}
+		#circle .smile {
+			display: none;
+		}
+	}	
 }
 #main {
 	min-height: 100vh;
@@ -63,22 +91,12 @@ body {
     flex-grow: 1;
 
     text-transform: uppercase;
-    
-    $dot-size: 2px;
-	$dot-space: 16px;
-	$bg-color: $main-background;
-	$dot-color: $blue;
 
-	background: 
-		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-		$dot-color;
+	background: $yellow-background-dots;
 	background-size: $dot-space $dot-space;
 	background-position: -4px -4px;
 
-	// &:hover {
-		animation:dot-animation 20s infinite linear; 
-	// }
+	animation:dot-animation 20s infinite linear; 
 
     p {
     	position: relative;
@@ -101,18 +119,21 @@ h1 {
 	position: absolute;
 	left:50%;
 	transform: translateX(-50%);
-	transition: .2s all ease-in-out;
 	border: $thin-border;
-	&, span {
-		transition: .2s all ease-in-out;
+	&, .circle-text {
+		transition: .2s width ease-in-out, .2s height ease-in-out;
 	}
-	span {
+	.circle-text {
+		user-select: none;
 		font-size: 18px;
 		opacity: 0;
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%) rotate(90deg);
+	}
+	.wink {
+		display: none;
 	}
 }
 ul {
@@ -203,7 +224,7 @@ li {
 			border: $thin-border;
 			box-shadow: 16px 0px 0 $blue;
 			cursor: pointer;
-			span {
+			.circle-text {
 				opacity: 1;
 			}
 		}
