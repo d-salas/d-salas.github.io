@@ -5,7 +5,7 @@
   src: url('/fonts/Terminus.ttf') format('truetype');
 }
 
-$title-font:  'Terminus', monospace;//'Zilla Slab', serif;
+$title-font:  monospace;//'Zilla Slab', serif;
 $font-family: $title-font;//"Lucida Console", Monaco, monospace;
 
 $pink: #dc6976;
@@ -13,7 +13,7 @@ $blue: #042949;
 $yellow: #ffe600;
 
 $main-background: $pink;
-$body-background: linear-gradient(130deg, $blue, $pink);
+$body-background: $pink;//linear-gradient(130deg, $blue, $pink);
 $reverse-body-background: linear-gradient(130deg, $pink, $blue);
 $text-color: $yellow;
 $spacer: 16px;
@@ -36,6 +36,7 @@ body {
 	text-align: center;
 	padding: $double-spacer;
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 }
 .container {
@@ -82,18 +83,18 @@ li {
 
 @media (min-width: 800px) {
 	#main {
-		min-height: 700px;
-		height: 80vh;
-		width: 80vw;
-		max-width: 800px;
-		margin: 10vh;
+		// min-height: 700px;
+		// height: 80vh;
+		// width: 80vw;
+		// max-width: 800px;
+		// margin: 10vh;
 		margin-left: auto;
 		margin-right: auto;
 		padding: $double-spacer;
-		display: flex;
-		background: $reverse-body-background;
+		// background: $reverse-body-background;
 	}
 	.container {
+		flex-direction: row;
 		flex-grow: 1;
 		// width: 100%;
 		// border: $spacer solid $text-color;
@@ -102,7 +103,7 @@ li {
 		padding: $spacer;
 		&.inner {
 			padding: $double-spacer;
-			background: $reverse-body-background;
+			// background: $reverse-body-background;
 			// background: $body-background;
 		}
 	}

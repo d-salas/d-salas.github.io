@@ -3,20 +3,21 @@
   src: url("/fonts/Terminus.ttf") format("truetype"); }
 
 body {
-  background: linear-gradient(130deg, #042949, #dc6976);
+  background: #dc6976;
   font-smooth: never;
   margin: 0;
   color: #ffe600;
-  font-family: "Terminus", monospace; }
+  font-family: monospace; }
 
 #main {
   height: 100vh;
   margin: 0 auto;
   box-sizing: border-box;
-  background: linear-gradient(130deg, #042949, #dc6976);
+  background: #dc6976;
   text-align: center;
   padding: 32px;
   display: flex;
+  flex-direction: row;
   justify-content: center; }
 
 .container {
@@ -25,7 +26,7 @@ body {
   justify-content: space-evenly; }
 
 h1 {
-  font-family: "Terminus", monospace;
+  font-family: monospace;
   letter-spacing: 4px;
   font-weight: 500;
   color: #ffe600;
@@ -56,20 +57,13 @@ li {
 
 @media (min-width: 800px) {
   #main {
-    min-height: 700px;
-    height: 80vh;
-    width: 80vw;
-    max-width: 800px;
-    margin: 10vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 32px;
-    display: flex;
-    background: linear-gradient(130deg, #dc6976, #042949); }
+    padding: 32px; }
   .container {
+    flex-direction: row;
     flex-grow: 1;
-    background: linear-gradient(130deg, #042949, #dc6976);
+    background: #dc6976;
     padding: 16px; }
     .container.inner {
-      padding: 32px;
-      background: linear-gradient(130deg, #dc6976, #042949); } }
+      padding: 32px; } }
