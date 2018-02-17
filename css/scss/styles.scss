@@ -5,25 +5,44 @@
   src: url('/fonts/Terminus.ttf') format('truetype');
 }
 
-$title-font:  monospace;//'Zilla Slab', serif;
+$title-font:  arial;//'Zilla Slab', serif;
 $font-family: $title-font;//"Lucida Console", Monaco, monospace;
 
-$pink: #dc6976;
-$blue: #042949;
+$pink: #f58894;
+$blue: blue;//#042949;
 $yellow: #ffe600;
 
 $main-background: $pink;
-$body-background: $pink;//linear-gradient(130deg, $blue, $pink);
+$body-background: $yellow;//linear-gradient(130deg, $blue, $pink);
 $reverse-body-background: linear-gradient(130deg, $pink, $blue);
-$text-color: $yellow;
+$text-color: $blue;
 $spacer: 16px;
 $double-spacer: $spacer * 2;
 $half-spacer: $spacer / 2;
-$thin-border: 1px solid $yellow;
+$thin-border: 1px solid $blue;
 
+// animation
+$distance:-4px;
+$cut-distance:4px;//$distance/4;
+$strips-size:8px; //10px
+$strips-ratio:70%;//70%
+$strips-angle:45deg;//90deg;
+
+@keyframes dash-animation{
+	0% {background-position:0 0};
+	100% {background-position:100% 0};
+}
+@keyframes dot-animation{
+	0% {background-position:-4px -2px};
+	100% {background-position:100% -100%};
+}
+
+::selection {
+  background-color: $pink; /* WebKit/Blink Browsers */
+  color: $blue;
+}
 body {
 	background: $body-background;
-	font-smooth: never;
 	margin: 0;
 	color: $text-color;
 	font-family: $font-family;
@@ -32,7 +51,6 @@ body {
 	height: 100vh;
 	margin: 0 auto;
 	box-sizing: border-box;
-	background: $body-background;
 	text-align: center;
 	padding: $double-spacer;
 	display: flex;
@@ -40,71 +58,148 @@ body {
 	justify-content: center;
 }
 .container {
+	border: $thin-border;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    
+    $dot-size: 2px;
+	$dot-space: 16px;
+	$bg-color: $yellow;
+	$dot-color: $pink;
+
+	background: 
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+	background-size: $dot-space $dot-space;
+	background-position: -4px -4px;
+
+	// &:hover {
+		animation:dot-animation 20s infinite linear; 
+	// }
+
+    p {
+    	position: relative;
+    	z-index: 1;
+    	margin: 16px auto 0;
+    }
 }
 h1 {
-	font-family: $title-font;
-	letter-spacing: 4px;
+	display: inline;
 	font-weight: 500;
-	color: $text-color;
-	margin-top: 0;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
 }
-.list-header {
-	margin-bottom: 0;
+#circle {
+	width: 150px;
+	height: 150px;
+	background: $pink;
+	border-radius: 50%;
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	transition: .2s all ease-in-out;
 }
 ul {
 	padding: 0;
 	margin: 0 auto;
-	// border: $thin-border;
 	list-style: none;
-	// max-width: 500px;
 }
 li {
 	padding: $double-spacer;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	border-top: $thin-border;
-	border-left: $thin-border;
-	border-right: $thin-border;
-	&:last-of-type {
-		// border: none;
-		border-bottom: $thin-border;
-		background: $blue;
-	}
 	&:hover {
+		position: relative;
+		left: -5px;
+		top: -5px;
+		border: $thin-border;
 		color: $blue;
-		// text-decoration: underline;
-		cursor: pointer;
 		background: $yellow;
+		cursor: pointer;
+		// box-shadow: 5px 5px 0 $blue;
+
+		&:before{
+			content:" ";
+			display:block;
+
+			position:absolute;
+			$bleeding-horizontal:3px;
+			$bleeding-vertical:0px;
+			top:-$bleeding-vertical - $distance;
+			left:-$bleeding-vertical - $distance;
+			bottom:-$bleeding-horizontal + $distance;
+			right:-$bleeding-horizontal + $distance;
+			z-index:-1;
+			$color:$blue;
+			$size:$strips-ratio/2;
+			$halfSize:$size/2;
+			$p1:$halfSize;
+			$p2:50%-$halfSize;
+			$p3:50%+$halfSize;
+			$p4:100%-$halfSize;
+			$transparent:transparentize($color,1);
+			background-image: linear-gradient($strips-angle,$color $p1, $transparent $p1, $transparent $p2,$color $p2, $color $p3, $transparent $p3, $transparent $p4, $color $p4);
+			background-size:$strips-size $strips-size;
+
+			animation:dash-animation 30s infinite linear; 
+		}
+	}
+	&:last-of-type {
+		background: $blue;
+		color: $yellow;
 	}
 }
 
-@media (min-width: 800px) {
-	#main {
-		// min-height: 700px;
-		// height: 80vh;
-		// width: 80vw;
-		// max-width: 800px;
-		// margin: 10vh;
-		margin-left: auto;
-		margin-right: auto;
-		padding: $double-spacer;
-		// background: $reverse-body-background;
-	}
+@media (min-width: 769px) {
 	.container {
+		width: 100%;
 		flex-direction: row;
-		flex-grow: 1;
-		// width: 100%;
-		// border: $spacer solid $text-color;
-		// background: $reverse-body-background;
-		background: $body-background;
-		padding: $spacer;
-		&.inner {
-			padding: $double-spacer;
-			// background: $reverse-body-background;
-			// background: $body-background;
+	}
+	.menu, .name {
+		width: 50%;
+	}
+	.menu, ul, li {
+		display: flex;
+	}
+	ul {
+		flex-direction: column;
+		width: 100%;
+		border-left: $thin-border;
+	}
+	li {
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		&:first-of-type{
+			border: none;
+			&:hover {
+				border: $thin-border;
+			}
+		}
+	}
+	#circle:hover {
+		width: 200px;
+		height: 200px;
+		border: $thin-border;
+		box-shadow: 16px 0px 0 $blue;
+		&:after {
+			content: "you are not lost";
+			width: 100%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+
 		}
 	}
 }

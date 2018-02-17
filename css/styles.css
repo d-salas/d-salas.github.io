@@ -2,18 +2,33 @@
   font-family: 'Terminus';
   src: url("/fonts/Terminus.ttf") format("truetype"); }
 
+@keyframes dash-animation {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 100% 0; } }
+
+@keyframes dot-animation {
+  0% {
+    background-position: -4px -2px; }
+  100% {
+    background-position: 100% -100%; } }
+
+::selection {
+  background-color: #f58894;
+  /* WebKit/Blink Browsers */
+  color: blue; }
+
 body {
-  background: #dc6976;
-  font-smooth: never;
+  background: #ffe600;
   margin: 0;
-  color: #ffe600;
-  font-family: monospace; }
+  color: blue;
+  font-family: arial; }
 
 #main {
   height: 100vh;
   margin: 0 auto;
   box-sizing: border-box;
-  background: #dc6976;
   text-align: center;
   padding: 32px;
   display: flex;
@@ -21,19 +36,41 @@ body {
   justify-content: center; }
 
 .container {
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  background: linear-gradient(90deg, #ffe600 14px, transparent 1%) center, linear-gradient(#ffe600 14px, transparent 1%) center, #f58894;
+  background-size: 16px 16px;
+  background-position: -4px -4px;
+  animation: dot-animation 20s infinite linear; }
+  .name p {
+    position: relative;
+    z-index: 1;
+    margin: 16px auto 0; }
 
 h1 {
-  font-family: monospace;
-  letter-spacing: 4px;
+  display: inline;
   font-weight: 500;
-  color: #ffe600;
-  margin-top: 0; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
 
-.list-header {
-  margin-bottom: 0; }
+#circle {
+  width: 150px;
+  height: 150px;
+  background: #f58894;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .2s all ease-in-out; }
 
 ul {
   padding: 0;
@@ -44,26 +81,60 @@ li {
   padding: 32px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-top: 1px solid #ffe600;
-  border-left: 1px solid #ffe600;
-  border-right: 1px solid #ffe600; }
-  li:last-of-type {
-    border-bottom: 1px solid #ffe600;
-    background: #042949; }
+  border-top: 1px solid blue; }
   li:hover {
-    color: #042949;
-    cursor: pointer;
-    background: #ffe600; }
+    position: relative;
+    left: -5px;
+    top: -5px;
+    border: 1px solid blue;
+    color: blue;
+    background: #ffe600;
+    cursor: pointer; }
+    li:hover:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      bottom: -7px;
+      right: -7px;
+      z-index: -1;
+      background-image: linear-gradient(45deg, blue 17.5%, rgba(0, 0, 255, 0) 17.5%, rgba(0, 0, 255, 0) 32.5%, blue 32.5%, blue 67.5%, rgba(0, 0, 255, 0) 67.5%, rgba(0, 0, 255, 0) 82.5%, blue 82.5%);
+      background-size: 8px 8px;
+      animation: dash-animation 30s infinite linear; }
+  li:last-of-type {
+    background: blue;
+    color: #ffe600; }
 
-@media (min-width: 800px) {
-  #main {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 32px; }
+@media (min-width: 769px) {
   .container {
-    flex-direction: row;
-    flex-grow: 1;
-    background: #dc6976;
-    padding: 16px; }
-    .container.inner {
-      padding: 32px; } }
+    width: 100%;
+    flex-direction: row; }
+  .menu, .name {
+    width: 50%; }
+  .menu, ul, li {
+    display: flex; }
+  ul {
+    flex-direction: column;
+    width: 100%;
+    border-left: 1px solid blue; }
+  li {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center; }
+    li:first-of-type {
+      border: none; }
+      li:first-of-type:hover {
+        border: 1px solid blue; }
+  #circle:hover {
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    box-shadow: 16px 0px 0 blue; }
+    #circle:hover:after {
+      content: "you are not lost";
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); } }

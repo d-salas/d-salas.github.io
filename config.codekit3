@@ -2724,22 +2724,22 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/scripts\/script-min.js": {
+	"\/scripts\/scripts-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/scripts\/script-min-min.js",
+		"oAP": "\/scripts\/scripts-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/scripts\/script.js": {
+	"\/scripts\/scripts.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/scripts\/script-min.js",
+		"oAP": "\/scripts\/scripts-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
