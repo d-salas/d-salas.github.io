@@ -1,10 +1,3 @@
-// styles
-
-@font-face {
-  font-family: 'Terminus';
-  src: url('/fonts/Terminus.ttf') format('truetype');
-}
-
 $title-font:  arial;//'Zilla Slab', serif;
 $font-family: $title-font;//"Lucida Console", Monaco, monospace;
 
@@ -12,9 +5,8 @@ $pink: #f58894;
 $blue: blue;//#042949;
 $yellow: #ffe600;
 
-$main-background: $pink;
-$body-background: $yellow;//linear-gradient(130deg, $blue, $pink);
-$reverse-body-background: linear-gradient(130deg, $pink, $blue);
+$main-background: $yellow;
+$accent-color: $yellow;
 $text-color: $blue;
 $spacer: 16px;
 $double-spacer: $spacer * 2;
@@ -38,11 +30,11 @@ $strips-angle:45deg;//90deg;
 }
 
 ::selection {
-  background-color: $pink; /* WebKit/Blink Browsers */
-  color: $blue;
+  background-color: $blue; /* WebKit/Blink Browsers */
+  color: $yellow;
 }
 body {
-	background: $body-background;
+	background: $main-background;
 	margin: 0;
 	color: $text-color;
 	font-family: $font-family;
@@ -68,11 +60,13 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+
+    text-transform: uppercase;
     
     $dot-size: 2px;
 	$dot-space: 16px;
-	$bg-color: $yellow;
-	$dot-color: $pink;
+	$bg-color: $main-background;
+	$dot-color: $blue;
 
 	background: 
 		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
@@ -101,12 +95,23 @@ h1 {
 #circle {
 	width: 150px;
 	height: 150px;
-	background: $pink;
+	background: $main-background;
 	border-radius: 50%;
 	position: absolute;
 	left:50%;
 	transform: translateX(-50%);
 	transition: .2s all ease-in-out;
+	border: $thin-border;
+	&, span {
+		transition: .2s all ease-in-out;
+	}
+	span {
+		opacity: 0;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
 }
 ul {
 	padding: 0;
@@ -124,7 +129,7 @@ li {
 		top: -5px;
 		border: $thin-border;
 		color: $blue;
-		background: $yellow;
+		background: $main-background;
 		cursor: pointer;
 		// box-shadow: 5px 5px 0 $blue;
 
@@ -192,14 +197,18 @@ li {
 		height: 200px;
 		border: $thin-border;
 		box-shadow: 16px 0px 0 $blue;
-		&:after {
-			content: "you are here";
-			width: 100%;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%,-50%);
-
+		cursor: pointer;
+		span {
+			opacity: 1;
 		}
+		// // &:after {
+		// 	content: "/////<br>/////<br>/////";
+		// 	width: 100%;
+		// 	position: absolute;
+		// 	left: 50%;
+		// 	top: 50%;
+		// 	transform: translate(-50%,-50%);
+
+		// }
 	}
 }
