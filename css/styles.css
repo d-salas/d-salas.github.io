@@ -61,9 +61,8 @@ h1 {
   z-index: 1; }
 
 #circle {
-  display: none;
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
   background: #ffe600;
   border-radius: 50%;
   position: absolute;
@@ -74,6 +73,7 @@ h1 {
   #circle, #circle span {
     transition: .2s all ease-in-out; }
   #circle span {
+    font-size: 18px;
     opacity: 0;
     position: absolute;
     left: 50%;
@@ -135,7 +135,8 @@ li {
       li:first-of-type:hover {
         border: 1px solid blue; }
   #circle {
-    display: block; }
+    width: 150px;
+    height: 150px; }
     #circle:hover {
       width: 200px;
       height: 200px;
