@@ -1,7 +1,7 @@
 $title-font:  arial;//'Zilla Slab', serif;
 $font-family: $title-font;//"Lucida Console", Monaco, monospace;
 
-$pink: pink;//#f58894;
+$pink: white;//#f58894;
 $blue: blue;//#042949;
 $yellow: #ffe600;
 $white: white;
@@ -88,19 +88,13 @@ body {
 }
 .name {
 	position: relative;
-	padding: $spacer 0;
+	flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
+    justify-content: space-between;
 
     text-transform: uppercase;
     position: relative;
-
-    background-image: url('https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif');
-    background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 
     p {
     	position: relative;
@@ -108,28 +102,46 @@ body {
     	margin: 16px auto 0;
     }
 }
+.background-and-foreground {
+	background-image: url('https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif');
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: $spacer;
+	border-bottom: $thin-border;
+}
 .foreground {
   width: 60%;
   margin: 0 auto;
   border: 5px solid black;
 }
+.flip {
+	// display: inline-block;
+	// background: none;
+	// transform: rotate(180deg);
+}
 h1 {
+	flex-grow: 1;
 	display: block;
 	margin: 0 auto;
-	position: absolute;
 	z-index: 1;
 	text-align: center;
 	width: 100%;
-	line-height: 48px;
-
+	height: 25%;
+	background-color: black;
+	border-bottom: $thin-border;
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	height: 100%;
+	justify-content: center;
+	// height: 100%;
 	span {
-		color: $pink;
-		background: white;
+		// color: $pink;
 	}
 	div {
 		display: flex;
@@ -139,20 +151,23 @@ h1 {
 
 .menu {
 	// border-top: $thin-border
+	background: $white;
 }
 .menu-item {
-	// background: $text-color;
+	background: black;
 	// color: $main-background;
 	margin: 0;
 	padding: $double-spacer;
 	text-align: center;
 	&:hover {
 		position: relative;
-		// left: -5px;
-		// top: -5px;
+		z-index: 10;
+		left: -5px;
+		top: -5px;
 		border: $thin-border;
-		color: $pink;
-		background: white;
+		// border-color: black;
+		// color: black;
+		// background: black;
 		cursor: pointer;
 		// box-shadow: 5px 5px 0 $blue;
 
@@ -167,8 +182,8 @@ h1 {
 			left:-$bleeding-vertical - $distance;
 			bottom:-$bleeding-horizontal + $distance;
 			right:-$bleeding-horizontal + $distance;
-			z-index:-1;
-			$color:$text-color;
+			z-index:-100;
+			$color:black;
 			$size:$strips-ratio/2;
 			$halfSize:$size/2;
 			$p1:$halfSize;
@@ -254,6 +269,9 @@ li {
 	#main {
 		background: $pink;
 		// border-color: $white;
+	}
+	h1 {
+		flex-grow: 0;
 	}
 	.container {
 		width: 100%;
