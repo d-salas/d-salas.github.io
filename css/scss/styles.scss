@@ -1,21 +1,22 @@
 $title-font:  arial;//'Zilla Slab', serif;
 $font-family: $title-font;//"Lucida Console", Monaco, monospace;
 
-$pink: #f58894;
+$pink: pink;//#f58894;
 $blue: blue;//#042949;
 $yellow: #ffe600;
+$white: white;
 
-$main-background: $yellow;
-$text-color: $blue;
+$main-background: $pink;
+$text-color: $white;
 $spacer: 16px;
 $double-spacer: $spacer * 2;
 $half-spacer: $spacer / 2;
-$thin-border: 1px solid $blue;
+$thin-border: 2px solid $white;
 
 $dot-size: 2px;
 $dot-space: 16px;
-$yellow-background-dots: linear-gradient(90deg, $yellow ($dot-space - $dot-size), transparent 1%) center,
-		linear-gradient($yellow ($dot-space - $dot-size), transparent 1%) center,
+$background-dots: linear-gradient(90deg, $main-background ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($main-background ($dot-space - $dot-size), transparent 1%) center,
 		$text-color;
 $pink-background-dots: linear-gradient(90deg, $pink ($dot-space - $dot-size), transparent 1%) center,
 		linear-gradient($pink ($dot-space - $dot-size), transparent 1%) center,
@@ -36,46 +37,48 @@ $strips-angle:45deg;//90deg;
 	0% {background-position:-4px -2px};
 	100% {background-position:100% -100%};
 }
+@keyframes rotate {
+    0%{
+        // transform: rotate(0deg);
+        box-shadow: 16px 0px 0 $text-color;
+    }
+    25%{
+        // transform: rotate(360deg);
+        box-shadow: 0px 16px 0 $text-color;
+    }
+    50%{
+    	box-shadow: -16px 0px 0 $text-color;
+    }
+    75%{
+		box-shadow: 0px -16px 0 $text-color;
+    }
+    100%{
+    	box-shadow: 16px 0px 0 $text-color;
+    }
+}
 
 ::selection {
-  background-color: $blue; /* WebKit/Blink Browsers */
-  color: $yellow;
+  background-color: $text-color; /* WebKit/Blink Browsers */
+  color: $main-background;
 }
 
 body {
-	background: $main-background;
+	background: $pink;
 	margin: 0;
 	color: $text-color;
-	font-family: $font-family;
-	&.pink {
-		&, li:not(:last-of-type), li:not(:last-of-type):hover, #circle {
-			background: $pink;
-		}
-		.name {
-			background: $pink-background-dots;
-		    background-size: 16px 16px;
-		    background-position: -4px -4px;
-		}
-		li:last-of-type {
-			color: $pink;
-		}
-		#circle .wink {
-			display: inline;
-		}
-		#circle .smile {
-			display: none;
-		}
-	}	
+	font-family: $font-family;	
 }
 #main {
 	min-height: 100vh;
 	margin: 0 auto;
 	box-sizing: border-box;
-	text-align: center;
+	// text-align: center;
 	padding: $double-spacer;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+
+	// background-image: url('https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif');
 }
 .container {
 	border: $thin-border;
@@ -84,19 +87,20 @@ body {
 	justify-content: space-between;
 }
 .name {
-	padding: $spacer;
+	position: relative;
+	padding: $spacer 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
 
     text-transform: uppercase;
+    position: relative;
 
-	background: $yellow-background-dots;
-	background-size: $dot-space $dot-space;
-	background-position: -4px -4px;
-
-	animation:dot-animation 20s infinite linear; 
+    background-image: url('https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif');
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 
     p {
     	position: relative;
@@ -104,54 +108,112 @@ body {
     	margin: 16px auto 0;
     }
 }
-h1 {
-	display: inline;
-	font-weight: 500;
-	margin: 0 auto;
-	position: relative;
-	z-index: 1;
+.foreground {
+  width: 60%;
+  margin: 0 auto;
+  border: 5px solid black;
 }
-#circle {
-	width: 75px;
-	height: 75px;
-	background: $main-background;
-	border-radius: 50%;
+h1 {
+	display: block;
+	margin: 0 auto;
 	position: absolute;
-	left:50%;
-	transform: translateX(-50%);
-	border: $thin-border;
-	&, .circle-text {
-		transition: .2s width ease-in-out, .2s height ease-in-out;
+	z-index: 1;
+	text-align: center;
+	width: 100%;
+	line-height: 48px;
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	span {
+		color: $pink;
+		background: white;
 	}
-	.circle-text {
-		user-select: none;
-		font-size: 18px;
-		opacity: 0;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%,-50%) rotate(90deg);
+	div {
+		display: flex;
+		justify-content: space-between;
 	}
-	.wink {
-		display: none;
+}
+
+.menu {
+	// border-top: $thin-border
+}
+.menu-item {
+	// background: $text-color;
+	// color: $main-background;
+	margin: 0;
+	padding: $double-spacer;
+	text-align: center;
+	&:hover {
+		position: relative;
+		// left: -5px;
+		// top: -5px;
+		border: $thin-border;
+		color: $pink;
+		background: white;
+		cursor: pointer;
+		// box-shadow: 5px 5px 0 $blue;
+
+		&:before{
+			content:" ";
+			display:block;
+
+			position:absolute;
+			$bleeding-horizontal:3px;
+			$bleeding-vertical:0px;
+			top:-$bleeding-vertical - $distance;
+			left:-$bleeding-vertical - $distance;
+			bottom:-$bleeding-horizontal + $distance;
+			right:-$bleeding-horizontal + $distance;
+			z-index:-1;
+			$color:$text-color;
+			$size:$strips-ratio/2;
+			$halfSize:$size/2;
+			$p1:$halfSize;
+			$p2:50%-$halfSize;
+			$p3:50%+$halfSize;
+			$p4:100%-$halfSize;
+			$transparent:transparentize($color,1);
+			background-image: linear-gradient($strips-angle,$color $p1, $transparent $p1, $transparent $p2,$color $p2, $color $p3, $transparent $p3, $transparent $p4, $color $p4);
+			background-size:$strips-size $strips-size;
+
+			animation:dash-animation 30s infinite linear; 
+		}
 	}
+}
+h2:not(:last-of-type) {
+	border-bottom: $thin-border;
 }
 ul {
 	padding: 0;
 	margin: 0 auto;
 	list-style: none;
+	border-left: $thin-border;
+	border-right: $thin-border;
 }
 li {
 	padding: $double-spacer;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	border-top: $thin-border;
+	text-align: center;
+	background: $main-background;
+	&:first-of-type{
+		border: none;
+	}
+	span {
+		display: block;
+		font-size: 12px;
+		margin-top: $half-spacer;
+	}
 	&:hover {
 		position: relative;
 		left: -5px;
 		top: -5px;
 		border: $thin-border;
-		color: $blue;
+		color: $text-color;
 		background: $main-background;
 		cursor: pointer;
 		// box-shadow: 5px 5px 0 $blue;
@@ -168,7 +230,7 @@ li {
 			bottom:-$bleeding-horizontal + $distance;
 			right:-$bleeding-horizontal + $distance;
 			z-index:-1;
-			$color:$blue;
+			$color:$text-color;
 			$size:$strips-ratio/2;
 			$halfSize:$size/2;
 			$p1:$halfSize;
@@ -183,50 +245,61 @@ li {
 		}
 	}
 	&:last-of-type {
-		background: $blue;
+		background: $text-color;
 		color: $main-background;
 	}
 }
 
 @media (min-width: 769px) {
+	#main {
+		background: $pink;
+		// border-color: $white;
+	}
 	.container {
 		width: 100%;
 		flex-direction: row;
 	}
-	.menu, .name {
-		width: 50%;
+	.menu {
+		border-left: $thin-border;
+		width: 60%;
+	}
+	.name {
+		width: 40%;
+	}
+	.menu-item {
+		text-align: right;
+		padding: $spacer;
+		flex-grow: 1;
+		&:first-of-type {
+			// border-top: $thin-border;
+		}
 	}
 	.menu, ul, li {
 		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
 	}
+
 	ul {
 		flex-direction: column;
 		width: 100%;
-		border-left: $thin-border;
+		border-left: none;
+		border-top: $thin-border;
+		border-bottom: $thin-border;
 	}
 	li {
 		flex: 1;
 		flex-direction: column;
 		justify-content: center;
 		&:first-of-type{
-			border: none;
 			&:hover {
 				border: $thin-border;
 			}
 		}
-	}
-	#circle {
-		width: 150px;
-		height: 150px;
-		&:hover {
-			width: 200px;
-			height: 200px;
-			border: $thin-border;
-			box-shadow: 16px 0px 0 $blue;
-			cursor: pointer;
-			.circle-text {
-				opacity: 1;
-			}
+		&:last-of-type {
+			// display: none;
+			// border-left: $thin-border;
+			// border-color: white;
 		}
 	}
 }

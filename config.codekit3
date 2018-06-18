@@ -7,7 +7,7 @@
 		"uuidString": "2D5D9E24-0E60-4000-B51C-48FCA2A0E130"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26680",
 "files": {
 	"\/css\/fonts\/Terminus.textClipping": {
 		"cB": 0,
@@ -190,6 +190,7 @@
 	"\/img\/Blue Velvet - Onward, Pacifica art.jpg": {
 		"ft": 16384,
 		"iS": 1399883,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/Blue Velvet - Onward, Pacifica art.jpg",
 		"oF": 0,
@@ -200,6 +201,7 @@
 	"\/img\/Blue Velvet - Sacramento art.jpg": {
 		"ft": 16384,
 		"iS": 4173474,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/Blue Velvet - Sacramento art.jpg",
 		"oF": 0,
@@ -210,6 +212,7 @@
 	"\/img\/Blue Velvet - Sacramento tape.jpg": {
 		"ft": 16384,
 		"iS": 426260,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/Blue Velvet - Sacramento tape.jpg",
 		"oF": 0,
@@ -220,6 +223,7 @@
 	"\/img\/Follow Me Down Poster.jpg": {
 		"ft": 16384,
 		"iS": 1202079,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/Follow Me Down Poster.jpg",
 		"oF": 0,
@@ -230,6 +234,7 @@
 	"\/img\/KUPS Orientation Poster.jpg": {
 		"ft": 16384,
 		"iS": 589752,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/KUPS Orientation Poster.jpg",
 		"oF": 0,
@@ -237,9 +242,21 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/landon.png": {
+		"ft": 32768,
+		"iS": 622075,
+		"oA": 0,
+		"oAP": "\/img\/landon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/Post Defiance Sponsor Contract.jpg": {
 		"ft": 16384,
 		"iS": 526504,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/Post Defiance Sponsor Contract.jpg",
 		"oF": 0,
@@ -250,6 +267,7 @@
 	"\/img\/Sun Eater.jpg": {
 		"ft": 16384,
 		"iS": 330141,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/Sun Eater.jpg",
 		"oF": 0,
@@ -1110,6 +1128,7 @@
 	"\/mss\/img\/ampersand.jpg": {
 		"ft": 16384,
 		"iS": 1164492,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/mss\/img\/ampersand.jpg",
 		"oF": 0,
@@ -1417,6 +1436,7 @@
 	"\/mss\/img\/roadster.jpg": {
 		"ft": 16384,
 		"iS": 3430715,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/mss\/img\/roadster.jpg",
 		"oF": 0,
@@ -1427,6 +1447,7 @@
 	"\/mss\/img\/savannahtree.jpg": {
 		"ft": 16384,
 		"iS": 3592749,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/mss\/img\/savannahtree.jpg",
 		"oF": 0,
@@ -1437,6 +1458,7 @@
 	"\/mss\/img\/wreath.jpg": {
 		"ft": 16384,
 		"iS": 2464696,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/mss\/img\/wreath.jpg",
 		"oF": 0,
@@ -2774,6 +2796,7 @@
 	"\/versing\/img\/albums\/nirvana.jpg": {
 		"ft": 16384,
 		"iS": 194439,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/versing\/img\/albums\/nirvana.jpg",
 		"oF": 0,
@@ -2784,6 +2807,7 @@
 	"\/versing\/img\/albums\/nude-descending.jpg": {
 		"ft": 16384,
 		"iS": 285000,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/versing\/img\/albums\/nude-descending.jpg",
 		"oF": 0,
@@ -2794,6 +2818,7 @@
 	"\/versing\/img\/albums\/tape.jpg": {
 		"ft": 16384,
 		"iS": 402426,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/versing\/img\/albums\/tape.jpg",
 		"oF": 0,
@@ -2804,6 +2829,7 @@
 	"\/versing\/img\/versing-boys.jpg": {
 		"ft": 16384,
 		"iS": 952708,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/versing\/img\/versing-boys.jpg",
 		"oF": 0,
@@ -2814,6 +2840,7 @@
 	"\/versing\/img\/videos\/cmo.jpg": {
 		"ft": 16384,
 		"iS": 37760,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/versing\/img\/videos\/cmo.jpg",
 		"oF": 0,
@@ -2831,6 +2858,7 @@
 	"\/versing\/img\/videos\/kexp.jpg": {
 		"ft": 16384,
 		"iS": 139266,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/versing\/img\/videos\/kexp.jpg",
 		"oF": 0,
@@ -2848,6 +2876,7 @@
 	"\/versing\/img\/videos\/vk.jpg": {
 		"ft": 16384,
 		"iS": 16090,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/versing\/img\/videos\/vk.jpg",
 		"oF": 0,
@@ -2931,7 +2960,8 @@
 	"creationDate": 540500827,
 	"displayValue": "d-salas.github.io",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-angryPicard"
+	"iconImageName": "\/mss\/apple-touch-icon.png",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -4734,6 +4764,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

@@ -10,107 +10,139 @@
   100% {
     background-position: 100% -100%; } }
 
+@keyframes rotate {
+  0% {
+    box-shadow: 16px 0px 0 white; }
+  25% {
+    box-shadow: 0px 16px 0 white; }
+  50% {
+    box-shadow: -16px 0px 0 white; }
+  75% {
+    box-shadow: 0px -16px 0 white; }
+  100% {
+    box-shadow: 16px 0px 0 white; } }
+
 ::selection {
-  background-color: blue;
+  background-color: white;
   /* WebKit/Blink Browsers */
-  color: #ffe600; }
+  color: pink; }
 
 body {
-  background: #ffe600;
+  background: pink;
   margin: 0;
-  color: blue;
+  color: white;
   font-family: arial; }
-  body.pink, body.pink li:not(:last-of-type), body.pink li:not(:last-of-type):hover, body.pink #circle {
-    background: #f58894; }
-  body.pink .name {
-    background: linear-gradient(90deg, #f58894 14px, transparent 1%) center, linear-gradient(#f58894 14px, transparent 1%) center, blue;
-    background-size: 16px 16px;
-    background-position: -4px -4px; }
-  body.pink li:last-of-type {
-    color: #f58894; }
-  body.pink #circle .wink {
-    display: inline; }
-  body.pink #circle .smile {
-    display: none; }
 
 #main {
   min-height: 100vh;
   margin: 0 auto;
   box-sizing: border-box;
-  text-align: center;
   padding: 32px;
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
 .container {
-  border: 1px solid blue;
+  border: 2px solid white;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
 .name {
-  padding: 16px;
+  position: relative;
+  padding: 16px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #ffe600 14px, transparent 1%) center, linear-gradient(#ffe600 14px, transparent 1%) center, blue;
-  background-size: 16px 16px;
-  background-position: -4px -4px;
-  animation: dot-animation 20s infinite linear; }
+  position: relative;
+  background-image: url("https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
   .name p {
     position: relative;
     z-index: 1;
     margin: 16px auto 0; }
 
-h1 {
-  display: inline;
-  font-weight: 500;
+.foreground {
+  width: 60%;
   margin: 0 auto;
-  position: relative;
-  z-index: 1; }
+  border: 5px solid black; }
 
-#circle {
-  width: 75px;
-  height: 75px;
-  background: #ffe600;
-  border-radius: 50%;
+h1 {
+  display: block;
+  margin: 0 auto;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid blue; }
-  #circle, #circle .circle-text {
-    transition: .2s width ease-in-out, .2s height ease-in-out; }
-  #circle .circle-text {
-    user-select: none;
-    font-size: 18px;
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(90deg); }
-  #circle .wink {
-    display: none; }
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  line-height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+  h1 span {
+    color: pink;
+    background: white; }
+  h1 div {
+    display: flex;
+    justify-content: space-between; }
+
+.menu-item {
+  margin: 0;
+  padding: 32px;
+  text-align: center; }
+  .menu-item:hover {
+    position: relative;
+    border: 2px solid white;
+    color: pink;
+    background: white;
+    cursor: pointer; }
+    .menu-item:hover:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      bottom: -7px;
+      right: -7px;
+      z-index: -1;
+      background-image: linear-gradient(45deg, white 17.5%, rgba(255, 255, 255, 0) 17.5%, rgba(255, 255, 255, 0) 32.5%, white 32.5%, white 67.5%, rgba(255, 255, 255, 0) 67.5%, rgba(255, 255, 255, 0) 82.5%, white 82.5%);
+      background-size: 8px 8px;
+      animation: dash-animation 30s infinite linear; }
+
+h2:not(:last-of-type) {
+  border-bottom: 2px solid white; }
 
 ul {
   padding: 0;
   margin: 0 auto;
-  list-style: none; }
+  list-style: none;
+  border-left: 2px solid white;
+  border-right: 2px solid white; }
 
 li {
   padding: 32px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-top: 1px solid blue; }
+  border-top: 2px solid white;
+  text-align: center;
+  background: pink; }
+  li:first-of-type {
+    border: none; }
+  li span {
+    display: block;
+    font-size: 12px;
+    margin-top: 8px; }
   li:hover {
     position: relative;
     left: -5px;
     top: -5px;
-    border: 1px solid blue;
-    color: blue;
-    background: #ffe600;
+    border: 2px solid white;
+    color: white;
+    background: pink;
     cursor: pointer; }
     li:hover:before {
       content: " ";
@@ -121,41 +153,41 @@ li {
       bottom: -7px;
       right: -7px;
       z-index: -1;
-      background-image: linear-gradient(45deg, blue 17.5%, rgba(0, 0, 255, 0) 17.5%, rgba(0, 0, 255, 0) 32.5%, blue 32.5%, blue 67.5%, rgba(0, 0, 255, 0) 67.5%, rgba(0, 0, 255, 0) 82.5%, blue 82.5%);
+      background-image: linear-gradient(45deg, white 17.5%, rgba(255, 255, 255, 0) 17.5%, rgba(255, 255, 255, 0) 32.5%, white 32.5%, white 67.5%, rgba(255, 255, 255, 0) 67.5%, rgba(255, 255, 255, 0) 82.5%, white 82.5%);
       background-size: 8px 8px;
       animation: dash-animation 30s infinite linear; }
   li:last-of-type {
-    background: blue;
-    color: #ffe600; }
+    background: white;
+    color: pink; }
 
 @media (min-width: 769px) {
+  #main {
+    background: pink; }
   .container {
     width: 100%;
     flex-direction: row; }
-  .menu, .name {
-    width: 50%; }
+  .menu {
+    border-left: 2px solid white;
+    width: 60%; }
+  .name {
+    width: 40%; }
+  .menu-item {
+    text-align: right;
+    padding: 16px;
+    flex-grow: 1; }
   .menu, ul, li {
-    display: flex; }
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; }
   ul {
     flex-direction: column;
     width: 100%;
-    border-left: 1px solid blue; }
+    border-left: none;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white; }
   li {
     flex: 1;
     flex-direction: column;
     justify-content: center; }
-    li:first-of-type {
-      border: none; }
-      li:first-of-type:hover {
-        border: 1px solid blue; }
-  #circle {
-    width: 150px;
-    height: 150px; }
-    #circle:hover {
-      width: 200px;
-      height: 200px;
-      border: 1px solid blue;
-      box-shadow: 16px 0px 0 blue;
-      cursor: pointer; }
-      #circle:hover .circle-text {
-        opacity: 1; } }
+    li:first-of-type:hover {
+      border: 2px solid white; } }
