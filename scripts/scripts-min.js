@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){if(window.console)var e=window.console;var n=$("#previous-work"),o=$("#contact");n.on("click",function(){n.toggleClass("menu-open"),$(".work-menu").toggleClass("menu-open"),o.removeClass("menu-open"),$(".contact-menu").removeClass("menu-open")}),o.on("click",function(){o.toggleClass("menu-open"),$(".contact-menu").toggleClass("menu-open"),n.removeClass("menu-open"),$(".work-menu").removeClass("menu-open")})});

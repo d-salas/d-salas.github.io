@@ -1,12 +1,26 @@
 $(document).ready(function(){
-	// $('#circle').on('click', function(){
-		// $('body').toggleClass('pink');
-		// $('body').toggleClass('yellow');
-	// });
+	if(window.console) {
+		var console = window.console;
+	}
 
-	// $('.circle-text').circleType({radius:135});
+	var previous = $('#previous-work');
+	var contact = $('#contact');
 
-	// const circleType = new CircleType($('.circle-text'));
+	previous.on('click', function(){
+		// console.log('clicked the menu');
+		previous.toggleClass('menu-open');
+		$('.work-menu').toggleClass('menu-open');
 
-	// new CircleType(document.getElementByClassName('.circle-text')).radius(384);
+		contact.removeClass('menu-open');
+		$('.contact-menu').removeClass('menu-open');
+	});
+
+
+	contact.on('click', function(){
+		contact.toggleClass('menu-open');
+		$('.contact-menu').toggleClass('menu-open');
+
+		previous.removeClass('menu-open');
+		$('.work-menu').removeClass('menu-open');
+	});
 });
