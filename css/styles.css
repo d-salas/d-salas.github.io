@@ -10,27 +10,15 @@
   100% {
     background-position: 100% -100%; } }
 
-@keyframes rotate {
-  0% {
-    box-shadow: 16px 0px 0 white; }
-  25% {
-    box-shadow: 0px 16px 0 white; }
-  50% {
-    box-shadow: -16px 0px 0 white; }
-  75% {
-    box-shadow: 0px -16px 0 white; }
-  100% {
-    box-shadow: 16px 0px 0 white; } }
-
 ::selection {
-  background-color: white;
+  background-color: black;
   /* WebKit/Blink Browsers */
-  color: white; }
+  color: gold; }
 
 body {
-  background: white;
+  background: gold;
   margin: 0;
-  color: white;
+  color: black;
   font-family: arial; }
 
 #main {
@@ -43,7 +31,7 @@ body {
   justify-content: center; }
 
 .container {
-  border: 2px solid white;
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -54,12 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-transform: uppercase;
   position: relative; }
-  .name p {
-    position: relative;
-    z-index: 1;
-    margin: 16px auto 0; }
 
 .background-and-foreground {
   background-image: url("https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif");
@@ -71,7 +54,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 16px;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid black; }
 
 .foreground {
   width: 60%;
@@ -83,23 +66,25 @@ h1 {
   display: block;
   margin: 0 auto;
   z-index: 1;
-  text-align: center;
   width: 100%;
   height: 25%;
-  background-color: black;
-  border-bottom: 2px solid white;
+  background-color: palegreen;
+  border-bottom: 2px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: flex-start; }
+  h1 span {
+    display: block;
+    padding: 16px; }
   h1 div {
     display: flex;
     justify-content: space-between; }
 
 .menu {
-  background: white; }
+  background: black; }
 
 .menu-item {
-  background: black;
+  background: pink;
   margin: 0;
   padding: 32px;
   text-align: center; }
@@ -108,7 +93,7 @@ h1 {
     z-index: 10;
     left: -5px;
     top: -5px;
-    border: 2px solid white;
+    border: 2px solid black;
     cursor: pointer; }
     .menu-item:hover:before {
       content: " ";
@@ -119,67 +104,45 @@ h1 {
       bottom: -7px;
       right: -7px;
       z-index: -100;
-      background-image: linear-gradient(45deg, black 17.5%, transparent 17.5%, transparent 32.5%, black 32.5%, black 67.5%, transparent 67.5%, transparent 82.5%, black 82.5%);
+      background-image: linear-gradient(45deg, pink 17.5%, rgba(255, 192, 203, 0) 17.5%, rgba(255, 192, 203, 0) 32.5%, pink 32.5%, pink 67.5%, rgba(255, 192, 203, 0) 67.5%, rgba(255, 192, 203, 0) 82.5%, pink 82.5%);
       background-size: 8px 8px;
       animation: dash-animation 30s infinite linear; }
 
 h2:not(:last-of-type) {
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid black; }
 
 ul {
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  border-left: 2px solid white;
-  border-right: 2px solid white; }
+  border-left: 2px solid black;
+  border-right: 2px solid black; }
 
 li {
   padding: 32px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-top: 2px solid white;
+  border-top: 2px solid black;
   text-align: center;
-  background: white; }
+  background: gold; }
   li:first-of-type {
     border: none; }
   li span {
     display: block;
     font-size: 12px;
     margin-top: 8px; }
-  li:hover {
-    position: relative;
-    left: -5px;
-    top: -5px;
-    border: 2px solid white;
-    color: white;
-    background: white;
-    cursor: pointer; }
-    li:hover:before {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      bottom: -7px;
-      right: -7px;
-      z-index: -1;
-      background-image: linear-gradient(45deg, white 17.5%, rgba(255, 255, 255, 0) 17.5%, rgba(255, 255, 255, 0) 32.5%, white 32.5%, white 67.5%, rgba(255, 255, 255, 0) 67.5%, rgba(255, 255, 255, 0) 82.5%, white 82.5%);
-      background-size: 8px 8px;
-      animation: dash-animation 30s infinite linear; }
   li:last-of-type {
-    background: white;
-    color: white; }
+    background: black;
+    color: gold; }
 
 @media (min-width: 769px) {
-  #main {
-    background: white; }
   h1 {
     flex-grow: 0; }
   .container {
     width: 100%;
     flex-direction: row; }
   .menu {
-    border-left: 2px solid white;
+    border-left: 2px solid black;
     width: 60%; }
   .name {
     width: 40%; }
@@ -195,11 +158,11 @@ li {
     flex-direction: column;
     width: 100%;
     border-left: none;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white; }
+    border-top: 2px solid black;
+    border-bottom: 2px solid black; }
   li {
     flex: 1;
     flex-direction: column;
     justify-content: center; }
     li:first-of-type:hover {
-      border: 2px solid white; } }
+      border: 2px solid black; } }
