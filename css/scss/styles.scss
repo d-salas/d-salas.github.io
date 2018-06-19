@@ -6,12 +6,13 @@ $blue: blue;//#042949;
 $yellow: #ffe600;
 $white: white;
 
-$box-color: pink;
+$box-color: cornflowerblue;
+$box-hover: palegreen;
 $name-box-color: gold;
 $border-color: black;
 $menu-background: $border-color;
-$submenu-background: palegreen;
-$main-background: paleturquoise;
+$submenu-background: pink;
+$main-background: cornflowerblue;
 $text-color: $border-color;
 
 $spacer: 16px;
@@ -21,10 +22,10 @@ $thin-border: 2px solid $border-color;
 
 // animation
 $distance:-4px;
-$cut-distance:4px;//$distance/4;
-$strips-size:8px; //10px
-$strips-ratio:70%;//70%
-$strips-angle:45deg;//90deg;
+$cut-distance:4px;
+$strips-size:8px; 
+$strips-ratio:70%;
+$strips-angle:45deg;
 
 @keyframes dash-animation{
 	0% {background-position:0 0};
@@ -40,13 +41,13 @@ $strips-angle:45deg;//90deg;
 
 	position:absolute;
 	$bleeding-horizontal:3px;
-	$bleeding-vertical:0px;
+	$bleeding-vertical:1px;
 	top:-$bleeding-vertical - $distance;
 	left:-$bleeding-vertical - $distance;
 	bottom:-$bleeding-horizontal + $distance;
 	right:-$bleeding-horizontal + $distance;
 	z-index:-100;
-	$color:$box-color;
+	$color: $box-hover;
 	$size:$strips-ratio/2;
 	$halfSize:$size/2;
 	$p1:$halfSize;
@@ -169,8 +170,23 @@ h1 {
 	h2 {
 		margin: 0;
 	}
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 	&:not(:last-of-type) {
 		border-bottom: $thin-border;
+		// background: palegreen;
+		&:hover:before {
+			border-bottom: $thin-border;
+		}
+	}
+	&.menu-open {
+		background: $box-hover;
 	}
 	&:not(.menu-open):hover {
 		position: relative;
@@ -178,6 +194,8 @@ h1 {
 		left: -5px;
 		top: -5px;
 		border: $thin-border;
+		// color: white;
+		background: $box-hover;
 
 		&:before{
 			@include dash-hover;
@@ -186,14 +204,6 @@ h1 {
 	&:hover {
 		cursor: pointer;
 		text-decoration: none;
-	}
-	a {
-		display: block;
-		height: 100%;
-		width: 100%;
-		&:hover {
-			text-decoration: none;
-		}
 	}
 }
 ul {

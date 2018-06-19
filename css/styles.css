@@ -19,7 +19,7 @@
 ::selection {
   background-color: black;
   /* WebKit/Blink Browsers */
-  color: paleturquoise; }
+  color: cornflowerblue; }
 
 a {
   color: black;
@@ -28,7 +28,7 @@ a {
     text-decoration: underline; }
 
 body {
-  background: paleturquoise;
+  background: cornflowerblue;
   margin: 0;
   color: black;
   font-family: arial; }
@@ -96,41 +96,46 @@ h1 {
   background: black; }
 
 .menu-item {
-  background: pink;
+  background: cornflowerblue;
   margin: 0;
   padding: 32px;
   text-align: center; }
   .menu-item h2 {
     margin: 0; }
-  .menu-item:not(:last-of-type) {
-    border-bottom: 2px solid black; }
-  .menu-item:not(.menu-open):hover {
-    position: relative;
-    z-index: 10;
-    left: -5px;
-    top: -5px;
-    border: 2px solid black; }
-    .menu-item:not(.menu-open):hover:before {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      bottom: -7px;
-      right: -7px;
-      z-index: -100;
-      background-image: linear-gradient(45deg, pink 17.5%, rgba(255, 192, 203, 0) 17.5%, rgba(255, 192, 203, 0) 32.5%, pink 32.5%, pink 67.5%, rgba(255, 192, 203, 0) 67.5%, rgba(255, 192, 203, 0) 82.5%, pink 82.5%);
-      background-size: 8px 8px;
-      animation: dash-animation 30s infinite linear; }
-  .menu-item:hover {
-    cursor: pointer;
-    text-decoration: none; }
   .menu-item a {
     display: block;
     height: 100%;
     width: 100%; }
     .menu-item a:hover {
       text-decoration: none; }
+  .menu-item:not(:last-of-type) {
+    border-bottom: 2px solid black; }
+    .menu-item:not(:last-of-type):hover:before {
+      border-bottom: 2px solid black; }
+  .menu-item.menu-open {
+    background: palegreen; }
+  .menu-item:not(.menu-open):hover {
+    position: relative;
+    z-index: 10;
+    left: -5px;
+    top: -5px;
+    border: 2px solid black;
+    background: palegreen; }
+    .menu-item:not(.menu-open):hover:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      bottom: -7px;
+      right: -7px;
+      z-index: -100;
+      background-image: linear-gradient(45deg, palegreen 17.5%, rgba(152, 251, 152, 0) 17.5%, rgba(152, 251, 152, 0) 32.5%, palegreen 32.5%, palegreen 67.5%, rgba(152, 251, 152, 0) 67.5%, rgba(152, 251, 152, 0) 82.5%, palegreen 82.5%);
+      background-size: 8px 8px;
+      animation: dash-animation 30s infinite linear; }
+  .menu-item:hover {
+    cursor: pointer;
+    text-decoration: none; }
 
 ul {
   padding: 0;
@@ -153,7 +158,7 @@ li {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  background: palegreen;
+  background: pink;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
