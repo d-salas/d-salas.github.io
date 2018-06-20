@@ -6,14 +6,20 @@ $blue: blue;//#042949;
 $yellow: #ffe600;
 $white: white;
 
-$box-color: cornflowerblue;
-$box-hover: palegreen;
+$box-color: white;
+$box-hover: paleturquoise;
+$contact-color: cornflowerblue;
 $name-box-color: gold;
 $border-color: black;
-$menu-background: $border-color;
-$submenu-background: pink;
-$main-background: cornflowerblue;
+$menu-background: black;
+$submenu-background: white;
+$main-background: white;
 $text-color: $border-color;
+
+::selection {
+  background-color: $text-color; /* WebKit/Blink Browsers */
+  color: $main-background;
+}
 
 $spacer: 16px;
 $double-spacer: $spacer * 2;
@@ -35,7 +41,7 @@ $strips-angle:45deg;
 	0% {background-position:-4px -2px};
 	100% {background-position:100% -100%};
 }
-@mixin dash-hover {
+@mixin dash-hover($background-color) {
 	content:" ";
 	display:block;
 
@@ -47,7 +53,7 @@ $strips-angle:45deg;
 	bottom:-$bleeding-horizontal + $distance;
 	right:-$bleeding-horizontal + $distance;
 	z-index:-100;
-	$color: $box-hover;
+	$color: $background-color;
 	$size:$strips-ratio/2;
 	$halfSize:$size/2;
 	$p1:$halfSize;
@@ -70,10 +76,7 @@ $strips-angle:45deg;
   }
 }
 
-::selection {
-  background-color: $text-color; /* WebKit/Blink Browsers */
-  color: $main-background;
-}
+
 a {
 	color: $text-color;
 	text-decoration: none;
@@ -110,7 +113,7 @@ body {
 	position: relative;
 	flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 
     position: relative;
@@ -118,7 +121,7 @@ body {
 .background-and-foreground {
 	background-image: url('https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif');
     background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover 101%;
 	background-position: center;
 
 	flex-grow: 1;
@@ -135,20 +138,21 @@ body {
 }
 
 h1 {
-	flex-grow: 1;
+	font-size: 1.9em;
 	display: block;
 	margin: 0 auto;
 	z-index: 1;
-	// text-align: center;
 	width: 100%;
-	height: 25%;
+	// height: 25%;
 	background-color: $name-box-color;
 	border-bottom: $thin-border;
+	border-right: $thin-border;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	// height: 100%;
+	flex-grow: 1;
+
 	span {
 		display: block;
 		padding: $spacer;
@@ -167,6 +171,16 @@ h1 {
 	margin: 0;
 	padding: $double-spacer;
 	text-align: center;
+	position: relative;
+	span {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 100px;
+		line-height: 100%;
+		// top: 25%;
+	}
 	h2 {
 		margin: 0;
 	}
@@ -179,14 +193,41 @@ h1 {
 		}
 	}
 	&:not(:last-of-type) {
-		border-bottom: $thin-border;
-		// background: palegreen;
+		// border-bottom: $thin-border;
 		&:hover:before {
-			border-bottom: $thin-border;
+			// border-bottom: $thin-border;
 		}
 	}
-	&.menu-open {
-		background: $box-hover;
+	&#contact {
+		background: $contact-color;
+		// border-top: $thin-border;
+		&.menu-open {
+		}
+		&:hover {
+			&:before {
+				// border-top: $thin-border;
+				// z-index: -1;
+				@include dash-hover($contact-color);
+			}
+		}
+	}
+	&#previous-work {
+		border-bottom: $thin-border;
+		&.menu-open {
+			background: $box-hover;
+			// border-bottom: $thin-border;
+		}
+		&:hover {
+			&:before {
+				@include dash-hover($box-hover);
+				border-bottom: $thin-border;
+			}
+		}
+	}
+	&.menu-open#contact, &.menu-open#previous-work {
+		&:hover:before {
+			content: none;
+		}
 	}
 	&:not(.menu-open):hover {
 		position: relative;
@@ -194,12 +235,7 @@ h1 {
 		left: -5px;
 		top: -5px;
 		border: $thin-border;
-		// color: white;
 		background: $box-hover;
-
-		&:before{
-			@include dash-hover;
-		}
 	}
 	&:hover {
 		cursor: pointer;
@@ -210,17 +246,20 @@ ul {
 	padding: 0;
 	margin: 0 auto;
 	list-style: none;
-	// opacity: 0;
 	max-height: 0;
 	overflow: hidden;
-	transition: .3s ease-in-out max-height;
+	transition: .3s ease-in-out max-height, .35s ease-in-out border-width;
+	border-bottom: $thin-border;
+	border-width: 0;
+	// box-sizing: content-box;
+	// opacity: 0;
 
 	&.menu-open {
-		// opacity: 1;
-		// height: auto;
 		border-bottom: $thin-border;
+		// opacity: 1;
 		display: flex;
 		flex-direction: column;
+		transition: .3s ease-in-out max-height;
 
 		&.work-menu {
 			max-height: 104px *4;
@@ -230,13 +269,19 @@ ul {
 		}
 	}
 }
+.work-menu {
+	background: $box-hover;
+}
+.contact-menu {
+	background: $contact-color;
+}
 li {
 	padding: $double-spacer;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-align: center;
 	
-	background: $submenu-background;
+	// background: $submenu-background;
 
 	flex-grow: 1;
 	display: flex;
@@ -251,13 +296,19 @@ li {
 		margin-top: $half-spacer;
 	}
 }
-.contact-menu a {
-	// animation: marquee 4s linear infinite;
-}
 
 @media (min-width: 769px) {
+	.name {
+		flex-direction: column;
+	}
 	h1 {
 		flex-grow: 0;
+		height: 25%;
+		font-size: 2em;
+		// border-bottom: none;
+	}
+	.background-and-foreground {
+		border: none;
 	}
 	.container {
 		width: 100%;
