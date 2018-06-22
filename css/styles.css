@@ -119,35 +119,10 @@ h1 {
       text-decoration: none; }
   .menu-item#contact {
     background: cornflowerblue; }
-    .menu-item#contact:hover:before {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      bottom: -7px;
-      right: -7px;
-      z-index: -100;
-      background-image: linear-gradient(45deg, cornflowerblue 17.5%, rgba(100, 149, 237, 0) 17.5%, rgba(100, 149, 237, 0) 32.5%, cornflowerblue 32.5%, cornflowerblue 67.5%, rgba(100, 149, 237, 0) 67.5%, rgba(100, 149, 237, 0) 82.5%, cornflowerblue 82.5%);
-      background-size: 8px 8px;
-      animation: dash-animation 30s infinite linear; }
   .menu-item#previous-work {
     border-bottom: 2px solid black; }
     .menu-item#previous-work.menu-open {
       background: paleturquoise; }
-    .menu-item#previous-work:hover:before {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      bottom: -7px;
-      right: -7px;
-      z-index: -100;
-      background-image: linear-gradient(45deg, paleturquoise 17.5%, rgba(175, 238, 238, 0) 17.5%, rgba(175, 238, 238, 0) 32.5%, paleturquoise 32.5%, paleturquoise 67.5%, rgba(175, 238, 238, 0) 67.5%, rgba(175, 238, 238, 0) 82.5%, paleturquoise 82.5%);
-      background-size: 8px 8px;
-      animation: dash-animation 30s infinite linear;
-      border-bottom: 2px solid black; }
   .menu-item.menu-open#contact:hover:before, .menu-item.menu-open#previous-work:hover:before {
     content: none; }
   .menu-item:not(.menu-open):hover {
@@ -201,6 +176,33 @@ li {
     display: block;
     font-size: 12px;
     margin-top: 8px; }
+
+@media (pointer: fine) {
+  #contact:hover:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: -7px;
+    right: -7px;
+    z-index: -100;
+    background-image: linear-gradient(45deg, cornflowerblue 17.5%, rgba(100, 149, 237, 0) 17.5%, rgba(100, 149, 237, 0) 32.5%, cornflowerblue 32.5%, cornflowerblue 67.5%, rgba(100, 149, 237, 0) 67.5%, rgba(100, 149, 237, 0) 82.5%, cornflowerblue 82.5%);
+    background-size: 8px 8px;
+    animation: dash-animation 30s infinite linear; }
+  #previous-work:hover:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: -7px;
+    right: -7px;
+    z-index: -100;
+    background-image: linear-gradient(45deg, paleturquoise 17.5%, rgba(175, 238, 238, 0) 17.5%, rgba(175, 238, 238, 0) 32.5%, paleturquoise 32.5%, paleturquoise 67.5%, rgba(175, 238, 238, 0) 67.5%, rgba(175, 238, 238, 0) 82.5%, paleturquoise 82.5%);
+    background-size: 8px 8px;
+    animation: dash-animation 30s infinite linear;
+    border-bottom: 2px solid black; } }
 
 @media (min-width: 769px) {
   .name {

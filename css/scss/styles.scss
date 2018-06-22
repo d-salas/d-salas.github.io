@@ -95,13 +95,10 @@ body {
 	min-height: 100vh;
 	margin: 0 auto;
 	box-sizing: border-box;
-	// text-align: center;
 	padding: $double-spacer;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-
-	// background-image: url('https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif');
 }
 .container {
 	border: $thin-border;
@@ -143,7 +140,6 @@ h1 {
 	margin: 0 auto;
 	z-index: 1;
 	width: 100%;
-	// height: 25%;
 	background-color: $name-box-color;
 	border-bottom: $thin-border;
 	border-right: $thin-border;
@@ -192,22 +188,11 @@ h1 {
 			text-decoration: none;
 		}
 	}
-	&:not(:last-of-type) {
-		// border-bottom: $thin-border;
-		&:hover:before {
-			// border-bottom: $thin-border;
-		}
-	}
 	&#contact {
 		background: $contact-color;
-		// border-top: $thin-border;
-		&.menu-open {
-		}
 		&:hover {
 			&:before {
-				// border-top: $thin-border;
-				// z-index: -1;
-				@include dash-hover($contact-color);
+				// @include dash-hover($contact-color);
 			}
 		}
 	}
@@ -215,13 +200,6 @@ h1 {
 		border-bottom: $thin-border;
 		&.menu-open {
 			background: $box-hover;
-			// border-bottom: $thin-border;
-		}
-		&:hover {
-			&:before {
-				@include dash-hover($box-hover);
-				border-bottom: $thin-border;
-			}
 		}
 	}
 	&.menu-open#contact, &.menu-open#previous-work {
@@ -251,12 +229,9 @@ ul {
 	transition: .3s ease-in-out max-height, .35s ease-in-out border-width;
 	border-bottom: $thin-border;
 	border-width: 0;
-	// box-sizing: content-box;
-	// opacity: 0;
 
 	&.menu-open {
 		border-bottom: $thin-border;
-		// opacity: 1;
 		display: flex;
 		flex-direction: column;
 		transition: .3s ease-in-out max-height;
@@ -280,8 +255,6 @@ li {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-align: center;
-	
-	// background: $submenu-background;
 
 	flex-grow: 1;
 	display: flex;
@@ -297,6 +270,17 @@ li {
 	}
 }
 
+@media (pointer: fine) {
+	#contact:hover:before {
+		@include dash-hover($contact-color);
+	}
+	#previous-work:hover:before {
+		@include dash-hover($box-hover);
+		border-bottom: $thin-border;
+	}
+}
+
+
 @media (min-width: 769px) {
 	.name {
 		flex-direction: column;
@@ -305,7 +289,6 @@ li {
 		flex-grow: 0;
 		height: 25%;
 		font-size: 2em;
-		// border-bottom: none;
 	}
 	.background-and-foreground {
 		border: none;
@@ -325,9 +308,6 @@ li {
 		text-align: right;
 		padding: $spacer;
 		flex-grow: 1;
-		&:first-of-type {
-			// border-top: $thin-border;
-		}
 	}
 	.menu, li {
 		display: flex;
@@ -336,7 +316,6 @@ li {
 	}
 
 	ul {
-		// display: none;
 		flex-direction: column;
 		width: 100%;
 		border-left: none;
