@@ -207,14 +207,6 @@ h1 {
 			content: none;
 		}
 	}
-	&:not(.menu-open):hover {
-		position: relative;
-		z-index: 10;
-		left: -5px;
-		top: -5px;
-		border: $thin-border;
-		background: $box-hover;
-	}
 	&:hover {
 		cursor: pointer;
 		text-decoration: none;
@@ -277,6 +269,14 @@ li {
 	#previous-work:hover:before {
 		@include dash-hover($box-hover);
 		border-bottom: $thin-border;
+	}
+	.menu-item:not(.menu-open):hover {
+		position: relative;
+		z-index: 10;
+		left: -5px;
+		top: -5px;
+		border: $thin-border;
+		background: $box-hover;
 	}
 }
 

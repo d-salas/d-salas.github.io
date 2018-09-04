@@ -125,13 +125,6 @@ h1 {
       background: paleturquoise; }
   .menu-item.menu-open#contact:hover:before, .menu-item.menu-open#previous-work:hover:before {
     content: none; }
-  .menu-item:not(.menu-open):hover {
-    position: relative;
-    z-index: 10;
-    left: -5px;
-    top: -5px;
-    border: 2px solid black;
-    background: paleturquoise; }
   .menu-item:hover {
     cursor: pointer;
     text-decoration: none; }
@@ -202,7 +195,14 @@ li {
     background-image: linear-gradient(45deg, paleturquoise 17.5%, rgba(175, 238, 238, 0) 17.5%, rgba(175, 238, 238, 0) 32.5%, paleturquoise 32.5%, paleturquoise 67.5%, rgba(175, 238, 238, 0) 67.5%, rgba(175, 238, 238, 0) 82.5%, paleturquoise 82.5%);
     background-size: 8px 8px;
     animation: dash-animation 30s infinite linear;
-    border-bottom: 2px solid black; } }
+    border-bottom: 2px solid black; }
+  .menu-item:not(.menu-open):hover {
+    position: relative;
+    z-index: 10;
+    left: -5px;
+    top: -5px;
+    border: 2px solid black;
+    background: paleturquoise; } }
 
 @media (min-width: 769px) {
   .name {
