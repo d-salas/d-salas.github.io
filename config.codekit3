@@ -2938,6 +2938,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/versing\/scss\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/versing\/scss\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/versing\/scss\/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2946,8 +2956,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/versing\/scss\/style.css",
-		"oF": 0,
+		"oAP": "\/versing\/css\/style.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		}

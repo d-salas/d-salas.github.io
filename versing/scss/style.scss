@@ -24,11 +24,21 @@ body {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-a {
+.top-menu a {
+	display: flex;
 	text-decoration: none;
 	color: $font-color;
+	justify-content: center;
+
 	&:hover {
 		color: $versing-red;
+		text-decoration: underline;
+	}
+}
+a {
+	color: $versing-red;
+	text-decoration: none;
+	&:hover {
 		text-decoration: underline;
 	}
 }
@@ -59,7 +69,7 @@ h2 {
 ul.top-menu {
 	padding: 0;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 }
 .top-menu li {
@@ -68,11 +78,12 @@ ul.top-menu {
 	font-size: 13px;
 }
 .versing-img img {
+	margin-top: $double-spacer;
 	max-width: 100%;
 }
 
 // Listen / Watch
-#album-covers, #video-thumbs, #video-names {
+#video-thumbs, #video-names {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -81,7 +92,7 @@ ul.top-menu {
 	
 	div, p {
 		text-align: center;
-		width: 30%;
+		width: 33%;//calc(33.333% - #{$half-spacer});
 	}
 	p {
 		margin-top: 0;
@@ -91,11 +102,24 @@ ul.top-menu {
 		width: 100%;
 		box-sizing: border-box;
 		border: 3px solid transparent;
+		// margin: $half-spacer;
 		cursor: pointer;
 
 		&:hover, &.active {
 			border-color: $versing-red;
 		}
+	}
+}
+#album-covers {
+	justify-content: center;
+	display: flex;
+	div {
+		margin: 0 $half-spacer;	
+		width: 48%;
+		max-width: 350px - $half-spacer;
+	}
+	img {
+		width: 100%;
 	}
 }
 #video-names {
@@ -114,7 +138,7 @@ ul.top-menu {
 		opacity: 1;
 	}
 }
-.bandcamp-embed, .youtube-embed {
+.bandcamp-embed, .youtube-embed:not(.silver-dollar-embed) {
 	display: none;
 	text-align: center;
 	margin-bottom: $spacer;
@@ -123,11 +147,25 @@ ul.top-menu {
 		display: block;
 	}
 }
+.silver-dollar p {
+	text-align: center;
+}
+.silver-dollar-embed > iframe {
+	margin-top: 0;
+}
 .bandcamp-embed iframe {
 	max-width: 700px;
 }
+.listen {
+	text-align: center;
+}
+.nirvana {	
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
 iframe {
-	margin-top: $spacer;
+	// margin-top: $spacer;
 }
 .thumb-title {
 	display: flex;
@@ -151,4 +189,11 @@ footer {
 		cursor: pointer;
 		text-decoration: none;
 	}
+}
+
+
+@media only screen and (min-width: 475px)  {
+	ul.top-menu {
+		flex-direction: row;
+	}	
 }

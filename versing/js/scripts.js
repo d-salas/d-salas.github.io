@@ -120,5 +120,6 @@
 
  	// Fit YouTube video to screen width
  	$('.youtube-embed').fitVids();
+ 	$('.silver-dollar-embed').fitVids();
 
 });

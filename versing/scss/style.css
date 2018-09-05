@@ -5,19 +5,11 @@ body {
   text-transform: uppercase;
   font-weight: bold; }
 
-.top-menu a {
-  display: flex;
-  text-decoration: none;
-  color: #3e3e3c;
-  justify-content: center; }
-  .top-menu a:hover {
-    color: #f15b55;
-    text-decoration: underline; }
-
 a {
-  color: #f15b55;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3e3e3c; }
   a:hover {
+    color: #f15b55;
     text-decoration: underline; }
 
 h2 {
@@ -45,7 +37,7 @@ h2 {
 ul.top-menu {
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between; }
 
 .top-menu li {
@@ -54,37 +46,26 @@ ul.top-menu {
   font-size: 13px; }
 
 .versing-img img {
-  margin-top: 32px;
   max-width: 100%; }
 
-#video-thumbs, #video-names {
+#album-covers, #video-thumbs, #video-names {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 16px; }
-  #video-thumbs div, #video-thumbs p, #video-names div, #video-names p {
+  #album-covers div, #album-covers p, #video-thumbs div, #video-thumbs p, #video-names div, #video-names p {
     text-align: center;
-    width: 33%; }
-  #video-thumbs p, #video-names p {
+    width: 30%; }
+  #album-covers p, #video-thumbs p, #video-names p {
     margin-top: 0;
     margin-bottom: 0; }
-  #video-thumbs img, #video-names img {
+  #album-covers img, #video-thumbs img, #video-names img {
     width: 100%;
     box-sizing: border-box;
     border: 3px solid transparent;
     cursor: pointer; }
-    #video-thumbs img:hover, #video-thumbs img.active, #video-names img:hover, #video-names img.active {
+    #album-covers img:hover, #album-covers img.active, #video-thumbs img:hover, #video-thumbs img.active, #video-names img:hover, #video-names img.active {
       border-color: #f15b55; }
-
-#album-covers {
-  justify-content: center;
-  display: flex; }
-  #album-covers div {
-    margin: 0 8px;
-    width: 48%;
-    max-width: 342px; }
-  #album-covers img {
-    width: 100%; }
 
 #video-names {
   margin-bottom: 8px; }
@@ -102,28 +83,16 @@ ul.top-menu {
     opacity: 1; }
 
 .bandcamp-embed, .youtube-embed:not(.silver-dollar-embed) {
-  display: none;
   text-align: center;
   margin-bottom: 16px; }
   .bandcamp-embed.show, .youtube-embed:not(.silver-dollar-embed).show {
     display: block; }
-
-.silver-dollar p {
-  text-align: center; }
 
 .silver-dollar-embed > iframe {
   margin-top: 0; }
 
 .bandcamp-embed iframe {
   max-width: 700px; }
-
-.listen {
-  text-align: center; }
-
-.nirvana {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto; }
 
 .thumb-title {
   display: flex;
@@ -145,7 +114,3 @@ footer {
   #moving-link:hover {
     cursor: pointer;
     text-decoration: none; }
-
-@media only screen and (min-width: 475px) {
-  ul.top-menu {
-    flex-direction: row; } }
