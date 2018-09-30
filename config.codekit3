@@ -220,6 +220,92 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/favicon\/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 81984,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/favicon\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 72212,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/favicon\/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/img\/favicon\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 7657,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/favicon\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 9107,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/favicon\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/favicon.ico",
+		"oF": 0
+		},
+	"\/img\/favicon\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 33338,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/favicon\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/favicon\/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/favicon\/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/site.webmanifest",
+		"oF": 0
+		},
 	"\/img\/Follow Me Down Poster.jpg": {
 		"ft": 16384,
 		"iS": 1202079,
