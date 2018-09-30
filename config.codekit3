@@ -222,7 +222,7 @@
 		},
 	"\/img\/favicon\/android-chrome-192x192.png": {
 		"ft": 32768,
-		"iS": 81984,
+		"iS": 85468,
 		"oA": 0,
 		"oAP": "\/img\/favicon\/android-chrome-192x192.png",
 		"oF": 0,
@@ -231,9 +231,20 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/favicon\/android-chrome-256x256.png": {
+		"ft": 32768,
+		"iS": 148591,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/android-chrome-256x256.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/favicon\/apple-touch-icon.png": {
 		"ft": 32768,
-		"iS": 72212,
+		"iS": 75530,
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon.png",
 		"oF": 0,
@@ -251,7 +262,7 @@
 		},
 	"\/img\/favicon\/favicon-16x16.png": {
 		"ft": 32768,
-		"iS": 7657,
+		"iS": 1343,
 		"oA": 0,
 		"oAP": "\/img\/favicon\/favicon-16x16.png",
 		"oF": 0,
@@ -262,7 +273,7 @@
 		},
 	"\/img\/favicon\/favicon-32x32.png": {
 		"ft": 32768,
-		"iS": 9107,
+		"iS": 3136,
 		"oA": 0,
 		"oAP": "\/img\/favicon\/favicon-32x32.png",
 		"oF": 0,
@@ -278,9 +289,20 @@
 		"oAP": "\/img\/favicon\/favicon.ico",
 		"oF": 0
 		},
+	"\/img\/favicon\/icon.png": {
+		"ft": 32768,
+		"iS": 131071,
+		"oA": 0,
+		"oAP": "\/img\/favicon\/icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/favicon\/mstile-150x150.png": {
 		"ft": 32768,
-		"iS": 33338,
+		"iS": 40704,
 		"oA": 0,
 		"oAP": "\/img\/favicon\/mstile-150x150.png",
 		"oF": 0,
@@ -327,6 +349,22 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/img\/landon-background.gif": {
+		"ft": 4194304,
+		"iS": 808294,
+		"oA": 0,
+		"oAP": "\/img\/landon-background.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/landon.gif": {
+		"ft": 4194304,
+		"iS": 1174796,
+		"oA": 0,
+		"oAP": "\/img\/landon.gif",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/img\/landon.png": {
 		"ft": 32768,

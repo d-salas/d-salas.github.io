@@ -57,7 +57,7 @@ body {
   position: relative; }
 
 .background-and-foreground {
-  background-image: url("https://media.giphy.com/media/1lDH8wAvFZY2WyoiUL/giphy.gif");
+  background-image: url("../img/landon-background.gif");
   background-repeat: no-repeat;
   background-size: cover 101%;
   background-position: center;
