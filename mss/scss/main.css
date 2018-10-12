@@ -1928,7 +1928,7 @@ ul.nav {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1.6rem;
-  padding: 15px 2vw 4px 2vw; }
+  padding: 15px vw 4px 2vw; }
 
 .navbar-toggle {
   font-size: 4.5rem;
@@ -1967,7 +1967,11 @@ ul.nav {
    ========================================================================== */
 #top {
   border: 2px solid #131B21;
-  margin: 1%; }
+  margin: 1.5vh;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 #mss-hero {
   text-align: center; }

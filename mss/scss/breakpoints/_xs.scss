@@ -254,8 +254,11 @@ ul.nav {
 
 #top {
 	border: 2px solid $black;
-	margin: 1%;
-	// height: 97vh;
+	margin: 1.5vh;
+	height: 97vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 	// @include full-screen;
 
